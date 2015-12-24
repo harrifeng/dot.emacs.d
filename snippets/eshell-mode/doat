@@ -1,0 +1,4 @@
+# contributor: Harri Feng <harrifeng@gmail.com>
+# name: docker attach a instance
+# --
+sudo docker attach

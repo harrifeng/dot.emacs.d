@@ -1,0 +1,4 @@
+# contributor: Harri Feng <harrifeng@gmail.com>
+# name: remove whitespaces
+# --
+sed -i 's/[ \t]*$//' "\$1" ${1:file}

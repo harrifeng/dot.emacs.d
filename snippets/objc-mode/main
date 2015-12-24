@@ -1,0 +1,11 @@
+# contributor: Harri Feng <harrifeng@gmail.com>
+# name: main
+# --
+#import <Foundation/Foundation.h>
+
+int main(int argc, const char * argv[]) {
+    @autoreleasepool {
+         $0
+    }
+    return 0;
+}

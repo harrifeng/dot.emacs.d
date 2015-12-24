@@ -1,0 +1,4 @@
+# contributor: Harri Feng <harrifeng@gmail.com>
+# name : Linux version information
+# --
+cat /etc/issue

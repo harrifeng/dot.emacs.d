@@ -1,0 +1,4 @@
+# contributor: Harri Feng <harrifeng@gmail.com>
+#name : Revert a Merge and preserve previous changes
+# --
+git reset --merge ORIG_HEAD

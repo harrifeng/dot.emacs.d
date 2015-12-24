@@ -1,0 +1,8 @@
+# contributor: Harri Feng <harrifeng@gmail.com>
+# name: Package Output
+# --
+package ${1:`(substring (mapconcat 'identity
+            (split-string
+             (substring (file-name-directory (buffer-file-name))
+                        (string-match "org" (file-name-directory (buffer-file-name)))
+                        (string-width (file-name-directory (buffer-file-name)))) "/") ".") 0 -1)`};

@@ -1,0 +1,4 @@
+# contributor: Harri Feng <harrifeng@gmail.com>
+#name : Remove Certain Files
+# --
+find ./ -type f -name "${1:*.rb}" | xargs grep "${2:fhr}"

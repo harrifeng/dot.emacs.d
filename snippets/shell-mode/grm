@@ -1,0 +1,4 @@
+# contributor: Harri Feng <harrifeng@gmail.com>
+# name: gradlew run main
+# --
+./gradlew run -DmainClass=org.hfeng.test.$0

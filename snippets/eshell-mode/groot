@@ -1,0 +1,4 @@
+# contributor: Harri Feng <harrifeng@gmail.com>
+# name: go to git root
+# --
+cd $(git rev-parse --show-cdup)

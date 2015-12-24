@@ -1,0 +1,6 @@
+# contributor: Harri Feng <harrifeng@gmail.com>
+# name: Public Class
+# --
+public class ${1:`(file-name-base (buffer-file-name))`} $2{
+    $3
+}

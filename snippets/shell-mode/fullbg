@@ -1,0 +1,4 @@
+# contributor: Harri Feng <harrifeng@gmail.com>
+# name: Put stdout stderr to /dev/null and use nohup to be able to run without shell
+# --
+nohup $0 > /dev/null 2>&1 &

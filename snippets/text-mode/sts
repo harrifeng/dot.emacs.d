@@ -1,0 +1,5 @@
+#name : status
+# --
+<status xmlns:atom="http://www.w3.org/2005/Atom">
+$1
+</status>

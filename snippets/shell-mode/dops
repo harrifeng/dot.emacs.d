@@ -1,0 +1,4 @@
+# contributor: Harri Feng <harrifeng@gmail.com>
+# name: docker ps a instance
+# --
+sudo docker ps -l

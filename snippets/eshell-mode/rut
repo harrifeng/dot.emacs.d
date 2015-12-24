@@ -1,0 +1,4 @@
+# contributor: Harri Feng <harrifeng@gmail.com>
+#name : Remote Unit Test
+# --
+bundle exec rake ubertest:run_git

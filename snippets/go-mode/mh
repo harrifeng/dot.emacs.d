@@ -1,0 +1,6 @@
+# contributor: Harri Feng <harrifeng@gmail.com>
+# name: Main Header
+# --
+package main
+
+import "fmt"

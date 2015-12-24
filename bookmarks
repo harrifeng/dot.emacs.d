@@ -1,0 +1,30 @@
+;;;; Emacs Bookmark Format Version 1 ;;;;
+;;; This format is meant to be slightly human-readable;
+;;; nevertheless, you probably don't want to edit it.
+;;; -*- End Of Bookmark File Format Version Stamp -*-
+(("golang-harrifeng"
+ (filename . "~/golang-space/src/github.com/harrifeng/")
+ (front-context-string . "go-in-action\n  d")
+ (rear-context-string . "74 Nov  8 21:15 ")
+ (position . 307))
+("vagrant-ROOT-etc"
+ (filename . "/ssh:vagrant@127.0.0.1#2345|sudo:root@127.0.0.1#2345:/etc")
+ (front-context-string . "acpi\n  -rw-r--r-")
+ (rear-context-string . "96 May 30 20:41 ")
+ (position . 193))
+("vagrant-ct"
+ (filename . "/ssh:vagrant@127.0.0.1#2345:/home/vagrant/")
+ (front-context-string . "bash_history\n  -")
+ (rear-context-string . "7 Jun  1 11:09 .")
+ (position . 210))
+("Coreos-vm"
+ (filename . "/ssh:core@127.0.0.1#2222:/home/core/")
+ (front-context-string . "bash_history\n  -")
+ (rear-context-string . "7 Jun  1 11:09 .")
+ (position . 210))
+("Coreos-ROOT-etc"
+ (filename . "/ssh:core@127.0.0.1#2222|sudo:root@127.0.0.1#2222:/etc")
+ (front-context-string . "acpi\n  -rw-r--r-")
+ (rear-context-string . "96 May 30 20:41 ")
+ (position . 193))
+)

@@ -1,0 +1,4 @@
+# contributor: Harri Feng <harrifeng@gmail.com>
+# name :ct parallel test
+# --
+time ./script/run_tests_parallel.sh

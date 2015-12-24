@@ -1,0 +1,4 @@
+# contributor: Harri Feng <harrifeng@gmail.com>
+# name: maven run
+# --
+mvn compile && mvn exec:java -Dexec.mainClass="org.hfeng.$1"

@@ -1,0 +1,4 @@
+# contributor: Harri Feng <harrifeng@gmail.com>
+# name: Put stdout stderr to /dev/null
+# --
+> /dev/null 2>&1 &

@@ -1,0 +1,89 @@
+##################
+# Plugin History #
+##################
+ac-comphist.dat
+el-get/
+url/
+
+##############
+# Temp Files #
+##############
+.abbrev_defs
+tramp
+.#*
+\#*
+*.elc
+*~
+.emacs_custom.el
+anything*
+
+#################
+# History Fiels #
+#################
+eshell/
+server/
+
+###############
+# Python Code #
+###############
+*.py[cod]
+
+# C extensions
+*.so
+
+# Packages
+*.egg
+*.egg-info
+dist
+build
+eggs
+parts
+bin
+var
+sdist
+develop-eggs
+.installed.cfg
+lib
+lib64
+
+# Installer logs
+pip-log.txt
+
+# Unit test / coverage reports
+.coverage
+.tox
+nosetests.xml
+
+# Translations
+*.mo
+
+# Mr Developer
+.mr.developer.cfg
+.project
+.pydevproject
+
+################
+# recent file  #
+################
+recentf
+request/
+
+
+##############
+# projectile #
+##############
+projectile.*
+projectile*.*
+.mc-lists.el
+/srecode-map.el
+
+############
+# session  #
+############
+session.*
+
+.unpacked
+
+.emacs.desktop*
+
+elpa/

@@ -1,0 +1,4 @@
+# contributor: Harri Feng <harrifeng@gmail.com>
+# name: remove whitespaces from all git repo files
+# --
+git ls-files | xargs sed -i 's/[ \t]*$//' "\$1"

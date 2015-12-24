@@ -1,0 +1,4 @@
+# contributor: Harri Feng <harrifeng@gmail.com>
+# name: Select * FROM
+# --
+SELECT * FROM $1 ;

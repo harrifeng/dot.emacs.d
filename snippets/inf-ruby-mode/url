@@ -1,0 +1,4 @@
+# contributor: Harri Feng <harrifeng@gmail.com>
+#name : escape the string to url style string
+# --
+require "erb"; ERB::Util.url_encode("space space")

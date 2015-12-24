@@ -1,0 +1,4 @@
+# contributor: Harri Feng <harrifeng@gmail.com>
+# name: find process that run on specific port
+# --
+lsof -i tcp:${1:3000}

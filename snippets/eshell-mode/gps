@@ -1,0 +1,4 @@
+# contributor: Harri Feng <harrifeng@gmail.com>
+# name: gradlew build with proxy setting in company
+# --
+gradlew -Dhttps.proxyHost=proxy.sin.sap.corp -Dhttps.proxyPort=8080 build
