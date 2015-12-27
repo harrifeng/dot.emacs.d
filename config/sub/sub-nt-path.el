@@ -7,6 +7,11 @@
 (defconst my-util-path
   (concat my-dev "Util/"))
 
+(defconst my-ruby-home
+  (concat my-dev "Ruby/"))
+(defconst my-ruby-path
+  (concat my-ruby-home "bin/"))
+
 (defconst my-rust-home
   (concat my-dev "Rust/"))
 (defconst my-rust-path
@@ -19,7 +24,7 @@
   (concat my-dev "Go/bin/"))
 
 (defconst my-python-path
-  (concat my-dev "Python2710/"))
+  (concat my-dev "Python/App"))
 
 (defconst my-python-script-path
   (concat my-python-path "Scripts/"))
@@ -57,6 +62,7 @@
          my-git-path ";"
          my-python-path ";"
          my-rust-path ";"
+         my-ruby-path ";"
          my-go-path ";"
          my-go-space-path ";"
          my-python-script-path ";"
