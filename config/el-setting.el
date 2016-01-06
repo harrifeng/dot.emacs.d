@@ -176,6 +176,23 @@
           (lambda ()
             (define-key ruby-mode-map (kbd "<f9>") 'ruby-hfeng-run)))
 
+
+(defun python-hfeng-run ()
+  (interactive)
+  (save-buffer)
+
+  (if (eq system-type 'windows-nt)
+      (setq python-run-command "python *.py")
+    (setq python-run-command "python *.py"))
+  (compile
+   (format python-run-command
+           (buffer-file-name))))
+
+(add-hook 'python-mode-hook
+          (lambda ()
+            (define-key python-mode-map (kbd "<f9>") 'python-hfeng-run)))
+
+
 ;; [H]ighlight-indentation------------------------------------------------>>
 (require 'highlight-indentation)
 
