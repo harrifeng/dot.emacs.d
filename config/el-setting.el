@@ -100,8 +100,8 @@
 (setq helm-ag-source-type 'file-line)
 
 ;; [G]olang relative------------------------------------------------------>>
-(setq gofmt-command "goimports")
-(add-hook 'before-save-hook #'gofmt-before-save)
+;; (setq gofmt-command "goimports")
+(add-hook 'before-save-hook 'gofmt-before-save)
 (require 'gotest)
 (define-key go-mode-map (kbd "C-x f") 'go-test-current-file)
 (define-key go-mode-map (kbd "C-x t") 'go-test-current-test)
