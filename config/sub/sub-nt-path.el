@@ -18,13 +18,13 @@
   (concat my-rust-home "bin/"))
 
 (setq racer-rust-src-path
-      (concat my-rust-home "ForRacer/src"))
+      (concat my-rust-home "ForRacer/src/"))
 
 (defconst my-go-path
   (concat my-dev "Go/bin/"))
 
 (defconst my-python-path
-  (concat my-dev "Python/App"))
+  (concat my-dev "WinPython/python-2.7.10.amd64/"))
 
 (defconst my-python-script-path
   (concat my-python-path "Scripts/"))
@@ -50,11 +50,11 @@
 
 
 (defconst my-go-space
-  (concat my-dev "Code/golang-space"))
+  (concat my-dev "Code/golang-space/"))
 (setenv "GOPATH" my-go-space)
 
 (defconst my-go-space-path
-  (concat my-go-space "/bin"))
+  (concat my-go-space "/bin/"))
 
 
 (setenv "PATH"
