@@ -75,6 +75,11 @@
 (setq package-archives '(("gnu" . "http://elpa.gnu.org/packages/")
                          ("melpa" . "http://melpa.milkbox.net/packages/")))
 
+;; pip install rope flake8 importmagic autopep8 yapf
+;; OR jedi instead of rope
+(add-to-list 'package-archives
+             '("elpy" . "https://jorgenschaefer.github.io/packages/"))
+
 (package-initialize)
 
 ;; different font size for different hosts

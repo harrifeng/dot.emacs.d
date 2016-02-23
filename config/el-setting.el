@@ -14,6 +14,7 @@
    company-go
    column-marker
    dockerfile-mode
+   elpy
    exec-path-from-shell
    go-mode
    gotest
@@ -64,6 +65,9 @@
 ;; [B]m-toogle------------------------------------------------------------>>
 (require 'bm)
 (global-set-key (kbd "C-x m")        'bm-toggle)
+
+;; [E]lpy----------------------------------------------------------------->>
+(elpy-enable)
 
 ;; [G]rep-a-lot----------------------------------------------------------->>
 (require 'grep-a-lot)
