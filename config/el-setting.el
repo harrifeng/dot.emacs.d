@@ -110,9 +110,10 @@
 (define-key go-mode-map (kbd "C-c r") 'go-run)
 
 (add-hook 'go-mode-hook 'company-mode)
-(add-hook 'go-mode-hook (lambda ()
-  (set (make-local-variable 'company-backends) '(company-go))
-  (company-mode)))
+(add-hook 'go-mode-hook
+          (lambda ()
+            (set (make-local-variable 'company-backends) '(company-go))
+            (company-mode)))
 
 (defun node-hfeng-run ()
   (interactive)
@@ -126,9 +127,9 @@
            (buffer-file-name))))
 
 (add-hook 'js2-mode-hook
-      (lambda ()
-        (define-key js2-mode-map (kbd "<f9>") 'node-hfeng-run)
-        ))
+          (lambda ()
+            (define-key js2-mode-map (kbd "<f9>") 'node-hfeng-run)
+            ))
 
 (defun go-hfeng-run ()
   (interactive)
@@ -155,11 +156,11 @@
 
 
 (add-hook 'go-mode-hook
-      (lambda ()
-        (define-key go-mode-map (kbd "<f9>") 'go-hfeng-run)
-        (define-key go-mode-map (kbd "<f11>") 'go-more-hfeng-run)
-        ;; (define-key go-mode-map (kbd "TAB") #'company-indent-or-complete-common)
-        ))
+          (lambda ()
+            (define-key go-mode-map (kbd "<f9>") 'go-hfeng-run)
+            (define-key go-mode-map (kbd "<f11>") 'go-more-hfeng-run)
+            ;; (define-key go-mode-map (kbd "TAB") #'company-indent-or-complete-common)
+            ))
 
 (defun ruby-hfeng-run ()
   (interactive)
@@ -182,15 +183,28 @@
   (save-buffer)
 
   (if (eq system-type 'windows-nt)
-      (setq python-run-command "python *.py")
-    (setq python-run-command "python *.py"))
+      (setq python-run-command "python %s")
+    (setq python-run-command "python %s"))
   (compile
    (format python-run-command
            (buffer-file-name))))
 
+(defun python-hfeng-test ()
+  (interactive)
+  (save-buffer)
+
+  (if (eq system-type 'windows-nt)
+      (setq python-run-command "python -m unittest %s")
+    (setq python-run-command "python -m unittest %s"))
+  (compile
+   (format python-run-command
+           (file-name-base (buffer-file-name)))))
+
 (add-hook 'python-mode-hook
           (lambda ()
-            (define-key python-mode-map (kbd "<f9>") 'python-hfeng-run)))
+            (define-key python-mode-map (kbd "<f8>") 'python-hfeng-test)
+            (define-key python-mode-map (kbd "<f9>") 'python-hfeng-run)
+            ))
 
 
 ;; [H]ighlight-indentation------------------------------------------------>>
@@ -214,7 +228,7 @@
 (global-set-key [(meta f3)] 'highlight-symbol-query-replace)
 
 ;; To customize the background color
-;(set-face-background 'highline-face "#333")
+                                        ;(set-face-background 'highline-face "#333")
 
 ;; [I]nf-ruby------------------------------------------------------------->>
 ;; ruby shell mode
@@ -268,10 +282,10 @@
              ))))
 
 (add-hook 'rust-mode-hook
-      (lambda ()
-        (define-key rust-mode-map (kbd "<f9>") 'rust-save-compile-and-run)
-        (define-key rust-mode-map (kbd "TAB") #'company-indent-or-complete-common)
-        ))
+          (lambda ()
+            (define-key rust-mode-map (kbd "<f9>") 'rust-save-compile-and-run)
+            (define-key rust-mode-map (kbd "TAB") #'company-indent-or-complete-common)
+            ))
 ;; [S]kewer-mode---------------------------------------------------------->>
 ;; use simple-httpd inside
 (add-hook 'js2-mode-hook 'skewer-mode)
