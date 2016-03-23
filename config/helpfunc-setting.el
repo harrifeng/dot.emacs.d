@@ -322,3 +322,9 @@ minibuffer"
   (interactive)
   (indent-region (point-min) (point-max))
   (message "format successfully"))
+
+;; find none-ascii character
+(defun occur-non-ascii ()
+  "Find any non-ascii characters in the current buffer."
+  (interactive)
+  (occur "[^[:ascii:]]"))
