@@ -2,7 +2,12 @@
 ;;; This format is meant to be slightly human-readable;
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
-(("GitHub"
+(("go-in-action"
+ (filename . "c:/Devbox/Code/golang-space/src/github.com/harrifeng/go-in-action/")
+ (front-context-string . ".git\n  -rw-rw-rw")
+ (rear-context-string . "096 03-30 20:16 ")
+ (position . 255))
+("GitHub"
  (filename . "c:/Users/hfeng/Documents/GitHub/")
  (front-context-string . "6.824\n  drwxrwxr")
  (rear-context-string . "096 03-30 08:17 ")
