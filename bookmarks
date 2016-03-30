@@ -2,7 +2,12 @@
 ;;; This format is meant to be slightly human-readable;
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
-(("Debian8-I309511"
+(("GitHub"
+ (filename . "c:/Users/hfeng/Documents/GitHub/")
+ (front-context-string . "6.824\n  drwxrwxr")
+ (rear-context-string . "096 03-30 08:17 ")
+ (position . 224))
+("Debian8-I309511"
  (filename . "/ssh:i309511@pvgl50861366a:/home/I309511/")
  (front-context-string . ".bash_history\n  ")
  (rear-context-string . "92 Dec 24 17:54 ")
