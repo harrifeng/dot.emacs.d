@@ -105,7 +105,6 @@
 
 ;; [G]olang relative------------------------------------------------------>>
 (setq gofmt-command "goimports")
-(add-hook 'before-save-hook 'gofmt-before-save)
 (require 'gotest)
 (define-key go-mode-map (kbd "C-x f") 'go-test-current-file)
 (define-key go-mode-map (kbd "C-x t") 'go-test-current-test)
@@ -116,6 +115,9 @@
 (add-hook 'go-mode-hook 'company-mode)
 (add-hook 'go-mode-hook
           (lambda ()
+            (add-hook 'before-save-hook 'gofmt-before-save)
+            (setq tab-width 8)
+            (setq indent-tabs-mode 1)
             (set (make-local-variable 'company-backends) '(company-go))
             (company-mode)))
 
