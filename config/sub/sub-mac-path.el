@@ -16,5 +16,6 @@
 
 (setq racer-rust-src-path
       (concat (getenv "HOME") "/version-src/rustc-1.3.0/src"))
-
+(setenv "GOPATH"
+        (concat (getenv "HOME") "/go"))
 (exec-path-from-shell-initialize)
