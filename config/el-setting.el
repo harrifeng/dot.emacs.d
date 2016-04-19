@@ -12,6 +12,7 @@
    bm
    company
    company-go
+   company-tern
    column-marker
    dockerfile-mode
    elpy
@@ -46,6 +47,7 @@
    solarized-theme
    spacemacs-theme
    switch-window
+   tern
    toml-mode
    web-mode
    yaml-mode
@@ -131,6 +133,15 @@
   (compile
    (format go-run-command
            (buffer-file-name))))
+
+(add-hook 'js2-mode-hook 'company-mode)
+(autoload 'tern-mode "tern.el" nil t)
+(add-hook 'js2-mode-hook
+          (lambda ()
+            (tern-mode t)
+            ))
+(add-to-list 'company-backends 'company-tern)
+
 
 (add-hook 'js2-mode-hook
           (lambda ()
