@@ -7,6 +7,9 @@
 (defconst my-util-path
   (concat my-dev "Util/"))
 
+(defconst my-node-path
+  (concat my-dev "nodejs/"))
+
 (defconst my-ruby-home
   (concat my-dev "Ruby/"))
 (defconst my-ruby-path
@@ -59,6 +62,7 @@
 
 (setenv "PATH"
         (concat
+         my-node-path ";"
          my-git-path ";"
          my-python-path ";"
          my-rust-path ";"
