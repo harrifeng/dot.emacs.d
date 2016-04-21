@@ -92,7 +92,7 @@
    ((string-match system-name "vagrant-ubuntu-vivid-64")
     ":pixelsize=15")
    ((string-match system-name "pvgm50860487a.dhcp.pvgl.sap.corp")
-    ":pixelsize=12")
+    ":pixelsize=15")
    (":pixelsize=18")))
 
 ;; red some color
