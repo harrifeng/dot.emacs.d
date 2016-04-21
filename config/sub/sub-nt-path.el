@@ -54,7 +54,7 @@
 (setenv "GOPATH" my-go-space)
 
 (defconst my-go-space-path
-  (concat my-go-space "/bin/"))
+  (concat my-go-space "bin/"))
 
 
 (setenv "PATH"
