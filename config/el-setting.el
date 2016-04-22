@@ -49,6 +49,7 @@
    switch-window
    tern
    toml-mode
+   web-beautify
    web-mode
    yaml-mode
    yasnippet dropdown-list
