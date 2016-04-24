@@ -88,12 +88,12 @@
    ((string-match system-name "hfeng-desktop")
     ":pixelsize=28")
    ((string-match system-name "hfeng-laptop")
-    ":pixelsize=18")
+    ":pixelsize=26")
    ((string-match system-name "vagrant-ubuntu-vivid-64")
     ":pixelsize=15")
    ((string-match system-name "pvgm50860487a.dhcp.pvgl.sap.corp")
     ":pixelsize=15")
-   (":pixelsize=18")))
+   (":pixelsize=26")))
 
 ;; red some color
 (set-cursor-color "red")

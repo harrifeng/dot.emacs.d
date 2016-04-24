@@ -1,4 +1,5 @@
 (provide 'keybind-setting)
+(global-set-key (kbd "C-c C-c")      'comment-box)
 (global-set-key (kbd "C-x C-k")      'kill-region)
 (global-set-key (kbd "C-c C-k")      'kill-region)
 
