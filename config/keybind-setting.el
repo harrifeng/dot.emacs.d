@@ -4,8 +4,10 @@
 (global-set-key (kbd "C-c C-k")      'kill-region)
 
 ;; Group key bind-------------------------------->
-;; iterm set `ctrl-;` to `0x03 0x6f`
+;; Mac iterm set `ctrl-;` to `0x03 0x6f`
 (global-set-key (kbd "C-c o")        'other-window)
+;; Windows set `ctrl-;` to `ctrl-1`
+(global-set-key (kbd "C-1")          'other-window)
 (global-set-key (kbd "C-;")          'other-window)
 
 ;; Group key bind-------------------------------->
