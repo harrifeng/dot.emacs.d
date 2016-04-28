@@ -1,5 +1,69 @@
 (provide 'helpfunc-setting)
 
+(defun install-my-packages()
+  (setq package-archives '(("gnu" . "http://elpa.gnu.org/packages/")
+                           ("melpa" . "http://melpa.milkbox.net/packages/")))
+
+  ;; pip install rope flake8 importmagic autopep8 yapf
+  ;; OR jedi instead of rope
+  (add-to-list 'package-archives
+               '("elpy" . "https://jorgenschaefer.github.io/packages/"))
+  (package-initialize)
+  (package-list-packages)
+  ;; check if the packages is installed; if not, install it.
+  (mapc
+   (lambda (package)
+     (or (package-installed-p package)
+         (package-install package)))
+   '(
+     ag
+     avy
+     bm
+     company
+     company-go
+     company-tern
+     column-marker
+     dockerfile-mode
+     elpy
+     exec-path-from-shell
+     go-mode
+     gotest
+     grep-a-lot
+     groovy-mode
+     git-gutter
+     helm
+     helm-ag
+     helm-swoop
+     helm-projectile
+     highlight-indentation
+     highlight-symbol
+     htmlize
+     inf-ruby
+     js2-mode
+     magit
+     markdown-mode
+     multi-term
+     multiple-cursors
+     projectile
+     restclient
+     racer
+     rust-mode
+     scss-mode
+     simple-httpd
+     skewer-mode
+     slime
+     smart-mode-line-powerline-theme
+     solarized-theme
+     spacemacs-theme
+     switch-window
+     tern
+     toml-mode
+     web-beautify
+     web-mode
+     yaml-mode
+     yasnippet dropdown-list
+     )))
+
 (defun sap-proxy()
   (interactive)
   (setq url-proxy-services '(("http" . "proxy.sin.sap.corp:8080")
@@ -71,7 +135,7 @@
 ;; Copy line from point to the end, also, exclude the line break,
 ;; it will looks more naturely
 (defadvice kill-ring-save
-  (before slick-copy activate compile)
+    (before slick-copy activate compile)
   "When called interactively with no active region,
    copy a single line instead."
   (interactive (if mark-active (list (region-beginning)
@@ -230,11 +294,11 @@
 
 ;;needed in insert-word-or-file-name
 (defun backward-to-non-blank () "go to 1st non blank (after blank) to left"
-  (interactive)
-  (if (re-search-backward "[ \t\n][^ \t\n]" (point-min) t)
-      (forward-char 1)
-    (if (string-match "[^ \t\n]" (buffer-substring 1 2))
-        (goto-char (point-min)))))
+       (interactive)
+       (if (re-search-backward "[ \t\n][^ \t\n]" (point-min) t)
+           (forward-char 1)
+         (if (string-match "[^ \t\n]" (buffer-substring 1 2))
+             (goto-char (point-min)))))
 
 
 ;;needed in insert-buffer/file/dir-name functions
