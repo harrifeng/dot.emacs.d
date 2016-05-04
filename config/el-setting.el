@@ -249,23 +249,6 @@
             (define-key rust-mode-map (kbd "<f9>") 'rust-save-compile-and-run)
             (define-key rust-mode-map (kbd "TAB") #'company-indent-or-complete-common)
             ))
-;; [S]kewer-mode---------------------------------------------------------->>
-;; use simple-httpd inside
-(add-hook 'js2-mode-hook 'skewer-mode)
-(add-hook 'css-mode-hook 'skewer-css-mode)
-(add-hook 'html-mode-hook 'skewer-html-mode)
-
-;; [S]lime---------------------------------------------------------------->>
-(setq inferior-lisp-program (executable-find "sbcl"))
-(setq slime-contribs '(slime-fancy))
-
-
-;; [S]mart-mode-line-powerline-theme-------------------------------------->>
-(require 'smart-mode-line)
-(setq sml/no-confirm-load-theme t)
-(sml/setup)
-(sml/apply-theme 'dark)
-;; (sml/apply-theme 'powerline)
 
 ;; [S]witch-windows
 (global-set-key (kbd "C-x o") 'switch-window)

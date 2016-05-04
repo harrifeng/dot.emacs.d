@@ -50,9 +50,6 @@
      rust-mode
      scss-mode
      simple-httpd
-     skewer-mode
-     slime
-     smart-mode-line-powerline-theme
      solarized-theme
      spacemacs-theme
      switch-window
