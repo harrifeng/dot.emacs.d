@@ -249,11 +249,16 @@
             (define-key rust-mode-map (kbd "<f9>") 'rust-save-compile-and-run)
             (define-key rust-mode-map (kbd "TAB") #'company-indent-or-complete-common)
             ))
+;; [S]mart-mode-line------------------------------------------------------>>
+(require 'smart-mode-line)
+(setq sml/no-confirm-load-theme t)
+(sml/setup)
+(sml/apply-theme 'dark)
 
 ;; [S]witch-windows
 (global-set-key (kbd "C-x o") 'switch-window)
 
-;; [T]heme---------s------------------------------------------------------>>
+;; [T]heme---------------------------------------------------------------->>
 (load-theme 'spacemacs-dark t)
 ;; (load-theme 'solarized-dark t)
 ;; (load-theme 'solarized-light t)

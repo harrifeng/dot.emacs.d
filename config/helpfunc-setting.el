@@ -50,6 +50,7 @@
      rust-mode
      scss-mode
      simple-httpd
+     smart-mode-line
      solarized-theme
      spacemacs-theme
      switch-window
