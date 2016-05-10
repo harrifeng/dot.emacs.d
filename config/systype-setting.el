@@ -56,6 +56,8 @@
   (require 'sub-linux-path)
   (require 'sub-linux-mode)
   (require 'sub-linux-font)
+  ;; Linux use bash also
+  (setq explicit-shell-file-name "/bin/bash")
   (menu-bar-mode -1))
 
  ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -70,7 +72,7 @@
   (run-with-idle-timer 1 nil 'w32-send-sys-command 61488)
   ;; cygwin use bash------------------------------------------->>
   (setq explicit-shell-file-name "/bin/bash")
-  (menu-bar-mode nil))
+  (menu-bar-mode -1))
 
  ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
  ;; Windows NT System specific test on Windows 7 ;;
