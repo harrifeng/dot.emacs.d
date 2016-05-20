@@ -202,7 +202,13 @@
 
 ;; [M]agit---------------------------------------------------------------->>
 (global-set-key (kbd "C-M-i")        'magit-status)
-
+(cond ((file-readable-p "/usr/local/git/bin/git")
+       (setq magit-git-executable "/usr/local/git/bin/git"))
+      ((file-readable-p "/usr/local/bin/git")
+       (setq magit-git-executable "/usr/local/bin/git"))
+      ((file-readable-p "/usr/bin/git")
+       (setq magit-git-executable "/usr/bin/git"))
+      (t (setq magit-git-executable "git")))
 ;; [M]ulti-term----------------------------------------------------------->>
 (require 'multi-term)
 
