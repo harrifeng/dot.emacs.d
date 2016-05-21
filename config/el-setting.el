@@ -226,6 +226,27 @@
 (add-to-list 'auto-mode-alist '("\\.http?\\'" . restclient-mode))
 
 
+;; cpp
+(defun cpp-save-compile-and-run ()
+  (interactive)
+  (save-buffer)
+  (if (eq system-type 'windows-nt)
+      (setq cpp-run-command "g++ -o %s %s && %s && rm %s.exe")
+    (setq cpp-run-command "g++ -o %s %s && %s && rm %s"))
+  (compile
+   (format cpp-run-command
+           (file-name-sans-extension (buffer-file-name))
+           (buffer-file-name)
+           (file-name-sans-extension (buffer-file-name))
+           (file-name-sans-extension (buffer-file-name))
+           )))
+
+(add-hook 'c++-mode-hook
+          (lambda ()
+            (define-key c++-mode-map (kbd "<f9>") 'cpp-save-compile-and-run)
+            (define-key c++-mode-map (kbd "TAB") #'company-indent-or-complete-common)
+            ))
+
 ;; [R]ust----------------------------------------------------------------->>
 (add-hook 'rust-mode-hook #'racer-mode)
 (add-hook 'racer-mode-hook #'company-mode)
