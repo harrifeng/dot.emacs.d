@@ -32,6 +32,12 @@
 (defconst my-python-script-path
   (concat my-python-path "Scripts/"))
 
+(defconst my-python3-path
+  (concat my-dev "WinPython3/python-3.5.1.amd64/"))
+
+(defconst my-python3-script-path
+  (concat my-python3-path "Scripts/"))
+
 (defconst my-git-path
   (concat my-dev "Git/bin/"))
 
@@ -65,11 +71,13 @@
          my-node-path ";"
          my-git-path ";"
          my-python-path ";"
+         my-python3-path ";"
          my-rust-path ";"
          my-ruby-path ";"
          my-go-path ";"
          my-go-space-path ";"
          my-python-script-path ";"
+         my-python3-script-path ";"
          my-java-path ";"
          my-mingw-path ";"
          my-graphviz-path ";"
