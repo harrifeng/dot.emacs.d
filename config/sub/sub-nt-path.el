@@ -10,7 +10,8 @@
 (defconst my-node-path
   (concat my-dev "nodejs/"))
 
-(defconst my-npm-path "~/npm/")
+(defconst my-npm-path
+  (concat (getenv "HOME") "/npm/"))
 
 (defconst my-ruby-home
   (concat my-dev "Ruby/"))
