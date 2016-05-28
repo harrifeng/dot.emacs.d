@@ -3,7 +3,7 @@ emacs.d is from old .emacs.d, keep this only have one branch, so that it can spr
 
 # golang install
 ```
-go get -u -v github.com/nsf/gocode github.com/golang/lint/golint github.com/lukehoban/go-find-references github.com/lukehoban/go-outline sourcegraph.com/sqs/goreturns golang.org/x/tools/cmd/gorename github.com/tpng/gopkgs github.com/newhook/go-symbols github.com/rogpeppe/godef
+go get -u -v github.com/nsf/gocode github.com/golang/lint/golint github.com/lukehoban/go-find-references github.com/lukehoban/go-outline sourcegraph.com/sqs/goreturns golang.org/x/tools/cmd/gorename github.com/tpng/gopkgs github.com/newhook/go-symbols github.com/rogpeppe/godef golang.org/x/tools/cmd/goimports
 ```
 
 # first usage
