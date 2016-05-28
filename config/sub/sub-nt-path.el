@@ -10,6 +10,8 @@
 (defconst my-node-path
   (concat my-dev "nodejs/"))
 
+(defconst my-npm-path "~/npm/")
+
 (defconst my-ruby-home
   (concat my-dev "Ruby/"))
 (defconst my-ruby-path
@@ -69,6 +71,7 @@
 (setenv "PATH"
         (concat
          my-node-path ";"
+         my-npm-path ";"
          my-git-path ";"
          my-python-path ";"
          my-python3-path ";"
