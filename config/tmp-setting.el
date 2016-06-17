@@ -1,5 +1,25 @@
 (provide 'tmp-setting)
 
+(defvar my-ansi-escape-re
+  (rx (or ?\233 (and ?\e ?\[))
+      (zero-or-more (char (?0 . ?\?)))
+      (zero-or-more (char ?\s ?- ?\/))
+      (char (?@ . ?~))))
+
+(defun my-nuke-ansi-escapes (beg end)
+  (save-excursion
+    (goto-char beg)
+    (while (re-search-forward my-ansi-escape-re end t)
+      (replace-match ""))))
+
+(defun my-eshell-nuke-ansi-escapes ()
+  (my-nuke-ansi-escapes eshell-last-output-start eshell-last-output-end))
+
+(add-hook 'eshell-output-filter-functions 'my-eshell-nuke-ansi-escapes t)
+(add-hook 'shell-output-filter-functions 'my-eshell-nuke-ansi-escapes t)
+
+;; (add-hook 'shell-mode-hook 'ansi-color-for-comint-mode-on)
+;; (add-to-list 'comint-output-filter-functions 'ansi-color-process-output)
 (mapc
  (lambda (package)
    (or (package-installed-p package)
