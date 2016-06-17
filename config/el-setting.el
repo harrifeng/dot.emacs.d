@@ -80,6 +80,17 @@
    (format go-run-command
            (buffer-file-name))))
 
+(defun node-hfeng-test ()
+  (interactive)
+  (save-buffer)
+
+  (if (eq system-type 'windows-nt)
+      (setq go-run-command "mocha.exe %s")
+    (setq go-run-command "mocha %s"))
+  (compile
+   (format go-run-command
+           (buffer-file-name))))
+
 (add-hook 'js2-mode-hook 'company-mode)
 (autoload 'tern-mode "tern.el" nil t)
 (add-hook 'js2-mode-hook
@@ -91,6 +102,7 @@
 
 (add-hook 'js2-mode-hook
           (lambda ()
+            (define-key js2-mode-map (kbd "<f8>") 'node-hfeng-test)
             (define-key js2-mode-map (kbd "<f9>") 'node-hfeng-run)
             ))
 
