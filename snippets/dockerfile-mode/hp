@@ -1,2 +1,2 @@
-ENV http_proxy http://proxy.sin.sap.corp:8080
-ENV https_proxy http://proxy.sin.sap.corp:8080
+ENV http_proxy http://10.0.75.1:7777
+ENV https_proxy http://10.0.75.1:7777
