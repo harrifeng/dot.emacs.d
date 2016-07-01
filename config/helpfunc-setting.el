@@ -56,6 +56,7 @@
      switch-window
      tern
      toml-mode
+     virtualenvwrapper
      web-beautify
      web-mode
      yaml-mode

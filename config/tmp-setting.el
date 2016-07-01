@@ -139,3 +139,9 @@
   (ansi-color-apply-on-region compilation-filter-start (point))
   (toggle-read-only))
 (add-hook 'compilation-filter-hook 'colorize-compilation-buffer)
+
+(require 'virtualenvwrapper)
+(venv-initialize-interactive-shells) ;; if you want interactive shell support
+(venv-initialize-eshell) ;; if you want eshell support
+(setq venv-location '("~/virtualpy/py3env/"
+                      "~/virtualpy/py2env/"))
