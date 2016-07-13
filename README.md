@@ -13,7 +13,7 @@ npm install -g js-beautify webpack tern
 
 # python install
 ```
-pip install rope flake8 importmagic autopep8 yapf
+pip install rope flake8 importmagic autopep8 yapf powerline-status psutil
 ```
 # first usage
 Use following command to first initialize the environment(on shell you can go to .emacs.d folder and run > $(tail -n1 README.md):
