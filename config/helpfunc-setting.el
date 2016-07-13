@@ -49,6 +49,7 @@
      racer
      rust-mode
      scss-mode
+     spaceline
      simple-httpd
      smart-mode-line
      solarized-theme

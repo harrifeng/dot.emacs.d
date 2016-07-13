@@ -145,3 +145,6 @@
 (venv-initialize-eshell) ;; if you want eshell support
 (setq venv-location '("~/virtualpy/py3env/"
                       "~/virtualpy/py2env/"))
+
+(require 'spaceline-config)
+(spaceline-spacemacs-theme)
