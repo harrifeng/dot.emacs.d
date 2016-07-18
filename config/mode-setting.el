@@ -1,8 +1,12 @@
 (provide 'mode-setting)
+;; sql-interactive-mode--->>
+(add-hook 'sql-interactive-mode-hook
+          (lambda ()
+            (toggle-truncate-lines t)))
 ;; cc mode---------------->>
 (setq c-default-style
       (quote ((java-mode . "java")
-	      (awk-mode . "awk")
+              (awk-mode . "awk")
               (c-mode . "bsd")
               (other . "stroustrup")))
       c-basic-offset 4)
