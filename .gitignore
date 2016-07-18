@@ -87,3 +87,8 @@ session.*
 .emacs.desktop*
 
 elpa/
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; sql-setting should not be included in the git repo ;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+sql-setting.el

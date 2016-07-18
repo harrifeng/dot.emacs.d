@@ -25,3 +25,11 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (require 'keybind-setting)
 (require 'tmp-setting)
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; sql-setting should not be included in the git repo ;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+(if (file-exists-p
+     (concat my-lisps-path "sql-setting.el"))
+    (require 'sql-setting))
