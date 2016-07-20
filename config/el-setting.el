@@ -289,10 +289,10 @@
             (define-key rust-mode-map (kbd "TAB") #'company-indent-or-complete-common)
             ))
 ;; [S]mart-mode-line------------------------------------------------------>>
-;; (require 'smart-mode-line)
-;; (setq sml/no-confirm-load-theme t)
-;; (sml/setup)
-;; (sml/apply-theme 'dark)
+(require 'smart-mode-line)
+(setq sml/no-confirm-load-theme t)
+(sml/setup)
+(sml/apply-theme 'dark)
 
 ;; [S]witch-windows
 (global-set-key (kbd "C-x o") 'switch-window)
