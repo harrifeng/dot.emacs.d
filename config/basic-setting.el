@@ -85,9 +85,9 @@
     ":pixelsize=26")
    ((string-match system-name "vagrant-ubuntu-vivid-64")
     ":pixelsize=15")
-   ((string-match system-name "pvgm50860487a.dhcp.pvgl.sap.corp")
+   ((string-match system-name "hfengdeMacBook-Pro.local")
     ":pixelsize=15")
-   (":pixelsize=26")))
+   (":pixelsize=16")))
 
 ;; red some color
 (set-cursor-color "red")
