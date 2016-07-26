@@ -2,7 +2,12 @@
 ;;; This format is meant to be slightly human-readable;
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
-(("go-in-action"
+(("vultr-coreos"
+ (filename . "/ssh:root@45.32.25.48:/root/")
+ (front-context-string . ".bash_history\n  ")
+ (rear-context-string . "87 Jul 26 03:36 ")
+ (position . 180))
+("go-in-action"
  (filename . "c:/Devbox/Code/golang-space/src/github.com/harrifeng/go-in-action/")
  (front-context-string . ".git\n  -rw-rw-rw")
  (rear-context-string . "096 03-30 20:16 ")
