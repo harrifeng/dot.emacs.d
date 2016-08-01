@@ -24,6 +24,7 @@
      company-tern
      column-marker
      dockerfile-mode
+     docker-tramp
      elnode
      elpy
      exec-path-from-shell
