@@ -46,6 +46,7 @@
      markdown-mode
      multi-term
      multiple-cursors
+     nodejs-repl
      projectile
      restclient
      racer
