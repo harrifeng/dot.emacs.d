@@ -1,6 +1,12 @@
 # emacs.d
 emacs.d is from old .emacs.d, keep this only have one branch, so that it can spread quickly
 
+# daily usage
+Use following elisp to clean the screen in any repl buffer
+```
+erase-buffer
+```
+
 # sql-setting.el is need if you use sql very often, one example el file looks like following
 ```
 (provide 'sql-setting)
