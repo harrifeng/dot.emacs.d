@@ -3,9 +3,8 @@ emacs.d is from old .emacs.d, keep this only have one branch, so that it can spr
 
 # daily usage
 Use following elisp to clean the screen in any repl buffer
-```
-erase-buffer
-```
+
+            erase-buffer
 
 # sql-setting.el is need if you use sql very often, one example el file looks like following
 ```
@@ -40,19 +39,21 @@ erase-buffer
   (sql-connect connection))
 ```
 # golang install
-```
-go get -u -v github.com/nsf/gocode github.com/golang/lint/golint github.com/lukehoban/go-find-references github.com/lukehoban/go-outline sourcegraph.com/sqs/goreturns golang.org/x/tools/cmd/gorename github.com/tpng/gopkgs github.com/newhook/go-symbols github.com/rogpeppe/godef golang.org/x/tools/cmd/goimports
-```
+        go get -u -v github.com/nsf/gocode github.com/golang/lint/golint github.com/lukehoban/go-find-references github.com/lukehoban/go-outline sourcegraph.com/sqs/goreturns golang.org/x/tools/cmd/gorename github.com/tpng/gopkgs github.com/newhook/go-symbols github.com/rogpeppe/godef golang.org/x/tools/cmd/goimports
 
 # nodejs install
-```
-npm install -g js-beautify webpack tern
-```
+
+        npm install -g js-beautify webpack tern
 
 # python install
-```
-pip install rope flake8 importmagic autopep8 yapf powerline-status psutil
-```
+        $ pip install rope flake8 importmagic autopep8 yapf powerline-status psutil
 # first usage
 Use following command to first initialize the environment(on shell you can go to .emacs.d folder and run > $(tail -n1 README.md):
 emacs --batch -l ~/.emacs.d/config/helpfunc-setting.el -f install-my-packages
+
+# livedown usage
+        git clone https://github.com/shime/emacs-livedown.git ~/.emacs.d/emacs-livedown
+        cat <<EOF >> ~/.emacs.d/init.el
+        (add-to-list 'load-path (expand-file-name "~/.emacs.d/emacs-livedown"))
+        (require 'livedown)
+        EOF
