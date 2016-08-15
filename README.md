@@ -43,7 +43,7 @@ Use following elisp to clean the screen in any repl buffer
 
 # nodejs install
 
-    $ npm install -g js-beautify webpack tern
+    $ npm install -g js-beautify webpack tern livedown
 
 # python install
 

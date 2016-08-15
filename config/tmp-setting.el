@@ -145,3 +145,6 @@
 (venv-initialize-eshell) ;; if you want eshell support
 (setq venv-location '("~/virtualpy/py3env/"
                       "~/virtualpy/py2env/"))
+
+(add-to-list 'load-path (concat my-lisps-path "nopackage"))
+(require 'livedown)
