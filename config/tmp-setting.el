@@ -144,8 +144,15 @@
 (venv-initialize-interactive-shells) ;; if you want interactive shell support
 (venv-initialize-eshell) ;; if you want eshell support
 
-(defun hfeng5 (str) (concat "~/virtualpy/" str))
-(setq venv-location (mapcar 'hfeng5 (nthcdr 2 (directory-files "~/virtualpy"))))
+(defun folder-under-folder (path)
+  (mapcar (lambda (x) (concat path x))
+          (nthcdr 2 (directory-files path))))
+
+(setq venv-location
+      (folder-under-folder "/Users/hfeng/virtualpy/"))
+
+;; (defun hfeng5 (str) (concat "~/virtualpy/" str))
+;; (setq venv-location (mapcar 'hfeng5 (nthcdr 2 (directory-files "~/virtualpy"))))
 
 (add-to-list 'load-path (concat my-lisps-path "nopackage"))
 (require 'livedown)
