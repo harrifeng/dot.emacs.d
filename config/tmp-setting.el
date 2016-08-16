@@ -29,14 +29,10 @@
    helm-mt
    ))
 
-
-
 (require 'multi-term)
 (setq multi-term-program "/bin/bash")
 ;; Use Emacs terminfo, not system terminfo
 (setq system-uses-terminfo nil)
-
-
 
 (defun java-save-compile-and-run()
   (interactive)
@@ -115,8 +111,8 @@
 
   (if (locate-dominating-file (buffer-file-name) "Makefile")
       (compile "make run && make clean")
-      ;; (setq objc-run-command "objcc %s && %s && rm %s")
-      (setq objc-run-command "clang -fobjc-arc -framework Foundation %s -o %s.exe && %s.exe && rm %s.exe")
+    ;; (setq objc-run-command "objcc %s && %s && rm %s")
+    (setq objc-run-command "clang -fobjc-arc -framework Foundation %s -o %s.exe && %s.exe && rm %s.exe")
     (compile
      (format objc-run-command
              (buffer-file-name)
@@ -126,13 +122,11 @@
              ))))
 
 (add-hook 'objc-mode-hook
-      (lambda ()
-        (define-key objc-mode-map (kbd "<f9>") 'objc-save-compile-and-run)
-        ))
+          (lambda ()
+            (define-key objc-mode-map (kbd "<f9>") 'objc-save-compile-and-run)
+            ))
 
 ;; objc-mode
-
-
 (require 'ansi-color)
 (defun colorize-compilation-buffer ()
   (toggle-read-only)
@@ -150,9 +144,6 @@
 
 (setq venv-location
       (folder-under-folder "/Users/hfeng/virtualpy/"))
-
-;; (defun hfeng5 (str) (concat "~/virtualpy/" str))
-;; (setq venv-location (mapcar 'hfeng5 (nthcdr 2 (directory-files "~/virtualpy"))))
 
 (add-to-list 'load-path (concat my-lisps-path "nopackage"))
 (require 'livedown)
