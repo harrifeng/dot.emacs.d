@@ -143,8 +143,9 @@
 (require 'virtualenvwrapper)
 (venv-initialize-interactive-shells) ;; if you want interactive shell support
 (venv-initialize-eshell) ;; if you want eshell support
-(setq venv-location '("~/virtualpy/py3env/"
-                      "~/virtualpy/py2env/"))
+
+(defun hfeng5 (str) (concat "~/virtualpy/" str))
+(setq venv-location (mapcar 'hfeng5 (nthcdr 2 (directory-files "~/virtualpy"))))
 
 (add-to-list 'load-path (concat my-lisps-path "nopackage"))
 (require 'livedown)
