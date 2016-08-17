@@ -1,4 +1,4 @@
 # contributor: Harri Feng <harrifeng@gmail.com>
 # name: docker rm all the container
 # --
-docker stop \`docker ps -a -q\` && docker rm \`docker ps -a -q\`
+docker rm -vf \`docker ps -a -q\`
