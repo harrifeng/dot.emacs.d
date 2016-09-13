@@ -142,8 +142,8 @@
   (save-buffer)
 
   (if (eq system-type 'windows-nt)
-      (setq ruby-run-command "ruby *.rb")
-    (setq ruby-run-command "ruby *.rb"))
+      (setq ruby-run-command "ruby %s")
+    (setq ruby-run-command "ruby %s"))
   (compile
    (format ruby-run-command
            (buffer-file-name))))
