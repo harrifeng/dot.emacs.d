@@ -2,7 +2,12 @@
 ;;; This format is meant to be slightly human-readable;
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
-(("Airflow"
+(("ec2-user@54.223.92.229"
+ (filename . "/ssh:ec2-user@54.223.92.229:/home/ec2-user/")
+ (front-context-string . ".bash_history\n  ")
+ (rear-context-string . "04 Sep 19 04:43 ")
+ (position . 232))
+("Airflow"
  (filename . "/docker:root@airflow-test:/root/airflow/")
  (front-context-string . "airflow-webserve")
  (rear-context-string . " 5 Aug  1 08:58 ")
