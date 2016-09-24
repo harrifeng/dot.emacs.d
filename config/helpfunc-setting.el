@@ -50,6 +50,7 @@
      projectile
      restclient
      racer
+     rubocop
      rust-mode
      scss-mode
      simple-httpd
