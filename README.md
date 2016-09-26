@@ -60,4 +60,4 @@ Use following elisp to clean the screen in any repl buffer
       EOF
 + first usage use following command to first initialize the environment(on shell you can go to .emacs.d folder and run > $(tail -n1 README.md):
 
-    $ emacs --batch -l ~/.emacs.d/config/helpfunc-setting.el -f install-my-packages
+     emacs --batch -l ~/.emacs.d/config/helpfunc-setting.el -f install-my-packages
