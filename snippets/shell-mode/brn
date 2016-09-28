@@ -1,0 +1,4 @@
+# contributor: Harri Feng <harrifeng@gmail.com>
+# name: Batch Rename File Extension
+# --
+for file in *.${1:enumerate} ; do mv $file \`echo $file | sed 's/\\(.*\\.\\)$1/\\1$2/'\` ; done$0
