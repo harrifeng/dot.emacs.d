@@ -1,0 +1,9 @@
+# contributor: Harri Feng <harrifeng@gmail.com>
+# name: Minitest Example
+# --
+require 'minitest/autorun'
+
+# MiniTest class
+class MyTest < Minitest::Test
+  $0
+end
