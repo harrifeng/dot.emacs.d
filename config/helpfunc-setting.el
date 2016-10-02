@@ -1,6 +1,7 @@
 (provide 'helpfunc-setting)
 
 (defun install-my-packages()
+  (interactive)
   (setq package-archives '(("gnu" . "http://elpa.gnu.org/packages/")
                            ("melpa" . "http://melpa.milkbox.net/packages/")))
 
@@ -9,7 +10,7 @@
   (add-to-list 'package-archives
                '("elpy" . "https://jorgenschaefer.github.io/packages/"))
   (package-initialize)
-  (package-list-packages)
+
   ;; check if the packages is installed; if not, install it.
   (mapc
    (lambda (package)
