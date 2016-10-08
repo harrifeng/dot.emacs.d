@@ -38,6 +38,8 @@
 (global-set-key (kbd "C-c C-m")      'helm-M-x)
 (global-set-key (kbd "C-x C-m")      'helm-M-x)
 (global-set-key (kbd "C-c s")        'helm-swoop)
+(global-set-key (kbd "C-c b")        'helm-ag)
+
 (global-set-key (kbd "C-c C-s")      'helm-swoop)
 
 ;; default is vertical
