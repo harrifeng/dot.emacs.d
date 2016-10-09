@@ -39,6 +39,8 @@
 (global-set-key (kbd "C-x C-m")      'helm-M-x)
 (global-set-key (kbd "C-c s")        'helm-swoop)
 (global-set-key (kbd "C-c b")        'helm-ag)
+(global-set-key (kbd "C-c v")        'helm-projectile-ag)
+(global-set-key (kbd "C-c C-v")      'helm-projectile-ag)
 
 (global-set-key (kbd "C-c C-s")      'helm-swoop)
 
@@ -50,6 +52,8 @@
       (lambda () ""))
 
 ;; Only works for helm-ag, not for helm-do-ag
+;;Three setting should all together to config, otherwise it will fail
+(setq helm-ag-base-command "ag --nocolor --nogroup --ignore-case")
 (setq helm-ag-command-option "--all-text")
 (setq helm-ag-source-type 'file-line)
 
