@@ -300,7 +300,7 @@
 (global-set-key (kbd "C-x o") 'switch-window)
 
 ;; [T]heme---------------------------------------------------------------->>
-(load-theme 'spacemacs-dark t)
+;; (load-theme 'spacemacs-dark t)
 ;; (load-theme 'solarized-dark t)
 ;; (load-theme 'solarized-light t)
 ;; (load-theme 'hickey t)
