@@ -39,8 +39,10 @@
 (global-set-key (kbd "C-x C-m")      'helm-M-x)
 (global-set-key (kbd "C-c s")        'helm-swoop)
 (global-set-key (kbd "C-c b")        'helm-ag)
-(global-set-key (kbd "C-c v")        'helm-projectile-ag)
-(global-set-key (kbd "C-c C-v")      'helm-projectile-ag)
+(global-set-key (kbd "C-c u")        'helm-projectile-ag)
+(global-set-key (kbd "C-c C-u")      'helm-projectile-ag)
+(global-set-key (kbd "C-c n")        'helm-ag-buffers)
+(global-set-key (kbd "C-c C-n")      'helm-ag-buffers)
 
 (global-set-key (kbd "C-c C-s")      'helm-swoop)
 
