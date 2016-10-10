@@ -1,0 +1,4 @@
+# contributor: Harri Feng <harrifeng@gmail.com>
+#name : Ruby Code Contains No Equal
+# --
+<% $1 %>
