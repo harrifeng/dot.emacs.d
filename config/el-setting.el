@@ -302,6 +302,8 @@
 (sml/setup)
 (sml/apply-theme 'dark)
 
+;; [S]imple-httpd--------------------------------------------------------->>
+(setq httpd-port 1234)
 ;; [S]witch-windows
 (global-set-key (kbd "C-x o") 'switch-window)
 
