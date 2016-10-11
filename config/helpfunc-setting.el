@@ -17,55 +17,7 @@
      (or (package-installed-p package)
          (package-install package)))
    '(
-     ag
-     avy
-     bm
-     company
-     company-go
-     company-tern
-     column-marker
-     dockerfile-mode
-     docker-tramp
-     elnode
-     elpy
-     exec-path-from-shell
-     go-mode
-     gotest
-     grep-a-lot
-     groovy-mode
-     git-gutter
-     helm
-     helm-ag
-     helm-swoop
-     helm-projectile
-     highlight-indentation
-     highlight-symbol
-     htmlize
-     inf-ruby
-     js2-mode
-     magit
-     markdown-mode
-     multi-term
-     multiple-cursors
-     nodejs-repl
-     projectile
-     restclient
-     racer
-     rubocop
-     rust-mode
-     scss-mode
-     simple-httpd
-     smart-mode-line
      solarized-theme
-     spacemacs-theme
-     switch-window
-     tern
-     toml-mode
-     virtualenvwrapper
-     web-beautify
-     web-mode
-     yaml-mode
-     yasnippet dropdown-list
      )))
 
 (defun sap-proxy()
