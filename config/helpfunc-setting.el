@@ -1,5 +1,23 @@
 (provide 'helpfunc-setting)
 
+(defun revert-buffer-no-confirm ()
+  "Revert buffer without confirmation."
+  (interactive)
+  (revert-buffer :ignore-auto :noconfirm))
+
+(defun git-add-current-buffer ()
+  "call 'git add [current-buffer]'"
+  (interactive)
+  (save-buffer)
+  (let* ((buffile (buffer-file-name))
+         (output (shell-command-to-string
+                  (concat "git add " (buffer-file-name))))
+         )
+    (message (if (not (string= output ""))
+                 output
+               (concat "Added " buffile)))))
+
+
 (defun install-my-packages()
   (interactive)
   (setq package-archives '(("gnu" . "http://elpa.gnu.org/packages/")

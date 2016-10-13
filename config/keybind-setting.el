@@ -21,11 +21,11 @@
 (global-set-key (kbd "C-x C-u")      'backward-kill-line)
 (global-set-key (kbd "C-x C-b")      'ibuffer)
 (global-set-key (kbd "C-x j")        'join-line)
-(global-set-key (kbd "C-w")          'backward-kill-word)
+(global-set-key (kbd "C-w")          'git-add-current-buffer)
 (global-set-key (kbd "C-h")          'backward-delete-char-untabify)
 
 (global-set-key (kbd "C-c r")        'revert-buffer)
-(global-set-key (kbd "<f5>")         'revert-buffer)
+(global-set-key (kbd "<f5>")         'revert-buffer-no-confirm)
 
 (global-set-key (kbd "<f2>")         'helm-global-mark-ring)
 (global-set-key (kbd "<f6>")         'mark-whole-buffer)
