@@ -45,6 +45,12 @@
 ;; (recentf-mode 1)
 ;; (setq recentf-max-menu-items 100)
 
+
+;;--------cua-mode----------------->>
+(cua-mode t) ;Always enable cua-mode
+(setq cua-enable-cua-keys nil)
+(global-set-key (kbd "C-x SPC")      'cua-set-rectangle-mark)
+
 ;;--------ibuffer------------------>>
 (require 'ibuffer)
 

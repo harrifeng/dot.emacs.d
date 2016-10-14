@@ -11,9 +11,10 @@
 (global-set-key (kbd "C-;")          'other-window)
 
 ;; Group key bind-------------------------------->
+
 ;; iterm set `ctrl-=` to `0x03 0x61`
-(global-set-key (kbd "C-c a")        'cua-set-rectangle-mark)
-(global-set-key (kbd "C-=")          'cua-set-rectangle-mark)
+;; C-= can be used later
+
 
 (global-set-key (kbd "C-x C-y")      'kill-ring-save)
 (global-set-key (kbd "C-c C-y")      'kill-ring-save)
@@ -41,6 +42,8 @@
 
 (global-set-key (kbd "C-x C-g")      'helm-global-mark-ring)
 (global-set-key (kbd "C-c C-g")      'helm-global-mark-ring)
+;; iterm set `ctrl-=` to `0x03 0x0d`
+(global-set-key (kbd "C-c RET")      'mark-whole-buffer)
 (global-set-key (kbd "<C-return>")   'mark-whole-buffer)
 (global-set-key (kbd "C-2")          'set-mark-command)
 (global-set-key (kbd "C-,")          'set-mark-command)
