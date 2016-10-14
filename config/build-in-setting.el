@@ -104,6 +104,9 @@
             (ibuffer-switch-to-saved-filter-groups "default")))
 
 ;;--------org-mode------------------>>
+;; no folding when open a org file
+
+(setq org-startup-folded nil)
 ;; I don't want to use org-mode's auto type subscript.
 ;; only setting this is not enough, you also
 ;; have to set '#+OPTIONS:^:{}' at the beginning

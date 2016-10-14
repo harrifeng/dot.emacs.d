@@ -147,3 +147,10 @@
 
 (add-to-list 'load-path (concat my-lisps-path "nopackage"))
 (require 'livedown)
+
+(defun refresh-file ()
+  "Revert buffer Only when it's really changed, maybe usefull"
+  (interactive)
+  ;;(revert-buffer t t t)
+  (revert-buffer t (not (buffer-modified-p)) t)
+  )
