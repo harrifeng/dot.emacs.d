@@ -6,7 +6,7 @@
   (revert-buffer :ignore-auto :noconfirm))
 
 (defun git-add-current-buffer ()
-  "call 'git add [current-buffer]'"
+  "call 'git add [current-buffer]' revert-buffer afterwards, no gitgutter changes show"
   (interactive)
   (save-buffer)
   (let* ((buffile (buffer-file-name))
@@ -15,7 +15,11 @@
          )
     (message (if (not (string= output ""))
                  output
-               (concat "Added " buffile)))))
+               (concat "Added " buffile))))
+
+  (sleep-for 0 200)                     ;sleep for 0.2 seconds,  `git add` need time
+  (revert-buffer :ignore-auto :noconfirm) ; revert buffer, no git gutter show, as they're indexed
+  )
 
 
 (defun install-my-packages()
