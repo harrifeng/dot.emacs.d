@@ -8,6 +8,7 @@
 (defun git-add-current-buffer ()
   "call 'git add [current-buffer]' revert-buffer afterwards, no gitgutter changes show"
   (interactive)
+  (delete-trailing-whitespace)
   (save-buffer)
   (let* ((buffile (buffer-file-name))
          (output (shell-command-to-string
