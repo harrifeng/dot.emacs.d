@@ -49,6 +49,7 @@
 ;;--------cua-mode----------------->>
 (cua-mode t) ;Always enable cua-mode
 (setq cua-enable-cua-keys nil)
+(define-key cua-global-keymap (kbd "<C-return>") nil)
 (global-set-key (kbd "C-x SPC")      'cua-set-rectangle-mark)
 
 ;;--------ibuffer------------------>>
