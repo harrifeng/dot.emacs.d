@@ -1,0 +1,4 @@
+# contributor: Harri Feng <harrifeng@gmail.com>
+# name: bundle use ruby-china mirror
+# --
+bundle config mirror.https://rubygems.org http://gems.ruby-china.org
