@@ -1,4 +1,4 @@
 # contributor: Harri Feng <harrifeng@gmail.com>
-# name: git commit -m
+# name: ruby raw
 # --
-git commit -m "$1"
+request.env['RAW_POST_DATA']

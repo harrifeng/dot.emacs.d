@@ -1,4 +1,4 @@
 # contributor: Harri Feng <harrifeng@gmail.com>
 #name : Remote Unit Test
 # --
-bundle exec rake ubertest:run_git
+sed -i "s:mysqldump:mysqldump -h#{ENV['DB_HOST'] || 'localhost'}:g" lib/tasks/ubertest.rake && bundle exec rake ubertest:run_git && git checkout -- lib/tasks/ubertest.rake

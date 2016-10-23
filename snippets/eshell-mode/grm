@@ -1,4 +1,4 @@
 # contributor: Harri Feng <harrifeng@gmail.com>
-# name: gradlew run main
+# name: go run main file
 # --
-./gradlew run -DmainClass=org.hfeng.test.$0
+go run main.go
