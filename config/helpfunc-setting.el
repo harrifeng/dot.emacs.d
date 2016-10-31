@@ -74,6 +74,7 @@
      projectile
      restclient
      racer
+     rainbow-delimiters
      rubocop
      rust-mode
      scss-mode

@@ -1,4 +1,4 @@
 # contributor: Harri Feng <harrifeng@gmail.com>
 #name : Start Server on 54321 in debug mode
 # --
-rails s -b 0.0.0.0 $0
+rails s -b 0.0.0.0 -p 12345 $0
