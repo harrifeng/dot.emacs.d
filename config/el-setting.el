@@ -331,6 +331,9 @@
 (add-to-list 'auto-mode-alist '("\\.djhtml\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.jsx\\'" . web-mode))
 
+(setq web-mode-content-types-alist
+      '(("jsx" . "\\.js[x]?\\'")))
+
 ;; [Y]asnippet------------------------------------------------------------>>
 (require 'yasnippet)
 (yas-global-mode 1)
