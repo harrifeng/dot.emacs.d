@@ -56,6 +56,7 @@
      gotest
      grep-a-lot
      groovy-mode
+     gist
      git-gutter
      helm
      helm-ag
