@@ -219,6 +219,7 @@
 ;; [J]s2-mode------------------------------------------------------------->>
 (autoload 'js2-mode "js2-mode" nil t)
 (add-to-list 'auto-mode-alist '("\\.js$" . js2-mode))
+(setq js-indent-level 2)
 
 ;; [M]agit---------------------------------------------------------------->>
 (global-set-key (kbd "C-M-i")        'magit-status)
