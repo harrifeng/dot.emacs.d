@@ -340,6 +340,8 @@
 (setq web-mode-content-types-alist
       '(("jsx" . "\\.js[x]?\\'")))
 
+;; [W]ich-key-mode-------------------------------------------------------->>
+(which-key-mode)
 ;; [Y]asnippet------------------------------------------------------------>>
 (require 'yasnippet)
 (yas-global-mode 1)

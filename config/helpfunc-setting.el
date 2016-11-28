@@ -89,6 +89,7 @@
      virtualenvwrapper
      web-beautify
      web-mode
+     which-key
      yaml-mode
      yasnippet dropdown-list
      )))
