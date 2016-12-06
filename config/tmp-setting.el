@@ -165,7 +165,7 @@
     (format "%s" 0)
     ))
 
-(let* ((dot-theme-file "~/.emacs.d/.theme")
+(let* ((dot-theme-file (concat my-emacs-path ".theme"))
        (files '(solarized-light
                 solarized-dark
                 spacemacs-light
