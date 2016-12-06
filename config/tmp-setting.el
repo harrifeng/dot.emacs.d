@@ -156,13 +156,24 @@
   )
 
 
-(let* ((files '(solarized-light
+(defun get-string-from-file (filePath)
+  "Return filePath's file content"
+  (with-temp-buffer
+    (insert-file-contents filePath)
+    (buffer-string)))
+
+(let* ((dot-theme-file "~/.emacs.d/.theme")
+       (files '(solarized-light
                 solarized-dark
                 spacemacs-light
                 spacemacs-dark
-                afternoon
                 ))
-       (randnum (% (abs (random t)) (length files )))
-       (selected-filename (nth randnum files)))
+       (tmp (string-to-number (get-string-from-file dot-theme-file)))
+       (idx (% (abs tmp) (length files )))
+       (selected-filename (nth idx files))
+       )
   (load-theme selected-filename t)
+  (with-temp-file dot-theme-file
+    (insert (format "%s" (+ tmp 1)))
+    )
   )
