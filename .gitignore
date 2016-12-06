@@ -94,3 +94,6 @@ elpa/
 sql-setting.el
 
 games/
+
+# this is for auto select theme one by one
+.theme

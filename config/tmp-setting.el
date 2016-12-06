@@ -158,9 +158,12 @@
 
 (defun get-string-from-file (filePath)
   "Return filePath's file content"
-  (with-temp-buffer
-    (insert-file-contents filePath)
-    (buffer-string)))
+  (if (file-exists-p filePath)
+      (with-temp-buffer
+        (insert-file-contents filePath)
+        (buffer-string))
+    (format "%s" 0)
+    ))
 
 (let* ((dot-theme-file "~/.emacs.d/.theme")
        (files '(solarized-light
