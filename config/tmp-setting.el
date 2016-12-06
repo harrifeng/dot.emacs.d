@@ -157,11 +157,10 @@
 
 
 (let* ((files '(solarized-light
-                hickey
-                wheatgrass
-                cyberpunk
-                zen-and-art
+                solarized-dark
+                spacemacs-light
                 spacemacs-dark
+                afternoon
                 ))
        (randnum (% (abs (random t)) (length files )))
        (selected-filename (nth randnum files)))
