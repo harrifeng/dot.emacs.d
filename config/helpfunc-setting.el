@@ -47,6 +47,7 @@
      company-go
      company-tern
      column-marker
+     cyberpunk-theme
      dockerfile-mode
      docker-tramp
      elnode
@@ -84,6 +85,7 @@
      smart-mode-line
      solarized-theme
      spacemacs-theme
+     sublime-themes
      switch-window
      tern
      toml-mode
