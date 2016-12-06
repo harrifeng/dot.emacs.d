@@ -154,3 +154,16 @@
   ;;(revert-buffer t t t)
   (revert-buffer t (not (buffer-modified-p)) t)
   )
+
+
+(let* ((files '(solarized-light
+                hickey
+                wheatgrass
+                cyberpunk
+                zen-and-art
+                spacemacs-dark
+                ))
+       (randnum (% (abs (random t)) (length files )))
+       (selected-filename (nth randnum files)))
+  (load-theme selected-filename t)
+  )
