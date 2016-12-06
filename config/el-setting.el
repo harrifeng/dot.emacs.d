@@ -221,6 +221,37 @@
 (add-to-list 'auto-mode-alist '("\\.js$" . js2-mode))
 (setq js-indent-level 2)
 
+;; [L]oad-theme-buffer-local---------------------------------------------->>
+(defun ltheme-solarized-light()
+  (interactive)
+  (save-buffer)
+  (load-theme-buffer-local 'solarized-light (current-buffer))
+  )
+
+(defun ltheme-hickey()
+  (interactive)
+  (save-buffer)
+  (load-theme-buffer-local 'hickey (current-buffer))
+  )
+
+(defun ltheme-wheatgrass()
+  (interactive)
+  (save-buffer)
+  (load-theme-buffer-local 'wheatgrass (current-buffer))
+  )
+
+(defun ltheme-cyberpunk()
+  (interactive)
+  (save-buffer)
+  (load-theme-buffer-local 'cyberpunk (current-buffer))
+  )
+
+(defun ltheme-zen-and-art()
+  (interactive)
+  (save-buffer)
+  (load-theme-buffer-local 'zen-and-art (current-buffer))
+  )
+
 ;; [M]agit---------------------------------------------------------------->>
 (global-set-key (kbd "C-M-i")        'magit-status)
 (cond ((file-readable-p "/usr/local/git/bin/git")

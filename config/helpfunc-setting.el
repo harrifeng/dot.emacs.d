@@ -67,6 +67,7 @@
      htmlize
      inf-ruby
      js2-mode
+     load-theme-buffer-local
      magit
      markdown-mode
      multi-term
