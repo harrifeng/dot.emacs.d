@@ -90,6 +90,7 @@
      tern
      toml-mode
      virtualenvwrapper
+     visual-regexp
      web-beautify
      web-mode
      which-key

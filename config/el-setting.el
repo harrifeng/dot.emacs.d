@@ -344,12 +344,12 @@
 
 ;; [T]heme---------------------------------------------------------------->>
 ;; (load-theme 'spacemacs-dark t)
-;; (load-theme 'solarized-dark t)
-;; (load-theme 'solarized-light t)
-;; (load-theme 'hickey t)
-;; (load-theme 'wheatgrass t)
-;; (load-theme 'cyberpunk t)
-;; (load-theme 'zen-and-art t)
+
+;; [V]isual-regexp-------------------------------------------------------->>
+(define-key global-map (kbd "C-c r") 'vr/replace)
+(define-key global-map (kbd "C-c q") 'vr/query-replace) ;awesome
+;; if you use multiple-cursors, this is for you:
+(define-key global-map (kbd "C-c m") 'vr/mc-mark)
 
 ;; [W]eb-mode------------------------------------------------------------->>
 (require 'web-mode)
