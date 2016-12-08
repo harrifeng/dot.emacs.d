@@ -265,7 +265,7 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 ;; run mulitiple shell
-(add-hook 'comint-output-filter-functions 'shell-mode-auto-rename-buffer)
+;; (add-hook 'comint-output-filter-functions 'shell-mode-auto-rename-buffer)
 
 ;; run mulitiple eshell
 (add-hook 'eshell-mode-hook
