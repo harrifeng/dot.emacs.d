@@ -433,4 +433,5 @@ minibuffer"
   "Align columns by whitespace"
   (interactive "r")
   (align-regexp start end
-                "\\(\\s-*\\)\\s-" 1 0 t))
+                "\\(\\s-*\\)\\s-" 1 0 t)
+  (indent-region start end))
