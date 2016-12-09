@@ -97,3 +97,6 @@ games/
 
 # this is for auto select theme one by one
 .theme
+
+# emacs tmp dot file
+ido.last
