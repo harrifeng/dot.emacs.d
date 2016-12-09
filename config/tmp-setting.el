@@ -229,9 +229,8 @@
       (delete-window)
     (if (not (get-buffer "*shell*"))
         (progn
-          (split-window-below (selected-window))
-          (other-window 1)
-          (shell "*shell*"))
+          (split-window-below)
+          (shell))
       (switch-to-buffer-other-window "*shell*"))
     )
   )
