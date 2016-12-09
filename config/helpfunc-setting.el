@@ -81,7 +81,6 @@
      rubocop
      rust-mode
      scss-mode
-     shell-pop-el
      simple-httpd
      smart-mode-line
      solarized-theme
