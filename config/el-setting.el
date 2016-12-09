@@ -332,7 +332,7 @@
             (define-key rust-mode-map (kbd "TAB") #'company-indent-or-complete-common)
             ))
 ;; [S]hell-pop-el--------------------------------------------------------->>
-(global-set-key (kbd "C-v")        'shell-pop)
+
 ;; [S]mart-mode-line------------------------------------------------------>>
 (require 'smart-mode-line)
 (setq sml/no-confirm-load-theme t)

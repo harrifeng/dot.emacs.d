@@ -220,3 +220,20 @@
 
 (add-hook 'comint-output-filter-functions
           'filter-non-sgr-control-sequences-in-output)
+
+
+(defun toggle-shell-buffer ()
+  "Create or visit a shell buffer."
+  (interactive)
+  (if (eq (current-buffer) (get-buffer "*shell*"))
+      (delete-window)
+    (if (not (get-buffer "*shell*"))
+        (progn
+          (split-window-below (selected-window))
+          (other-window 1)
+          (shell "*shell*"))
+      (switch-to-buffer-other-window "*shell*"))
+    )
+  )
+
+(global-set-key (kbd "C-v")        'toggle-shell-buffer)
