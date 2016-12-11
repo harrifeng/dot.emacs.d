@@ -1,0 +1,4 @@
+# contributor: Harri Feng <harrifeng@gmail.com>
+# name: apt with temp proxy config
+# --
+-c ~/github/dotfiles/apt_proxy_conf.sh
