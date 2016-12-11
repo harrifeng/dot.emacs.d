@@ -230,6 +230,7 @@
     (if (not (get-buffer "*shell*"))
         (progn
           (split-window-below)
+          (other-window 1)
           (shell))
       (switch-to-buffer-other-window "*shell*"))
     )
