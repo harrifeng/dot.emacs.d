@@ -23,7 +23,8 @@
 (global-set-key (kbd "C-x C-b")      'ibuffer)
 (global-set-key (kbd "C-x j")        'join-line)
 ;; git add current buffer to version control!
-(global-set-key (kbd "C-c C-v")      'git-add-current-buffer)
+(global-set-key (kbd "C-c i")   'git-add-current-buffer)
+(global-set-key (kbd "C-c C-i") 'git-add-current-buffer)
 (global-set-key (kbd "C-w")          'align-whitespace)
 (global-set-key (kbd "C-h")          'backward-delete-char-untabify)
 

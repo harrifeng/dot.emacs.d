@@ -237,3 +237,17 @@
   )
 
 (global-set-key (kbd "C-v")        'toggle-shell-buffer)
+
+(defun open-shell-pwd ()
+  "Open a shell on pwd"
+  (interactive)
+  (setq shell-pwd-name  (format "SHELL-%s" (current-buffer)))
+  (if (not (get-buffer shell-pwd-name))
+      (progn
+        (split-window-below)
+        (shell (format "SHELL-%s" (current-buffer)))
+        )
+    (switch-to-buffer-other-window shell-pwd-name)))
+
+(global-set-key (kbd "C-c v")   'open-shell-pwd)
+(global-set-key (kbd "C-c C-v") 'open-shell-pwd)
