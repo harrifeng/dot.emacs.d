@@ -38,12 +38,12 @@
 (global-set-key (kbd "C-c C-m")      'helm-M-x)
 (global-set-key (kbd "C-x C-m")      'helm-M-x)
 (global-set-key (kbd "C-c s")        'helm-swoop)
-(global-set-key (kbd "C-c b")        'helm-ag)
+;; n stands for Now directory
+(global-set-key (kbd "C-c n")        'helm-ag)
+;; b stands for buffer
+(global-set-key (kbd "C-c b")        'helm-ag-buffers)
 (global-set-key (kbd "C-c u")        'helm-projectile-ag)
 (global-set-key (kbd "C-c C-u")      'helm-projectile-ag)
-(global-set-key (kbd "C-c n")        'helm-ag-buffers)
-(global-set-key (kbd "C-c C-n")      'helm-ag-buffers)
-
 (global-set-key (kbd "C-c C-s")      'helm-swoop)
 
 ;; default is vertical
