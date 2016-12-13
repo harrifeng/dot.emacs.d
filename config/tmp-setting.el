@@ -166,8 +166,8 @@
     ))
 
 (let* ((dot-theme-file (concat my-emacs-path ".theme"))
-       (files '(solarized-light
-                solarized-dark
+       (files '(
+                darcula
                 spacemacs-light
                 spacemacs-dark
                 ))
