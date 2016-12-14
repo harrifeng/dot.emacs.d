@@ -32,8 +32,6 @@
 (global-set-key (kbd "<f5>")         'revert-buffer-no-confirm)
 
 (global-set-key (kbd "<f2>")         'helm-global-mark-ring)
-(global-set-key (kbd "<f6>")         'mark-whole-buffer)
-(global-set-key (kbd "C-c w")        'mark-whole-buffer)
 (global-set-key (kbd "<f7>")         'indent-whole)
 (global-set-key (kbd "<f12>")        'whitespace-mode)
 

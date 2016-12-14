@@ -12,7 +12,9 @@
 
 ;; [B]m-toogle------------------------------------------------------------>>
 (require 'bm)
-(global-set-key (kbd "C-x m")        'bm-toggle)
+(global-set-key (kbd "<f6>")         'bm-toggle)
+(global-set-key (kbd "C-c w")        'bm-toggle)
+
 
 ;; [E]lpy----------------------------------------------------------------->>
 (elpy-enable)
@@ -253,7 +255,7 @@
   )
 
 ;; [M]agit---------------------------------------------------------------->>
-(global-set-key (kbd "C-M-i")        'magit-status)
+(global-set-key (kbd "C-x m")        'magit-status)
 (cond ((file-readable-p "/usr/local/git/bin/git")
        (setq magit-git-executable "/usr/local/git/bin/git"))
       ((file-readable-p "/usr/local/bin/git")
