@@ -62,7 +62,7 @@
 
 
 (defconst my-go-space
-  (concat my-dev "Code/golang-space/"))
+  (concat my-dev "Code/go/"))
 (setenv "GOPATH" my-go-space)
 
 (defconst my-go-space-path

@@ -48,6 +48,7 @@
      company-tern
      column-marker
      cyberpunk-theme
+     darcula-theme
      dockerfile-mode
      docker-tramp
      elnode
