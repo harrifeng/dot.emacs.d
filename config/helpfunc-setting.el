@@ -55,6 +55,7 @@
      elpy
      exec-path-from-shell
      go-mode
+     go-guru
      gotest
      grep-a-lot
      groovy-mode
