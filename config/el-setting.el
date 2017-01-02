@@ -3,25 +3,15 @@
 ;; [A]g------------------------------------------------------------------->>
 (setq ag-highlight-search t)
 
-;; [A]uto-complete-------------------------------------------------------->>
-;; (require 'auto-complete-config)
-;; (ac-config-default)
-
 ;; [A]vy------------------------------------------------------------------>>
 (global-set-key (kbd "C-t")          'avy-goto-char)
 
 ;; [B]m-toogle------------------------------------------------------------>>
-(require 'bm)
 (global-set-key (kbd "<f6>")         'bm-toggle)
 (global-set-key (kbd "C-c w")        'bm-toggle)
 
-
 ;; [E]lpy----------------------------------------------------------------->>
 (elpy-enable)
-
-;; [G]rep-a-lot----------------------------------------------------------->>
-(require 'grep-a-lot)
-(grep-a-lot-setup-keys)
 
 ;; [G]it-gutter----------------------------------------------------------->>
 (require 'git-gutter)
@@ -193,8 +183,6 @@
 
 
 ;; [H]ighlight-indentation------------------------------------------------>>
-(require 'highlight-indentation)
-
 (add-hook 'ruby-mode-hook
           (lambda () (highlight-indentation-current-column-mode)))
 
@@ -205,18 +193,13 @@
           (lambda () (highlight-indentation-current-column-mode)))
 
 ;; [H]ighlight-symbol----------------------------------------------------->>
-(require 'highlight-symbol)
 (global-set-key [(control f3)] 'highlight-symbol)
 (global-set-key [f4] 'highlight-symbol)
 (global-set-key [f3] 'highlight-symbol-next)
 (global-set-key [(shift f3)] 'highlight-symbol-prev)
 (global-set-key [(meta f3)] 'highlight-symbol-query-replace)
 
-;; To customize the background color
-                                        ;(set-face-background 'highline-face "#333")
-
 ;; [I]nf-ruby------------------------------------------------------------->>
-;; ruby shell mode
 
 ;; [J]s2-mode------------------------------------------------------------->>
 (autoload 'js2-mode "js2-mode" nil t)
@@ -263,8 +246,6 @@
       ((file-readable-p "/usr/bin/git")
        (setq magit-git-executable "/usr/bin/git"))
       (t (setq magit-git-executable "git")))
-;; [M]ulti-term----------------------------------------------------------->>
-(require 'multi-term)
 
 ;; [P]rojectile----------------------------------------------------------->>
 (projectile-global-mode)
@@ -281,7 +262,6 @@
 ;; [R]estclient]---------------------------------------------------------->>
 (require 'restclient)
 (add-to-list 'auto-mode-alist '("\\.http?\\'" . restclient-mode))
-
 
 ;; cpp
 (defun cpp-save-compile-and-run ()
@@ -336,7 +316,6 @@
 ;; [S]hell-pop-el--------------------------------------------------------->>
 
 ;; [S]mart-mode-line------------------------------------------------------>>
-(require 'smart-mode-line)
 (setq sml/no-confirm-load-theme t)
 (sml/setup)
 (sml/apply-theme 'dark)
@@ -344,7 +323,6 @@
 ;; [S]imple-httpd--------------------------------------------------------->>
 (setq httpd-port 1234)
 ;; [S]witch-windows
-(global-set-key (kbd "C-x o") 'switch-window)
 
 ;; [T]heme---------------------------------------------------------------->>
 ;; (load-theme 'spacemacs-dark t)
@@ -379,7 +357,6 @@
 ;; [W]ich-key-mode-------------------------------------------------------->>
 (which-key-mode)
 ;; [Y]asnippet------------------------------------------------------------>>
-(require 'yasnippet)
 (yas-global-mode 1)
 
 (setq yas-snippet-dirs
@@ -387,7 +364,6 @@
         (concat my-emacs-path "snippets")
         ))
 ;; dropdown-list is needed by yasnippet
-(require 'dropdown-list)
 (setq yas-prompt-functions
       '(yas/dropdown-prompt
         yas/ido-prompt
@@ -396,11 +372,9 @@
         yas/no-prompt))
 
 ;; Misc------------------------------------------------------------------->>
-(require 'scss-mode)
 (autoload 'scss-mode "scss-mode")
 (add-to-list 'auto-mode-alist '("\\.scss\\'" . scss-mode))
 
-(require 'multiple-cursors)
 (global-set-key (kbd "C-S-c C-S-c") 'mc/edit-lines)
 (global-set-key (kbd "C->") 'mc/mark-next-like-this)
 (global-set-key (kbd "C-<") 'mc/mark-previous-like-this)

@@ -1,7 +1,9 @@
 (provide 'keybind-setting)
-(global-set-key (kbd "C-c C-c")      'comment-box)
-(global-set-key (kbd "C-x C-k")      'kill-region)
-(global-set-key (kbd "C-c C-k")      'kill-region)
+
+(global-set-key (kbd "C-x o")   'switch-window)
+(global-set-key (kbd "C-c C-c") 'comment-box)
+(global-set-key (kbd "C-x C-k") 'kill-region)
+(global-set-key (kbd "C-c C-k") 'kill-region)
 
 ;; Group key bind-------------------------------->
 ;; Mac iterm set `ctrl-;` to `0x03 0x6f`

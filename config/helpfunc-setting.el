@@ -57,7 +57,6 @@
      go-mode
      go-guru
      gotest
-     grep-a-lot
      groovy-mode
      gist
      git-gutter
@@ -73,7 +72,6 @@
      load-theme-buffer-local
      magit
      markdown-mode
-     multi-term
      multiple-cursors
      nodejs-repl
      projectile
