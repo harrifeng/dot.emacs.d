@@ -147,7 +147,7 @@
 
 (add-to-list 'load-path (concat my-lisps-path "nopackage"))
 (require 'livedown)
-
+(require 'redis-cli)
 (defun refresh-file ()
   "Revert buffer Only when it's really changed, maybe usefull"
   (interactive)
