@@ -1,4 +1,4 @@
 # contributor: Harri Feng <harrifeng@gmail.com>
 # name: Select * FROM
 # --
-SELECT * FROM $1 ;
+SELECT * FROM $1 LIMIT 1; $0

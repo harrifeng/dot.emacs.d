@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: log.Printf(...)
+# key: log
+# --
+log.Printf("${1:%s}\n", ${2:args})
+$0
