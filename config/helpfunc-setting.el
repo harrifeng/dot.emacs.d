@@ -60,6 +60,7 @@
      groovy-mode
      gist
      git-gutter
+     haml-mode
      helm
      helm-ag
      helm-swoop
