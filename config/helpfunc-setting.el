@@ -54,6 +54,7 @@
      elnode
      elpy
      exec-path-from-shell
+     flycheck
      go-mode
      go-guru
      gotest

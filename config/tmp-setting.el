@@ -251,3 +251,6 @@
 
 (global-set-key (kbd "C-c v")   'open-shell-pwd)
 (global-set-key (kbd "C-c C-v") 'open-shell-pwd)
+
+
+(global-flycheck-mode)
