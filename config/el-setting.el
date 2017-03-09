@@ -202,8 +202,8 @@
 ;; [I]nf-ruby------------------------------------------------------------->>
 
 ;; [J]s2-mode------------------------------------------------------------->>
-(autoload 'js2-mode "js2-mode" nil t)
-(add-to-list 'auto-mode-alist '("\\.js$" . js2-mode))
+;; (autoload 'js2-mode "js2-mode" nil t)
+(add-to-list 'auto-mode-alist '("\\.js$" . rjsx-mode))
 (setq js-indent-level 2)
 
 ;; [L]oad-theme-buffer-local---------------------------------------------->>
@@ -349,10 +349,10 @@
 (add-to-list 'auto-mode-alist '("\\.erb\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.mustache\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.djhtml\\'" . web-mode))
-(add-to-list 'auto-mode-alist '("\\.jsx\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.jsx\\'" . rjsx-mode))
 
-(setq web-mode-content-types-alist
-      '(("jsx" . "\\.js[x]?\\'")))
+;; (setq web-mode-content-types-alist
+;;       '(("jsx" . "\\.js[x]?\\'")))
 
 ;; [W]ich-key-mode-------------------------------------------------------->>
 (which-key-mode)

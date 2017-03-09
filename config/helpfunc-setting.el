@@ -80,6 +80,7 @@
      restclient
      racer
      rainbow-delimiters
+     rjsx-mode
      rubocop
      rust-mode
      scss-mode
