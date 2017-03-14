@@ -74,6 +74,7 @@
      load-theme-buffer-local
      magit
      markdown-mode
+     wgrep-ag
      multiple-cursors
      nodejs-repl
      projectile

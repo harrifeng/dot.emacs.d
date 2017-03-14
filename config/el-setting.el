@@ -106,6 +106,8 @@
             (define-key js2-mode-map (kbd "<f9>") 'node-hfeng-run)
             ))
 
+(setq js2-strict-missing-semi-warning nil)
+
 (defun go-hfeng-run ()
   (interactive)
   (save-buffer)
