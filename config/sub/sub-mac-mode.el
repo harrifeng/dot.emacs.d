@@ -6,3 +6,4 @@
 
 ;; spell checking
 (setq ispell-program-name "aspell")
+(ispell-change-dictionary "american" t)
