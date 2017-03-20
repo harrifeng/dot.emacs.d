@@ -249,6 +249,9 @@
        (setq magit-git-executable "/usr/bin/git"))
       (t (setq magit-git-executable "git")))
 
+;; [M]utiple-cursors------------------------------------------------------>>
+(global-set-key (kbd "C-c C-a")        'mc/mark-all-like-this)
+
 ;; [P]rojectile----------------------------------------------------------->>
 (projectile-global-mode)
 
@@ -326,12 +329,9 @@
 (setq httpd-port 1234)
 ;; [S]witch-windows
 
-;; [T]heme---------------------------------------------------------------->>
-;; (load-theme 'spacemacs-dark t)
-
 ;; [V]isual-regexp-------------------------------------------------------->>
-(define-key global-map (kbd "C-c r") 'vr/replace)
-(define-key global-map (kbd "C-c q") 'vr/query-replace) ;awesome
+(define-key global-map (kbd "C-c C-r") 'vr/replace)
+(define-key global-map (kbd "C-c C-q") 'vr/query-replace) ;awesome
 ;; if you use multiple-cursors, this is for you:
 (define-key global-map (kbd "C-c m") 'vr/mc-mark)
 
