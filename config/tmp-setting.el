@@ -167,7 +167,7 @@
 
 (let* ((dot-theme-file (concat my-emacs-path ".theme"))
        (files '(
-                darcula
+                ;; darcula
                 material
                 ;; spacemacs-dark
                 ))

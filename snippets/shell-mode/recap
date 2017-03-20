@@ -1,0 +1,4 @@
+# contributor: Harri Feng <harrifeng@gmail.com>
+# name: Cap restart
+# --
+bundle exec cap development deploy:stop && bundle exec cap development deploy:start
