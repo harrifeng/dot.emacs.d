@@ -12,6 +12,7 @@
 
 ;;--------tramp-------------------->>
 (require 'tramp)
+(setq tramp-default-method "plink")
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; tramp will ask for plink in windows, I will use cygwin emacs on ;;
 ;; windows							   ;;
