@@ -142,8 +142,10 @@
   (mapcar (lambda (x) (concat path x))
           (nthcdr 2 (directory-files path))))
 
-(setq venv-location
-      (folder-under-folder "/Users/hfeng/venv/"))
+(defconst my-venv-path "/Users/hfeng/venv/")
+(if (file-exists-p my-venv-path)
+    (setq venv-location
+          (folder-under-folder my-venv-path)))
 
 (add-to-list 'load-path (concat my-lisps-path "nopackage"))
 (require 'livedown)
