@@ -142,8 +142,8 @@
   (mapcar (lambda (x) (concat path x))
           (nthcdr 2 (directory-files path))))
 
-;; (setq venv-location
-;;       (folder-under-folder "/Users/hfeng/virtualpy/"))
+(setq venv-location
+      (folder-under-folder "/Users/hfeng/venv/"))
 
 (add-to-list 'load-path (concat my-lisps-path "nopackage"))
 (require 'livedown)
