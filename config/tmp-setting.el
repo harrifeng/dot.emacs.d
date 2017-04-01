@@ -273,4 +273,16 @@
 
 (setq flycheck-highlighting-mode nil)
 (setq flycheck-indication-mode nil)
-(global-set-key (kbd "<f8>") 'flycheck-list-errors)
+
+(defun toggle-flycheck-error-buffer ()
+  "toggle a flycheck error buffer."
+  (interactive)
+  (if (string-match-p "Flycheck errors" (format "%s" (window-list)))
+      (dolist (w (window-list))
+        (when (string-match-p "*Flycheck errors*" (buffer-name (window-buffer w)))
+          (delete-window w)
+          ))
+    (flycheck-list-errors)
+    )
+  )
+(global-set-key (kbd "<f8>") 'toggle-flycheck-error-buffer)
