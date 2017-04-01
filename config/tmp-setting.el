@@ -253,6 +253,24 @@
 (global-set-key (kbd "C-c C-v") 'open-shell-pwd)
 
 
+(defun lunaryorn-use-js-executables-from-node-modules ()
+  "Set executables of JS checkers from local node modules."
+  (-when-let* ((file-name (buffer-file-name))
+               (root (locate-dominating-file file-name "node_modules"))
+               (module-directory (expand-file-name "node_modules" root)))
+    (pcase-dolist (`(,checker . ,module) '((javascript-jshint . "jshint")
+                                           (javascript-eslint . "eslint")
+                                           (javascript-jscs   . "jscs")))
+      (let ((package-directory (expand-file-name module module-directory))
+            (executable-var (flycheck-checker-executable-variable checker)))
+        (when (file-directory-p package-directory)
+          (set (make-local-variable executable-var)
+               (expand-file-name (concat "bin/" module ".js")
+                                 package-directory)))))))
+
+(add-hook 'flycheck-mode-hook 'lunaryorn-use-js-executables-from-node-modules)
+
+
 ;; (global-flycheck-mode)
 
 ;; (flycheck-define-checker jsxhint-checker
