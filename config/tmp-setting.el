@@ -269,20 +269,8 @@
                                  package-directory)))))))
 
 (add-hook 'flycheck-mode-hook 'lunaryorn-use-js-executables-from-node-modules)
+(global-flycheck-mode)
 
-
-;; (global-flycheck-mode)
-
-;; (flycheck-define-checker jsxhint-checker
-;;   "A JSX syntax and style checker based on JSXHint."
-;;
-;;   :command ("jsxhint" source)
-;;   :error-patterns
-;;   ((error line-start (1+ nonl) ": line " line ", col " column ", " (message) line-end))
-;;   :modes (web-mode))
-;; (add-hook 'web-mode-hook
-;;           (lambda ()
-;;             (when (equal web-mode-content-type "jsx")
-;;               ;; enable flycheck
-;;               (flycheck-select-checker 'jsxhint-checker)
-;;               (flycheck-mode))))
+(setq flycheck-highlighting-mode nil)
+(setq flycheck-indication-mode nil)
+(global-set-key (kbd "<f8>") 'flycheck-list-errors)

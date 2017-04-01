@@ -40,7 +40,7 @@
     (set-frame-parameter
      nil 'fullscreen
      (when (not (frame-parameter nil 'fullscreen)) 'fullboth)))
-  (global-set-key (kbd "<f8>")         'toggle-fullscreen)
+  ;; (global-set-key (kbd "<f8>")         'toggle-fullscreen)
 
   ;; Mac Emacs start with fix height and width----------------->>
   (add-to-list 'default-frame-alist '(height . 35))
