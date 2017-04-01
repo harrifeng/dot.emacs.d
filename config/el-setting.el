@@ -102,7 +102,7 @@
 
 (add-hook 'js2-mode-hook
           (lambda ()
-            (define-key js2-mode-map (kbd "<f8>") 'node-hfeng-test)
+            ;; (define-key js2-mode-map (kbd "<f8>") 'node-hfeng-test)
             (define-key js2-mode-map (kbd "<f9>") 'node-hfeng-run)
             ))
 
@@ -179,7 +179,7 @@
 
 (add-hook 'python-mode-hook
           (lambda ()
-            (define-key python-mode-map (kbd "<f8>") 'python-hfeng-test)
+            ;; (define-key python-mode-map (kbd "<f8>") 'python-hfeng-test)
             (define-key python-mode-map (kbd "<f9>") 'python-hfeng-run)
             ))
 
