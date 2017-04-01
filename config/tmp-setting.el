@@ -142,7 +142,8 @@
   (mapcar (lambda (x) (concat path x))
           (nthcdr 2 (directory-files path))))
 
-(defconst my-venv-path "/Users/hfeng/venv/")
+(defconst my-venv-path (concat (getenv "HOME") "/venv/"))
+
 (if (file-exists-p my-venv-path)
     (setq venv-location
           (folder-under-folder my-venv-path)))
