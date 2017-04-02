@@ -75,7 +75,7 @@
      magit
      markdown-mode
      wgrep-ag
-     material
+     material-theme
      multiple-cursors
      nodejs-repl
      projectile
