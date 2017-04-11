@@ -145,8 +145,11 @@
 (defconst my-venv-path (concat (getenv "HOME") "/venv/"))
 
 (if (file-exists-p my-venv-path)
-    (setq venv-location
-          (folder-under-folder my-venv-path)))
+    (progn
+      (setq venv-location
+            (folder-under-folder my-venv-path))
+      ;; we often had two envs, the 2ENV and 3ENV, comment out if you do not use env
+      (venv-workon "3ENV")))
 
 (add-to-list 'load-path (concat my-lisps-path "nopackage"))
 (require 'livedown)
