@@ -439,3 +439,19 @@ minibuffer"
   (align-regexp start end
                 "\\(\\s-*\\)\\s-" 1 0 t)
   (indent-region start end))
+
+(defun toggle-shell-buffer ()
+  "Create or visit a shell buffer."
+  (interactive)
+  (if (eq (current-buffer) (get-buffer "*shell*"))
+      (delete-window)
+    (if (not (get-buffer "*shell*"))
+        (progn
+          (split-window-below)
+          (other-window 1)
+          (shell))
+      (switch-to-buffer-other-window "*shell*"))
+    )
+  )
+
+(global-set-key (kbd "C-v")        'toggle-shell-buffer)
