@@ -396,4 +396,19 @@ minibuffer"
     )
   )
 
-(global-set-key (kbd "C-v")        'toggle-shell-buffer)
+(defun toggle-eshell-buffer ()
+  "Create or visit a eshell buffer."
+  (interactive)
+  (if (eq (current-buffer) (get-buffer "*eshell*"))
+      (delete-window)
+    (if (not (get-buffer "*eshell*"))
+        (progn
+          (split-window-below)
+          (other-window 1)
+          (eshell))
+      (switch-to-buffer-other-window "*eshell*"))
+    )
+  )
+(if (eq system-type 'windows-nt)
+    (global-set-key (kbd "C-v") 'toggle-eshell-buffer)
+  (global-set-key (kbd "C-v") 'toggle-shell-buffer))
