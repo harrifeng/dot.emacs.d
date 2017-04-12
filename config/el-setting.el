@@ -69,6 +69,22 @@
             (set (make-local-variable 'company-backends) '(company-go))
             (company-mode)))
 
+(defun my-make-room-for-new-compilation-buffer ()
+  "Renames existing *compilation* buffer to something unique so
+      that a new compilation job can be run."
+  (interactive)
+  (let ((cbuf (get-buffer "*compilation*"))
+        (more-cbufs t)
+        (n 1)
+        (new-cbuf-name ""))
+    (when cbuf
+      (while more-cbufs
+        (setq new-cbuf-name (format "*compilation%d*" n))
+        (setq n (1+ n))
+        (setq more-cbufs (get-buffer new-cbuf-name)))
+      (with-current-buffer cbuf
+        (rename-buffer new-cbuf-name)))))
+
 (defun node-hfeng-run ()
   (interactive)
   (save-buffer)
@@ -78,7 +94,10 @@
     (setq go-run-command "node %s"))
   (compile
    (format go-run-command
-           (buffer-file-name))))
+           (buffer-file-name)))
+  (my-make-room-for-new-compilation-buffer)
+  )
+
 
 (defun node-hfeng-test ()
   (interactive)
@@ -89,7 +108,9 @@
     (setq go-run-command "mocha %s"))
   (compile
    (format go-run-command
-           (buffer-file-name))))
+           (buffer-file-name)))
+  (my-make-room-for-new-compilation-buffer)
+  )
 
 (add-hook 'js2-mode-hook 'company-mode)
 (autoload 'tern-mode "tern.el" nil t)
@@ -117,7 +138,9 @@
     (setq go-run-command "go run %s"))
   (compile
    (format go-run-command
-           (buffer-file-name))))
+           (buffer-file-name)))
+  (my-make-room-for-new-compilation-buffer)
+  )
 
 
 (defun go-more-hfeng-run ()
@@ -129,7 +152,9 @@
     (setq go-run-command "go run *.go"))
   (compile
    (format go-run-command
-           (buffer-file-name))))
+           (buffer-file-name)))
+  (my-make-room-for-new-compilation-buffer)
+  )
 
 
 (add-hook 'go-mode-hook
@@ -148,7 +173,9 @@
     (setq ruby-run-command "ruby %s"))
   (compile
    (format ruby-run-command
-           (buffer-file-name))))
+           (buffer-file-name)))
+  (my-make-room-for-new-compilation-buffer)
+  )
 
 (add-hook 'ruby-mode-hook
           (lambda ()
@@ -164,7 +191,9 @@
     (setq python-run-command "python %s"))
   (compile
    (format python-run-command
-           (buffer-file-name))))
+           (buffer-file-name)))
+  (my-make-room-for-new-compilation-buffer)
+  )
 
 (defun python-hfeng-test ()
   (interactive)
@@ -175,7 +204,9 @@
     (setq python-run-command "python -m unittest %s"))
   (compile
    (format python-run-command
-           (file-name-base (buffer-file-name)))))
+           (file-name-base (buffer-file-name))))
+  (my-make-room-for-new-compilation-buffer)
+  )
 
 (add-hook 'python-mode-hook
           (lambda ()
@@ -281,7 +312,9 @@
            (buffer-file-name)
            (file-name-sans-extension (buffer-file-name))
            (file-name-sans-extension (buffer-file-name))
-           )))
+           ))
+  (my-make-room-for-new-compilation-buffer)
+  )
 
 (add-hook 'c++-mode-hook
           (lambda ()
@@ -311,7 +344,9 @@
              (buffer-file-name)
              (file-name-sans-extension (buffer-file-name))
              (file-name-sans-extension (buffer-file-name))
-             ))))
+             ))
+    (my-make-room-for-new-compilation-buffer)
+    ))
 
 (add-hook 'rust-mode-hook
           (lambda ()

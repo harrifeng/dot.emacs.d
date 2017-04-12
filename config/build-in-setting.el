@@ -101,7 +101,13 @@
                ("Ruby"   (or
                           (mode . ruby-mode)
                           (mode . enh-ruby-mode)))
+               ("Js"   (or
+                        (mode . js2-mode)
+                        (mode . rjsx-mode)
+                        (mode . web-mode)))
+
                ("Magit"  (name . "^\\*magit"))
+               ("Compilation"  (name . "^\\*compilation"))
                ("Docs"   (mode . org-mode))
                ("Dired"  (mode . dired-mode))))))
 
