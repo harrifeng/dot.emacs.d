@@ -140,9 +140,20 @@
       (rename-buffer  (concat "*Shell: "
                               (concat default-directory "*")) t)))
 
+(defun hfeng-remove-content-to-another-buffer ()
+  "This function delete content to another bufer"
+  (interactive)
+  (save-excursion
+    (mark-whole-buffer)
+    (append-to-file (mark) (point) "~/hfeng.log")
+    ))
+
 (defun my-shell-mode-hook ()
   (local-set-key (kbd "C-x C-l")
-                 (lambda nil (interactive) (erase-buffer)
+                 (lambda nil
+                   (interactive)
+                   (hfeng-remove-content-to-another-buffer)
+                   (erase-buffer)
                    (comint-send-input)))
   )
 
