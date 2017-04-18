@@ -276,3 +276,6 @@
     )
   )
 (global-set-key (kbd "<f8>") 'toggle-flycheck-error-buffer)
+
+(setq-default resize-mini-windows nil
+              enable-recursive-minibuffers t)
