@@ -276,10 +276,3 @@
     )
   )
 (global-set-key (kbd "<f8>") 'toggle-flycheck-error-buffer)
-
-;; tmp solution for ruby 1.9, as it does not support rubocop
-
-(add-hook 'ruby-mode-hook
-          '(lambda ()
-             (setq flycheck-checker 'ruby-rubylint)
-             (flycheck-mode 1)))
