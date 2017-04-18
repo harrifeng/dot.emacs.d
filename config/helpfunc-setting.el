@@ -146,10 +146,12 @@
   (setq log-file-name "~/hfeng.log")
   (save-excursion
     (mark-whole-buffer)
-    (write-region "\nStart-------------------------------------->\n"
+    (write-region (format-time-string
+                   "\nStart From %Y-%m-%d %H:%M:%S------------------------------------------>\n")
                   nil log-file-name 'append)
     (append-to-file (mark) (point) log-file-name)
-    (write-region "\nEnd---------------------------------------->\n"
+    (write-region (format-time-string
+                   "\nFinish At %Y-%m-%d %H:%M:%S-------------------------------------------<\n")
                   nil log-file-name 'append)
     ))
 
