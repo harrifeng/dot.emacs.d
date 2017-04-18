@@ -279,3 +279,11 @@
 
 (setq-default resize-mini-windows nil
               enable-recursive-minibuffers t)
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (require 'flycheck-tip)                                         ;;
+;; (define-key your-prog-mode (kbd "C-c C-n") 'flycheck-tip-cycle) ;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;; To avoid echoing error message on minibuffer (optional)
+(setq flycheck-display-errors-function 'ignore)
