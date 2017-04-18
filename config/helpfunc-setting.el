@@ -143,7 +143,18 @@
 (defun hfeng-remove-content-to-another-buffer ()
   "This function delete content to another bufer"
   (interactive)
-  (setq log-file-name "~/hfeng.log")
+
+  (if (file-exists-p (concat (getenv "HOME") "/github/shell-log/"))
+      (defconst my-shell-log-path
+        (concat (getenv "HOME") "/github/shell-log/"))
+    (defconst my-shell-log-path
+      (concat (getenv "HOME") "/")))
+  (setq log-file-name
+        (concat my-shell-log-path
+                (format-time-string "%Y-%m-%d-")
+                (symbol-name system-type)
+                ".txt"
+                ))
   (save-excursion
     (mark-whole-buffer)
     (write-region (format-time-string
