@@ -146,6 +146,9 @@
                    (comint-send-input)))
   )
 
+;;clean all the buffer content
+(add-hook 'shell-mode-hook 'my-shell-mode-hook)
+
 ;;eshell clear the screen
 (defun eshell/cls ()
   "Clears the shell buffer ala Unix's clear or DOS' cls"
