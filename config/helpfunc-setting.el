@@ -143,9 +143,14 @@
 (defun hfeng-remove-content-to-another-buffer ()
   "This function delete content to another bufer"
   (interactive)
+  (setq log-file-name "~/hfeng.log")
   (save-excursion
     (mark-whole-buffer)
-    (append-to-file (mark) (point) "~/hfeng.log")
+    (write-region "\nStart-------------------------------------->\n"
+                  nil log-file-name 'append)
+    (append-to-file (mark) (point) log-file-name)
+    (write-region "\nEnd---------------------------------------->\n"
+                  nil log-file-name 'append)
     ))
 
 (defun my-shell-mode-hook ()
