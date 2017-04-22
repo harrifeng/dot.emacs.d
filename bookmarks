@@ -2,7 +2,17 @@
 ;;; This format is meant to be slightly human-readable;
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
-(("ec2-user@54.223.92.229"
+(("vagrant-100-200"
+ (filename . "/ssh:vagrant@192.168.100.200:/home/vagrant/")
+ (front-context-string . ".bash_history\n  ")
+ (rear-context-string . "92 Apr 21 09:20 ")
+ (position . 210))
+("hfeng-145"
+ (filename . "/ssh:hfeng@192.168.1.145:/home/hfeng/")
+ (front-context-string . ".bash_history\n  ")
+ (rear-context-string . "31 Apr 19 13:26 ")
+ (position . 196))
+("ec2-user@54.223.92.229"
  (filename . "/ssh:ec2-user@54.223.92.229:/home/ec2-user/")
  (front-context-string . ".bash_history\n  ")
  (rear-context-string . "04 Sep 19 04:43 ")
