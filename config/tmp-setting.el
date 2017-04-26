@@ -240,9 +240,27 @@
         )
     (switch-to-buffer-other-window shell-pwd-name)))
 
-(global-set-key (kbd "C-c v")   'open-shell-pwd)
-(global-set-key (kbd "C-c C-v") 'open-shell-pwd)
+(defun open-eshell-pwd ()
+  "Open a eshell on pwd"
+  (interactive)
+  (setq eshell-pwd-name  (format "ESHELL-%s" (current-buffer)))
+  (if (not (get-buffer eshell-pwd-name))
+      (progn
+        (split-window-below)
+        (eshell (format "ESHELL-%s" (current-buffer)))
+        )
+    (switch-to-buffer-other-window eshell-pwd-name)))
 
+
+(if (eq system-type 'windows-nt)
+    (progn
+      (global-set-key (kbd "C-c v")   'open-eshell-pwd)
+      (global-set-key (kbd "C-c C-v") 'open-eshell-pwd)
+      )
+  (progn
+    (global-set-key (kbd "C-c v")   'open-shell-pwd)
+    (global-set-key (kbd "C-c C-v") 'open-shell-pwd)
+    ))
 
 (defun lunaryorn-use-js-executables-from-node-modules ()
   "Set executables of JS checkers from local node modules."
