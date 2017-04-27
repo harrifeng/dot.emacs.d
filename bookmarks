@@ -2,79 +2,34 @@
 ;;; This format is meant to be slightly human-readable;
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
-(("vagrant-100-200"
- (filename . "/ssh:vagrant@192.168.100.200:/home/vagrant/")
+(("2-50-Vagrant"
+ (filename . "/ssh:vagrant@10.33.2.50:/home/vagrant/")
  (front-context-string . ".bash_history\n  ")
- (rear-context-string . "92 Apr 21 09:20 ")
- (position . 210))
-("hfeng-145"
- (filename . "/ssh:hfeng@192.168.1.145:/home/hfeng/")
- (front-context-string . ".bash_history\n  ")
- (rear-context-string . "31 Apr 19 13:26 ")
- (position . 196))
-("ec2-user@54.223.92.229"
- (filename . "/ssh:ec2-user@54.223.92.229:/home/ec2-user/")
- (front-context-string . ".bash_history\n  ")
- (rear-context-string . "04 Sep 19 04:43 ")
- (position . 232))
-("Airflow"
- (filename . "/docker:root@airflow-test:/root/airflow/")
- (front-context-string . "airflow-webserve")
- (rear-context-string . " 5 Aug  1 08:58 ")
- (position . 192))
-("ec2-user"
- (filename . "/ssh:ec2-user@54.222.238.115:/home/ec2-user/")
- (front-context-string . ".bash_history\n  ")
- (rear-context-string . "18 Jul 29 06:18 ")
- (position . 235))
-("vultr-coreos"
- (filename . "/ssh:root@45.32.25.48:/root/")
- (front-context-string . ".bash_history\n  ")
- (rear-context-string . "87 Jul 26 03:36 ")
- (position . 180))
-("go-in-action"
- (filename . "c:/Devbox/Code/golang-space/src/github.com/harrifeng/go-in-action/")
- (front-context-string . ".git\n  -rw-rw-rw")
- (rear-context-string . "096 03-30 20:16 ")
- (position . 255))
-("GitHub"
- (filename . "c:/Users/hfeng/Documents/GitHub/")
- (front-context-string . "6.824\n  drwxrwxr")
- (rear-context-string . "096 03-30 08:17 ")
- (position . 224))
-("Debian8-I309511"
- (filename . "/ssh:i309511@pvgl50861366a:/home/I309511/")
- (front-context-string . ".bash_history\n  ")
- (rear-context-string . "92 Dec 24 17:54 ")
- (position . 217))
-("Debian8-ROOT-I309511"
- (filename . "/ssh:i309511@pvgl50861366a|sudo:root@pvgl50861366a:/etc")
- (front-context-string . ".bash_history\n  ")
- (rear-context-string . "92 Dec 24 17:54 ")
- (position . 217))
-("golang-harrifeng"
- (filename . "~/golang-space/src/github.com/harrifeng/")
- (front-context-string . "go-in-action\n  d")
- (rear-context-string . "74 Nov  8 21:15 ")
- (position . 307))
-("vagrant-ROOT-etc"
- (filename . "/ssh:vagrant@127.0.0.1#2345|sudo:root@127.0.0.1#2345:/etc")
+ (rear-context-string . "57 Apr 26 07:47 ")
+ (position . 220))
+("50-18-saybot"
+ (filename . "/ssh:saybot@192.168.50.17:/home/saybot/")
+ (front-context-string . "!\n  drwxr-xr-x  ")
+ (rear-context-string . "98 Sep 28  2016 ")
+ (position . 108))
+("33-2-50-ROOT"
+ (filename . "/ssh:vagrant@10.33.2.50|sudo:root@10.33.2.50:/etc/")
  (front-context-string . "acpi\n  -rw-r--r-")
- (rear-context-string . "96 May 30 20:41 ")
- (position . 193))
-("vagrant-ct"
- (filename . "/ssh:vagrant@127.0.0.1#2345:/home/vagrant/")
- (front-context-string . "bash_history\n  -")
- (rear-context-string . "7 Jun  1 11:09 .")
- (position . 210))
-("Coreos-vm"
- (filename . "/ssh:core@127.0.0.1#2222:/home/core/")
- (front-context-string . "bash_history\n  -")
- (rear-context-string . "7 Jun  1 11:09 .")
- (position . 210))
-("Coreos-ROOT-etc"
- (filename . "/ssh:core@127.0.0.1#2222|sudo:root@127.0.0.1#2222:/etc")
+ (rear-context-string . "96 Apr 18 20:44 ")
+ (position . 233))
+("saybot-50-13"
+ (filename . "/ssh:saybot@192.168.50.13:/var/")
+ (front-context-string . "backups\n  drwxr-")
+ (rear-context-string . "96 Apr 22 06:37 ")
+ (position . 189))
+("200-200-ROOT"
+ (filename . "/ssh:vagrant@192.168.200.200|sudo:root@192.168.200.200:/")
  (front-context-string . "acpi\n  -rw-r--r-")
- (rear-context-string . "96 May 30 20:41 ")
- (position . 193))
+ (rear-context-string . "96 Apr 18 20:44 ")
+ (position . 222))
+("200-200-vagrant"
+ (filename . "/ssh:vagrant@192.168.200.200:/home/vagrant/")
+ (front-context-string . ".bash_history\n  ")
+ (rear-context-string . "82 Apr 22 08:23 ")
+ (position . 210))
 )

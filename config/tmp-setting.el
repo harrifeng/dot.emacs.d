@@ -295,3 +295,6 @@
           '(lambda ()
              (setq flycheck-checker 'ruby-rubylint)
              (flycheck-mode 1)))
+
+;; This speed up the tramp connection
+(setq projectile-mode-line "Projectile")
