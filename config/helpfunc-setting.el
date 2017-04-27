@@ -167,17 +167,27 @@
     ))
 (global-set-key (kbd "C-x C-l")           'hfeng-remove-content-to-another-buffer)
 
+(defun my-clear ()
+  (interactive)
+  (let ((comint-buffer-maximum-size 0))
+    (comint-truncate-buffer)))
+
+(defun hfeng-clear (&optional prefix)
+  "Move the line containing point to the top of the window.
+   With PREFIX, move the line containing point to line PREFIX of the window."
+  (interactive "P")
+  (recenter (or prefix 0)))
+
 (defun my-shell-mode-hook ()
   (local-set-key (kbd "C-x C-l")
                  (lambda nil
                    (interactive)
                    (hfeng-remove-content-to-another-buffer)
-                   (erase-buffer)
-                   (comint-send-input)))
-  )
+                   (hfeng-clear))))
 
 ;;clean all the buffer content
 (add-hook 'shell-mode-hook 'my-shell-mode-hook)
+(add-hook 'eshell-mode-hook 'my-shell-mode-hook)
 
 ;;eshell clear the screen
 (defun eshell/cls ()
