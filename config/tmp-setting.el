@@ -316,3 +316,8 @@
 
 ;; This speed up the tramp connection
 (setq projectile-mode-line "Projectile")
+
+;; sample way to unset key for minor mode
+(defun my-elpy-hook ()
+  (define-key elpy-mode-map (kbd "<C-return>") nil))
+(add-hook 'elpy-mode-hook 'my-elpy-hook)
