@@ -12,7 +12,7 @@
 
 ;; [E]lpy----------------------------------------------------------------->>
 (elpy-enable)
-
+(remove-hook 'elpy-modules 'elpy-module-flymake)
 ;; [G]it-gutter----------------------------------------------------------->>
 (require 'git-gutter)
 (global-git-gutter-mode +1)
