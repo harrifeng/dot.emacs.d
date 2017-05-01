@@ -183,7 +183,7 @@
                  (lambda nil
                    (interactive)
                    (hfeng-remove-content-to-another-buffer)
-                   (hfeng-clear))))
+                   (my-clear))))
 
 ;;clean all the buffer content
 (add-hook 'shell-mode-hook 'my-shell-mode-hook)
@@ -193,6 +193,7 @@
 (defun eshell/cls ()
   "Clears the shell buffer ala Unix's clear or DOS' cls"
   (interactive)
+  (hfeng-remove-content-to-another-buffer)
   ;; the shell prompts are read-only, so clear that for the duration
   (let ((inhibit-read-only t))
     ;; simply delete the region
