@@ -236,7 +236,7 @@
   (if (not (get-buffer shell-pwd-name))
       (progn
         (split-window-below)
-        (shell (format "SHELL-%s" (current-buffer)))
+        (shell shell-pwd-name)
         )
     (switch-to-buffer-other-window shell-pwd-name)))
 
@@ -247,7 +247,8 @@
   (if (not (get-buffer eshell-pwd-name))
       (progn
         (split-window-below)
-        (eshell (format "ESHELL-%s" (current-buffer)))
+        (eshell "new")
+        (rename-buffer eshell-pwd-name)
         )
     (switch-to-buffer-other-window eshell-pwd-name)))
 
