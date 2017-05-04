@@ -7,7 +7,7 @@
 (global-set-key (kbd "C-t")          'avy-goto-char)
 
 ;; [B]ack-button---------------------------------------------------------->>
-(back-button-mode)
+;; (back-button-mode)
 
 ;; [B]m-toogle------------------------------------------------------------>>
 (global-set-key (kbd "<f6>")         'bm-toggle)
