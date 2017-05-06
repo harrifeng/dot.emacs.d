@@ -1,0 +1,4 @@
+# contributor: Harri Feng <harrifeng@gmail.com>
+# name: sudo bash vagrant
+# --
+sudo bash /vagrant/$0

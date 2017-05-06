@@ -2,7 +2,12 @@
 ;;; This format is meant to be slightly human-readable;
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
-(("10-33-2-155-Vagrant"
+(("leet-in-go"
+ (filename . "~/go/src/github.com/harrifeng/leet-in-go/")
+ (front-context-string . ".git\n  -rw-r--r-")
+ (rear-context-string . "10 May  4 15:29 ")
+ (position . 272))
+("10-33-2-155-Vagrant"
  (filename . "/ssh:vagrant@10.33.2.155:/home/vagrant/")
  (front-context-string . ".bash_history\n  ")
  (rear-context-string . "92 May  2 04:02 ")

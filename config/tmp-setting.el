@@ -91,6 +91,23 @@
             (define-key scheme-mode-map (kbd "<f9>") 'scheme-hfeng-run)
             ))
 
+(defun sh-hfeng-run()
+  (interactive)
+  (save-buffer)
+
+  (if (eq system-type 'windows-nt)
+      (setq hfeng-run-command "bash.exe  %s")
+    (setq hfeng-run-command "bash  %s"))
+  (compile
+   (format hfeng-run-command
+           (buffer-file-name))))
+
+(add-hook 'sh-mode-hook
+          (lambda ()
+            (define-key sh-mode-map (kbd "<f9>") 'sh-hfeng-run)
+            ))
+
+
 ;; Different theme
 (defun random-color-theme () (interactive)
        (let ((chosen-theme
