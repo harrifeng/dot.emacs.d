@@ -339,3 +339,7 @@
 (defun my-elpy-hook ()
   (define-key elpy-mode-map (kbd "<C-return>") nil))
 (add-hook 'elpy-mode-hook 'my-elpy-hook)
+
+
+(add-hook 'comint-exec-hook
+      (lambda () (set-process-query-on-exit-flag (get-buffer-process (current-buffer)) nil)))
