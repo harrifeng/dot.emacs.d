@@ -1,0 +1,4 @@
+# contributor: Harri Feng <harrifeng@gmail.com>
+# name: ubuntu install
+# --
+sudo DEBIAN_FRONTEND=noninteractive apt-get -y install
