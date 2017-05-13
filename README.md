@@ -57,6 +57,14 @@ sql-setting.el is need if you use sql very often, one example el file looks like
 
     $ pip install rope flake8 importmagic autopep8 yapf powerline-status psutil
 
+## flycheck
++ for shell flycheck,you need
+
+```
+brew install shellcheck
+```
+
+
 ## Command setup (May not work for Emacs 25.1)
 + First usage use following command to first initialize the environment on shell you can go to .emacs.d folder and run
 
