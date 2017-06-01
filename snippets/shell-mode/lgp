@@ -1,0 +1,4 @@
+# contributor: Harri Feng <harrifeng@gmail.com>
+# name: generate python problem
+# --
+leetcode show $1 -g -l python $0
