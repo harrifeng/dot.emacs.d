@@ -153,7 +153,7 @@
   (setq log-file-name
         (concat my-shell-log-path
                 (format-time-string "%Y-%m-%d-")
-                (symbol-name system-type)
+                (replace-regexp-in-string "/" "-" (symbol-name system-type))
                 ".txt"
                 ))
   (save-excursion
