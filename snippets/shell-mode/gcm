@@ -1,4 +1,4 @@
 # contributor: Harri Feng <harrifeng@gmail.com>
-# name: git commit -m
+# name: gitcommit
 # --
-git commit -m "$1"
+git commit -m \"$1\"
