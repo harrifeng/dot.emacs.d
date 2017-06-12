@@ -147,12 +147,20 @@
 
   (if (file-exists-p (concat (getenv "HOME") "/github/shell-log/"))
       (defconst my-shell-log-path
-        (concat (getenv "HOME") "/github/shell-log/"))
+        (concat
+         (getenv "HOME")
+         "/github/shell-log/"
+         (format-time-string "%Y-%m/")
+         ))
     (defconst my-shell-log-path
-      (concat (getenv "HOME") "/")))
+      (concat (getenv "HOME")
+              (format-time-string "/%Y-%m/")
+              )))
+  (unless (file-exists-p my-shell-log-path)
+    (make-directory my-shell-log-path))
+
   (setq log-file-name
         (concat my-shell-log-path
-                (format-time-string "%Y-%m/")
                 (format-time-string "%Y-%m-%d-")
                 (replace-regexp-in-string "/" "-" (symbol-name system-type))
                 ".txt"
