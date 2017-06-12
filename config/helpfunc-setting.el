@@ -152,6 +152,7 @@
       (concat (getenv "HOME") "/")))
   (setq log-file-name
         (concat my-shell-log-path
+                (format-time-string "%Y-%m/")
                 (format-time-string "%Y-%m-%d-")
                 (replace-regexp-in-string "/" "-" (symbol-name system-type))
                 ".txt"
