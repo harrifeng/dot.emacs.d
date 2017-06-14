@@ -1,4 +1,4 @@
 # contributor: Harri Feng <harrifeng@gmail.com>
-# name : run unittest
+# name : Run unitTest
 # --
-%run -m unittest
+%run -m unittest $0

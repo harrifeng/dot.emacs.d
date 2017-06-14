@@ -1,5 +1,0 @@
-# contributor: Harri Feng <harrifeng@gmail.com>
-# name: <%=...%>
-# key: rbe
-# --
-<%= $1 %>
