@@ -1,3 +1,0 @@
-#name : test
-# --
- filename ${1:test}
