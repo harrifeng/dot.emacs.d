@@ -128,6 +128,7 @@
           (lambda ()
             ;; (define-key js2-mode-map (kbd "<f8>") 'node-hfeng-test)
             (define-key js2-mode-map (kbd "<f9>") 'node-hfeng-run)
+            (define-key js2-mode-map (kbd "C-m") 'node-hfeng-run)
             ))
 
 (setq js2-strict-missing-semi-warning nil)
@@ -163,6 +164,7 @@
 (add-hook 'go-mode-hook
           (lambda ()
             (define-key go-mode-map (kbd "<f9>") 'go-hfeng-run)
+            (define-key go-mode-map (kbd "C-m") 'go-hfeng-run)
             ;; (define-key go-mode-map (kbd "TAB") #'company-indent-or-complete-common)
             ))
 
@@ -181,7 +183,9 @@
 
 (add-hook 'ruby-mode-hook
           (lambda ()
-            (define-key ruby-mode-map (kbd "<f9>") 'ruby-hfeng-run)))
+            (define-key ruby-mode-map (kbd "<f9>") 'ruby-hfeng-run)
+            (define-key ruby-mode-map (kbd "C-m") 'ruby-hfeng-run)
+            ))
 
 
 (defun python-hfeng-run ()
@@ -214,6 +218,7 @@
           (lambda ()
             ;; (define-key python-mode-map (kbd "<f8>") 'python-hfeng-test)
             (define-key python-mode-map (kbd "<f9>") 'python-hfeng-run)
+            (define-key python-mode-map (kbd "C-m") 'python-hfeng-run)
             ))
 
 
@@ -321,6 +326,7 @@
 (add-hook 'c++-mode-hook
           (lambda ()
             (define-key c++-mode-map (kbd "<f9>") 'cpp-save-compile-and-run)
+            (define-key c++-mode-map (kbd "C-m") 'cpp-save-compile-and-run)
             (define-key c++-mode-map (kbd "TAB") #'company-indent-or-complete-common)
             ))
 
@@ -353,6 +359,7 @@
 (add-hook 'rust-mode-hook
           (lambda ()
             (define-key rust-mode-map (kbd "<f9>") 'rust-save-compile-and-run)
+            (define-key rust-mode-map (kbd "C-m") 'rust-save-compile-and-run)
             (define-key rust-mode-map (kbd "TAB") #'company-indent-or-complete-common)
             ))
 ;; [S]hell-pop-el--------------------------------------------------------->>
