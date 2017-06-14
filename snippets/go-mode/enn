@@ -1,5 +1,5 @@
 # contributor: Harri Feng <harrifeng@gmail.com>
-# name: if err is NOT nil
+# name: if Err is NOT Nil
 # --
 if err != nil {
 	$0

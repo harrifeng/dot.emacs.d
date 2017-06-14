@@ -1,0 +1,4 @@
+# contributor: Harri Feng <harrifeng@gmail.com>
+# name: LOGprintF
+# --
+log.Printf("${1:%s}\n", ${2:args})$0

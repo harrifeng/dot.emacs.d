@@ -1,6 +1,4 @@
-# -*- mode: snippet -*-
-# name: log.Printf(...)
-# key: log
+# contributor: Harri Feng <harrifeng@gmail.com>
+# name: log.Println()
 # --
-log.Printf("${1:%s}\n", ${2:args})
-$0
+log.Println($0)
