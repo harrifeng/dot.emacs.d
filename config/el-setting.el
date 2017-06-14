@@ -396,12 +396,11 @@
 ;; [W]ich-key-mode-------------------------------------------------------->>
 (which-key-mode)
 ;; [Y]asnippet------------------------------------------------------------>>
+(setq yas-snippet-dirs
+      '("~/.emacs.d/snippets")
+      )
 (yas-global-mode 1)
 
-(setq yas-snippet-dirs
-      '(
-        (concat my-emacs-path "snippets")
-        ))
 ;; dropdown-list is needed by yasnippet
 (setq yas-prompt-functions
       '(yas/dropdown-prompt
