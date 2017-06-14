@@ -396,8 +396,9 @@
 ;; [W]ich-key-mode-------------------------------------------------------->>
 (which-key-mode)
 ;; [Y]asnippet------------------------------------------------------------>>
+(defconst my-snippet-path (concat my-emacs-path "snippets"))
 (setq yas-snippet-dirs
-      '("~/.emacs.d/snippets")
+      '(my-snippet-path)
       )
 (yas-global-mode 1)
 
