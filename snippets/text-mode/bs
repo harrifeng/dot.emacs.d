@@ -1,4 +1,4 @@
 # contributor: Harri Feng <harrifeng@gmail.com>
-# name: Colon Equal
+# name: Back Slash
 # --
-:= $0
+\$0
