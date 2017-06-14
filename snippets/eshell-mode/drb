@@ -1,4 +1,0 @@
-# contributor: Harri Feng <harrifeng@gmail.com>
-# name: remove branch remotely
-# --
-git push ${1:origin} --delete $0

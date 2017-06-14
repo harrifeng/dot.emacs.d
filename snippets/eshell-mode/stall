@@ -1,4 +1,0 @@
-# contributor: Harri Feng <harrifeng@gmail.com>
-# name: git stash all files
-# --
-git stash --include-untracked

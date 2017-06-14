@@ -1,4 +1,0 @@
-# contributor: Harri Feng <harrifeng@gmail.com>
-# name: git assume unchanged
-# --
-git update-index --no-assume-unchanged $0

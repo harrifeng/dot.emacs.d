@@ -1,4 +1,0 @@
-# contributor: Harri Feng <harrifeng@gmail.com>
-# name: git config name
-# --
-git config --global user.name "Harri Feng"

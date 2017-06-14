@@ -1,4 +1,0 @@
-# contributor: Harri Feng <harrifeng@gmail.com>
-# name: git diff --cached --check
-# --
-find . -type f -name "*.js" -exec js-beautify -r {} \;

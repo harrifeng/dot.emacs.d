@@ -1,4 +1,0 @@
-# contributor: Harri Feng <harrifeng@gmail.com>
-# name: No Locking the Screen
-# --
-caffeinate -d

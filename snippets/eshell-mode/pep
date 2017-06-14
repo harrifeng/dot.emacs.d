@@ -1,4 +1,0 @@
-# contributor: Harri Feng <harrifeng@gmail.com>
-# name: pep8 for python
-# --
-autopep8 --in-place --aggressive --aggressive

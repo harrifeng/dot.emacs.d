@@ -1,4 +1,0 @@
-# contributor: Harri Feng <harrifeng@gmail.com>
-# name: docker list all the container, use docker rm `<>`  can deletes all!
-# --
-docker ps -a -q

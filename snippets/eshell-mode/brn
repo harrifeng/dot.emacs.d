@@ -1,4 +1,0 @@
-# contributor: Harri Feng <harrifeng@gmail.com>
-# name: Batch Rename File Extension
-# --
-for file in *.${1:py} ; do mv $file \`echo $file | sed 's/\\(.*\\.\\)$1/\\1${2:rb}/'\` ; done$0

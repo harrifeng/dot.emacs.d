@@ -1,4 +1,0 @@
-# contributor: Harri Feng <harrifeng@gmail.com>
-# name: Flush Privileges
-# --
-FLUSH PRIVILEGES;

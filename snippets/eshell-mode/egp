@@ -1,4 +1,0 @@
-# contributor: Harri Feng <harrifeng@gmail.com>
-# name: set current folder as GoPATH
-# --
-export "GOPATH=\$PWD"

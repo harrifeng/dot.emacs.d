@@ -1,4 +1,0 @@
-# contributor: Harri Feng <harrifeng@gmail.com>
-# name: g++ c++11 support
-# --
-g++ --std=c++11

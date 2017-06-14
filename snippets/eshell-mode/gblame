@@ -1,4 +1,0 @@
-# contributor: Harri Feng <harrifeng@gmail.com>
-# name: git blame specific line
-# --
-git log -L$(1)+$(2)

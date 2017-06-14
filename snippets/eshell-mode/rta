@@ -1,4 +1,0 @@
-# contributor: Harri Feng <harrifeng@gmail.com>
-#name : Test all for leet
-# --
-find . -name 'solution.rb' | xargs -n1 -I{} ruby -Itest {}

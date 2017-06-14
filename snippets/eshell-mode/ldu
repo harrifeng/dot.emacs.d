@@ -1,4 +1,0 @@
-# contributor: Harri Feng <harrifeng@gmail.com>
-# name: Linux Bash to see the current folder size
-# --
-du -h --max-depth=0 $0

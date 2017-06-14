@@ -1,4 +1,0 @@
-# contributor: Harri Feng <harrifeng@gmail.com>
-# name: Proxy setting for sap
-# --
-export http_proxy="http://proxy.sin.sap.corp:8080" && export https_proxy="http://proxy.sin.sap.corp:8080"

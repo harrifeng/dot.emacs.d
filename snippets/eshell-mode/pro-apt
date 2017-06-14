@@ -1,1 +1,0 @@
-sudo echo "Acquire:http::proxy 'http://proxy.sin.sap.corp:8080'" >> /etc/apt/apt.conf

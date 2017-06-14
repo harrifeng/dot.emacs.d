@@ -1,4 +1,0 @@
-# contributor: Harri Feng <harrifeng@gmail.com>
-# name: maven test
-# --
-mvn test -Dtest="org.hfeng..$1"

@@ -1,4 +1,0 @@
-# contributor: Harri Feng <harrifeng@gmail.com>
-# name: mysql change password for root
-# --
-mysqladmin -u root -h localhost password 'root' -p

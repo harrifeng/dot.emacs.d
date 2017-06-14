@@ -1,4 +1,0 @@
-# contributor: Harri Feng <harrifeng@gmail.com>
-# name: docker find the container's ip by id
-# --
-sudo docker inspect --format='{{.NetworkSettings.IPAddress}}' `docker ps -l -q`

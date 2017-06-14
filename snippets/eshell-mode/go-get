@@ -1,1 +1,0 @@
-go get github.com/nsf/gocode && go get golang.org/x/tools/cmd/goimports && go get github.com/rogpeppe/godef

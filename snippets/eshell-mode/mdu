@@ -1,4 +1,0 @@
-# contributor: Harri Feng <harrifeng@gmail.com>
-# name: mac du to see the current folder size
-# --
-du -h -d 0

@@ -1,4 +1,0 @@
-# contributor: Harri Feng <harrifeng@gmail.com>
-# name: Java version detection -32
-# --
-java -d32 -version

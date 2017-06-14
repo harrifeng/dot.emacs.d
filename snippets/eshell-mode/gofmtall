@@ -1,4 +1,0 @@
-# contributor: Harri Feng <harrifeng@gmail.com>
-# name: go format all files under current folders
-# --
-go fmt ./...

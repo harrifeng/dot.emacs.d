@@ -1,4 +1,0 @@
-# contributor: Harri Feng <harrifeng@gmail.com>
-# name: docker find dagling image
-# --
-docker rmi \`docker images --quiet --filter "dangling=true"\`

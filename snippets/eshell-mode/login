@@ -1,4 +1,0 @@
-# contributor: Harri Feng <harrifeng@gmail.com>
-# name: Whether this shell is login shell
-# --
-shopt -q login_shell && echo 'Login shell' || echo 'Not login shell'

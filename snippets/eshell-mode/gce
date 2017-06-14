@@ -1,4 +1,0 @@
-# contributor: Harri Feng <harrifeng@gmail.com>
-# name: git config email
-# --
-git config --global user.email "harrifeng@gmail.com"

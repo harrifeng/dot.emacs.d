@@ -1,4 +1,0 @@
-# contributor: Harri Feng <harrifeng@gmail.com>
-# name: gradlew build with proxy setting in home
-# --
-gradlew -Dhttps.proxyHost=127.0.0.1 -Dhttps.proxyPort=7777 build

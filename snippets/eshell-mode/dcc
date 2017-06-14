@@ -1,4 +1,0 @@
-# contributor: Harri Feng <harrifeng@gmail.com>
-# name: git diff --cached --check
-# --
-git add . && git diff --cached --check && git diff --cached -S "byebug"

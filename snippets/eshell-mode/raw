@@ -1,4 +1,0 @@
-# contributor: Harri Feng <harrifeng@gmail.com>
-# name: ruby raw
-# --
-request.env['RAW_POST_DATA']

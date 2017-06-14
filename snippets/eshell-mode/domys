@@ -1,4 +1,0 @@
-# contributor: Harri Feng <harrifeng@gmail.com>
-# name: docker start a mysql server
-# --
-docker run --name $1 -e MYSQL_ALLOW_EMPTY_PASSWORD=yes -d mysql:5.6 $0

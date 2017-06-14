@@ -1,4 +1,0 @@
-# contributor: Harri Feng <harrifeng@gmail.com>
-# name: git checkout to previous branch
-# --
-git checkout -$0

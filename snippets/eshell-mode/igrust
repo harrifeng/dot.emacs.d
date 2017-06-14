@@ -1,4 +1,0 @@
-# contributor: Harri Feng <harrifeng@gmail.com>
-# name: copy tmp .gitignore for rust to current folder, this is only for rust example
-# --
-cp ~/github/gitignore/Rust.gitignore .gitignore

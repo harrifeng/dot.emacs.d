@@ -1,4 +1,0 @@
-# contributor: Harri Feng <harrifeng@gmail.com>
-# name: git log by more than one user
-# --
-git log --author="\(tom\)\|\(jack\)\|\(other\)"

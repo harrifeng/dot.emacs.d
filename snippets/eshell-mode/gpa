@@ -1,4 +1,0 @@
-# contributor: Harri Feng <harrifeng@gmail.com>
-# name: git remote | xargs -n 1 git push --all
-# --
-DANGEROUS ONE!!git remote | xargs -n 1 git push --all DANGEROUS ONE!!

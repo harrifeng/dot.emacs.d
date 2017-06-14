@@ -1,4 +1,0 @@
-# contributor: Harri Feng <harrifeng@gmail.com>
-# name: docker compose run background
-# --
-docker-compose up -d
