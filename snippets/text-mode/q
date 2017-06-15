@@ -1,4 +1,4 @@
 # contributor: Harri Feng <harrifeng@gmail.com>
-# name: String (double quote)
+# name: single Quotes
 # --
-"$0"
+'$0'
