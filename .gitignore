@@ -100,3 +100,5 @@ games/
 
 # emacs tmp dot file
 ido.last
+
+.cache/

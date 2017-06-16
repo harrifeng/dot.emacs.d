@@ -50,3 +50,6 @@
 (global-set-key (kbd "C-c C-SPC")         'pop-global-mark)
 ;; rename the buffer, the start another shell
 (global-set-key (kbd "C-c c")             'rename-buffer)
+
+(keyboard-translate ?\C-t ?\C-x)
+(keyboard-translate ?\C-x ?\C-t)
