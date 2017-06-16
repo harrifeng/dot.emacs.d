@@ -52,3 +52,6 @@
 
 (keyboard-translate ?\C-t ?\C-x)
 (keyboard-translate ?\C-x ?\C-t)
+
+;; we still need this
+(global-set-key (kbd "C-h")               'backward-delete-char-untabify)

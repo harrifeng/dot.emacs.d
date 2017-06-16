@@ -25,7 +25,7 @@
 (require 'helm-projectile)
 (helm-projectile-on)
 
-(global-set-key (kbd "C-;")          'helm-toggle-visible-mark)
+(global-set-key (kbd "C-c C-f")      'helm-find-files)
 (global-set-key (kbd "C-x C-r")      'helm-recentf)
 (global-set-key (kbd "C-x b")        'helm-mini)
 (global-set-key (kbd "C-M-;")        'helm-projectile)

@@ -80,7 +80,7 @@
 (defconst my-font-size
   (cond
    ((string-match system-name "hfeng-desktop")
-    ":pixelsize=28")
+    ":pixelsize=20")
    ((string-match system-name "hfeng-laptop")
     ":pixelsize=20")
    ((string-match system-name "vagrant-ubuntu-vivid-64")
