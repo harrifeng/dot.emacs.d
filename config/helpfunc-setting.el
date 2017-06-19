@@ -51,6 +51,7 @@
      elpy
      exec-path-from-shell
      flycheck
+     general
      go-mode
      go-guru
      gotest

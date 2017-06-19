@@ -23,7 +23,7 @@
 ;; git add current buffer to version control!
 (global-set-key (kbd "C-c i")             'git-add-current-buffer)
 (global-set-key (kbd "C-c C-i")           'git-add-current-buffer)
-(global-set-key (kbd "C-w")               'align-whitespace)
+;;(global-set-key (kbd "C-w")               'align-whitespace)
 (global-set-key (kbd "C-c r")             'revert-buffer)
 (global-set-key (kbd "<f5>")              'revert-buffer-no-confirm)
 (global-set-key (kbd "<f2>")              'helm-global-mark-ring)
@@ -54,4 +54,4 @@
 (keyboard-translate ?\C-x ?\C-t)
 
 ;; we still need this
-(global-set-key (kbd "C-h")               'backward-delete-char-untabify)
+;;(global-set-key (kbd "C-h")               'backward-delete-char-untabify)

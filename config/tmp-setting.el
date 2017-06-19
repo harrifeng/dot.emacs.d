@@ -345,3 +345,12 @@
       (lambda () (set-process-query-on-exit-flag (get-buffer-process (current-buffer)) nil)))
 
 (add-hook 'yaml-mode-hook 'flymake-yaml-load)
+(require 'general)
+;; define C-. as prefix key, otherwise general will complain
+(define-prefix-command 'ctl-dot-map)
+(setq my-leader1 "C-.")
+(general-define-key :prefix my-leader1
+                    "." 'helm-M-x
+                    "s" 'shell
+                    "b" 'helm-mini
+                    "f" 'helm-find-files)
