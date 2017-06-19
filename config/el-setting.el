@@ -26,12 +26,10 @@
 (helm-projectile-on)
 
 (global-set-key (kbd "C-c C-f")      'helm-find-files)
-(global-set-key (kbd "C-x C-r")      'helm-recentf)
 (global-set-key (kbd "C-x b")        'helm-mini)
 (global-set-key (kbd "C-M-;")        'helm-projectile)
 (global-set-key (kbd "C-M-y")        'helm-show-kill-ring)
 (global-set-key (kbd "C-c C-m")      'helm-M-x)
-(global-set-key (kbd "C-x C-m")      'helm-M-x)
 (global-set-key (kbd "C-c s")        'helm-swoop)
 ;; n stands for Now directory
 (global-set-key (kbd "C-c n")        'helm-ag)
@@ -57,10 +55,6 @@
 ;; [G]olang relative------------------------------------------------------>>
 (setq gofmt-command "goimports")
 (require 'gotest)
-(define-key go-mode-map (kbd "C-x f") 'go-test-current-file)
-(define-key go-mode-map (kbd "C-x t") 'go-test-current-test)
-(define-key go-mode-map (kbd "C-x p") 'go-test-current-project)
-(define-key go-mode-map (kbd "C-x r") 'go-run)
 (define-key go-mode-map (kbd "C-c r") 'go-run)
 
 (add-hook 'go-mode-hook 'company-mode)

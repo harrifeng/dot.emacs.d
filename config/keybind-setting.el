@@ -1,8 +1,6 @@
 (provide 'keybind-setting)
 
-(global-set-key (kbd "C-x o")             'switch-window)
 (global-set-key (kbd "C-c C-c")           'comment-box)
-(global-set-key (kbd "C-x C-k")           'kill-region)
 (global-set-key (kbd "C-c C-k")           'kill-region)
 
 ;; Group key bind-------------------------------->
@@ -15,11 +13,7 @@
 ;; Group key bind-------------------------------->
 ;; iterm set `ctrl-=` to `0x03 0x61`
 ;; C-= can be used later
-(global-set-key (kbd "C-x C-y")           'kill-ring-save)
 (global-set-key (kbd "C-c C-y")           'kill-ring-save)
-(global-set-key (kbd "C-x C-u")           'backward-kill-line)
-(global-set-key (kbd "C-x C-b")           'ibuffer)
-(global-set-key (kbd "C-x j")             'join-line)
 ;; git add current buffer to version control!
 (global-set-key (kbd "C-c i")             'git-add-current-buffer)
 (global-set-key (kbd "C-c C-i")           'git-add-current-buffer)
@@ -34,7 +28,6 @@
 (global-set-key (kbd "M-/")               'hippie-expand)
 (global-set-key (kbd "C-j")               'newline-and-indent)
 (global-set-key (kbd "M-p")               'query-replace)
-(global-set-key (kbd "C-x C-g")           'helm-global-mark-ring)
 (global-set-key (kbd "C-c C-g")           'helm-global-mark-ring)
 ;; iterm set `ctrl-=` to `0x03 0x0d`
 (global-set-key (kbd "C-c RET")           'mark-whole-buffer)

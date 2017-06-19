@@ -176,7 +176,7 @@
                    "\nFinish At %Y-%m-%d %H:%M:%S-------------------------------------------<\n")
                   nil log-file-name 'append)
     ))
-(global-set-key (kbd "C-x C-l")           'hfeng-remove-content-to-another-buffer)
+(global-set-key (kbd "C-c C-l")           'hfeng-remove-content-to-another-buffer)
 
 (defun my-clear ()
   (interactive)
@@ -190,7 +190,7 @@
   (recenter (or prefix 0)))
 
 (defun my-shell-mode-hook ()
-  (local-set-key (kbd "C-x C-l")
+  (local-set-key (kbd "C-c C-l")
                  (lambda nil
                    (interactive)
                    (hfeng-remove-content-to-another-buffer)
