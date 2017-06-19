@@ -24,16 +24,8 @@
 (require 'helm)
 (require 'helm-projectile)
 (helm-projectile-on)
+(setq helm-ag-insert-at-point 'symbol)
 
-(global-set-key (kbd "C-c C-f")      'helm-find-files)
-(global-set-key (kbd "C-x b")        'helm-mini)
-(global-set-key (kbd "C-M-;")        'helm-projectile)
-(global-set-key (kbd "C-M-y")        'helm-show-kill-ring)
-(global-set-key (kbd "C-c C-m")      'helm-M-x)
-(global-set-key (kbd "C-c s")        'helm-swoop)
-;; n stands for Now directory
-(global-set-key (kbd "C-c n")        'helm-ag)
-;; b stands for buffer
 (global-set-key (kbd "C-c b")        'helm-ag-buffers)
 (global-set-key (kbd "C-c u")        'helm-projectile-ag)
 (global-set-key (kbd "C-c C-u")      'helm-projectile-ag)

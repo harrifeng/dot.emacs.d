@@ -5,7 +5,7 @@
   (interactive)
   (revert-buffer :ignore-auto :noconfirm))
 
-(defun git-add-current-buffer ()
+(defun git-add-current-buffer-to-git ()
   "call 'git add [current-buffer]' revert-buffer afterwards, no gitgutter changes show"
   (interactive)
   (delete-trailing-whitespace)

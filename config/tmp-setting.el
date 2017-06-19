@@ -357,7 +357,7 @@
                     "1" 'delete-other-windows
                     "2" 'split-window-below
                     "3" 'split-window-right
-                    "a" 'helm-ag
+                    "a" 'helm-projectile-ag
                     "b" 'split-window-below
                     "c" 'kill-ring-save ;copy
                     "d" 'delete-other-windows
@@ -365,6 +365,7 @@
                     "f" 'helm-find-files
                     "g" 'magit-status
                     "h" 'highlight-symbol
+                    "i" 'git-add-current-buffer-to-git
                     "k" 'kill-region    ;cut
                     "l" 'hfeng-remove-content-to-another-buffer
                     "m" 'helm-mini
@@ -376,6 +377,7 @@
                     "u" 'helm-projectile
                     "v" 'split-window-right ;vertical
                     "w" 'helm-swoop
+                    "SPC" 'ibuffer
                     )
 
 
