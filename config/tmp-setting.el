@@ -363,7 +363,7 @@
                     "d" 'delete-other-windows
                     "E" 'save-buffers-kill-terminal
                     "f" 'helm-find-files
-                    "g" 'helm-M-x
+                    "g" 'magit-status
                     "h" 'highlight-symbol
                     "k" 'kill-region    ;cut
                     "l" 'hfeng-remove-content-to-another-buffer
@@ -371,9 +371,10 @@
                     "n" 'highlight-symbol-next ;next highlight
                     "o" 'open-shell-pwd
                     "p" 'highlight-symbol-prev ;previous highlight
-                    "r" 'split-window-right
+                    "r" 'revert-buffer-no-confirm
                     "s" 'save-buffer
                     "u" 'helm-projectile
+                    "v" 'split-window-right ;vertical
                     "w" 'helm-swoop
                     )
 
@@ -409,13 +410,11 @@
                     "2" 'split-window-below
                     "3" 'split-window-right
                     "a" 'helm-ag
-                    "b" 'split-window-below
                     "c" 'kill-ring-save ;copy
                     "d" 'delete-other-windows
                     "e" 'save-buffers-kill-terminal
                     "f" 'helm-find-files
-                    "g" 'helm-M-x
-                    "h" 'helm-mini
+                    "g" 'magit-status
                     "k" 'kill-region    ;cut
                     "m" 'helm-mini
                     "o" 'open-shell-pwd
