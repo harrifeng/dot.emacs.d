@@ -352,34 +352,34 @@
 (setq my-leader1 "C-.")
 
 (general-define-key :prefix my-leader1
-                    "." 'helm-M-x
-                    "1" 'delete-other-windows
-                    "2" 'split-window-below
-                    "3" 'split-window-right
-                    "a" 'helm-projectile-ag
-                    "b" 'helm-mini
-                    "c" 'open-shell-pwd
-                    "d" 'delete-other-windows
-                    "e" 'toggle-flycheck-error-buffer
-                    "E" 'save-buffers-kill-terminal
-                    "f" 'helm-find-files
-                    "g" 'magit-status
-                    "h" 'split-window-horizontal ;horizontal
-                    "i" 'ibuffer
-                    "k" 'kill-region    ;cut
-                    "l" 'hfeng-remove-content-to-another-buffer
-                    "m" 'helm-all-mark-rings
-                    "n" 'highlight-symbol-next ;next highlight
-                    "o" 'kill-ring-save ;copy
-                    "p" 'highlight-symbol-prev ;prev highlight
-                    "r" 'revert-buffer-no-confirm
-                    "s" 'save-buffer
-                    "t" 'bm-toggle
-                    "u" 'helm-projectile       ;universal open file
-                    "v" 'split-window-vertical ;vertical
-                    "w" 'helm-swoop
-                    "x" 'git-add-current-buffer-to-git
-                    "y" 'highlight-symbol      ;mark highlith
+                    "."   'helm-M-x
+                    "1"   'delete-other-windows
+                    "2"   'split-window-below
+                    "3"   'split-window-right
+                    "a"   'helm-projectile-ag
+                    "b"   'helm-mini
+                    "c"   'helm-book-mark
+                    "d"   'delete-other-windows
+                    "e"   'toggle-flycheck-error-buffer
+                    "E"   'save-buffers-kill-terminal
+                    "f"   'helm-find-files
+                    "g"   'magit-status
+                    "h"   'split-window-horizontal ;horizontal
+                    "i"   'ibuffer
+                    "k"   'kill-region             ;cut
+                    "l"   'hfeng-remove-content-to-another-buffer
+                    "m"   'helm-all-mark-rings
+                    "n"   'highlight-symbol-next   ;next      highlight
+                    "o"   'kill-ring-save          ;copy
+                    "p"   'highlight-symbol-prev   ;prev      highlight
+                    "r"   'revert-buffer-no-confirm
+                    "s"   'save-buffer
+                    "t"   'bm-toggle
+                    "u"   'helm-projectile         ;universal open file
+                    "v"   'split-window-vertical   ;vertical
+                    "w"   'helm-swoop
+                    "x"   'git-add-current-buffer-to-git
+                    "y"   'highlight-symbol        ;mark      highlith
                     "SPC" 'open-shell-pwd
                     )
 
