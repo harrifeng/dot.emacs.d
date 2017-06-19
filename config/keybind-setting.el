@@ -34,10 +34,6 @@
 (global-set-key (kbd "<C-return>")        'mark-whole-buffer)
 (global-set-key (kbd "C-2")               'set-mark-command)
 (global-set-key (kbd "C-,")               'set-mark-command)
-(global-set-key (kbd "C-c h")             'windmove-left)
-(global-set-key (kbd "C-c l")             'windmove-right)
-(global-set-key (kbd "C-c j")             'windmove-down)
-(global-set-key (kbd "C-c k")             'windmove-up)
 ;; ctrl-c-ctrl-j is go to definition, so ctrl-c-ctrl-space is handy
 (global-set-key (kbd "C-c C-SPC")         'pop-global-mark)
 ;; rename the buffer, the start another shell

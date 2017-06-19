@@ -349,21 +349,25 @@
 ;; define C-. as prefix key, otherwise general will complain
 (define-prefix-command 'ctl-dot-map)
 (setq my-leader1 "C-.")
+
 (general-define-key :prefix my-leader1
                     "." 'helm-M-x
                     "1" 'delete-other-windows
                     "2" 'split-window-below
                     "3" 'split-window-right
                     "a" 'helm-ag
-                    "b" 'helm-mini
-                    "c" 'helm-M-x
+                    "b" 'split-window-below
+                    "c" 'kill-ring-save ;copy
                     "d" 'delete-other-windows
                     "e" 'save-buffers-kill-terminal
                     "f" 'helm-find-files
                     "g" 'helm-M-x
+                    "h" 'highlight-symbol
+                    "k" 'kill-region    ;cut
+                    "m" 'helm-mini
                     "o" 'open-shell-pwd
                     "p" 'helm-projectile
-                    "h" 'helm-M-x
+                    "r" 'split-window-right
                     "s" 'save-buffer
                     "w" 'helm-swoop
                     )
@@ -381,9 +385,37 @@
                     "C-e" 'save-buffers-kill-terminal
                     "C-f" 'helm-find-files
                     "C-g" 'helm-M-x
+                    "C-r" 'split-window-right
                     "C-o" 'open-shell-pwd
                     "C-p" 'helm-projectile
                     "C-h" 'helm-M-x
                     "C-s" 'save-buffer
                     "C-w" 'helm-swoop
+                    )
+
+;; Mac iterm set `ctrl-.` to `0x03 0x64`, so the my-leader2 is
+;; solely for iterm usage, and thus the code will be copied from
+;; my-leader2
+(setq my-leader2 "C-c d")
+
+(general-define-key :prefix my-leader2
+                    "." 'helm-M-x
+                    "1" 'delete-other-windows
+                    "2" 'split-window-below
+                    "3" 'split-window-right
+                    "a" 'helm-ag
+                    "b" 'split-window-below
+                    "c" 'kill-ring-save ;copy
+                    "d" 'delete-other-windows
+                    "e" 'save-buffers-kill-terminal
+                    "f" 'helm-find-files
+                    "g" 'helm-M-x
+                    "h" 'helm-mini
+                    "k" 'kill-region    ;cut
+                    "m" 'helm-mini
+                    "o" 'open-shell-pwd
+                    "p" 'helm-projectile
+                    "r" 'split-window-right
+                    "s" 'save-buffer
+                    "w" 'helm-swoop
                     )
