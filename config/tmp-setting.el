@@ -380,7 +380,7 @@
                     "w" 'helm-swoop
                     "x" 'git-add-current-buffer-to-git
                     "y" 'highlight-symbol      ;mark highlith
-                    "SPC" 'helm-M-x
+                    "SPC" 'open-shell-pwd
                     )
 
 
