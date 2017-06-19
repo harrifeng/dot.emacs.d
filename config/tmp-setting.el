@@ -345,6 +345,8 @@
       (lambda () (set-process-query-on-exit-flag (get-buffer-process (current-buffer)) nil)))
 
 (add-hook 'yaml-mode-hook 'flymake-yaml-load)
+(add-to-list 'default-frame-alist '(fullscreen . maximized))
+
 (require 'general)
 ;; define C-. as prefix key, otherwise general will complain
 (define-prefix-command 'ctl-dot-map)
