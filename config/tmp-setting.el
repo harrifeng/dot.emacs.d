@@ -351,6 +351,39 @@
 (setq my-leader1 "C-.")
 (general-define-key :prefix my-leader1
                     "." 'helm-M-x
-                    "s" 'shell
+                    "1" 'delete-other-windows
+                    "2" 'split-window-below
+                    "3" 'split-window-right
+                    "a" 'helm-ag
                     "b" 'helm-mini
-                    "f" 'helm-find-files)
+                    "c" 'helm-M-x
+                    "d" 'delete-other-windows
+                    "e" 'save-buffers-kill-terminal
+                    "f" 'helm-find-files
+                    "g" 'helm-M-x
+                    "o" 'open-shell-pwd
+                    "p" 'helm-projectile
+                    "h" 'helm-M-x
+                    "s" 'save-buffer
+                    "w" 'helm-swoop
+                    )
+
+
+(general-define-key :prefix my-leader1
+                    "C-." 'helm-M-x
+                    "C-1" 'delete-other-windows
+                    "C-2" 'split-window-below
+                    "C-3" 'split-window-right
+                    "C-a" 'helm-ag
+                    "C-b" 'helm-mini
+                    "C-c" 'helm-M-x
+                    "C-d" 'delete-other-windows
+                    "C-e" 'save-buffers-kill-terminal
+                    "C-f" 'helm-find-files
+                    "C-g" 'helm-M-x
+                    "C-o" 'open-shell-pwd
+                    "C-p" 'helm-projectile
+                    "C-h" 'helm-M-x
+                    "C-s" 'save-buffer
+                    "C-w" 'helm-swoop
+                    )
