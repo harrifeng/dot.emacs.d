@@ -366,6 +366,7 @@
                     "g" 'helm-M-x
                     "h" 'highlight-symbol
                     "k" 'kill-region    ;cut
+                    "l" 'hfeng-remove-content-to-another-buffer
                     "m" 'helm-mini
                     "n" 'highlight-symbol-next ;next highlight
                     "o" 'open-shell-pwd

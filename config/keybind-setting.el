@@ -34,13 +34,7 @@
 (global-set-key (kbd "<C-return>")        'mark-whole-buffer)
 (global-set-key (kbd "C-2")               'set-mark-command)
 (global-set-key (kbd "C-,")               'set-mark-command)
-;; ctrl-c-ctrl-j is go to definition, so ctrl-c-ctrl-space is handy
-(global-set-key (kbd "C-c C-SPC")         'pop-global-mark)
-;; rename the buffer, the start another shell
-(global-set-key (kbd "C-c c")             'rename-buffer)
 
-(keyboard-translate ?\C-t ?\C-x)
-(keyboard-translate ?\C-x ?\C-t)
-
+(global-set-key "\C-x" nil)
 ;; we still need this
 ;;(global-set-key (kbd "C-h")               'backward-delete-char-untabify)
