@@ -105,11 +105,6 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; ==============Boolean Habits=================== ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; If set to t, Delete key deletes forward and Backspace key deletes
-;; backward.
-
-(normal-erase-is-backspace-mode t)
-
 ;; use spaces only!
 (setq-default indent-tabs-mode nil)
 

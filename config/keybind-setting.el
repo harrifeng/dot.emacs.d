@@ -10,6 +10,7 @@
 (global-set-key (kbd "C-j")               'newline-and-indent)
 (global-set-key (kbd "M-p")               'query-replace)
 
+(define-key helm-find-files-map (kbd "C-h") nil)
 (global-set-key (kbd "C-h")               'backward-delete-char-untabify)
 
 ;; Start Iterm2 Key region----------------------------->
@@ -26,4 +27,3 @@
 (global-set-key (kbd "C-c c")             'other-window)
 (global-set-key (kbd "C-;")               'other-window)
 ;; End Iterm2 Key region------------------------------->
-

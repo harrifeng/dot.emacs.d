@@ -385,23 +385,6 @@
 
 
 (general-define-key :prefix my-leader1
-                    "C-." 'helm-M-x
-                    "C-1" 'delete-other-windows
-                    "C-2" 'split-window-below
-                    "C-3" 'split-window-right
-                    "C-a" 'helm-ag
-                    "C-b" 'helm-mini
-                    "C-c" 'helm-M-x
-                    "C-d" 'delete-other-windows
-                    "C-e" 'save-buffers-kill-terminal
-                    "C-f" 'helm-find-files
-                    "C-g" 'helm-M-x
-                    "C-r" 'split-window-right
-                    "C-o" 'open-shell-pwd
-                    "C-p" 'helm-projectile
-                    "C-h" 'helm-M-x
-                    "C-s" 'save-buffer
-                    "C-w" 'helm-swoop
                     )
 
 ;; Mac iterm set `ctrl-.` to `0x03 0x64`, so the my-leader2 is
@@ -410,21 +393,4 @@
 (setq my-leader2 "C-c d")
 
 (general-define-key :prefix my-leader2
-                    "." 'helm-M-x
-                    "1" 'delete-other-windows
-                    "2" 'split-window-below
-                    "3" 'split-window-right
-                    "a" 'helm-ag
-                    "c" 'kill-ring-save ;copy
-                    "d" 'delete-other-windows
-                    "e" 'save-buffers-kill-terminal
-                    "f" 'helm-find-files
-                    "g" 'magit-status
-                    "k" 'kill-region    ;cut
-                    "m" 'helm-mini
-                    "o" 'open-shell-pwd
-                    "p" 'helm-projectile
-                    "r" 'split-window-right
-                    "s" 'save-buffer
-                    "w" 'helm-swoop
                     )
