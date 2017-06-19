@@ -312,7 +312,6 @@
     (flycheck-list-errors)
     )
   )
-(global-set-key (kbd "<f8>") 'toggle-flycheck-error-buffer)
 
 (setq-default resize-mini-windows nil
               enable-recursive-minibuffers t)
@@ -342,7 +341,7 @@
 
 
 (add-hook 'comint-exec-hook
-      (lambda () (set-process-query-on-exit-flag (get-buffer-process (current-buffer)) nil)))
+          (lambda () (set-process-query-on-exit-flag (get-buffer-process (current-buffer)) nil)))
 
 (add-hook 'yaml-mode-hook 'flymake-yaml-load)
 (add-to-list 'default-frame-alist '(fullscreen . maximized))
@@ -358,26 +357,30 @@
                     "2" 'split-window-below
                     "3" 'split-window-right
                     "a" 'helm-projectile-ag
-                    "b" 'split-window-below
-                    "c" 'kill-ring-save ;copy
+                    "b" 'helm-mini
+                    "c" 'open-shell-pwd
                     "d" 'delete-other-windows
+                    "e" 'toggle-flycheck-error-buffer
                     "E" 'save-buffers-kill-terminal
                     "f" 'helm-find-files
                     "g" 'magit-status
-                    "h" 'highlight-symbol
-                    "i" 'git-add-current-buffer-to-git
+                    "h" 'split-window-horizontal ;horizontal
+                    "i" 'ibuffer
                     "k" 'kill-region    ;cut
                     "l" 'hfeng-remove-content-to-another-buffer
-                    "m" 'helm-mini
+                    "m" 'helm-all-mark-rings
                     "n" 'highlight-symbol-next ;next highlight
-                    "o" 'open-shell-pwd
-                    "p" 'highlight-symbol-prev ;previous highlight
+                    "o" 'kill-ring-save ;copy
+                    "p" 'highlight-symbol-prev ;prev highlight
                     "r" 'revert-buffer-no-confirm
                     "s" 'save-buffer
-                    "u" 'helm-projectile
-                    "v" 'split-window-right ;vertical
+                    "t" 'bm-toggle
+                    "u" 'helm-projectile       ;universal open file
+                    "v" 'split-window-vertical ;vertical
                     "w" 'helm-swoop
-                    "SPC" 'ibuffer
+                    "x" 'git-add-current-buffer-to-git
+                    "y" 'highlight-symbol      ;mark highlith
+                    "SPC" 'helm-M-x
                     )
 
 

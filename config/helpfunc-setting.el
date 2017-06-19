@@ -1,5 +1,19 @@
 (provide 'helpfunc-setting)
 
+(defun split-window-vertical ()
+  "Open a windows vertically"
+  (interactive)
+  (split-window-right)
+  (other-window 1)
+  )
+
+(defun split-window-horizontal ()
+  "Open a windows horizontal"
+  (interactive)
+  (split-window-below)
+  (other-window 1)
+  )
+
 (defun revert-buffer-no-confirm ()
   "Revert buffer without confirmation."
   (interactive)
