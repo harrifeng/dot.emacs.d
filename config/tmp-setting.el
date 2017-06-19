@@ -361,16 +361,18 @@
                     "b" 'split-window-below
                     "c" 'kill-ring-save ;copy
                     "d" 'delete-other-windows
-                    "e" 'save-buffers-kill-terminal
+                    "E" 'save-buffers-kill-terminal
                     "f" 'helm-find-files
                     "g" 'helm-M-x
                     "h" 'highlight-symbol
                     "k" 'kill-region    ;cut
                     "m" 'helm-mini
+                    "n" 'highlight-symbol-next ;next highlight
                     "o" 'open-shell-pwd
-                    "p" 'helm-projectile
+                    "p" 'highlight-symbol-prev ;previous highlight
                     "r" 'split-window-right
                     "s" 'save-buffer
+                    "u" 'helm-projectile
                     "w" 'helm-swoop
                     )
 
