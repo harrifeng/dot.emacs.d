@@ -350,7 +350,7 @@
 ;; define C-. as prefix key, otherwise general will complain
 (define-prefix-command 'ctl-space-map)
 (global-set-key (kbd "C-SPC") 'ctl-space-map)
-(global-set-key (kbd "C-c a") 'ctl-space-map)
+(global-set-key (kbd "C-c a") 'ctl-space-map) ;mac key bind in Iterm2
 (setq my-leader1 "C-SPC")
 
 (general-define-key :prefix my-leader1
@@ -359,13 +359,12 @@
                     "2"   'split-window-below
                     "3"   'split-window-right
                     "a"   'helm-projectile-ag ;Ag
-                    "b"   'helm-mini
-                    "c"   'helm-book-mark
+                    "c"   'helm-bookmarks
                     "d"   'delete-other-windows ;Delete
                     "e"   'toggle-flycheck-error-buffer ;Error
                     "E"   'save-buffers-kill-terminal   ;Exit
                     "f"   'helm-find-files              ;Find-file
-                    "g"   'magit-status                 ;Git
+                    ;; "g"   'magit-status                 ;Git
                     "h"   'split-window-horizontal ;Horizontal
                     "i"   'highlight-symbol        ;hIghlithg-symbol
                     "k"   'kill-region             ;Kill(cut)
@@ -380,19 +379,40 @@
                     "u"   'helm-projectile         ;Universal open file
                     "v"   'split-window-vertical   ;Vertical
                     "w"   'helm-swoop              ;sWoop
-                    "x"   'git-add-current-buffer-to-git
-                    "y"   'ibuffer
+                    "x"   'helm-M-x
+                    "y"   'helm-M-x
                     "SPC" 'helm-M-x
                     )
 
 
-(general-define-key :prefix my-leader1
+
+(setq my-leader2 "C-SPC b")             ;about Buffer
+
+(general-define-key :prefix my-leader2
+                    "b" 'helm-mini
+                    "i" 'ibuffer
+                    "k" 'kill-buffer
+                    "m" 'helm-bookmarks
+                    "n" 'next-buffer
+                    "p" 'previous-buffer
+                    "w" 'read-only-mode ; toggle writable state
                     )
+
+(setq my-leader3 "C-SPC g")             ;about Git
+
+(general-define-key :prefix my-leader3
+                    "g" 'magit-status
+                    "a" 'git-add-current-buffer-to-git
+                    "c" 'with-editor-finish ;commit
+                    "r" 'vc-revert
+                    )
+
 
 ;; Mac iterm set `ctrl-.` to `0x03 0x64`, so the my-leader2 is
 ;; solely for iterm usage, and thus the code will be copied from
 ;; my-leader2
-(setq my-leader2 "C-c d")
 
-(general-define-key :prefix my-leader2
-                    )
+;; (setq my-leader11 "C-c d")
+;;
+;; (general-define-key :prefix my-leader11
+;;                     )
