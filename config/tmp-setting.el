@@ -373,6 +373,7 @@
                     "o"   'other-window
                     "p"   'highlight-symbol-prev   ;Prev      highlight
                     "r"   'revert-buffer-no-confirm ;Revert
+                    "R"   'restart-emacs
                     "s"   'save-buffer              ;Save
                     "t"   'bm-toggle                ;bm-Toggle
                     "u"   'helm-projectile         ;Universal open file
