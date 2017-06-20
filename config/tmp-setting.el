@@ -368,7 +368,7 @@
                     "n"   'highlight-symbol-next   ;Next      highlight
                     "o"   'other-window
                     "p"   'highlight-symbol-prev   ;Prev      highlight
-                    "r"   'helm-all-mark-rings                    ;rings
+                    "x"   'helm-all-mark-rings                    ;rings
                     "t"   'bm-toggle                ;bm-Toggle
                     "v"   'split-window-vertical   ;Vertical
                     "y"   'kill-ring-save          ;copY
@@ -377,7 +377,7 @@
 
 
 
-(setq my-leader2 "C-SPC b")             ;about Buffer
+(setq my-leader2 "C-SPC b")
 
 (general-define-key :prefix my-leader2
                     :prefix-command 'Buffer
@@ -391,7 +391,7 @@
                     "w" 'read-only-mode           ; toggle writable state
                     )
 
-(setq my-leader3 "C-SPC f")             ;about Buffer
+(setq my-leader3 "C-SPC f")
 
 (general-define-key :prefix my-leader3
                     :prefix-command 'File
@@ -401,7 +401,7 @@
                     )
 
 
-(setq my-leader4 "C-SPC g")             ;about Git
+(setq my-leader4 "C-SPC g")
 
 (general-define-key :prefix my-leader4
                     :prefix-command 'Git
@@ -413,7 +413,7 @@
                     )
 
 
-(setq my-leader5 "C-SPC s")             ;about Search
+(setq my-leader5 "C-SPC s")
 
 (general-define-key :prefix my-leader5
                     :prefix-command 'Search
@@ -424,12 +424,20 @@
                     "p" 'helm-projectile-ag
                     )
 
-(setq my-leader6 "C-SPC q")             ;about Search
+(setq my-leader6 "C-SPC q")
 
 (general-define-key :prefix my-leader6
-                    :prefix-command 'Search
+                    :prefix-command 'Quit
                     "q" 'save-buffers-kill-terminal   ;Exit
                     "r" 'restart-emacs
+                    )
+
+(setq my-leader7 "C-SPC r")
+
+(general-define-key :prefix my-leader7
+                    :prefix-command 'Replace
+                    "q" 'query-replace
+                    "r" 'replace-string
                     )
 
 
