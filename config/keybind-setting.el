@@ -16,14 +16,15 @@
 ;; Start Iterm2 Key region----------------------------->
 
 ;; Map iterm2 may corresponding key to following code hex
-;; ctrl-c-a is 0x03(ctrl) 0x61 (a) -> C-,
-;; ctrl-c-b is 0x03(ctrl) 0x62 (b) -> C-RET
-;; ctrl-c-c is 0x03(ctrl) 0x63 (c) -> C-;
-;; ctrl-c-d is 0x03(ctrl) 0x64 (d) -> C-.
+;; ctrl-c-a is 0x03(ctrl) 0x61 (a) -> C-SPC
+;; ctrl-c-b is 0x03(ctrl) 0x62 (b) -> C-,
+;; ctrl-c-c is 0x03(ctrl) 0x63 (c) -> C-.
+;; ctrl-c-d is 0x03(ctrl) 0x64 (d) -> C-;
+;; ctrl-c-e is 0x03(ctrl) 0x65 (e) -> C-'
 (global-set-key (kbd "C-c a")             'set-mark-command)
 (global-set-key (kbd "C-,")               'set-mark-command)
 (global-set-key (kbd "C-c b")             'mark-whole-buffer)
-(global-set-key (kbd "<C-return>")        'mark-whole-buffer)
+(global-set-key (kbd "C-'")               'mark-whole-buffer)
 (global-set-key (kbd "C-c c")             'other-window)
 (global-set-key (kbd "C-;")               'other-window)
 ;; End Iterm2 Key region------------------------------->

@@ -348,8 +348,9 @@
 
 (require 'general)
 ;; define C-. as prefix key, otherwise general will complain
-(define-prefix-command 'ctl-dot-map)
-(setq my-leader1 "C-.")
+(define-prefix-command 'ctl-space-map)
+(global-set-key (kbd "C-SPC") 'ctl-space-map)
+(setq my-leader1 "C-SPC")
 
 (general-define-key :prefix my-leader1
                     "."   'helm-M-x
