@@ -156,7 +156,7 @@
       (rename-buffer  (concat "*Shell: "
                               (concat default-directory "*")) t)))
 
-(defun hfeng-remove-content-to-another-buffer ()
+(defun hfeng-clear-screen-to-another-buffer ()
   "This function delete content to another bufer"
   (interactive)
 
@@ -203,10 +203,10 @@
   (recenter (or prefix 0)))
 
 (defun my-shell-mode-hook ()
-  (local-set-key (kbd "C-. l")
+  (local-set-key (kbd "C-SPC l")
                  (lambda nil
                    (interactive)
-                   (hfeng-remove-content-to-another-buffer)
+                   (hfeng-clear-screen-to-another-buffer)
                    (my-clear))))
 
 ;;clean all the buffer content
@@ -217,7 +217,7 @@
 (defun eshell/cls ()
   "Clears the shell buffer ala Unix's clear or DOS' cls"
   (interactive)
-  (hfeng-remove-content-to-another-buffer)
+  (hfeng-clear-screen-to-another-buffer)
   ;; the shell prompts are read-only, so clear that for the duration
   (let ((inhibit-read-only t))
     ;; simply delete the region

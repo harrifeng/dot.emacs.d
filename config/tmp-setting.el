@@ -369,7 +369,7 @@
                     "h"   'split-window-horizontal ;Horizontal
                     "i"   'highlight-symbol        ;hIghlithg-symbol
                     "k"   'kill-region             ;Kill(cut)
-                    "l"   'hfeng-remove-content-to-another-buffer ;cLear
+                    "l"   'hfeng-clear-screen-to-another-buffer ;cLear
                     "m"   'helm-all-mark-rings                    ;Mark-rings
                     "n"   'highlight-symbol-next   ;Next      highlight
                     "o"   'kill-ring-save          ;cOpy
