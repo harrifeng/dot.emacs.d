@@ -92,6 +92,7 @@
      projectile
      restclient
      racer
+     restart-emacs
      rainbow-delimiters
      rjsx-mode
      rubocop
