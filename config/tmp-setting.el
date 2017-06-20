@@ -358,30 +358,30 @@
                     "1"   'delete-other-windows
                     "2"   'split-window-below
                     "3"   'split-window-right
-                    "a"   'helm-projectile-ag
+                    "a"   'helm-projectile-ag ;Ag
                     "b"   'helm-mini
                     "c"   'helm-book-mark
-                    "d"   'delete-other-windows
-                    "e"   'toggle-flycheck-error-buffer
-                    "E"   'save-buffers-kill-terminal
-                    "f"   'helm-find-files
-                    "g"   'magit-status
-                    "h"   'split-window-horizontal ;horizontal
-                    "i"   'ibuffer
-                    "k"   'kill-region             ;cut
-                    "l"   'hfeng-remove-content-to-another-buffer
-                    "m"   'helm-all-mark-rings
-                    "n"   'highlight-symbol-next   ;next      highlight
-                    "o"   'kill-ring-save          ;copy
-                    "p"   'highlight-symbol-prev   ;prev      highlight
-                    "r"   'revert-buffer-no-confirm
-                    "s"   'save-buffer
-                    "t"   'bm-toggle
-                    "u"   'helm-projectile         ;universal open file
-                    "v"   'split-window-vertical   ;vertical
-                    "w"   'helm-swoop
+                    "d"   'delete-other-windows ;Delete
+                    "e"   'toggle-flycheck-error-buffer ;Error
+                    "E"   'save-buffers-kill-terminal   ;Exit
+                    "f"   'helm-find-files              ;Find-file
+                    "g"   'magit-status                 ;Git
+                    "h"   'split-window-horizontal ;Horizontal
+                    "i"   'highlight-symbol        ;hIghlithg-symbol
+                    "k"   'kill-region             ;Kill(cut)
+                    "l"   'hfeng-remove-content-to-another-buffer ;cLear
+                    "m"   'helm-all-mark-rings                    ;Mark-rings
+                    "n"   'highlight-symbol-next   ;Next      highlight
+                    "o"   'kill-ring-save          ;cOpy
+                    "p"   'highlight-symbol-prev   ;Prev      highlight
+                    "r"   'revert-buffer-no-confirm ;Revert
+                    "s"   'save-buffer              ;Save
+                    "t"   'bm-toggle                ;bm-Toggle
+                    "u"   'helm-projectile         ;Universal open file
+                    "v"   'split-window-vertical   ;Vertical
+                    "w"   'helm-swoop              ;sWoop
                     "x"   'git-add-current-buffer-to-git
-                    "y"   'highlight-symbol        ;mark      highlith
+                    "y"   'ibuffer
                     "SPC" 'helm-M-x
                     )
 
