@@ -364,14 +364,13 @@
                     "e"   'toggle-flycheck-error-buffer ;Error
                     "E"   'save-buffers-kill-terminal   ;Exit
                     "f"   'helm-find-files              ;Find-file
-                    ;; "g"   'magit-status                 ;Git
                     "h"   'split-window-horizontal ;Horizontal
                     "i"   'highlight-symbol        ;hIghlithg-symbol
                     "k"   'kill-region             ;Kill(cut)
                     "l"   'hfeng-clear-screen-to-another-buffer ;cLear
                     "m"   'helm-all-mark-rings                    ;Mark-rings
                     "n"   'highlight-symbol-next   ;Next      highlight
-                    "o"   'kill-ring-save          ;cOpy
+                    "o"   'other-window
                     "p"   'highlight-symbol-prev   ;Prev      highlight
                     "r"   'revert-buffer-no-confirm ;Revert
                     "s"   'save-buffer              ;Save
@@ -380,7 +379,7 @@
                     "v"   'split-window-vertical   ;Vertical
                     "w"   'helm-swoop              ;sWoop
                     "x"   'helm-M-x
-                    "y"   'helm-M-x
+                    "y"   'kill-ring-save          ;copY
                     "SPC" 'helm-M-x
                     )
 
