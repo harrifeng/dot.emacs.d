@@ -21,10 +21,16 @@
 ;; ctrl-c-c is 0x03(ctrl) 0x63 (c) -> C-.
 ;; ctrl-c-d is 0x03(ctrl) 0x64 (d) -> C-;
 ;; ctrl-c-e is 0x03(ctrl) 0x65 (e) -> C-'
-(global-set-key (kbd "C-c a")             'set-mark-command)
+(global-set-key (kbd "C-c b")             'set-mark-command)
 (global-set-key (kbd "C-,")               'set-mark-command)
-(global-set-key (kbd "C-c b")             'mark-whole-buffer)
-(global-set-key (kbd "C-'")               'mark-whole-buffer)
+
 (global-set-key (kbd "C-c c")             'other-window)
+(global-set-key (kbd "C-.")               'other-window)
+
+(global-set-key (kbd "C-c d")             'other-window)
 (global-set-key (kbd "C-;")               'other-window)
+
+(global-set-key (kbd "C-c e")             'mark-whole-buffer)
+(global-set-key (kbd "C-'")               'mark-whole-buffer)
+
 ;; End Iterm2 Key region------------------------------->

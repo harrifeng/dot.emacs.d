@@ -350,10 +350,11 @@
 ;; define C-. as prefix key, otherwise general will complain
 (define-prefix-command 'ctl-space-map)
 (global-set-key (kbd "C-SPC") 'ctl-space-map)
+(global-set-key (kbd "C-c a") 'ctl-space-map)
 (setq my-leader1 "C-SPC")
 
 (general-define-key :prefix my-leader1
-                    "."   'helm-M-x
+                    "."   'open-shell-pwd
                     "1"   'delete-other-windows
                     "2"   'split-window-below
                     "3"   'split-window-right
@@ -381,7 +382,7 @@
                     "w"   'helm-swoop
                     "x"   'git-add-current-buffer-to-git
                     "y"   'highlight-symbol        ;mark      highlith
-                    "SPC" 'open-shell-pwd
+                    "SPC" 'helm-M-x
                     )
 
 
