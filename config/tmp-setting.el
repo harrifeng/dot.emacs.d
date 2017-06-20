@@ -372,9 +372,7 @@
                     "n"   'highlight-symbol-next   ;Next      highlight
                     "o"   'other-window
                     "p"   'highlight-symbol-prev   ;Prev      highlight
-                    "r"   'revert-buffer-no-confirm ;Revert
                     "R"   'restart-emacs
-                    "s"   'save-buffer              ;Save
                     "t"   'bm-toggle                ;bm-Toggle
                     "u"   'helm-projectile         ;Universal open file
                     "v"   'split-window-vertical   ;Vertical
@@ -389,23 +387,41 @@
 (setq my-leader2 "C-SPC b")             ;about Buffer
 
 (general-define-key :prefix my-leader2
+                    :prefix-command 'BufferBookmark
                     "b" 'helm-mini
                     "i" 'ibuffer
                     "k" 'kill-buffer
                     "m" 'helm-bookmarks
                     "n" 'next-buffer
                     "p" 'previous-buffer
-                    "w" 'read-only-mode ; toggle writable state
+                    "r" 'revert-buffer-no-confirm ;Revert
+                    "s" 'save-buffer
+                    "w" 'read-only-mode           ; toggle writable state
                     )
 
 (setq my-leader3 "C-SPC g")             ;about Git
 
 (general-define-key :prefix my-leader3
+                    :prefix-command 'Git
                     "g" 'magit-status
-                    "a" 'git-add-current-buffer-to-git
+                    "a" 'git-add-current-buffer-to-git ;add & stash
                     "c" 'with-editor-finish ;commit
                     "r" 'vc-revert
+                    "s" 'git-add-current-buffer-to-git ;add & stash
                     )
+
+
+(setq my-leader3 "C-SPC s")             ;about Search
+
+(general-define-key :prefix my-leader3
+                    :prefix-command 'Search
+                    "s" 'helm-swoop
+                    "a" 'helm-do-ag
+                    "b" 'helm-do-ag-buffers
+                    "f" 'helm-do-ag-this-file
+                    "p" 'helm-projectile-ag
+                    )
+
 
 
 ;; Mac iterm set `ctrl-.` to `0x03 0x64`, so the my-leader2 is
