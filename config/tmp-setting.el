@@ -359,25 +359,18 @@
                     "2"   'split-window-below
                     "3"   'split-window-right
                     "a"   'helm-projectile-ag ;Ag
-                    "c"   'helm-bookmarks
                     "d"   'delete-other-windows ;Delete
                     "e"   'toggle-flycheck-error-buffer ;Error
-                    "E"   'save-buffers-kill-terminal   ;Exit
-                    "f"   'helm-find-files              ;Find-file
                     "h"   'split-window-horizontal ;Horizontal
                     "i"   'highlight-symbol        ;hIghlithg-symbol
                     "k"   'kill-region             ;Kill(cut)
                     "l"   'hfeng-clear-screen-to-another-buffer ;cLear
-                    "m"   'helm-all-mark-rings                    ;Mark-rings
                     "n"   'highlight-symbol-next   ;Next      highlight
                     "o"   'other-window
                     "p"   'highlight-symbol-prev   ;Prev      highlight
-                    "R"   'restart-emacs
+                    "r"   'helm-all-mark-rings                    ;rings
                     "t"   'bm-toggle                ;bm-Toggle
-                    "u"   'helm-projectile         ;Universal open file
                     "v"   'split-window-vertical   ;Vertical
-                    "w"   'helm-swoop              ;sWoop
-                    "x"   'helm-M-x
                     "y"   'kill-ring-save          ;copY
                     "SPC" 'helm-M-x
                     )
@@ -387,11 +380,10 @@
 (setq my-leader2 "C-SPC b")             ;about Buffer
 
 (general-define-key :prefix my-leader2
-                    :prefix-command 'BufferBookmark
+                    :prefix-command 'Buffer
                     "b" 'helm-mini
                     "i" 'ibuffer
                     "k" 'kill-buffer
-                    "m" 'helm-bookmarks
                     "n" 'next-buffer
                     "p" 'previous-buffer
                     "r" 'revert-buffer-no-confirm ;Revert
@@ -399,9 +391,19 @@
                     "w" 'read-only-mode           ; toggle writable state
                     )
 
-(setq my-leader3 "C-SPC g")             ;about Git
+(setq my-leader3 "C-SPC f")             ;about Buffer
 
 (general-define-key :prefix my-leader3
+                    :prefix-command 'File
+                    "f" 'helm-find-files
+                    "p" 'helm-projectile ; opened files called buffer
+                    "m" 'helm-bookmarks
+                    )
+
+
+(setq my-leader4 "C-SPC g")             ;about Git
+
+(general-define-key :prefix my-leader4
                     :prefix-command 'Git
                     "g" 'magit-status
                     "a" 'git-add-current-buffer-to-git ;add & stash
@@ -411,15 +413,23 @@
                     )
 
 
-(setq my-leader3 "C-SPC s")             ;about Search
+(setq my-leader5 "C-SPC s")             ;about Search
 
-(general-define-key :prefix my-leader3
+(general-define-key :prefix my-leader5
                     :prefix-command 'Search
                     "s" 'helm-swoop
                     "a" 'helm-do-ag
                     "b" 'helm-do-ag-buffers
                     "f" 'helm-do-ag-this-file
                     "p" 'helm-projectile-ag
+                    )
+
+(setq my-leader6 "C-SPC q")             ;about Search
+
+(general-define-key :prefix my-leader6
+                    :prefix-command 'Search
+                    "q" 'save-buffers-kill-terminal   ;Exit
+                    "r" 'restart-emacs
                     )
 
 
