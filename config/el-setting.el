@@ -24,6 +24,16 @@
 (require 'helm)
 (require 'helm-projectile)
 (helm-projectile-on)
+
+(setq helm-prevent-escaping-from-minibuffer t
+      helm-bookmark-show-location t
+      helm-display-header-line nil
+      helm-split-window-in-side-p t
+      helm-always-two-windows t
+      helm-echo-input-in-header-line t
+      helm-imenu-execute-action-at-once-if-one nil
+      helm-org-format-outline-path t)
+
 (setq helm-ag-insert-at-point 'symbol)
 
 (global-set-key (kbd "C-c b")        'helm-ag-buffers)
