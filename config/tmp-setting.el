@@ -479,6 +479,7 @@
                     "l" 'mc/insert-letters
                     "s" 'mc/sort-regions
                     "r" 'mc/reverse-regions
+                    "o" 'mc/mark-pop
                     )
 
 
