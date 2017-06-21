@@ -51,7 +51,6 @@
 (cua-mode t) ;Always enable cua-mode
 (setq cua-enable-cua-keys nil)
 (define-key cua-global-keymap (kbd "<C-return>") nil)
-(global-set-key (kbd "C-c SPC")      'cua-set-rectangle-mark)
 
 ;;--------ibuffer------------------>>
 (require 'ibuffer)
@@ -155,14 +154,6 @@
 
 
 
-;; When you have made some personal keyboard shortcuts in
-;; emacs using global-set-key, both major modes and minor
-;; modes will override those if it uses the same keys.
-;; This is because major mode and minor mode's keymaps
-;; have priority over global keymaps.
-(add-hook 'org-mode-hook
-          (lambda()
-            (define-key org-mode-map (kbd "C-,") 'other-window)))
 
 (defconst my-blog-url "http://localhost:8765/")
 (defconst my-link-home (concat my-blog-url "index.html"))

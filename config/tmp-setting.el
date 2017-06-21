@@ -370,6 +370,7 @@
                     "p"   'highlight-symbol-prev   ;Prev      highlight
                     "x"   'helm-all-mark-rings                    ;rings
                     "t"   'bm-toggle                ;bm-Toggle
+                    "u"   'cua-set-rectangle-mark
                     "v"   'split-window-vertical   ;Vertical
                     "y"   'kill-ring-save          ;copY
                     "SPC" 'helm-M-x
