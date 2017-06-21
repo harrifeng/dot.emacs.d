@@ -24,8 +24,8 @@
 (global-set-key (kbd "C-c b")             'set-mark-command)
 (global-set-key (kbd "C-,")               'set-mark-command)
 
-(global-set-key (kbd "C-c c")             'other-window)
-(global-set-key (kbd "C-.")               'other-window)
+(global-set-key (kbd "C-c c")             'set-mark-command)
+(global-set-key (kbd "C-.")               'set-mark-command)
 
 (global-set-key (kbd "C-c d")             'other-window)
 (global-set-key (kbd "C-;")               'other-window)
