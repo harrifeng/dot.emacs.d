@@ -466,12 +466,13 @@
 
 (general-define-key :prefix my-leader8
                     :prefix-command 'MultipleCursors
-                    ;; only edit, no region concept at FIRST, you can use `Mark set` again to select region!!!
+                    ;; here the region start from coursor to the end
+                    ;; you can use `Mark set` again to select region!!!
                     "m" 'mc/edit-lines              ; Most useful one, can cursor in the middle of the line
                     "b" 'mc/edit-beginnings-of-lines ; like 'm', except the can only cursor at beginning
                     "e" 'mc/edit-ends-of-lines       ; like 'm', except the can only cursor at end
                     ;; had region concept
-                    "a" 'mc/mark-all-in-region
+                    "a" 'mc/mark-all-in-region  ;you can also use `C-g` to cancle region, only the curors!!!
                     "n" 'mc/mark-next-like-this ;region select next
                     "p" 'mc/mark-previous-like-this ;resiong select previous
                     "w" 'mc/mark-all-like-this ; mark active region in all in whole buffer, not very accurate
@@ -480,6 +481,13 @@
                     "s" 'mc/sort-regions
                     "r" 'mc/reverse-regions
                     "o" 'mc/mark-pop
+                    ; mark-next-like-this is two phases
+                    ; 1.mark this region, and 2.move to next line
+                    ; we use skip-to-next-lik-this means
+                    ; 1.skip current line,and 2.move to next line
+                    ; Also, you can use C-u <num> to mark-like-this quickly!
+                    "k" 'mc/skip-to-next-like-this
+                    "x" 'mc/skip-to-previous-like-this; not use often
                     )
 
 
