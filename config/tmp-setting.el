@@ -425,7 +425,8 @@
 
 (general-define-key :prefix my-leader3
                     :prefix-command 'File
-                    "f" 'helm-find-files
+                    "f" 'find-file
+                    "h" 'helm-find-files
                     "o" 'find-file-other-window
                     "p" 'helm-projectile ; opened files called buffer
                     "m" 'helm-bookmarks
