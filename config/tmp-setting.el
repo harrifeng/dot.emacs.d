@@ -373,6 +373,26 @@
                     "v"   'split-window-vertical   ;Vertical
                     "y"   'kill-ring-save          ;copY
                     "SPC" 'helm-M-x
+                    ;; More tolerant
+                    "C-."   'open-shell-pwd
+                    "C-1"   'delete-other-windows
+                    "C-2"   'split-window-below
+                    "C-3"   'split-window-right
+                    "C-a"   'helm-projectile-ag ;Ag
+                    "C-d"   'delete-other-windows ;Delete
+                    "C-e"   'toggle-flycheck-error-buffer ;Error
+                    "C-h"   'split-window-horizontal ;Horizontal
+                    "C-i"   'highlight-symbol        ;hIghlithg-symbol
+                    "C-k"   'kill-region             ;Kill(cut)
+                    "C-l"   'hfeng-clear-screen-to-another-buffer ;cLear
+                    "C-n"   'highlight-symbol-next   ;Next      highlight
+                    "C-o"   'other-window
+                    "C-p"   'highlight-symbol-prev   ;Prev      highlight
+                    "C-x"   'helm-all-mark-rings                    ;rings
+                    "C-t"   'bm-toggle                ;bm-Toggle
+                    "C-v"   'split-window-vertical   ;Vertical
+                    "C-y"   'kill-ring-save          ;copY
+                    "C-SPC" 'helm-M-x
                     )
 
 
