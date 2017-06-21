@@ -370,7 +370,7 @@
                     "o"   'delete-other-windows    ;Other
                     "p"   'highlight-symbol-prev   ;Prev      highlight
                     "x"   'helm-all-mark-rings                    ;rings
-                    "t"   'bm-toggle                ;bm-Toggle
+                    ;; "t"   'bm-toggle                ;bm-Toggle
                     "u"   'cua-set-rectangle-mark
                     "v"   'split-window-vertical   ;Vertical
                     "y"   'kill-ring-save          ;copY
@@ -410,7 +410,7 @@
                     "p" 'previous-buffer
                     "r" 'revert-buffer-no-confirm ;Revert
                     "s" 'save-buffer
-                    "w" 'read-only-mode           ; toggle writable state
+                    "w" 'mark-whole-buffer
                     )
 
 (setq my-leader3 "C-SPC f")
@@ -497,12 +497,25 @@
 (general-define-key :prefix my-leader9
                     :prefix-command 'Window
                     "b" 'balance-windows
+                    "d" 'ace-delete-window
                     "s" 'switch-window
                     "h" 'windmove-left
                     "l" 'windmove-right
                     "k" 'windmove-up
                     "j" 'windmove-down
                     )
+
+(setq my-leader10 "C-SPC t")
+
+(general-define-key :prefix my-leader10
+                    :prefix-command 'Text
+                    "i" 'text-scale-increase
+                    "d" 'text-scale-decrease
+                    "b" 'org-edit-special
+                    "e" 'org-edit-src-exit
+                    "w" 'align-whitespace
+                    )
+
 
 
 
