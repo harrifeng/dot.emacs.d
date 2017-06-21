@@ -462,6 +462,25 @@
                     "r" 'replace-string
                     )
 
+(setq my-leader8 "C-SPC m")
+
+(general-define-key :prefix my-leader8
+                    :prefix-command 'MultipleCursors
+                    ;; only edit, no region concept at FIRST, you can use `Mark set` again to select region!!!
+                    "m" 'mc/edit-lines              ; Most useful one, can cursor in the middle of the line
+                    "b" 'mc/edit-beginnings-of-lines ; like 'm', except the can only cursor at beginning
+                    "e" 'mc/edit-ends-of-lines       ; like 'm', except the can only cursor at end
+                    ;; had region concept
+                    "a" 'mc/mark-all-in-region
+                    "n" 'mc/mark-next-like-this ;region select next
+                    "p" 'mc/mark-previous-like-this ;resiong select previous
+                    "w" 'mc/mark-all-like-this ; mark active region in all in whole buffer, not very accurate
+                    "d" 'mc/insert-numbers          ;digits
+                    "l" 'mc/insert-letters
+                    "s" 'mc/sort-regions
+                    "r" 'mc/reverse-regions
+                    )
+
 
 
 ;; Mac iterm set `ctrl-.` to `0x03 0x64`, so the my-leader2 is
