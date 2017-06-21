@@ -518,11 +518,14 @@
 
 (general-define-key :prefix my-leader10
                     :prefix-command 'Text
-                    "i" 'text-scale-increase
+                    "t" 'delete-trailing-whitespace
+                    "a" 'align-whitespace
+                    "b" 'org-edit-special ;begin src
                     "d" 'text-scale-decrease
-                    "b" 'org-edit-special
-                    "e" 'org-edit-src-exit
-                    "w" 'align-whitespace
+                    "e" 'org-edit-src-exit ;end src
+                    "i" 'text-scale-increase
+                    "u" 'untabify
+                    "w" 'whitespace-mode
                     )
 
 
