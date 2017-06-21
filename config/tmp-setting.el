@@ -355,18 +355,19 @@
 
 (general-define-key :prefix my-leader1
                     "."   'open-shell-pwd
+                    "0"   'delete-window
                     "1"   'delete-other-windows
                     "2"   'split-window-below
                     "3"   'split-window-right
                     "a"   'helm-projectile-ag ;Ag
-                    "d"   'delete-other-windows ;Delete
+                    "d"   'delete-window
                     "e"   'toggle-flycheck-error-buffer ;Error
                     "h"   'split-window-horizontal ;Horizontal
                     "i"   'highlight-symbol        ;hIghlithg-symbol
                     "k"   'kill-region             ;Kill(cut)
                     "l"   'hfeng-clear-screen-to-another-buffer ;cLear
                     "n"   'highlight-symbol-next   ;Next      highlight
-                    "o"   'other-window
+                    "o"   'delete-other-windows    ;Other
                     "p"   'highlight-symbol-prev   ;Prev      highlight
                     "x"   'helm-all-mark-rings                    ;rings
                     "t"   'bm-toggle                ;bm-Toggle
@@ -417,6 +418,7 @@
 (general-define-key :prefix my-leader3
                     :prefix-command 'File
                     "f" 'helm-find-files
+                    "o" 'find-file-other-window
                     "p" 'helm-projectile ; opened files called buffer
                     "m" 'helm-bookmarks
                     )
@@ -488,6 +490,18 @@
                     ; Also, you can use C-u <num> to mark-like-this quickly!
                     "k" 'mc/skip-to-next-like-this
                     "x" 'mc/skip-to-previous-like-this; not use often
+                    )
+
+(setq my-leader9 "C-SPC w")
+
+(general-define-key :prefix my-leader9
+                    :prefix-command 'Window
+                    "b" 'balance-windows
+                    "s" 'switch-window
+                    "h" 'windmove-left
+                    "l" 'windmove-right
+                    "k" 'windmove-up
+                    "j" 'windmove-down
                     )
 
 
