@@ -389,7 +389,7 @@
                     "C-n"   'highlight-symbol-next   ;Next      highlight
                     "C-o"   'other-window
                     "C-p"   'highlight-symbol-prev   ;Prev      highlight
-                    "C-x"   'helm-all-mark-rings                    ;rings
+                    "C-x"   'helm-all-mark-rings ;all mark ring
                     "C-t"   'bm-toggle                ;bm-Toggle
                     "C-v"   'split-window-vertical   ;Vertical
                     "C-y"   'kill-ring-save          ;copY
@@ -428,6 +428,7 @@
                     :prefix-command 'Git
                     "g" 'magit-status
                     "a" 'git-add-current-buffer-to-git ;add & stash
+                    "d" 'vc-diff
                     "c" 'with-editor-finish ;commit
                     "r" 'vc-revert
                     "s" 'git-add-current-buffer-to-git ;add & stash
