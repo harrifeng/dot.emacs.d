@@ -267,9 +267,8 @@
    (if mark-active (list (region-beginning) (region-end))
      (list (line-beginning-position)
            (line-beginning-position 2)))))
-
-(defun qiang-copy-line (arg)
-  "Copy lines (as many as prefix argument) in the kill ring"
+(defun hfeng-copy-line (arg)
+  "Ctrl-k Cut to the end of line, this function Copy to the end of line"
   (interactive "p")
   (kill-ring-save (point)
                   (line-end-position))

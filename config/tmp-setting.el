@@ -375,7 +375,7 @@
                     "k"   'kill-region             ;Kill(cut)
                     "l"   'hfeng-clear-screen-to-another-buffer ;cLear
                     "n"   'highlight-symbol-next   ;Next      highlight
-                    "o"   'delete-other-windows    ;Other
+                    "o"   'kill-ring-save          ;Opposite of kill-region
                     "p"   'highlight-symbol-prev   ;Prev      highlight
                     "x"   'helm-all-mark-rings                    ;rings
                     ;; "t"   'bm-toggle                ;bm-Toggle
