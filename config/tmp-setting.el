@@ -505,8 +505,10 @@
 
 (general-define-key :prefix my-leader9
                     :prefix-command 'Window
+                    "w" 'delete-other-windows
                     "b" 'balance-windows
-                    "d" 'ace-delete-window
+                    "d" 'delete-window
+                    "o" 'delete-other-windows
                     "s" 'switch-window
                     "h" 'windmove-left
                     "l" 'windmove-right
@@ -526,6 +528,8 @@
                     "i" 'text-scale-increase
                     "u" 'untabify
                     "w" 'whitespace-mode
+                    "r" 'replace-string
+                    "q" 'query-replace
                     )
 
 

@@ -13,7 +13,7 @@
 (define-key helm-find-files-map (kbd "C-h") nil)
 (global-set-key (kbd "C-h")               'backward-delete-char-untabify)
 
-(define-key yas-minor-mode-map (kbd "C-o") 'hfeng-copy-line)
+(define-key yas-minor-mode-map (kbd "C-o") 'copy-line)
 
 ;; Start Iterm2 Key region----------------------------->
 
