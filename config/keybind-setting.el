@@ -26,13 +26,16 @@
 (global-set-key (kbd "C-c b")             'set-mark-command)
 (global-set-key (kbd "C-,")               'set-mark-command)
 
-(global-set-key (kbd "C-c c")             'set-mark-command)
-(global-set-key (kbd "C-.")               'set-mark-command)
+;; org-mode bind C-, to another use, in such case, we can
+;; use C-' as set-mark-command
+(global-set-key (kbd "C-c e")             'set-mark-command)
+(global-set-key (kbd "C-'")               'set-mark-command)
+
+(global-set-key (kbd "C-c c")             'avy-goto-char)
+(global-set-key (kbd "C-.")               'avy-goto-char)
 
 (global-set-key (kbd "C-c d")             'other-window)
 (global-set-key (kbd "C-;")               'other-window)
 
-(global-set-key (kbd "C-c e")             'mark-whole-buffer)
-(global-set-key (kbd "C-'")               'mark-whole-buffer)
 
 ;; End Iterm2 Key region------------------------------->

@@ -367,16 +367,16 @@
                     "1"   'delete-other-windows
                     "2"   'split-window-below
                     "3"   'split-window-right
-                    "a"   'helm-projectile-ag ;Ag
+                    "/"   'helm-projectile-ag ; Vim use / as search
                     "d"   'delete-window
                     "e"   'toggle-flycheck-error-buffer ;Error
                     "h"   'split-window-horizontal ;Horizontal
                     "i"   'highlight-symbol        ;hIghlithg-symbol
                     "k"   'kill-region             ;Kill(cut)
                     "l"   'hfeng-clear-screen-to-another-buffer ;cLear
-                    "n"   'highlight-symbol-next   ;Next      highlight
+                    ;; "n"   'highlight-symbol-next   ;Next      highlight
                     "o"   'kill-ring-save          ;Opposite of kill-region
-                    "p"   'highlight-symbol-prev   ;Prev      highlight
+                    ;; "p"   'highlight-symbol-prev   ;Prev      highlight
                     "x"   'helm-all-mark-rings                    ;rings
                     ;; "t"   'bm-toggle                ;bm-Toggle
                     "u"   'cua-set-rectangle-mark
@@ -531,7 +531,19 @@
                     "r" 'replace-string
                     "q" 'query-replace
                     )
+(setq my-leader11 "C-SPC p")
 
+(general-define-key :prefix my-leader11
+                    :prefix-command 'Position
+                    ;; go to position
+                    "p" 'avy-goto-char
+                    "l" 'avy-goto-line
+                    "g" 'goto-line
+                    ;; handle copy & paste
+                    "m" 'avy-move-region
+                    "o" 'avy-kill-ring-save-region
+                    "k" 'avy-kill-region
+                    )
 
 
 
