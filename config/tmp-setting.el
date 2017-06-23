@@ -370,16 +370,13 @@
                     "/"   'helm-projectile-ag ; Vim use / as search
                     "d"   'delete-window
                     "e"   'toggle-flycheck-error-buffer ;Error
-                    "h"   'split-window-horizontal ;Horizontal
                     "i"   'highlight-symbol        ;hIghlithg-symbol
                     "k"   'kill-region             ;Kill(cut)
                     "l"   'hfeng-clear-screen-to-another-buffer ;cLear
-                    ;; "n"   'highlight-symbol-next   ;Next      highlight
                     "o"   'kill-ring-save          ;Opposite of kill-region
-                    ;; "p"   'highlight-symbol-prev   ;Prev      highlight
                     "x"   'helm-all-mark-rings                    ;rings
-                    ;; "t"   'bm-toggle                ;bm-Toggle
                     "u"   'cua-set-rectangle-mark
+                    ";"   'split-window-horizontal ;Horizontal
                     "v"   'split-window-vertical   ;Vertical
                     "y"   'kill-ring-save          ;copY
                     "SPC" 'helm-M-x
@@ -465,12 +462,15 @@
                     "r" 'restart-emacs
                     )
 
-(setq my-leader7 "C-SPC r")
+(setq my-leader7 "C-SPC h")
 
 (general-define-key :prefix my-leader7
-                    :prefix-command 'Replace
-                    "q" 'query-replace
-                    "r" 'replace-string
+                    :prefix-command 'Highlight
+                    "h" 'hlt-highlight-symbol
+                    "r" 'hlt-unhighlight-symbol
+                    "l" 'hlt-highlight-lines
+                    "s" 'hlt-highlight-symbol
+                    "u" 'hlt-unhighlight-all-prop
                     )
 
 (setq my-leader8 "C-SPC m")
@@ -506,7 +506,9 @@
 (general-define-key :prefix my-leader9
                     :prefix-command 'Window
                     "w" 'delete-other-windows
-                    "b" 'balance-windows
+                    "a" 'balance-windows
+                    "b" 'split-window-horizontal ;below
+                    "r" 'split-window-vertical   ;right
                     "d" 'delete-window
                     "o" 'delete-other-windows
                     "s" 'switch-window
