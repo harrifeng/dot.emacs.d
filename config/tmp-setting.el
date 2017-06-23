@@ -410,12 +410,13 @@
 (general-define-key :prefix my-leader2
                     :prefix-command 'Buffer
                     "b" 'helm-mini
-                    "i" 'ibuffer
+                    "i" 'indent-whole
                     "k" 'kill-buffer
                     "n" 'next-buffer
                     "p" 'previous-buffer
                     "r" 'revert-buffer-no-confirm ;Revert
                     "s" 'save-buffer
+                    "u" 'ibuffer
                     "w" 'mark-whole-buffer
                     )
 
@@ -557,8 +558,8 @@
 (general-define-key :prefix my-leader12
                     :prefix-command 'VisualBM
                     ;; go to position
-                    "v" 'helm-bm
-                    "t" 'bm-toggle
+                    "v" 'bm-toggle
+                    "l" 'helm-bm
                     "n" 'bm-next
                     "p" 'bm-previous
                     )
