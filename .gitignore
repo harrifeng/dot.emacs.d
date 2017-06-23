@@ -102,3 +102,5 @@ games/
 ido.last
 
 .cache/
+
+.bm-repository

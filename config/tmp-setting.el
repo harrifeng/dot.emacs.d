@@ -173,6 +173,7 @@
 (require 'livedown)
 (require 'redis-cli)
 (require 'visible-mark)
+(require 'highlight)
 (global-visible-mark-mode 1) ;; or add (visible-mark-mode) to specific hooks
 (defface visible-mark-active ;; put this before (require 'visible-mark)
   '((((type tty) (class mono)))
