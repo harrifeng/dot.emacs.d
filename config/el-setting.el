@@ -31,13 +31,15 @@
       helm-echo-input-in-header-line t
       helm-imenu-execute-action-at-once-if-one nil
       helm-ag-insert-at-point 'symbol
-      helm-swoop-split-direction 'split-window-horizontally ;;; default is vertical
-      helm-swoop-pre-input-function (lambda () "")
       helm-org-format-outline-path t)
 
 (require 'helm-projectile)
 (helm-projectile-on)
 
+(require 'helm-swoop)
+(setq helm-swoop-split-direction 'split-window-vertically)
+(setq helm-swoop-split-with-multiple-windows t)
+(setq helm-swoop-move-to-line-cycle t)
 ;; Only works for helm-ag, not for helm-do-ag
 ;;Three setting should all together to config, otherwise it will fail
 (setq helm-ag-base-command "ag --nocolor --nogroup --ignore-case")
