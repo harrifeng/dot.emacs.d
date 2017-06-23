@@ -2,7 +2,37 @@
 ;;; This format is meant to be slightly human-readable;
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
-(("192-168-1-154-test"
+(("saybot92"
+ (filename . "/ssh:saybot@192.168.0.92:/home/saybot/")
+ (front-context-string . ".bash_history\n  ")
+ (rear-context-string . "07 Jun 23 13:59 ")
+ (position . 199))
+("saybot94"
+ (filename . "/ssh:saybot@192.168.0.94:/home/saybot/")
+ (front-context-string . ".bash_history\n  ")
+ (rear-context-string . "85 Jun 23 13:48 ")
+ (position . 199))
+("saybot93"
+ (filename . "/ssh:saybot@192.168.0.93:/home/saybot/")
+ (front-context-string . ".bash_history\n  ")
+ (rear-context-string . "00 Jun 23 14:01 ")
+ (position . 199))
+("saybot91"
+ (filename . "/ssh:saybot@192.168.0.91:/home/saybot/")
+ (front-context-string . ".bash_history\n  ")
+ (rear-context-string . "66 Jun 23 13:59 ")
+ (position . 199))
+("shell-log"
+ (filename . "~/github/shell-log/")
+ (front-context-string . ".git\n  -rw-r--r-")
+ (rear-context-string . "476  6 23 13:52 ")
+ (position . 233))
+("openstack_interface.cfg.prod.example"
+ (filename . "~/github/openstack-ansible/etc/network/interfaces.d/openstack_interface.cfg.prod.example")
+ (front-context-string . "bond0\n\n# OpenSta")
+ (rear-context-string . "vlan-raw-device ")
+ (position . 1457))
+("192-168-1-154-test"
  (filename . "/ssh:test@192.168.1.154:/home/test/")
  (front-context-string . ".bash_history\n  ")
  (rear-context-string . "04 May  8 09:52 ")

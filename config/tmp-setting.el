@@ -530,7 +530,9 @@
                     "d" 'text-scale-decrease
                     "e" 'org-edit-src-exit ;end src
                     "i" 'text-scale-increase
-                    "u" 'untabify
+                    "t" 'untabify
+                    "u" 'upcase-dwim
+                    "l" 'downcase-dwim
                     "w" 'whitespace-mode
                     "r" 'replace-string
                     "q" 'query-replace
