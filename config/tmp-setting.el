@@ -467,10 +467,11 @@
 (general-define-key :prefix my-leader7
                     :prefix-command 'Highlight
                     "h" 'hlt-highlight-symbol
-                    "r" 'hlt-unhighlight-symbol
-                    "l" 'hlt-highlight-lines
-                    "s" 'hlt-highlight-symbol
-                    "u" 'hlt-unhighlight-all-prop
+                    "u" 'hlt-unhighlight-symbol
+                    "n" 'hlt-next-highlight
+                    "p" 'hlt-previous-highlight
+                    "r" 'hlt-unhighlight-region ;region will clear all if no active space is set
+                    "l" 'hfeng-line
                     )
 
 (setq my-leader8 "C-SPC m")

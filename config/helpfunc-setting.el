@@ -1,5 +1,27 @@
 (provide 'helpfunc-setting)
 
+(defun hfeng-line (arg)
+  "Copy lines (as many as prefix argument) in the kill ring.
+      Ease of use features:
+      - Move to start of next line.
+      - Appends the copy on sequential calls.
+      - Use newline as last char even on the last line of the buffer.
+      - If region is active, copy its lines."
+  (interactive "p")
+
+  (let ((beg (line-beginning-position))
+        (end (line-end-position arg)))
+    (when mark-active
+      (if (> (point) (mark))
+          (setq beg (save-excursion (goto-char (mark)) (line-beginning-position)))
+        (setq end (save-excursion (goto-char (mark)) (line-end-position)))))
+    (setq face
+          `((background-color . ,"yellow") (foreground-color . ,hlt-auto-face-foreground)))
+     (hlt-highlight-lines beg end face "Haha"))
+    (if (and arg (not (= 1 arg))) (message "%d lines copied" arg)))
+
+
+
 (defun split-window-vertical ()
   "Open a windows vertically"
   (interactive)
