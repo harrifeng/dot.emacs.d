@@ -371,11 +371,11 @@
                     "/"   'helm-projectile-ag ; Vim use / as search
                     "d"   'delete-window
                     "e"   'toggle-flycheck-error-buffer ;Error
-                    "i"   'highlight-symbol        ;hIghlithg-symbol
+                    ;; "i"   'highlight-symbol        ;hIghlithg-symbol
                     "k"   'kill-region             ;Kill(cut)
                     "l"   'hfeng-clear-screen-to-another-buffer ;cLear
                     "o"   'kill-ring-save          ;Opposite of kill-region
-                    "x"   'helm-all-mark-rings                    ;rings
+                    ;; "x"   'helm-all-mark-rings                    ;rings
                     "u"   'cua-set-rectangle-mark
                     ";"   'split-window-horizontal ;Horizontal
                     ","   'split-window-vertical   ;Vertical
@@ -556,6 +556,17 @@
 (setq my-leader12 "C-SPC v")
 
 (general-define-key :prefix my-leader12
+                    :prefix-command 'VisualBM
+                    ;; go to position
+                    "v" 'bm-toggle
+                    "l" 'helm-bm
+                    "n" 'bm-next
+                    "p" 'bm-previous
+                    )
+
+(setq my-leader13 "C-SPC r")
+
+(general-define-key :prefix my-leader13
                     :prefix-command 'VisualBM
                     ;; go to position
                     "v" 'bm-toggle
