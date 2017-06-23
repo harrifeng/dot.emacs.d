@@ -21,9 +21,7 @@
 (global-git-gutter-mode +1)
 
 ;; [H]elm-alike-plugins--------------------------------------------------->>
-(require 'helm)
-(require 'helm-projectile)
-(helm-projectile-on)
+(require 'helm-config)
 
 (setq helm-prevent-escaping-from-minibuffer t
       helm-bookmark-show-location t
@@ -32,21 +30,13 @@
       helm-always-two-windows t
       helm-echo-input-in-header-line t
       helm-imenu-execute-action-at-once-if-one nil
+      helm-ag-insert-at-point 'symbol
+      helm-swoop-split-direction 'split-window-horizontally ;;; default is vertical
+      helm-swoop-pre-input-function (lambda () "")
       helm-org-format-outline-path t)
 
-(setq helm-ag-insert-at-point 'symbol)
-
-(global-set-key (kbd "C-c b")        'helm-ag-buffers)
-(global-set-key (kbd "C-c u")        'helm-projectile-ag)
-(global-set-key (kbd "C-c C-u")      'helm-projectile-ag)
-(global-set-key (kbd "C-c C-s")      'helm-swoop)
-
-;; default is vertical
-;; (setq helm-swoop-split-direction 'split-window-horizontally)
-
-;; disable pre-input
-(setq helm-swoop-pre-input-function
-      (lambda () ""))
+(require 'helm-projectile)
+(helm-projectile-on)
 
 ;; Only works for helm-ag, not for helm-do-ag
 ;;Three setting should all together to config, otherwise it will fail
