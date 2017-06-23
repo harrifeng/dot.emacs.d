@@ -97,6 +97,7 @@
      haml-mode
      helm
      helm-ag
+     helm-bm
      helm-swoop
      helm-projectile
      highlight-indentation

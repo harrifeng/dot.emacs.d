@@ -377,7 +377,7 @@
                     "x"   'helm-all-mark-rings                    ;rings
                     "u"   'cua-set-rectangle-mark
                     ";"   'split-window-horizontal ;Horizontal
-                    "v"   'split-window-vertical   ;Vertical
+                    ","   'split-window-vertical   ;Vertical
                     "y"   'kill-ring-save          ;copY
                     "SPC" 'helm-M-x
                     ;; More tolerant
@@ -550,6 +550,18 @@
                     "o" 'avy-kill-ring-save-region
                     "k" 'avy-kill-region
                     )
+
+(setq my-leader12 "C-SPC v")
+
+(general-define-key :prefix my-leader12
+                    :prefix-command 'VisualBM
+                    ;; go to position
+                    "v" 'helm-bm
+                    "t" 'bm-toggle
+                    "n" 'bm-next
+                    "p" 'bm-previous
+                    )
+
 
 
 
