@@ -519,9 +519,9 @@
                     "d" 'text-scale-decrease
                     "e" 'org-edit-src-exit ;end src
                     "i" 'text-scale-increase
-                    "t" 'untabify
-                    "u" 'upcase-dwim
-                    "l" 'downcase-dwim
+                    "x" 'untabify
+                    "u" 'upcase-region
+                    "l" 'downcase-region
                     "w" 'whitespace-mode
                     "r" 'replace-string
                     "q" 'query-replace
