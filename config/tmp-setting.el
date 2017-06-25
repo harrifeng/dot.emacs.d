@@ -554,12 +554,14 @@
 (setq my-leader13 "C-SPC r")
 
 (general-define-key :prefix my-leader13
-                    :prefix-command 'VisualBM
-                    ;; go to position
-                    "v" 'bm-toggle
-                    "l" 'helm-bm
-                    "n" 'bm-next
-                    "p" 'bm-previous
+                    :prefix-command 'Register
+                    "r" 'append-to-register
+                    "l" 'helm-register  ;list register
+                    "n" 'copy-to-register ;new register content
+                    "a" 'append-to-register
+                    "p" 'prepend-to-register
+                    "i" 'insert-register
+                    "k" 'helm-show-kill-ring ;kill ring is a special register
                     )
 
 
@@ -573,3 +575,7 @@
 ;;
 ;; (general-define-key :prefix my-leader11
 ;;                     )
+
+
+(setq register-separator ?+)
+(set-register register-separator "\n\n")
