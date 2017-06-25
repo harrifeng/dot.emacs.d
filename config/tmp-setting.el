@@ -363,22 +363,24 @@
 (setq my-leader1 "C-SPC")
 
 (general-define-key :prefix my-leader1
+                    ","   'open-eshell-pwd
                     "."   'open-shell-pwd
+                    "<return>" 'open-shell-pwd
+                    ";"   'split-window-horizontal ;Horizontal
+                    "'"   'split-window-vertical   ;Vertical
                     "0"   'delete-window
+                    "-"   'delete-window
+                    "="   'delete-window
                     "1"   'delete-other-windows
                     "2"   'split-window-below
                     "3"   'split-window-right
                     "/"   'helm-projectile-ag ; Vim use / as search
                     "d"   'delete-window
                     "e"   'toggle-flycheck-error-buffer ;Error
-                    ;; "i"   'highlight-symbol        ;hIghlithg-symbol
                     "k"   'kill-region             ;Kill(cut)
                     "l"   'hfeng-clear-screen-to-another-buffer ;cLear
                     "o"   'kill-ring-save          ;Opposite of kill-region
-                    ;; "x"   'helm-all-mark-rings                    ;rings
                     "u"   'cua-set-rectangle-mark
-                    ";"   'split-window-horizontal ;Horizontal
-                    ","   'split-window-vertical   ;Vertical
                     "y"   'kill-ring-save          ;copY
                     "SPC" 'helm-M-x
                     ;; More tolerant
