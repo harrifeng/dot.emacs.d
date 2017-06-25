@@ -1,0 +1,4 @@
+# contributor: Harri Feng <harrifeng@gmail.com>
+# name: cnpm install
+# --
+npm install -g cnpm --registry=https://registry.npm.taobao.org
