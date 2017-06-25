@@ -77,6 +77,14 @@
  ;; Windows NT System specific test on Windows 7 ;;
  ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
  ((eq system-type 'windows-nt)
+
+
+  ;; win 10 GC
+  (setq gc-cons-threshold (* 512 1024 1024))
+  (setq gc-cons-percentage 0.5)
+  (run-with-idle-timer 5 t #'garbage-collect)
+  ;; (setq garbage-collection-messages t)
+
   ;; nt-like path setting------------------------------------>>
   (require 'sub-nt-path)
   (require 'sub-nt-mode)
