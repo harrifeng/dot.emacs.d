@@ -439,6 +439,7 @@
                     :prefix-command 'Git
                     "g" 'magit-status
                     "a" 'git-add-current-buffer-to-git ;add & stash
+                    "b" 'vc-annotate                   ;blame
                     "d" 'vc-diff
                     "c" 'with-editor-finish ;commit
                     "r" 'vc-revert
