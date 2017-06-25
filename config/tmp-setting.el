@@ -394,6 +394,8 @@
 (general-define-key :prefix my-leader2
                     :prefix-command 'Buffer
                     "b" 'helm-mini
+                    "a" 'beginning-of-buffer
+                    "e" 'end-of-buffer
                     "i" 'indent-whole
                     "k" 'kill-buffer
                     "n" 'next-buffer
