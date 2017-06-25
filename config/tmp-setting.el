@@ -363,11 +363,11 @@
 (setq my-leader1 "C-SPC")
 
 (general-define-key :prefix my-leader1
-                    ","   'open-eshell-pwd
-                    "."   'open-shell-pwd
+                    ";"   'open-shell-pwd ;Most frequently used
+                    "'"   'open-eshell-pwd ;mainly used in windows
                     "<return>" 'open-shell-pwd
-                    ";"   'split-window-horizontal ;Horizontal
-                    "'"   'split-window-vertical   ;Vertical
+                    ","   'split-window-and-cursor-below
+                    "."   'split-window-and-cursor-right ; `.` is right of `,`
                     "0"   'delete-window
                     "-"   'delete-window
                     "="   'delete-window
@@ -384,24 +384,6 @@
                     "y"   'kill-ring-save          ;copY
                     "SPC" 'helm-M-x
                     ;; More tolerant
-                    "C-."   'open-shell-pwd
-                    "C-1"   'delete-other-windows
-                    "C-2"   'split-window-below
-                    "C-3"   'split-window-right
-                    "C-a"   'helm-projectile-ag ;Ag
-                    "C-d"   'delete-other-windows ;Delete
-                    "C-e"   'toggle-flycheck-error-buffer ;Error
-                    "C-h"   'split-window-horizontal ;Horizontal
-                    "C-i"   'highlight-symbol        ;hIghlithg-symbol
-                    "C-k"   'kill-region             ;Kill(cut)
-                    "C-l"   'hfeng-clear-screen-to-another-buffer ;cLear
-                    "C-n"   'highlight-symbol-next   ;Next      highlight
-                    "C-o"   'other-window
-                    "C-p"   'highlight-symbol-prev   ;Prev      highlight
-                    "C-x"   'helm-all-mark-rings ;all mark ring
-                    "C-t"   'bm-toggle                ;bm-Toggle
-                    "C-v"   'split-window-vertical   ;Vertical
-                    "C-y"   'kill-ring-save          ;copY
                     "C-SPC" 'helm-M-x
                     )
 
@@ -514,8 +496,8 @@
                     :prefix-command 'Window
                     "w" 'delete-other-windows
                     "a" 'balance-windows
-                    "b" 'split-window-horizontal ;below
-                    "r" 'split-window-vertical   ;right
+                    "b" 'split-window-and-cursor-below
+                    "r" 'split-window-and-cursor-right
                     "d" 'delete-window
                     "o" 'delete-other-windows
                     "s" 'switch-window

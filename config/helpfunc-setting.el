@@ -22,15 +22,15 @@
 
 
 
-(defun split-window-vertical ()
-  "Open a windows vertically"
+(defun split-window-and-cursor-right ()
+  "Open a windows and cursor on the right"
   (interactive)
   (split-window-right)
   (other-window 1)
   )
 
-(defun split-window-horizontal ()
-  "Open a windows horizontal"
+(defun split-window-and-cursor-below ()
+  "Open a windows and cursor on the below"
   (interactive)
   (split-window-below)
   (other-window 1)
