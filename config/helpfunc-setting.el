@@ -101,13 +101,11 @@
    '(
      ag
      avy
-     back-button
      bm
      company
      company-go
      company-tern
      column-marker
-     cyberpunk-theme
      darcula-theme
      dockerfile-mode
      docker-tramp
@@ -142,18 +140,13 @@
      nodejs-repl
      projectile
      restclient
-     racer
      restart-emacs
      rainbow-delimiters
      rjsx-mode
      rubocop
-     rust-mode
      scss-mode
      simple-httpd
      smart-mode-line
-     solarized-theme
-     spacemacs-theme
-     sublime-themes
      switch-window
      tern
      toml-mode
@@ -163,7 +156,7 @@
      web-mode
      which-key
      yaml-mode
-     yasnippet dropdown-list
+     yasnippet
      )))
 
 (defun sap-proxy()

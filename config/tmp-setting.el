@@ -186,7 +186,7 @@
 (let* ((dot-theme-file (concat my-emacs-path ".theme"))
        (files '(
                 darcula
-                ;; material
+                material
                 ;; spacemacs-dark
                 ))
        (tmp (string-to-number (get-string-from-file dot-theme-file)))
