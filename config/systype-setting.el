@@ -21,17 +21,6 @@
   ;;   mac-command-modifier 'meta
   ;;   mac-option-modifier 'none)
 
-  ;; el-get setting-------------------------------------------->>
-  ;; (add-to-list 'load-path (concat my-emacs-path "el-get/el-get"))
-  ;; (unless (require 'el-get nil 'noerror)
-  ;;   (with-current-buffer
-  ;;   (url-retrieve-synchronously
-  ;;    "https://raw.github.com/dimitri/el-get/master/el-get-install.el")
-  ;;     (let (el-get-master-branch)
-  ;;   (goto-char (point-max))
-  ;;   (eval-print-last-sexp))))
-  ;; (el-get 'sync)
-
   ;; full screen setting--------------------------------------->>
   (setq ns-use-native-fullscreen nil)
   (defun toggle-fullscreen ()

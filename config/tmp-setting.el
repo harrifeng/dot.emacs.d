@@ -304,3 +304,6 @@
 
 (add-hook 'yaml-mode-hook 'flymake-yaml-load)
 (add-to-list 'default-frame-alist '(fullscreen . maximized))
+
+(desktop-save-mode 1)
+(setq desktop-restore-eager 5)
