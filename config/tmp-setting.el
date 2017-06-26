@@ -239,41 +239,6 @@
 (add-hook 'comint-output-filter-functions
           'filter-non-sgr-control-sequences-in-output)
 
-
-(defun open-shell-pwd ()
-  "Open a shell on pwd"
-  (interactive)
-  (setq shell-pwd-name  (format "SHELL-%s" (current-buffer)))
-  (if (not (get-buffer shell-pwd-name))
-      (progn
-        (split-window-below)
-        (shell shell-pwd-name)
-        )
-    (switch-to-buffer-other-window shell-pwd-name)))
-
-(defun open-eshell-pwd ()
-  "Open a eshell on pwd"
-  (interactive)
-  (setq eshell-pwd-name  (format "ESHELL-%s" (current-buffer)))
-  (if (not (get-buffer eshell-pwd-name))
-      (progn
-        (split-window-below)
-        (eshell "new")
-        (rename-buffer eshell-pwd-name)
-        )
-    (switch-to-buffer-other-window eshell-pwd-name)))
-
-
-(if (eq system-type 'windows-nt)
-    (progn
-      (global-set-key (kbd "C-c v")   'open-eshell-pwd)
-      (global-set-key (kbd "C-c C-v") 'open-eshell-pwd)
-      )
-  (progn
-    (global-set-key (kbd "C-c v")   'open-shell-pwd)
-    (global-set-key (kbd "C-c C-v") 'open-shell-pwd)
-    ))
-
 (defun lunaryorn-use-js-executables-from-node-modules ()
   "Set executables of JS checkers from local node modules."
   (-when-let* ((file-name (buffer-file-name))

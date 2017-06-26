@@ -1,5 +1,28 @@
 (provide 'helpfunc-setting)
 
+(defun open-shell-pwd ()
+  "Open a shell on pwd"
+  (interactive)
+  (setq shell-pwd-name  (format "SHELL-%s" (current-buffer)))
+  (if (not (get-buffer shell-pwd-name))
+      (progn
+        (split-window-below)
+        (shell shell-pwd-name)
+        )
+    (switch-to-buffer-other-window shell-pwd-name)))
+
+(defun open-eshell-pwd ()
+  "Open a eshell on pwd"
+  (interactive)
+  (setq eshell-pwd-name  (format "ESHELL-%s" (current-buffer)))
+  (if (not (get-buffer eshell-pwd-name))
+      (progn
+        (split-window-below)
+        (eshell "new")
+        (rename-buffer eshell-pwd-name)
+        )
+    (switch-to-buffer-other-window eshell-pwd-name)))
+
 (defun hfeng-line (arg)
   "Copy lines (as many as prefix argument) in the kill ring.
       Ease of use features:
