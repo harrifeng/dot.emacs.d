@@ -225,7 +225,89 @@
                                  package-directory)))))))
 
 (add-hook 'flycheck-mode-hook 'lunaryorn-use-js-executables-from-node-modules)
-(global-flycheck-mode)
+
+;;========================================
+(global-flycheck-mode 1)
+
+;; (setq flycheck-completion-system nil)
+;; (setq flycheck-error-list-minimum-level nil)
+;;
+;; ;; Disable JSHint
+;; (setq-default flycheck-disabled-checkers
+;;               (append flycheck-disabled-checkers
+;;                       '(javascript-jshint)))
+;;
+;; ;; Disable JSCS
+;; (setq-default flycheck-disabled-checkers
+;;               (append flycheck-disabled-checkers
+;;                       '(javascript-jscs)))
+;;
+;; (flycheck-add-mode 'javascript-eslint 'js2-mode)
+;;
+;; (flycheck-add-mode 'json-jsonlint 'json-mode)
+;;
+;; (flycheck-add-mode 'css-csslint 'css-web-mode)
+;;
+;; (flycheck-add-mode 'python-pylint `python-mode)
+;;
+;; ;; Disable json-jsonlist for JSON files
+;; (setq-default flycheck-disabled-checkers
+;;               (append flycheck-disabled-checkers
+;;                       '(json-jsonlist)))
+;;
+;; ;; Disable evil mode in the error list
+;; (add-to-list 'evil-emacs-state-modes 'flycheck-error-list-mode)
+
+;; (setq flycheck-check-syntax-automatically '(save mode-enabled))
+;; (setq flycheck-checker-error-threshold nil)
+(setq flycheck-checkers
+      '(
+        coffee
+        coffee-coffeelint
+        css-csslint
+        emacs-lisp
+        emacs-lisp-checkdoc
+        haml
+        handlebars
+        html-tidy
+        javascript-jshint
+        javascript-eslint
+        javascript-gjslint
+        javascript-jscs
+        javascript-standard
+        json-jsonlint
+        less
+        processing
+        r-lintr
+        rpm-rpmlint
+        ruby-rubocop
+        ruby-rubylint
+        ruby
+        ruby-jruby
+        sass
+        scss-lint
+        scss
+        sh-bash
+        sh-posix-dash
+        sh-posix-bash
+        sh-zsh
+        sh-shellcheck
+        slim
+        sql-sqlint
+        xml-xmlstarlet
+        xml-xmllint
+        yaml-jsyaml
+        yaml-ruby
+        ))
+
+;; (setq flycheck-completion-system 'ido)
+;; (setq flycheck-display-errors-delay 0.2)
+;; (setq flycheck-eslintrc "/Users/sk034327/Repos/eslint.d/eslintConfig.json")
+;; (setq flycheck-highlighting-mode 'symbols)
+;; (setq flycheck-idle-change-delay 1)
+;; (setq flycheck-indication-mode 'right-fringe)
+
+;;========================================
 
 (setq flycheck-highlighting-mode nil)
 (setq flycheck-indication-mode nil)

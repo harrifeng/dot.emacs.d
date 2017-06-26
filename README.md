@@ -51,7 +51,7 @@ sql-setting.el is need if you use sql very often, one example el file looks like
 
 ## nodejs install
 
-    $ npm install -g js-beautify webpack tern livedown
+    $ npm install -g js-beautify webpack tern livedown yaml-jsyaml
 
 ## python install
 
