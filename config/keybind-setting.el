@@ -91,6 +91,7 @@
                     "s" 'save-buffer
                     "u" 'ibuffer
                     "w" 'mark-whole-buffer
+                    "t" 'load-theme-buffer-local
                     )
 
 (setq my-leader3 "C-SPC f")
