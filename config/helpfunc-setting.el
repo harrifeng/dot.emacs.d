@@ -278,16 +278,17 @@
                  (list (line-beginning-position)
                        (line-beginning-position 2)))))
 
-;; For Ctrl + x, Ctrl + u
-(defadvice kill-line (before check-position activate)
-  (if (member major-mode
-              '(emacs-lisp-mode scheme-mode lisp-mode
-                                c-mode c++-mode objc-mode js-mode
-                                latex-mode plain-tex-mode))
-      (if (and (eolp) (not (bolp)))
-          (progn (forward-char 1)
-                 (just-one-space 0)
-                 (backward-char 1)))))
+;; (defadvice kill-line (before check-position activate)
+;;   (if (member major-mode
+;;               '(emacs-lisp-mode scheme-mode lisp-mode
+;;                                 c-mode c++-mode objc-mode js-mode
+;;                                 latex-mode plain-tex-mode))
+;;       (if (and (eolp) (not (bolp)))
+;;           (progn (forward-char 1)
+;;                  (just-one-space 0)
+;;                  (backward-char 1)))))
+
+;; kill to the begin of the line
 (defun backward-kill-line (arg)
   (interactive "p") (kill-line 0) )
 

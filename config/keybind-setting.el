@@ -63,12 +63,11 @@
                     "3"   'split-window-right
                     "/"   'helm-projectile-ag ; Vim use / as search
                     "d"   'delete-window
-                    "e"   'toggle-flycheck-error-buffer ;Error
                     "k"   'kill-region             ;Kill(cut)
                     "l"   'hfeng-clear-screen-to-another-buffer ;cLear
                     "o"   'kill-ring-save          ;Opposite of kill-region
                     "u"   'cua-set-rectangle-mark
-                    "y"   'kill-ring-save          ;copY
+                    "y"   'helm-show-kill-ring ;detailed paste
                     "SPC" 'helm-M-x
                     ;; More tolerant
                     "C-SPC" 'helm-M-x
@@ -83,6 +82,7 @@
                     "b" 'helm-mini
                     "a" 'beginning-of-buffer
                     "e" 'end-of-buffer
+                    "g" 'goto-line
                     "i" 'indent-whole
                     "k" 'kill-buffer
                     "n" 'next-buffer
@@ -202,26 +202,17 @@
 (general-define-key :prefix my-leader10
                     :prefix-command 'Text
                     "t" 'delete-trailing-whitespace
-                    "a" 'align-whitespace
-                    "b" 'org-edit-special ;begin src
                     "d" 'text-scale-decrease
-                    "e" 'org-edit-src-exit ;end src
                     "i" 'text-scale-increase
                     "x" 'untabify
-                    "u" 'upcase-region
-                    "l" 'downcase-region
-                    "w" 'whack-whitespace
-                    "r" 'replace-string
-                    "q" 'query-replace
                     )
-(setq my-leader11 "C-SPC p")
+(setq my-leader11 "C-SPC a")
 
 (general-define-key :prefix my-leader11
-                    :prefix-command 'Position
+                    :prefix-command 'Avy
                     ;; go to position
-                    "p" 'avy-goto-char
+                    "a" 'avy-goto-char
                     "l" 'avy-goto-line
-                    "g" 'goto-line
                     ;; handle copy & paste
                     "m" 'avy-move-region
                     "o" 'avy-kill-ring-save-region
@@ -251,6 +242,31 @@
                     "i" 'insert-register
                     "k" 'helm-show-kill-ring ;kill ring is a special register
                     )
+
+(setq my-leader14 "C-SPC e")
+
+(general-define-key :prefix my-leader14
+                    :prefix-command 'Edit
+                    "a" 'align-whitespace
+                    "b" 'backward-kill-line
+                    "u" 'upcase-region
+                    "d" 'downcase-region
+                    "w" 'whack-whitespace
+                    "r" 'replace-string
+                    "q" 'query-replace
+                    )
+
+
+(setq my-leader15 "C-SPC j")
+
+(general-define-key :prefix my-leader15
+                    :prefix-command 'Jump
+                    "b" 'org-edit-special ;begin src
+                    "e" 'org-edit-src-exit ;end src
+                    )
+
+
+
 
 
 
