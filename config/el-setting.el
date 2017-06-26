@@ -295,7 +295,6 @@
   )
 
 ;; [M]agit---------------------------------------------------------------->>
-(global-set-key (kbd "C-x m")        'magit-status)
 (cond ((file-readable-p "/usr/local/git/bin/git")
        (setq magit-git-executable "/usr/local/git/bin/git"))
       ((file-readable-p "/usr/local/bin/git")
@@ -305,16 +304,15 @@
       (t (setq magit-git-executable "git")))
 
 ;; [M]utiple-cursors------------------------------------------------------>>
-(global-set-key (kbd "C-c C-a")        'mc/mark-all-like-this)
 
 ;; [P]rojectile----------------------------------------------------------->>
 (projectile-global-mode)
 
 ;; to enable caching unconditionally
-;; (setq projectile-enable-caching t)
+(setq projectile-enable-caching t)
 
 ;; To disable remote file exists cache that use this snippet of code:
-;; (setq projectile-file-exists-remote-cache-expire nil)
+(setq projectile-file-exists-remote-cache-expire nil)
 
 ;; [R]ainbow-delimiters--------------------------------------------------->>
 (add-hook 'prog-mode-hook #'rainbow-delimiters-mode)

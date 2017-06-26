@@ -92,21 +92,6 @@
             (define-key sh-mode-map (kbd "<f9>") 'sh-hfeng-run)
             ))
 
-
-;; Different theme
-(defun random-color-theme () (interactive)
-       (let ((chosen-theme
-              (nth
-               (random
-                (length (mapcar 'symbol-name (custom-available-themes))))
-               (custom-available-themes))))
-         (message "Theme: %s" chosen-theme)
-         (load-theme chosen-theme t nil)))
-
-(defun show-me-the-colors ()  (interactive) (loop do (random-color-theme) (sit-for 3)))
-(setq color-theme-is-cumulative 'false)
-
-
 (defun objc-save-compile-and-run ()
   (interactive)
   (save-buffer)
@@ -183,20 +168,6 @@
     (format "%s" 0)
     ))
 
-(let* ((dot-theme-file (concat my-emacs-path ".theme"))
-       (files '(
-                darcula
-                material
-                ))
-       (tmp (string-to-number (get-string-from-file dot-theme-file)))
-       (idx (% (abs tmp) (length files )))
-       (selected-filename (nth idx files))
-       )
-  (load-theme selected-filename t)
-  (with-temp-file dot-theme-file
-    (insert (format "%s" (+ tmp 1)))
-    )
-  )
 
 (defun regexp-alternatives (regexps)
   "Return the alternation of a list of regexps."
