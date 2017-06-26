@@ -7,6 +7,9 @@
 (setq user-mail-address "harrifeng@gmail.com")
 (setq user-full-name    "harrifeng")
 
+(setq register-separator ?+)
+(set-register register-separator "\n\n")
+
 (setq kill-ring-max 200)
 
 (setq-default tab-width 4)

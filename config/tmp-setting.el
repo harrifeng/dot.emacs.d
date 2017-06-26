@@ -18,21 +18,6 @@
 (add-hook 'eshell-output-filter-functions 'my-eshell-nuke-ansi-escapes t)
 (add-hook 'shell-output-filter-functions 'my-eshell-nuke-ansi-escapes t)
 
-;; (add-hook 'shell-mode-hook 'ansi-color-for-comint-mode-on)
-;; (add-to-list 'comint-output-filter-functions 'ansi-color-process-output)
-(mapc
- (lambda (package)
-   (or (package-installed-p package)
-       (package-install package)))
- '(
-   multi-term
-   helm-mt
-   ))
-
-(require 'multi-term)
-(setq multi-term-program "/bin/bash")
-;; Use Emacs terminfo, not system terminfo
-(setq system-uses-terminfo nil)
 
 (defun java-save-compile-and-run()
   (interactive)
@@ -575,7 +560,3 @@
 ;;
 ;; (general-define-key :prefix my-leader11
 ;;                     )
-
-
-(setq register-separator ?+)
-(set-register register-separator "\n\n")
