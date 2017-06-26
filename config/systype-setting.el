@@ -41,10 +41,6 @@
      nil 'fullscreen
      (when (not (frame-parameter nil 'fullscreen)) 'fullboth)))
 
-  ;; Mac Emacs start with fix height and width----------------->>
-  (add-to-list 'default-frame-alist '(height . 35))
-  (add-to-list 'default-frame-alist '(width . 100))
-
   ;; menu-bar-mode is useful in mac---------------------------->>
   (menu-bar-mode t))
 
