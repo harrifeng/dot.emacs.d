@@ -159,28 +159,14 @@
      yasnippet
      )))
 
-(defun sap-proxy()
-  (interactive)
-  (setq url-proxy-services '(("http" . "proxy.sin.sap.corp:8080")
-                             ("https" . "proxy.sin.sap.corp:8080")))
-  )
-
 (defun local-proxy()
   (interactive)
   (setq url-proxy-services '(("http" . "127.0.0.1:8123")))
   )
-
-;; vagrant
-(defun vg-proxy()
-  (interactive)
-  (setq url-proxy-services '(("http" . "10.0.2.2:8123")))
-  )
-
 (defun no-proxy()
   (interactive)
   (setq url-proxy-services nil)
   )
-
 
 (defun whack-whitespace (arg)
   "Delete all white space from point to the next word.  With prefix ARG

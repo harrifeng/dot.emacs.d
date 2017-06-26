@@ -209,7 +209,7 @@
                     "x" 'untabify
                     "u" 'upcase-region
                     "l" 'downcase-region
-                    "w" 'whitespace-mode
+                    "w" 'whack-whitespace
                     "r" 'replace-string
                     "q" 'query-replace
                     )
