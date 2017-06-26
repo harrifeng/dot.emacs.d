@@ -521,6 +521,3 @@ minibuffer"
       (switch-to-buffer-other-window "*eshell*"))
     )
   )
-(if (eq system-type 'windows-nt)
-    (global-set-key (kbd "C-v") 'toggle-eshell-buffer)
-  (global-set-key (kbd "C-v") 'toggle-shell-buffer))
