@@ -272,7 +272,7 @@
 
 
 ;; [M]aterial theme------------------------------------------------------->>
-(load-theme 'material t)
+(load-theme 'monokai t)
 
 ;; [P]rojectile----------------------------------------------------------->>
 (projectile-global-mode)

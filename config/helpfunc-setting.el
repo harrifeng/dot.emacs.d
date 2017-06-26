@@ -133,6 +133,7 @@
      js2-mode
      load-theme-buffer-local
      magit
+     monokai-theme
      markdown-mode
      wgrep-ag
      material-theme

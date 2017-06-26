@@ -28,11 +28,11 @@
 
 ;; org-mode bind C-, to another use, in such case, we can
 ;; use C-' as set-mark-command
-(global-set-key (kbd "C-c e")             'set-mark-command)
-(global-set-key (kbd "C-'")               'set-mark-command)
+(global-set-key (kbd "C-c c")             'set-mark-command)
+(global-set-key (kbd "C-.")               'set-mark-command)
 
-(global-set-key (kbd "C-c c")             'avy-goto-char)
-(global-set-key (kbd "C-.")               'avy-goto-char)
+(global-set-key (kbd "C-c e")             'avy-goto-char)
+(global-set-key (kbd "C-'")               'avy-goto-char)
 
 (global-set-key (kbd "C-c d")             'other-window)
 (global-set-key (kbd "C-;")               'other-window)

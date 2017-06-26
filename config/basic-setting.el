@@ -137,3 +137,7 @@
 (setq auto-save-default nil)
 ;; Enable copy and pasting from clipboard
 (setq x-select-enable-clipboard t)
+
+;; conf-mode is built-in mode for configurationo file, add one by one
+(add-to-list 'auto-mode-alist '("Dockerfile" . conf-mode))
+(add-to-list 'auto-mode-alist '("\\..*ignore" . conf-mode))
