@@ -256,43 +256,41 @@
 (global-set-key [(shift f3)] 'highlight-symbol-prev)
 (global-set-key [(meta f3)] 'highlight-symbol-query-replace)
 
-;; [I]nf-ruby------------------------------------------------------------->>
-
 ;; [J]s2-mode------------------------------------------------------------->>
 ;; (autoload 'js2-mode "js2-mode" nil t)
 (add-to-list 'auto-mode-alist '("\\.js$" . rjsx-mode))
 (setq js-indent-level 2)
 
 ;; [L]oad-theme-buffer-local---------------------------------------------->>
-(defun ltheme-solarized-light()
-  (interactive)
-  (save-buffer)
-  (load-theme-buffer-local 'solarized-light (current-buffer))
-  )
-
-(defun ltheme-hickey()
-  (interactive)
-  (save-buffer)
-  (load-theme-buffer-local 'hickey (current-buffer))
-  )
-
-(defun ltheme-wheatgrass()
-  (interactive)
-  (save-buffer)
-  (load-theme-buffer-local 'wheatgrass (current-buffer))
-  )
-
-(defun ltheme-cyberpunk()
-  (interactive)
-  (save-buffer)
-  (load-theme-buffer-local 'cyberpunk (current-buffer))
-  )
-
-(defun ltheme-zen-and-art()
-  (interactive)
-  (save-buffer)
-  (load-theme-buffer-local 'zen-and-art (current-buffer))
-  )
+;; (defun ltheme-solarized-light()
+;;   (interactive)
+;;   (save-buffer)
+;;   (load-theme-buffer-local 'solarized-light (current-buffer))
+;;   )
+;;
+;; (defun ltheme-hickey()
+;;   (interactive)
+;;   (save-buffer)
+;;   (load-theme-buffer-local 'hickey (current-buffer))
+;;   )
+;;
+;; (defun ltheme-wheatgrass()
+;;   (interactive)
+;;   (save-buffer)
+;;   (load-theme-buffer-local 'wheatgrass (current-buffer))
+;;   )
+;;
+;; (defun ltheme-cyberpunk()
+;;   (interactive)
+;;   (save-buffer)
+;;   (load-theme-buffer-local 'cyberpunk (current-buffer))
+;;   )
+;;
+;; (defun ltheme-zen-and-art()
+;;   (interactive)
+;;   (save-buffer)
+;;   (load-theme-buffer-local 'zen-and-art (current-buffer))
+;;   )
 
 ;; [M]agit---------------------------------------------------------------->>
 (cond ((file-readable-p "/usr/local/git/bin/git")
@@ -303,7 +301,9 @@
        (setq magit-git-executable "/usr/bin/git"))
       (t (setq magit-git-executable "git")))
 
-;; [M]utiple-cursors------------------------------------------------------>>
+
+;; [M]aterial theme------------------------------------------------------->>
+(load-theme 'material t)
 
 ;; [P]rojectile----------------------------------------------------------->>
 (projectile-global-mode)
@@ -377,7 +377,6 @@
             (define-key rust-mode-map (kbd "C-m") 'rust-save-compile-and-run)
             (define-key rust-mode-map (kbd "TAB") #'company-indent-or-complete-common)
             ))
-;; [S]hell-pop-el--------------------------------------------------------->>
 
 ;; [S]mart-mode-line------------------------------------------------------>>
 (setq sml/no-confirm-load-theme t)
