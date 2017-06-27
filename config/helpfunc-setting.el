@@ -294,16 +294,11 @@
 (defun backward-kill-line (arg)
   (interactive "p") (kill-line 0) )
 
-(defun copy-line (&optional arg)
-  "Do a kill-line but copy rather than kill.  This function directly calls
-kill-line, so see documentation of kill-line for how to use it including prefix
-argument and relevant variables.  This function works by temporarily making the
-buffer read-only, so I suggest setting kill-read-only-ok to t."
-  (interactive "P")
-  (toggle-read-only 1)
-  (kill-line arg)
-  (toggle-read-only 0))
-(setq-default kill-read-only-ok t)
+(defun copy-to-end-of-line ()
+  (interactive)
+  (kill-ring-save (point)
+                  (line-end-position))
+  (message "Copied to end of line"))
 
 (defadvice kill-region (before slick-cut activate compile)
   "When called interactively with no active region, kill a single line instead."
