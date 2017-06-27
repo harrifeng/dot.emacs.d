@@ -50,6 +50,7 @@
   (interactive)
   (split-window-right)
   (other-window 1)
+  (helm-mini)
   )
 
 (defun split-window-and-cursor-below ()
@@ -57,6 +58,7 @@
   (interactive)
   (split-window-below)
   (other-window 1)
+  (helm-mini)
   )
 
 (defun revert-buffer-no-confirm ()
