@@ -1,5 +1,12 @@
 (provide 'helpfunc-setting)
 
+(defun copy-whole-buffer ()
+ "kill the whole buffer"
+  (interactive)
+  (kill-ring-save (point-min)
+                  (point-max))
+  )
+
 (defun open-shell-pwd ()
   "Open a shell on pwd"
   (interactive)

@@ -86,6 +86,7 @@
                     "i" 'indent-whole
                     "k" 'kill-buffer
                     "n" 'next-buffer
+                    "o" 'copy-whole-buffer
                     "p" 'previous-buffer
                     "r" 'revert-buffer-no-confirm ;Revert
                     "s" 'save-buffer
