@@ -1,4 +1,10 @@
 (provide 'helpfunc-setting)
+(defun hfeng/jump-to-scratch ()
+  "switch to *scratch* buffer even it doesn't exist "
+  (interactive)
+  (switch-to-buffer-other-window "*scratch*")
+  )
+
 
 (defun copy-whole-buffer ()
  "kill the whole buffer"
@@ -157,6 +163,7 @@
      scss-mode
      simple-httpd
      smart-mode-line
+     sudo-edit
      switch-window
      tern
      toml-mode

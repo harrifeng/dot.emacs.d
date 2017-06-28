@@ -255,6 +255,8 @@
                     "w" 'whack-whitespace
                     "r" 'replace-string
                     "q" 'query-replace
+                    "s" 'sudo-edit
+                    "e" 'sudo-edit
                     )
 
 
@@ -264,6 +266,7 @@
                     :prefix-command 'Jump
                     "b" 'org-edit-special ;begin src
                     "e" 'org-edit-src-exit ;end src
+                    "s" 'hfeng/jump-to-scratch
                     )
 
 
