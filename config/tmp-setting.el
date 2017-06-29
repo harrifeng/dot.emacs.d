@@ -359,3 +359,6 @@
 
 (desktop-save-mode 1)
 (setq desktop-restore-eager 5)
+
+
+(add-hook 'prog-mode-hook #'hs-minor-mode)

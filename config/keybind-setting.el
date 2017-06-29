@@ -282,12 +282,14 @@
 
 (general-define-key :prefix my-leader16
                     :prefix-command 'Toggle
+                    "t" 'hs-toggle-hiding
+                    "h" 'hs-hide-all
+                    "s" 'hs-show-all
                     "a" 'artist-mode
                     "r" 'read-only-mode
                     "f" 'toggle-frame-fullscreen
                     "e" 'toggle-flycheck-error-buffer
                     "w" 'whitespace-mode
-                    "g" 'helm-global-mark-ring
                     )
 
 
