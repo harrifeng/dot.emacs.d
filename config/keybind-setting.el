@@ -145,11 +145,16 @@
 
 (general-define-key :prefix my-leader7
                     :prefix-command 'Highlight
-                    "h" 'hlt-highlight-symbol
-                    "u" 'hlt-unhighlight-symbol
-                    "n" 'hlt-next-highlight
-                    "p" 'hlt-previous-highlight
-                    "r" 'hlt-unhighlight-region ;region will clear all if no active space is set
+                    ;; 1st
+                    "h" 'highlight-regexp
+                    "u" 'unhighlight-regexp
+                    ;; 2nd
+                    "s" 'highlight-symbol-at-point
+                    "n" 'highlight-symbol-next
+                    "p" 'highlight-symbol-prev
+                    ;; 3rd
+                    "r" 'hlt-highlight-region
+                    "c" 'hlt-unhighlight-region ;region will clear all if no active space is set
                     "l" 'hfeng-line
                     )
 
