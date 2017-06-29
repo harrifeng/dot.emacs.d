@@ -355,7 +355,6 @@
           (lambda () (set-process-query-on-exit-flag (get-buffer-process (current-buffer)) nil)))
 
 (add-hook 'yaml-mode-hook 'flymake-yaml-load)
-(add-to-list 'default-frame-alist '(fullscreen . maximized))
 
 (desktop-save-mode 1)
 (setq desktop-restore-eager 5)

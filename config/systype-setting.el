@@ -15,20 +15,8 @@
   (setq explicit-shell-file-name "/bin/bash")
   (setq explicit-bash-args '("--noediting" "--login" "-i"))
 
-  ;; Command as meta------------------------------------------->>
-  ;; (setq mac-option-key-is-meta nil
-  ;;   mac-command-key-is-meta t
-  ;;   mac-command-modifier 'meta
-  ;;   mac-option-modifier 'none)
-
-  ;; full screen setting--------------------------------------->>
-  (setq ns-use-native-fullscreen nil)
-  (defun toggle-fullscreen ()
-    "Toggle full screen"
-    (interactive)
-    (set-frame-parameter
-     nil 'fullscreen
-     (when (not (frame-parameter nil 'fullscreen)) 'fullboth)))
+  ;; if you want to the emacs mac open to maximized size, setting this
+  (add-to-list 'default-frame-alist '(fullscreen . maximized))
 
   ;; menu-bar-mode is useful in mac---------------------------->>
   (menu-bar-mode t))

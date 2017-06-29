@@ -388,6 +388,11 @@
 (setq wgrep-change-readonly-file t)
 ;; [W]ich-key-mode-------------------------------------------------------->>
 (which-key-mode)
+
+;; Set the time delay (in seconds) for the which-key popup to appear. A value of
+;; zero might cause issues so a non-zero value is recommended.
+(setq which-key-idle-delay 2.0)
+
 ;; [Y]asnippet------------------------------------------------------------>>
 (defconst my-snippet-path (concat my-emacs-path "snippets"))
 (setq yas-snippet-dirs
