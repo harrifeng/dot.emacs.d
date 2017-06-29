@@ -262,6 +262,9 @@
                     "q" 'query-replace
                     "s" 'sudo-edit
                     "e" 'sudo-edit
+                    "m" 'wgrep-change-to-wgrep-mode ;multiple modify
+                    "f" 'wgrep-finish-edit
+                    "k" 'wgrep-abort-changes
                     )
 
 
