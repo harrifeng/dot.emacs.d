@@ -204,11 +204,10 @@
                     "j" 'windmove-down
                     )
 
-(setq my-leader10 "C-SPC t")
+(setq my-leader10 "C-SPC x")
 
 (general-define-key :prefix my-leader10
-                    :prefix-command 'Text
-                    "t" 'delete-trailing-whitespace
+                    :prefix-command 'X
                     "d" 'text-scale-decrease
                     "i" 'text-scale-increase
                     "x" 'untabify
@@ -247,7 +246,6 @@
                     "a" 'append-to-register
                     "p" 'prepend-to-register
                     "i" 'insert-register
-                    "k" 'helm-show-kill-ring ;kill ring is a special register
                     )
 
 (setq my-leader14 "C-SPC e")
@@ -260,6 +258,7 @@
                     "l" 'downcase-region ;M-l downcase-word
                     "w" 'whack-whitespace
                     "r" 'replace-string
+                    "t" 'delete-trailing-whitespace
                     "q" 'query-replace
                     "s" 'sudo-edit
                     "e" 'sudo-edit
@@ -279,6 +278,17 @@
                     )
 
 
+(setq my-leader16 "C-SPC t")
+
+(general-define-key :prefix my-leader16
+                    :prefix-command 'Toggle
+                    "a" 'artist-mode
+                    "r" 'read-only-mode
+                    "f" 'toggle-frame-fullscreen
+                    "e" 'toggle-flycheck-error-buffer
+                    "w" 'whitespace-mode
+                    "g" 'helm-global-mark-ring
+                    )
 
 
 

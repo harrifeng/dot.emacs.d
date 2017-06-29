@@ -148,7 +148,6 @@
      js2-mode
      load-theme-buffer-local
      magit
-     minimap
      monokai-theme
      markdown-mode
      wgrep-ag
