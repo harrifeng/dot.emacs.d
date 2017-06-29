@@ -255,8 +255,8 @@
                     :prefix-command 'Edit
                     "a" 'align-whitespace
                     "b" 'backward-kill-line
-                    "u" 'upcase-region
-                    "d" 'downcase-region
+                    "u" 'upcase-region  ;M-u upcase-word
+                    "l" 'downcase-region ;M-l downcase-word
                     "w" 'whack-whitespace
                     "r" 'replace-string
                     "q" 'query-replace
