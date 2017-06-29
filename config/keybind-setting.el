@@ -13,6 +13,7 @@
 (define-key helm-find-files-map (kbd "C-h") nil)
 (global-set-key (kbd "C-h")               'backward-delete-char-untabify)
 (global-set-key (kbd "C-o")               'copy-to-end-of-line)
+(global-set-key (kbd "C-r")               'cua-scroll-down)
 
 
 ;; Start Iterm2 Key region----------------------------->
