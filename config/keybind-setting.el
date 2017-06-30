@@ -274,10 +274,11 @@
 (setq my-leader15 "C-SPC j")
 
 (general-define-key :prefix my-leader15
-                    :prefix-command 'Jump
+                    :prefix-command 'Jump      ;jump will go to definite one buffer
                     "b" 'org-edit-special ;begin src
                     "e" 'org-edit-src-exit ;end src
                     "t" 'hfeng/jump-to-scratch ;tmp file
+                    "m" 'hfeng/jump-to-message ;message file
                     "s" 'shell
                     "j" 'shell-command
                     )

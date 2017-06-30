@@ -5,6 +5,12 @@
   (switch-to-buffer-other-window "*scratch*")
   )
 
+(defun hfeng/jump-to-message ()
+  "switch to *scratch* buffer even it doesn't exist "
+  (interactive)
+  (switch-to-buffer-other-window "*Messages*")
+  )
+
 
 (defun copy-whole-buffer ()
  "kill the whole buffer"
