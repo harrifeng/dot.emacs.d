@@ -132,6 +132,7 @@
                     "b" 'helm-do-ag-buffers
                     "f" 'helm-do-ag-this-file
                     "p" 'helm-projectile-ag
+                    "x" 'ag
                     )
 
 (setq my-leader6 "C-SPC q")
@@ -211,7 +212,8 @@
                     :prefix-command 'X
                     "d" 'text-scale-decrease
                     "i" 'text-scale-increase
-                    "x" 'untabify
+                    "u" 'untabify
+                    "r" 'recompile-emacs
                     )
 (setq my-leader11 "C-SPC a")
 
@@ -275,7 +277,9 @@
                     :prefix-command 'Jump
                     "b" 'org-edit-special ;begin src
                     "e" 'org-edit-src-exit ;end src
-                    "s" 'hfeng/jump-to-scratch
+                    "t" 'hfeng/jump-to-scratch ;tmp file
+                    "s" 'shell
+                    "j" 'shell-command
                     )
 
 

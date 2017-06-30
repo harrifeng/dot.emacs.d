@@ -537,3 +537,8 @@ minibuffer"
   (nuke-all-buffers)
   (restart-emacs)
   )
+
+(defun recompile-emacs ()
+  (interactive)
+  (byte-recompile-directory "~/.emacs.d/config" 0)
+  )
