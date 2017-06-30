@@ -276,13 +276,14 @@
 (general-define-key :prefix my-leader15
                     :prefix-command 'Jump      ;jump will go to definite one buffer
                     "d" 'godef-jump
+                    ; these two for the jump around
                     "b" 'pop-tag-mark
+                    "l" 'helm-global-mark-ring
                     "s" 'org-edit-special ;start src
                     "e" 'org-edit-src-exit ;end src
                     "t" 'hfeng/jump-to-scratch ;tmp file
                     "m" 'hfeng/jump-to-message ;message file
                     "s" 'shell
-                    "j" 'helm-global-mark-ring
                     )
 
 
