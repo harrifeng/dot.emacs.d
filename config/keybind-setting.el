@@ -316,6 +316,14 @@
                     )
 
 
+(setq my-leader17 "C-SPC i")
+
+(general-define-key :prefix my-leader17
+                    :prefix-command 'Info
+                    "v" 'describe-variable
+                    "k" 'yas/describe-tables
+                    )
+
 
 
 
