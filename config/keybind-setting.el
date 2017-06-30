@@ -140,6 +140,7 @@
                     :prefix-command 'Quit
                     "q" 'save-buffers-kill-terminal   ;Exit
                     "r" 'restart-emacs
+                    "c" 'restart-a-clean-emacs ;no desktop buffer saved
                     )
 
 (setq my-leader7 "C-SPC h")

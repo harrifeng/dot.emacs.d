@@ -523,3 +523,17 @@ minibuffer"
       (switch-to-buffer-other-window "*eshell*"))
     )
   )
+
+
+(defun nuke-all-buffers ()
+  (interactive)
+  (mapcar 'kill-buffer (buffer-list))
+  (delete-other-windows))
+
+;; we use desktop to save all the buffers, if you do not want these buffers
+;; use this function
+(defun restart-a-clean-emacs ()
+  (interactive)
+  (nuke-all-buffers)
+  (restart-emacs)
+  )
