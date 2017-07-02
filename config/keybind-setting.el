@@ -104,7 +104,6 @@
                     "h" 'helm-find-files
                     "o" 'find-file-other-window
                     "p" 'helm-projectile ; opened files called buffer
-                    "b" 'bookmark-set
                     "m" 'helm-bookmarks
                     )
 
