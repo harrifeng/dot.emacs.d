@@ -5,7 +5,12 @@
 
 ;; [A]uto-highlight-symbol------------------------------------------------>>
 (global-auto-highlight-symbol-mode t)
+(ahs-set-idle-interval 0.3)
 (ahs-chrange-display)
+;; this code is too old, new mode need to add hook for it
+(add-hook 'js2-mode-hook 'auto-highlight-symbol-mode)
+(add-hook 'shell-mode-hook 'auto-highlight-symbol-mode)
+(add-hook 'go-mode-hook 'auto-highlight-symbol-mode)
 
 ;; [A]vy------------------------------------------------------------------>>
 (global-set-key (kbd "C-t")          'avy-goto-char)
