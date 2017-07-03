@@ -3,6 +3,10 @@
 ;; [A]g------------------------------------------------------------------->>
 (setq ag-highlight-search t)
 
+;; [A]uto-highlight-symbol------------------------------------------------>>
+(global-auto-highlight-symbol-mode t)
+(ahs-chrange-display)
+
 ;; [A]vy------------------------------------------------------------------>>
 (global-set-key (kbd "C-t")          'avy-goto-char)
 

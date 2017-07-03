@@ -121,6 +121,7 @@
          (package-install package)))
    '(
      ag
+     auto-highlight-symbol
      avy
      bm
      company
