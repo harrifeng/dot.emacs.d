@@ -261,7 +261,7 @@
                     "w" 'whack-whitespace
                     "r" 'replace-string
                     "t" 'delete-trailing-whitespace
-                    "q" 'query-replace
+                    "q" 'query-replace-from-region ;Only query replace can use this region as first parameter
                     "s" 'sudo-edit
                     "e" 'sudo-edit
                     "m" 'wgrep-change-to-wgrep-mode ;multiple modify

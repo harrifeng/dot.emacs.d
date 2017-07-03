@@ -161,6 +161,7 @@
      multiple-cursors
      nodejs-repl
      projectile
+     query-replace-from-region
      restclient
      restart-emacs
      rainbow-delimiters
