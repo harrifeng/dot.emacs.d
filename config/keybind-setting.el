@@ -83,7 +83,6 @@
                     "b" 'helm-mini
                     "a" 'beginning-of-buffer
                     "e" 'end-of-buffer
-                    "g" 'goto-line
                     "i" 'indent-whole
                     "k" 'kill-buffer
                     "n" 'next-buffer
@@ -280,6 +279,7 @@
                     "t" 'hfeng/jump-to-scratch ;tmp file
                     "m" 'hfeng/jump-to-message ;message file
                     "s" 'shell
+                    "n" 'goto-line      ;line number
                     )
 
 
@@ -319,6 +319,7 @@
 
 (general-define-key :prefix my-leader17
                     :prefix-command 'Info
+                    "i" 'shell-command
                     "v" 'describe-variable
                     "k" 'yas/describe-tables
                     )

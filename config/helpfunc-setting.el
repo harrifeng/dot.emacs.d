@@ -146,8 +146,9 @@
      helm
      helm-ag
      helm-bm
-     helm-swoop
+     helm-go-package
      helm-projectile
+     helm-swoop
      highlight-indentation
      highlight-symbol
      htmlize
