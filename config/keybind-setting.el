@@ -283,11 +283,11 @@
                     )
 
 
-(add-hook 'go-mode-hook ;; guessing
+(add-hook 'go-mode-hook
     '(lambda ()
        (local-set-key (kbd "C-SPC j j") 'godef-jump)))
 
-(add-hook 'org-mode-hook ;; guessing
+(add-hook 'org-mode-hook
     '(lambda ()
        (local-set-key (kbd "C-SPC j j") 'org-edit-special)
        ))
@@ -324,6 +324,21 @@
                     "k" 'yas/describe-tables
                     )
 
+
+(setq my-leader18 "C-SPC p")
+
+(general-define-key :prefix my-leader18
+                    :prefix-command 'PerMode
+                    "p" 'shell-command  ;doc
+                    )
+
+(add-hook 'go-mode-hook
+    '(lambda ()
+       (local-set-key (kbd "C-SPC p a") 'helm-go-package))) ;add package
+
+(add-hook 'go-mode-hook
+    '(lambda ()
+       (local-set-key (kbd "C-SPC p d") 'godoc-at-point)))
 
 
 

@@ -1,4 +1,0 @@
-# contributor: Harri Feng <harrifeng@gmail.com>
-# name :ssh fanqiang
-# --
-ssh -qTfnN -D 7070 root@108.61.220.164
