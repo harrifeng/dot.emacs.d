@@ -136,7 +136,7 @@
      exec-path-from-shell
      flycheck
      general
-     global-auto-highlight-symbol-mode
+     auto-highlight-symbol
      go-mode
      go-guru
      gotest
@@ -157,7 +157,7 @@
      js2-mode
      load-theme-buffer-local
      magit
-     monokai-theme
+;     monokai-theme
      markdown-mode
      wgrep-ag
      material-theme
