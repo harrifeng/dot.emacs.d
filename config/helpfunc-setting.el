@@ -136,6 +136,7 @@
      exec-path-from-shell
      flycheck
      general
+     global-auto-highlight-symbol-mode
      go-mode
      go-guru
      gotest
@@ -163,7 +164,7 @@
      multiple-cursors
      nodejs-repl
      projectile
-     query-replace-from-region
+     replace-from-region
      restclient
      restart-emacs
      rainbow-delimiters
