@@ -13,7 +13,7 @@
 
 
 (defun copy-whole-buffer ()
- "kill the whole buffer"
+  "kill the whole buffer"
   (interactive)
   (kill-ring-save (point-min)
                   (point-max))
@@ -59,8 +59,8 @@
         (setq end (save-excursion (goto-char (mark)) (line-end-position)))))
     (setq face
           `((background-color . ,"yellow") (foreground-color . ,hlt-auto-face-foreground)))
-     (hlt-highlight-lines beg end face "Haha"))
-    (if (and arg (not (= 1 arg))) (message "%d lines copied" arg)))
+    (hlt-highlight-lines beg end face "Haha"))
+  (if (and arg (not (= 1 arg))) (message "%d lines copied" arg)))
 
 
 
@@ -102,18 +102,26 @@
   (revert-buffer :ignore-auto :noconfirm) ; revert buffer, no git gutter show, as they're indexed
   )
 
+(defun set-china-mirror()
+  (interactive)
+  (setq package-archives '(("gnu"   . "http://mirrors.tuna.tsinghua.edu.cn/elpa/gnu/")
+                           ("melpa" . "http://mirrors.tuna.tsinghua.edu.cn/elpa/melpa/")
+                           ("elpy" . "https://jorgenschaefer.github.io/packages/")
+                           ))
+  (package-initialize)
+  )
+
+(defun set-no-mirror()
+  (interactive)
+  (setq package-archives '(("gnu" . "http://elpa.gnu.org/packages/")
+                           ("melpa" . "http://melpa.milkbox.net/packages/")
+                           ("elpy" . "https://jorgenschaefer.github.io/packages/")
+                           ))
+  (package-initialize)
+  )
 
 (defun install-my-packages()
   (interactive)
-  (setq package-archives '(("gnu" . "http://elpa.gnu.org/packages/")
-                           ("melpa" . "http://melpa.milkbox.net/packages/")))
-
-  ;; pip install rope flake8 importmagic autopep8 yapf
-  ;; OR jedi instead of rope
-  (add-to-list 'package-archives
-               '("elpy" . "https://jorgenschaefer.github.io/packages/"))
-  (package-initialize)
-
   ;; check if the packages is installed; if not, install it.
   (mapc
    (lambda (package)
@@ -157,7 +165,6 @@
      js2-mode
      load-theme-buffer-local
      magit
-;     monokai-theme
      markdown-mode
      wgrep-ag
      material-theme
