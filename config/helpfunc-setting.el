@@ -274,9 +274,18 @@
                    (hfeng-clear-screen-to-another-buffer)
                    (my-clear))))
 
+(defun my-shell-mode-hook-term ()
+  (local-set-key (kbd "C-c a l")
+                 (lambda nil
+                   (interactive)
+                   (hfeng-clear-screen-to-another-buffer)
+                   (my-clear))))
+
+
 ;;clean all the buffer content
 (add-hook 'shell-mode-hook 'my-shell-mode-hook)
-(add-hook 'eshell-mode-hook 'my-shell-mode-hook)
+(add-hook 'shell-mode-hook 'my-shell-mode-hook-term)
+
 
 ;;eshell clear the screen
 (defun eshell/cls ()
