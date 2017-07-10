@@ -196,7 +196,7 @@
                     "b" 'split-window-and-cursor-below
                     "r" 'split-window-and-cursor-right
                     "d" 'delete-window
-                    "o" 'delete-other-windows
+                    "o" 'other-window
                     "s" 'switch-window
                     "h" 'windmove-left
                     "l" 'windmove-right
