@@ -208,6 +208,7 @@
 
 (general-define-key :prefix my-leader10
                     :prefix-command 'X
+                    "b" 'bookmark-set
                     "d" 'text-scale-decrease
                     "i" 'text-scale-increase
                     "u" 'untabify
@@ -309,6 +310,7 @@
                     "s" 'hs-show-all
                     "a" 'artist-mode
                     "r" 'read-only-mode
+                    "l" 'toggle-truncate-lines
                     "f" 'toggle-frame-fullscreen
                     "e" 'toggle-flycheck-error-buffer
                     "w" 'whitespace-mode
