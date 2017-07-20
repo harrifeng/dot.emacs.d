@@ -260,45 +260,45 @@
 
 ;; (setq flycheck-check-syntax-automatically '(save mode-enabled))
 ;; (setq flycheck-checker-error-threshold nil)
-(setq flycheck-checkers
-      '(
-        coffee
-        coffee-coffeelint
-        css-csslint
-        emacs-lisp
-        emacs-lisp-checkdoc
-        haml
-        handlebars
-        html-tidy
-        javascript-jshint
-        javascript-eslint
-        javascript-gjslint
-        javascript-jscs
-        javascript-standard
-        json-jsonlint
-        less
-        processing
-        r-lintr
-        rpm-rpmlint
-        ruby-rubocop
-        ruby-rubylint
-        ruby
-        ruby-jruby
-        sass
-        scss-lint
-        scss
-        sh-bash
-        sh-posix-dash
-        sh-posix-bash
-        sh-zsh
-        sh-shellcheck
-        slim
-        sql-sqlint
-        xml-xmlstarlet
-        xml-xmllint
-        yaml-jsyaml
-        yaml-ruby
-        ))
+;; (setq flycheck-checkers
+;;       '(
+;;         coffee
+;;         coffee-coffeelint
+;;         css-csslint
+;;         emacs-lisp
+;;         emacs-lisp-checkdoc
+;;         haml
+;;         handlebars
+;;         html-tidy
+;;         javascript-jshint
+;;         javascript-eslint
+;;         javascript-gjslint
+;;         javascript-jscs
+;;         javascript-standard
+;;         json-jsonlint
+;;         less
+;;         processing
+;;         r-lintr
+;;         rpm-rpmlint
+;;         ruby-rubocop
+;;         ruby-rubylint
+;;         ruby
+;;         ruby-jruby
+;;         sass
+;;         scss-lint
+;;         scss
+;;         sh-bash
+;;         sh-posix-dash
+;;         sh-posix-bash
+;;         sh-zsh
+;;         sh-shellcheck
+;;         slim
+;;         sql-sqlint
+;;         xml-xmlstarlet
+;;         xml-xmllint
+;;         yaml-jsyaml
+;;         yaml-ruby
+;;         ))
 
 ;; (setq flycheck-completion-system 'ido)
 ;; (setq flycheck-display-errors-delay 0.2)
