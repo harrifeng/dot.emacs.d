@@ -347,6 +347,11 @@
     '(lambda ()
        (local-set-key (kbd "C-SPC p f") 'elpy-autopep8-fix-code)))
 
+(add-hook 'python-mode-hook
+    '(lambda ()
+       (local-set-key (kbd "C-SPC p v") 'venv-workon))) ;choose python version
+
+
 
 ;; Mac iterm set `ctrl-.` to `0x03 0x64`, so the my-leader2 is
 ;; solely for iterm usage, and thus the code will be copied from
