@@ -1,4 +1,0 @@
-# contributor: Harri Feng <harrifeng@gmail.com>
-# name : python version
-# --
-import sys;print(sys.version_info) $0

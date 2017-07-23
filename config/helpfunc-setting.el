@@ -1,4 +1,12 @@
 (provide 'helpfunc-setting)
+
+(defun hfeng/jump-to-python()
+  "switch to *python*"
+  (interactive)
+  (run-python)
+  (switch-to-buffer-other-window "*Python*")
+  )
+
 (defun hfeng/jump-to-scratch ()
   "switch to *scratch* buffer even it doesn't exist "
   (interactive)

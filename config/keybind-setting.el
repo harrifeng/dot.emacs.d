@@ -281,6 +281,8 @@
                     "m" 'hfeng/jump-to-message ;message file
                     "s" 'shell
                     "n" 'goto-line      ;line number
+                    "p" 'hfeng/jump-to-python
+                    "r" 'inf-ruby       ;ruby interpreter
                     )
 
 
@@ -350,6 +352,7 @@
 (add-hook 'python-mode-hook
     '(lambda ()
        (local-set-key (kbd "C-SPC p v") 'venv-workon))) ;choose python version
+
 
 
 
