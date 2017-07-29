@@ -149,6 +149,7 @@
      docker-tramp
      elnode
      elpy
+     ess
      exec-path-from-shell
      flycheck
      general
