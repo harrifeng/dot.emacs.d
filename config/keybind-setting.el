@@ -333,7 +333,8 @@
 
 (general-define-key :prefix my-leader18
                     :prefix-command 'PerMode
-                    "s" 'shell-command  ;doc
+                    "p" 'hfeng/previous-buffer-same-mode
+                    "n" 'hfeng/next-buffer-same-mode
                     )
 
 (add-hook 'go-mode-hook
@@ -355,7 +356,12 @@
 
 (add-hook 'ess-mode-hook
     '(lambda ()
-       (local-set-key (kbd "C-SPC p p") 'ess-load-file)))
+       (local-set-key (kbd "C-SPC p l") 'ess-load-file)))
+(add-hook 'inferior-python-mode-hook
+    '(lambda ()
+       (local-set-key (kbd "C-SPC p v") 'venv-workon))) ;choose python version
+
+
 
 
 ;; Mac iterm set `ctrl-.` to `0x03 0x64`, so the my-leader2 is

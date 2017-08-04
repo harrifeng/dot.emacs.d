@@ -1,0 +1,4 @@
+# contributor: Harri Feng <harrifeng@gmail.com>
+# name : Change Directory
+# --
+import os; os.chdir('$0')

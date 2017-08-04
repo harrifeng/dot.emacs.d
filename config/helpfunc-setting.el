@@ -1,5 +1,20 @@
 (provide 'helpfunc-setting)
 
+(defun buffer-same-mode (change-buffer-fun)
+  (let ((current-mode major-mode)
+        (next-mode nil))
+    (while (not (eq next-mode current-mode))
+      (funcall change-buffer-fun)
+      (setq next-mode major-mode))))
+
+(defun hfeng/previous-buffer-same-mode ()
+  (interactive)
+  (buffer-same-mode #'previous-buffer))
+
+(defun hfeng/next-buffer-same-mode ()
+  (interactive)
+  (buffer-same-mode #'next-buffer))
+
 (defun hfeng/jump-to-python()
   "switch to *python*"
   (interactive)
