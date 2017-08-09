@@ -305,7 +305,7 @@
   (save-buffer)
   (if (eq system-type 'windows-nt)
       (setq cpp-run-command "g++ -o %s %s && %s && rm %s.exe")
-    (setq cpp-run-command "g++ -o %s %s && %s && rm %s"))
+    (setq cpp-run-command "g++ -o %s.out %s && %s.out && rm %s.out"))
   (compile
    (format cpp-run-command
            (file-name-sans-extension (buffer-file-name))

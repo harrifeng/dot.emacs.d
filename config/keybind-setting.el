@@ -354,6 +354,10 @@
     '(lambda ()
        (local-set-key (kbd "C-SPC p v") 'venv-workon))) ;choose python version
 
+(add-hook 'python-mode-hook
+    '(lambda ()
+       (local-set-key (kbd "C-SPC p r") 'run-python))) ;repl
+
 (add-hook 'ess-mode-hook
     '(lambda ()
        (local-set-key (kbd "C-SPC p l") 'ess-load-file)))

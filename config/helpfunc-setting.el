@@ -204,6 +204,7 @@
      scss-mode
      simple-httpd
      smart-mode-line
+     solarized-theme
      sudo-edit
      switch-window
      tern
