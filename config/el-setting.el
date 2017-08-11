@@ -283,6 +283,15 @@
 ;; [M]aterial theme------------------------------------------------------->>
 (load-theme 'material t)
 
+;; [P]lantuml-mode-------------------------------------------------------->>
+(add-to-list
+ 'org-src-lang-modes '("plantuml" . plantuml))
+
+(setq plantuml-output-type "svg")
+(setq plantuml-jar-path
+      (concat my-emacs-path "util/plantuml.jar"))
+
+
 ;; [P]rojectile----------------------------------------------------------->>
 (projectile-global-mode)
 

@@ -194,6 +194,7 @@
      material-theme
      multiple-cursors
      nodejs-repl
+     plantuml-mode
      projectile
      replace-from-region
      restclient
