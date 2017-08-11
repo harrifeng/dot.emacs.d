@@ -326,6 +326,7 @@
                     "i" 'shell-command
                     "v" 'describe-variable
                     "k" 'yas/describe-tables
+                    "e" 'eval-last-sexp
                     )
 
 
