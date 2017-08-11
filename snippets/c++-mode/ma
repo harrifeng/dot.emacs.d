@@ -1,0 +1,11 @@
+# contributor: Harri Feng <harrifeng@gmail.com>
+# name: MAin function
+# --
+#include <iostream>
+using namespace std;
+
+int main(int argc, char *argv[])
+{
+    $0
+    return 0;
+}
