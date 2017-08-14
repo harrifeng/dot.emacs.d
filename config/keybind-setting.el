@@ -309,6 +309,7 @@
                     :prefix-command 'Toggle
                     "t" 'hs-toggle-hiding
                     "h" 'hs-hide-all
+                    "i" 'image-toggle-display
                     "s" 'hs-show-all
                     "a" 'artist-mode
                     "r" 'read-only-mode
@@ -366,14 +367,12 @@
     '(lambda ()
        (local-set-key (kbd "C-SPC p v") 'venv-workon))) ;choose python version
 
+(defun plantuml-preview-with-prefix-arg ()
+  (interactive)
+  (setq current-prefix-arg '(4)) ; C-u
+  (call-interactively 'plantuml-preview))
 
 
-
-;; Mac iterm set `ctrl-.` to `0x03 0x64`, so the my-leader2 is
-;; solely for iterm usage, and thus the code will be copied from
-;; my-leader2
-
-;; (setq my-leader11 "C-c d")
-;;
-;; (general-define-key :prefix my-leader11
-;;                     )
+(add-hook 'plantuml-mode-hook
+    '(lambda ()
+       (local-set-key (kbd "C-SPC p v") 'plantuml-preview-with-prefix-arg)))
