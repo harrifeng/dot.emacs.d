@@ -86,8 +86,6 @@
     ":pixelsize=20")
    ((string-match system-name "hfeng-laptop")
     ":pixelsize=20")
-   ((string-match system-name "vagrant-ubuntu-vivid-64")
-    ":pixelsize=15")
    ((string-match system-name "hfengdeMacBook-Pro.local")
     ":pixelsize=15")
    (":pixelsize=16")))
