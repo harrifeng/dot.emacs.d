@@ -1,0 +1,4 @@
+# contributor: Harri Feng <harrifeng@gmail.com>
+# name: FreAuentA
+# --
+cd /var/lib/docker/volumes/kolla_logs/_data/

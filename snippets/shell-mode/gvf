@@ -1,0 +1,4 @@
+# contributor: Harri Feng <harrifeng@gmail.com>
+# name: Gradlew Verfiy google Format finish
+# --
+./gradlew verGJF
