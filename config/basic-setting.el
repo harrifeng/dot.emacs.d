@@ -88,7 +88,7 @@
     ":pixelsize=20")
    ((string-match system-name "hfengdeMacBook-Pro.local")
     ":pixelsize=15")
-   (":pixelsize=16")))
+   (":pixelsize=20")))
 
 ;; red some color
 (set-cursor-color "red")

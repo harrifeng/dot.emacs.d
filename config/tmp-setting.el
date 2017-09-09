@@ -354,8 +354,8 @@
 (add-hook 'comint-exec-hook
           (lambda () (set-process-query-on-exit-flag (get-buffer-process (current-buffer)) nil)))
 
-(desktop-save-mode 1)
-(setq desktop-restore-eager 5)
+;(desktop-save-mode 1)
+;(setq desktop-restore-eager 5)
 
 
 (add-hook 'prog-mode-hook #'hs-minor-mode)
