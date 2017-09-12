@@ -1,6 +1,6 @@
 (provide 'keybind-setting)
 ;; git add current buffer to version control!
-(global-set-key (kbd "<f2>")              'helm-all-mark-ring)
+(global-set-key (kbd "<f2>")              'helm-all-mark-rings)
 (global-set-key (kbd "<f5>")              'revert-buffer-no-confirm)
 (global-set-key (kbd "<f7>")              'indent-whole)
 (global-set-key (kbd "<f8>")              'toggle-flycheck-error-buffer)
@@ -276,7 +276,7 @@
                     :prefix-command 'Jump      ;jump will go to definite one buffer
                     ; these two for the jump around: godef-jump to somewhere, and j-back
                     "b" 'pop-tag-mark
-                    "l" 'helm-all-mark-ring
+                    "l" 'helm-all-mark-rings
 
                     "t" 'hfeng/jump-to-scratch ;tmp file
                     "m" 'hfeng/jump-to-message ;message file
