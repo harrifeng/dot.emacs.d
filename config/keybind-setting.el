@@ -1,6 +1,6 @@
 (provide 'keybind-setting)
 ;; git add current buffer to version control!
-(global-set-key (kbd "<f2>")              'helm-global-mark-ring)
+(global-set-key (kbd "<f2>")              'helm-all-mark-ring)
 (global-set-key (kbd "<f5>")              'revert-buffer-no-confirm)
 (global-set-key (kbd "<f7>")              'indent-whole)
 (global-set-key (kbd "<f8>")              'toggle-flycheck-error-buffer)
@@ -274,15 +274,18 @@
 
 (general-define-key :prefix my-leader15
                     :prefix-command 'Jump      ;jump will go to definite one buffer
-                    ; these two for the jump around
+                    ; these two for the jump around: godef-jump to somewhere, and j-back
                     "b" 'pop-tag-mark
-                    "l" 'helm-global-mark-ring
+                    "l" 'helm-all-mark-ring
+
                     "t" 'hfeng/jump-to-scratch ;tmp file
                     "m" 'hfeng/jump-to-message ;message file
                     "s" 'shell
-                    "n" 'goto-line      ;line number
-                    "p" 'hfeng/jump-to-python
+                    "g" 'goto-line      ;line number
+                    "n" 'cua-set-mark
+                    "p" 'hfeng/go-to-previous-mark-in-current-buffer
                     "r" 'inf-ruby       ;ruby interpreter
+                    "y" 'hfeng/jump-to-python ; python interpreter
                     )
 
 
@@ -372,6 +375,10 @@
   (setq current-prefix-arg '(4)) ; C-u
   (call-interactively 'plantuml-preview))
 
+(defun hfeng/go-to-previous-mark-in-current-buffer ()
+  (interactive)
+  (setq current-prefix-arg '(4)) ; C-u
+  (call-interactively 'cua-set-mark))
 
 (add-hook 'plantuml-mode-hook
     '(lambda ()
