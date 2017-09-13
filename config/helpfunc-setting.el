@@ -29,11 +29,19 @@
   )
 
 (defun hfeng/jump-to-message ()
-  "switch to *scratch* buffer even it doesn't exist "
   (interactive)
   (switch-to-buffer-other-window "*Messages*")
   )
 
+(defun hfeng/jump-to-emacsd ()
+  (interactive)
+  (find-file "~/.emacs.d")
+  )
+
+(defun hfeng/jump-to-go ()
+  (interactive)
+  (find-file "~/go")
+  )
 
 (defun copy-whole-buffer ()
   "kill the whole buffer"

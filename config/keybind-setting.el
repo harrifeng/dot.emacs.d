@@ -281,9 +281,11 @@
 
                     "t" 'hfeng/jump-to-scratch ;tmp file
                     "m" 'hfeng/jump-to-message ;message file
+                    "e" 'hfeng/jump-to-emacsd  ;emacs.d folder
+                    "g" 'hfeng/jump-to-go      ;go folder
+
                     "s" 'shell
-                    "g" 'goto-line      ;line number
-                    "n" 'cua-set-mark
+                    "n" 'goto-line      ;line number
                     "p" 'hfeng/go-to-previous-mark-in-current-buffer
                     "r" 'inf-ruby       ;ruby interpreter
                     "y" 'hfeng/jump-to-python ; python interpreter
