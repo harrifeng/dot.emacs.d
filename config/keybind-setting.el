@@ -115,7 +115,8 @@
                     "a" 'git-add-current-buffer-to-git ;add & stash
                     "b" 'vc-annotate                   ;blame
                     "d" 'vc-diff
-                    "c" 'with-editor-finish ;commit
+                    "c" 'with-editor-finish ;Commit it
+                    "e" 'with-editor-cancel ;Exit commit
                     "r" 'vc-revert
                     "s" 'git-add-current-buffer-to-git ;add & stash
                     )
