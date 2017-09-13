@@ -332,7 +332,8 @@
                     :prefix-command 'Info
                     "i" 'shell-command
                     "v" 'describe-variable
-                    "k" 'yas/describe-tables
+                    "k" 'describe-key
+                    "s" 'yas/describe-tables ;short key
                     "e" 'eval-last-sexp
                     )
 

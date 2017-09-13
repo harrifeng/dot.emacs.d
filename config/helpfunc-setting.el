@@ -40,7 +40,7 @@
 
 (defun hfeng/jump-to-go ()
   (interactive)
-  (find-file "~/go")
+  (find-file "~/go/src/github.com/harrifeng/playground/")
   )
 
 (defun copy-whole-buffer ()
