@@ -213,7 +213,8 @@
                     "d" 'text-scale-decrease
                     "i" 'text-scale-increase
                     "u" 'untabify
-                    "r" 'recompile-emacs
+                    "x" 'regex-tool
+                    "c" 'recompile-emacs
                     )
 (setq my-leader11 "C-SPC a")
 
@@ -337,6 +338,13 @@
                     "e" 'eval-last-sexp
                     )
 
+(setq my-leader17 "C-SPC n")
+
+(general-define-key :prefix my-leader17
+                    :prefix-command 'Not-open
+                    "n" 'hfeng/bk-kill-buffers
+                    "c" 'hfeng/bk-kill-buffers-compilation
+                    )
 
 (setq my-leader18 "C-SPC p")
 

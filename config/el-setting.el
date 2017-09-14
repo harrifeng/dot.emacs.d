@@ -302,13 +302,7 @@
 ;; To disable remote file exists cache that use this snippet of code:
 (setq projectile-file-exists-remote-cache-expire nil)
 
-;; [R]ainbow-delimiters--------------------------------------------------->>
-(add-hook 'prog-mode-hook #'rainbow-delimiters-mode)
-
-;; [R]estclient]---------------------------------------------------------->>
-(require 'restclient)
-(add-to-list 'auto-mode-alist '("\\.http?\\'" . restclient-mode))
-
+;; [R]egex-tool---------------------------------------------------------->>
 ;; cpp
 (defun cpp-save-compile-and-run ()
   (interactive)

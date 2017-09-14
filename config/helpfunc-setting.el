@@ -1,5 +1,17 @@
 (provide 'helpfunc-setting)
 
+(require 'cl)
+(defun hfeng/bk-kill-buffers (regexp)
+  "Kill buffers matching REGEXP without asking for confirmation."
+  (interactive "sKill buffers matching this regular expression: ")
+  (flet ((kill-buffer-ask (buffer) (kill-buffer buffer)))
+    (kill-matching-buffers regexp)))
+
+(defun hfeng/bk-kill-buffers-compilation ()
+  (interactive)
+  (hfeng/bk-kill-buffers "compilation*")
+  )
+
 (defun buffer-same-mode (change-buffer-fun)
   (let ((current-mode major-mode)
         (next-mode nil))
@@ -205,9 +217,8 @@
      plantuml-mode
      projectile
      replace-from-region
-     restclient
+     regex-tool
      restart-emacs
-     rainbow-delimiters
      rjsx-mode
      rubocop
      scss-mode
