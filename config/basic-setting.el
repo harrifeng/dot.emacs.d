@@ -139,3 +139,6 @@
 ;; conf-mode is built-in mode for configurationo file, add one by one
 (add-to-list 'auto-mode-alist '("Dockerfile" . conf-mode))
 (add-to-list 'auto-mode-alist '("\\..*ignore" . conf-mode))
+
+;; Auto ask yes for `Kill process buffer without confirmation?`
+(setq kill-buffer-query-functions (delq 'process-kill-buffer-query-function kill-buffer-query-functions))
