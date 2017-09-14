@@ -256,6 +256,7 @@
 
 (general-define-key :prefix my-leader14
                     :prefix-command 'Edit
+                    "e" 'query-replace
                     "a" 'align-whitespace
                     "b" 'backward-kill-line
                     "u" 'upcase-region  ;M-u upcase-word
@@ -265,7 +266,6 @@
                     "t" 'delete-trailing-whitespace
                     "q" 'query-replace-from-region ;Only query replace can use this region as first parameter
                     "s" 'sudo-edit
-                    "e" 'sudo-edit
                     "m" 'wgrep-change-to-wgrep-mode ;multiple modify
                     "f" 'wgrep-finish-edit
                     "k" 'wgrep-abort-changes
