@@ -311,3 +311,4 @@
   )
 
 (add-hook 'shell-mode-hook 'shell-log-hook)
+(add-hook 'eshell-mode-hook 'shell-log-hook)
