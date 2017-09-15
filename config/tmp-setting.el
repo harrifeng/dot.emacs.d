@@ -274,10 +274,6 @@
 (add-hook 'comint-exec-hook
           (lambda () (set-process-query-on-exit-flag (get-buffer-process (current-buffer)) nil)))
 
-;(desktop-save-mode 1)
-;(setq desktop-restore-eager 5)
-
-
 (add-hook 'prog-mode-hook #'hs-minor-mode)
 
 
@@ -306,3 +302,12 @@
 (require 'saveplace)
 (setq-default save-place t)
 (setq save-place-file "~/.emacs.d/saved-places")
+
+
+
+(defun shell-log-hook ()
+  (add-hook 'kill-buffer-hook 'hfeng-clear-screen-to-another-buffer nil t)
+  (add-hook 'kill-emacs-hook 'hfeng-clear-screen-to-another-buffer nil t)
+  )
+
+(add-hook 'shell-mode-hook 'shell-log-hook)
