@@ -82,3 +82,8 @@ brew install shellcheck
 ```
      emacs --batch -l ~/.emacs.d/config/helpfunc-setting.el -f install-my-packages
 ```
+
+## Choco install
+```
+     choco install -y git diffutils
+```
