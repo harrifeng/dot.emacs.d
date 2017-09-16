@@ -3,90 +3,91 @@
 ;; (if (file-exists-p "c:/Devbox/")
 ;;     (defconst my-dev "c:/Devbox/")
 ;;   (defconst my-dev "d:/Devbox/"))
-;; 
+;;
 ;; (defconst my-util-path
 ;;   (concat my-dev "Util/"))
-;; 
+;;
 ;; (defconst my-node-path
 ;;   (concat my-dev "nodejs/"))
-;; 
+;;
 ;; (defconst my-npm-path
 ;;   (concat (getenv "HOME") "/npm/"))
-;; 
+;;
 ;; (defconst my-ruby-home
 ;;   (concat my-dev "Ruby/"))
 ;; (defconst my-ruby-path
 ;;   (concat my-ruby-home "bin/"))
-;; 
+;;
 ;; (defconst my-rust-home
 ;;   (concat my-dev "Rust/"))
 ;; (defconst my-rust-path
 ;;   (concat my-rust-home "bin/"))
-;; 
+;;
 ;; (setq racer-rust-src-path
 ;;       (concat my-rust-home "ForRacer/src/"))
-;; 
-;; (defconst my-go-path
-;;   (concat my-dev "Go/bin/"))
-;; 
+;;
+;;
 ;; (defconst my-python-path
 ;;   (concat my-dev "WinPython/python-2.7.10.amd64/"))
-;; 
+;;
 ;; (defconst my-python-script-path
 ;;   (concat my-python-path "Scripts/"))
-;; 
+;;
 ;; (defconst my-python3-path
 ;;   (concat my-dev "WinPython3/python-3.5.1.amd64/"))
-;; 
+;;
 ;; (defconst my-python3-script-path
 ;;   (concat my-python3-path "Scripts/"))
-;; 
+;;
 ;; (defconst my-git-path
 ;;   (concat my-dev "Git/bin/"))
-;; 
+;;
 ;; (defconst my-mingw-path
 ;;   (concat my-dev "MinGW/bin/"))
-;; 
+;;
 ;; (defconst my-java-home
 ;;   (concat my-dev "Java/"))
-;; 
+;;
 ;; (defconst my-go-home
 ;;   (concat my-dev "Go/"))
 ;; (setenv "GOROOT" my-go-home)
-;; 
+;;
 ;; (defconst my-java-path
 ;;   (concat my-dev "Java/bin/"))
-;; 
+;;
 ;; (defconst my-graphviz-path
 ;;   (concat my-dev "Graphviz/bin/"))
-;; 
-;; 
-;; (defconst my-go-space
-;;   (concat my-dev "Code/go/"))
-;; (setenv "GOPATH" my-go-space)
-;; 
-;; (defconst my-go-space-path
-;;   (concat my-go-space "bin/"))
-;; 
-;; 
-;; (setenv "PATH"
-;;         (concat
-;;          my-node-path ";"
-;;          my-npm-path ";"
-;;          my-git-path ";"
-;;          my-python-path ";"
-;;          my-python3-path ";"
-;;          my-rust-path ";"
-;;          my-ruby-path ";"
-;;          my-go-path ";"
-;;          my-go-space-path ";"
-;;          my-python-script-path ";"
-;;          my-python3-script-path ";"
-;;          my-java-path ";"
-;;          my-mingw-path ";"
-;;          my-graphviz-path ";"
-;;          my-util-path ";"
-;;          (getenv "PATH")))
-;; 
+;;
+;;
+(defconst my-go-path
+  (concat "C:/" "Go/bin/"))
+
+(defconst my-go-space
+  (concat (getenv "HOME")
+          "/go/"))
+(setenv "GOPATH" my-go-space)
+
+(defconst my-go-space-path
+  (concat my-go-space "bin/"))
+
+(setenv "PATH"
+        (concat
+         ;; my-node-path ";"
+         ;; my-npm-path ";"
+         ;; my-git-path ";"
+         ;; my-python-path ";"
+         ;; my-python3-path ";"
+         ;; my-rust-path ";"
+         ;; my-ruby-path ";"
+         my-go-path ";"
+         my-go-space-path ";"
+         ;; my-python-script-path ";"
+         ;; my-python3-script-path ";"
+         ;; my-java-path ";"
+         ;; my-mingw-path ";"
+         ;; my-graphviz-path ";"
+         ;; my-util-path ";"
+         (getenv "PATH")))
+;;
 ;; (setenv "JAVA_HOME"
 ;;         my-java-home)

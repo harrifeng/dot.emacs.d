@@ -52,8 +52,22 @@ sql-setting.el is need if you use sql very often, one example el file looks like
 ```
 ## golang install
 
-    $ go get -u -v golang.org/x/tools/cmd/goimports github.com/nsf/gocode github.com/rogpeppe/godef github.com/zmb3/gogetdoc github.com/golang/lint/golint github.com/lukehoban/go-outline sourcegraph.com/sqs/goreturns golang.org/x/tools/cmd/gorename github.com/tpng/gopkgs github.com/newhook/go-symbols golang.org/x/tools/cmd/guru github.com/cweill/gotests/...
-    $ go get -u -v github.com/motemen/gore github.com/k0kubun/pp golang.org/x/tools/cmd/godoc
+
+```
+go get -u -v github.com/nsf/gocode  \
+github.com/tpng/gopkgs  \
+github.com/ramya-rao-a/go-outline  \
+github.com/acroca/go-symbols  \
+golang.org/x/tools/cmd/guru  \
+golang.org/x/tools/cmd/gorename  \
+github.com/fatih/gomodifytags  \
+github.com/josharian/impl  \
+github.com/rogpeppe/godef  \
+sourcegraph.com/sqs/goreturns  \
+github.com/golang/lint/golint  \
+github.com/cweill/gotests/...  \
+github.com/derekparker/delve/cmd/dlv
+```
 
 ## nodejs install
 
