@@ -55,6 +55,7 @@ sql-setting.el is need if you use sql very often, one example el file looks like
 
 ```
 go get -u -v github.com/nsf/gocode  \
+golang.org/x/tools/cmd/goimports \
 github.com/tpng/gopkgs  \
 github.com/ramya-rao-a/go-outline  \
 github.com/acroca/go-symbols  \

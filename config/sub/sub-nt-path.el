@@ -66,6 +66,7 @@
   (concat (getenv "HOME")
           "/go/"))
 (setenv "GOPATH" my-go-space)
+(setenv "GOROOT" "C:/go")
 
 (defconst my-go-space-path
   (concat my-go-space "bin/"))

@@ -84,6 +84,9 @@
 (setq helm-ag-command-option "--all-text")
 (setq helm-ag-source-type 'file-line)
 
+(eval-after-load 'go-mode
+  '(substitute-key-definition 'go-import-add 'helm-go-package go-mode-map))
+
 ;; [G]olang relative------------------------------------------------------>>
 (setq gofmt-command "goimports")
 (require 'gotest)
