@@ -344,6 +344,7 @@
                     :prefix-command 'Not-open
                     "n" 'hfeng/bk-kill-buffers
                     "c" 'hfeng/bk-kill-buffers-compilation
+                    "s" 'hfeng/bk-kill-buffers-shell-pwd
                     )
 
 (setq my-leader18 "C-SPC p")

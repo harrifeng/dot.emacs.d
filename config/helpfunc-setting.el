@@ -12,6 +12,12 @@
   (hfeng/bk-kill-buffers "compilation*")
   )
 
+(defun hfeng/bk-kill-buffers-shell-pwd ()
+  (interactive)
+  (hfeng/bk-kill-buffers "SHELL-")
+  )
+
+
 (defun buffer-same-mode (change-buffer-fun)
   (let ((current-mode major-mode)
         (next-mode nil))
