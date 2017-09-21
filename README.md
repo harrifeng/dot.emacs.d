@@ -87,5 +87,5 @@ brew install shellcheck
 
 ## Choco install
 ```
-     choco install -y git diffutils
+     choco install -y git diffutils nodejs python2 ag
 ```
