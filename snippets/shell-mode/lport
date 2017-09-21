@@ -1,4 +1,4 @@
 # contributor: Harri Feng <harrifeng@gmail.com>
 # name: Linux Bash show port
 # --
-netstat -ltnp
+netstat -tulpn | grep "$1"$0
