@@ -48,7 +48,7 @@
 (define-prefix-command 'ctl-space-map)
 (global-set-key (kbd "C-SPC") 'ctl-space-map)
 (global-set-key (kbd "C-c a") 'ctl-space-map) ;mac key bind in Iterm2
-(setq my-leader1 "C-SPC")
+(setq my-leader1 "C-c a")
 
 (general-define-key :prefix my-leader1
                     ";"   'open-shell-pwd ;Most frequently used
@@ -76,7 +76,7 @@
 
 
 
-(setq my-leader2 "C-SPC b")
+(setq my-leader2 "C-c a b")
 
 (general-define-key :prefix my-leader2
                     :prefix-command 'Buffer
