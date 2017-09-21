@@ -175,6 +175,20 @@
   (my-make-room-for-new-compilation-buffer)
   )
 
+(defun go-hfeng-build ()
+  (interactive)
+  (save-buffer)
+
+  (if (eq system-type 'windows-nt)
+      (setq go-run-command "go build %s")
+    (setq go-run-command "go build %s"))
+  (compile
+   (format go-run-command
+           (buffer-file-name)))
+  (my-make-room-for-new-compilation-buffer)
+  )
+
+
 
 (defun go-more-hfeng-run ()
   (interactive)
