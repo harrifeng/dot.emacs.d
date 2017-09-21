@@ -312,3 +312,6 @@
 
 (add-hook 'shell-mode-hook 'shell-log-hook)
 (add-hook 'eshell-mode-hook 'shell-log-hook)
+
+(if (file-exists-p "/usr/local/bin/git")
+    (setq magit-git-executable "/usr/local/bin/git"))
