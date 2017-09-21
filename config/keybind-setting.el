@@ -95,7 +95,7 @@
                     "t" 'load-theme-buffer-local
                     )
 
-(setq my-leader3 "C-SPC f")
+(setq my-leader3 "C-c a f")
 
 (general-define-key :prefix my-leader3
                     :prefix-command 'File
@@ -107,7 +107,7 @@
                     )
 
 
-(setq my-leader4 "C-SPC g")
+(setq my-leader4 "C-c a g")
 
 (general-define-key :prefix my-leader4
                     :prefix-command 'Git
@@ -122,7 +122,7 @@
                     )
 
 
-(setq my-leader5 "C-SPC s")
+(setq my-leader5 "C-c a s")
 
 (general-define-key :prefix my-leader5
                     :prefix-command 'Search
@@ -134,7 +134,7 @@
                     "x" 'ag
                     )
 
-(setq my-leader6 "C-SPC q")
+(setq my-leader6 "C-c a q")
 
 (general-define-key :prefix my-leader6
                     :prefix-command 'Quit
@@ -143,7 +143,7 @@
                     "c" 'restart-a-clean-emacs ;no desktop buffer saved
                     )
 
-(setq my-leader7 "C-SPC h")
+(setq my-leader7 "C-c a h")
 
 (general-define-key :prefix my-leader7
                     :prefix-command 'Highlight
@@ -160,7 +160,7 @@
                     "l" 'hfeng-line
                     )
 
-(setq my-leader8 "C-SPC m")
+(setq my-leader8 "C-c a m")
 
 (general-define-key :prefix my-leader8
                     :prefix-command 'MultipleCursors
@@ -188,7 +188,7 @@
                     "x" 'mc/skip-to-previous-like-this; not use often
                     )
 
-(setq my-leader9 "C-SPC w")
+(setq my-leader9 "C-c a w")
 
 (general-define-key :prefix my-leader9
                     :prefix-command 'Window
@@ -205,7 +205,7 @@
                     "j" 'windmove-down
                     )
 
-(setq my-leader10 "C-SPC x")
+(setq my-leader10 "C-c a x")
 
 (general-define-key :prefix my-leader10
                     :prefix-command 'X
@@ -216,7 +216,7 @@
                     "x" 'regex-tool
                     "c" 'recompile-emacs
                     )
-(setq my-leader11 "C-SPC a")
+(setq my-leader11 "C-c a a")
 
 (general-define-key :prefix my-leader11
                     :prefix-command 'Avy
@@ -229,7 +229,7 @@
                     "k" 'avy-kill-region
                     )
 
-(setq my-leader12 "C-SPC v")
+(setq my-leader12 "C-c a v")
 
 (general-define-key :prefix my-leader12
                     :prefix-command 'VisualBM
@@ -240,7 +240,7 @@
                     "p" 'bm-previous
                     )
 
-(setq my-leader13 "C-SPC r")
+(setq my-leader13 "C-c a r")
 
 (general-define-key :prefix my-leader13
                     :prefix-command 'Register
@@ -252,7 +252,7 @@
                     "i" 'insert-register
                     )
 
-(setq my-leader14 "C-SPC e")
+(setq my-leader14 "C-c a e")
 
 (general-define-key :prefix my-leader14
                     :prefix-command 'Edit
@@ -272,7 +272,7 @@
                     )
 
 
-(setq my-leader15 "C-SPC j")
+(setq my-leader15 "C-c a j")
 
 (general-define-key :prefix my-leader15
                     :prefix-command 'Jump      ;jump will go to definite one buffer
@@ -295,22 +295,22 @@
 
 (add-hook 'go-mode-hook
     '(lambda ()
-       (local-set-key (kbd "C-SPC j j") 'godef-jump)))
+       (local-set-key (kbd "C-c a j j") 'godef-jump)))
 
 (add-hook 'org-mode-hook
     '(lambda ()
-       (local-set-key (kbd "C-SPC j j") 'org-edit-special)
+       (local-set-key (kbd "C-c a j j") 'org-edit-special)
        ))
 
 (add-hook 'org-src-mode-hook ;; guessing
     '(lambda ()
-       (local-set-key (kbd "C-SPC j e") 'org-edit-src-exit)
+       (local-set-key (kbd "C-c a j e") 'org-edit-src-exit)
        ))
 
 
 
 
-(setq my-leader16 "C-SPC t")
+(setq my-leader16 "C-c a t")
 
 (general-define-key :prefix my-leader16
                     :prefix-command 'Toggle
@@ -327,7 +327,7 @@
                     )
 
 
-(setq my-leader17 "C-SPC i")
+(setq my-leader17 "C-c a i")
 
 (general-define-key :prefix my-leader17
                     :prefix-command 'Info
@@ -338,7 +338,7 @@
                     "e" 'eval-last-sexp
                     )
 
-(setq my-leader17 "C-SPC n")
+(setq my-leader17 "C-c a n")
 
 (general-define-key :prefix my-leader17
                     :prefix-command 'Not-open
@@ -347,7 +347,7 @@
                     "s" 'hfeng/bk-kill-buffers-shell-pwd
                     )
 
-(setq my-leader18 "C-SPC p")
+(setq my-leader18 "C-c a p")
 
 (general-define-key :prefix my-leader18
                     :prefix-command 'PerMode
@@ -357,31 +357,31 @@
 
 (add-hook 'go-mode-hook
     '(lambda ()
-       (local-set-key (kbd "C-SPC p a") 'helm-go-package))) ;add package
+       (local-set-key (kbd "C-c a p a") 'helm-go-package))) ;add package
 
 (add-hook 'go-mode-hook
     '(lambda ()
-       (local-set-key (kbd "C-SPC p d") 'godoc-at-point)))
+       (local-set-key (kbd "C-c a p d") 'godoc-at-point)))
 
 
 (add-hook 'python-mode-hook
     '(lambda ()
-       (local-set-key (kbd "C-SPC p f") 'elpy-autopep8-fix-code)))
+       (local-set-key (kbd "C-c a p f") 'elpy-autopep8-fix-code)))
 
 (add-hook 'python-mode-hook
     '(lambda ()
-       (local-set-key (kbd "C-SPC p v") 'venv-workon))) ;choose python version
+       (local-set-key (kbd "C-c a p v") 'venv-workon))) ;choose python version
 
 (add-hook 'python-mode-hook
     '(lambda ()
-       (local-set-key (kbd "C-SPC p r") 'run-python))) ;repl
+       (local-set-key (kbd "C-c a p r") 'run-python))) ;repl
 
 (add-hook 'ess-mode-hook
     '(lambda ()
-       (local-set-key (kbd "C-SPC p l") 'ess-load-file)))
+       (local-set-key (kbd "C-c a p l") 'ess-load-file)))
 (add-hook 'inferior-python-mode-hook
     '(lambda ()
-       (local-set-key (kbd "C-SPC p v") 'venv-workon))) ;choose python version
+       (local-set-key (kbd "C-c a p v") 'venv-workon))) ;choose python version
 
 (defun plantuml-preview-with-prefix-arg ()
   (interactive)
@@ -395,4 +395,4 @@
 
 (add-hook 'plantuml-mode-hook
     '(lambda ()
-       (local-set-key (kbd "C-SPC p v") 'plantuml-preview-with-prefix-arg)))
+       (local-set-key (kbd "C-c a p v") 'plantuml-preview-with-prefix-arg)))
