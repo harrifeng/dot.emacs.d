@@ -102,6 +102,7 @@
                     "u" 'ibuffer
                     "w" 'mark-whole-buffer
                     "t" 'load-theme-buffer-local
+                    "x" 'sudo-edit
                     )
 
 (setq my-leader3 (concat hfeng-prefix " f"))
@@ -274,10 +275,10 @@
                     "r" 'replace-string
                     "t" 'delete-trailing-whitespace
                     "q" 'query-replace-from-region ;Only query replace can use this region as first parameter
-                    "s" 'sudo-edit
                     "m" 'wgrep-change-to-wgrep-mode ;multiple modify
                     "f" 'wgrep-finish-edit
                     "k" 'wgrep-abort-changes
+                    "s" 'sort-lines
                     )
 
 
