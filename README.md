@@ -89,3 +89,8 @@ brew install shellcheck
 ```
      choco install -y git diffutils nodejs python2 ag
 ```
+
+## Docker install
+```
+docker run --name cow --net host -e listen=http://0.0.0.0:7777 -e proxy=ss://aes-256-cfb:pwd@harrifeng.club:1984 -d fzinfz/cow
+```
