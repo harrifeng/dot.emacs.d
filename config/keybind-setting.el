@@ -99,9 +99,9 @@
                     "p" 'previous-buffer
                     "r" 'revert-buffer-no-confirm ;Revert
                     "s" 'save-buffer
+                    "t" 'load-theme-buffer-local
                     "u" 'ibuffer
                     "w" 'mark-whole-buffer
-                    "t" 'load-theme-buffer-local
                     "x" 'sudo-edit
                     )
 
@@ -111,9 +111,9 @@
                     :prefix-command 'File
                     "f" 'find-file
                     "h" 'helm-find-files
+                    "m" 'helm-bookmarks
                     "o" 'find-file-other-window
                     "p" 'helm-projectile ; opened files called buffer
-                    "m" 'helm-bookmarks
                     )
 
 
@@ -124,8 +124,8 @@
                     "g" 'magit-status
                     "a" 'git-add-current-buffer-to-git ;add & stash
                     "b" 'vc-annotate                   ;blame
-                    "d" 'vc-diff
                     "c" 'with-editor-finish ;Commit it
+                    "d" 'vc-diff
                     "e" 'with-editor-cancel ;Exit commit
                     "r" 'vc-revert
                     "s" 'git-add-current-buffer-to-git ;add & stash
@@ -149,8 +149,8 @@
 (general-define-key :prefix my-leader6
                     :prefix-command 'Quit
                     "q" 'save-buffers-kill-terminal   ;Exit
-                    "r" 'restart-emacs
                     "c" 'restart-a-clean-emacs ;no desktop buffer saved
+                    "r" 'restart-emacs
                     )
 
 (setq my-leader7 (concat hfeng-prefix " h"))
@@ -205,14 +205,14 @@
                     "w" 'delete-other-windows
                     "a" 'balance-windows
                     "b" 'split-window-and-cursor-below
-                    "r" 'split-window-and-cursor-right
                     "d" 'delete-window
-                    "o" 'other-window
-                    "s" 'switch-window
                     "h" 'windmove-left
-                    "l" 'windmove-right
-                    "k" 'windmove-up
                     "j" 'windmove-down
+                    "k" 'windmove-up
+                    "l" 'windmove-right
+                    "o" 'other-window
+                    "r" 'split-window-and-cursor-right
+                    "s" 'switch-window
                     )
 
 (setq my-leader10 (concat hfeng-prefix " x"))
@@ -220,11 +220,11 @@
 (general-define-key :prefix my-leader10
                     :prefix-command 'X
                     "b" 'bookmark-set
+                    "c" 'recompile-emacs
                     "d" 'text-scale-decrease
                     "i" 'text-scale-increase
                     "u" 'untabify
                     "x" 'regex-tool
-                    "c" 'recompile-emacs
                     )
 (setq my-leader11 (concat hfeng-prefix " a"))
 
@@ -255,11 +255,11 @@
 (general-define-key :prefix my-leader13
                     :prefix-command 'Register
                     "r" 'append-to-register
+                    "a" 'append-to-register
+                    "i" 'insert-register
                     "l" 'helm-register  ;list register
                     "n" 'copy-to-register ;new register content
-                    "a" 'append-to-register
                     "p" 'prepend-to-register
-                    "i" 'insert-register
                     )
 
 (setq my-leader14 (concat hfeng-prefix " e"))
@@ -269,16 +269,16 @@
                     "e" 'query-replace
                     "a" 'align-whitespace
                     "b" 'backward-kill-line
-                    "u" 'upcase-region  ;M-u upcase-word
-                    "l" 'downcase-region ;M-l downcase-word
-                    "w" 'whack-whitespace
-                    "r" 'replace-string
-                    "t" 'delete-trailing-whitespace
-                    "q" 'query-replace-from-region ;Only query replace can use this region as first parameter
-                    "m" 'wgrep-change-to-wgrep-mode ;multiple modify
                     "f" 'wgrep-finish-edit
                     "k" 'wgrep-abort-changes
+                    "l" 'downcase-region ;M-l downcase-word
+                    "m" 'wgrep-change-to-wgrep-mode ;multiple modify
+                    "q" 'query-replace-from-region ;Only query replace can use this region as first parameter
+                    "r" 'replace-string
                     "s" 'sort-lines
+                    "t" 'delete-trailing-whitespace
+                    "u" 'upcase-region  ;M-u upcase-word
+                    "w" 'whack-whitespace
                     )
 
 
