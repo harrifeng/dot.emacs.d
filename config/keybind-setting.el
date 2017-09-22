@@ -325,14 +325,14 @@
 (general-define-key :prefix my-leader16
                     :prefix-command 'Toggle
                     "t" 'hs-toggle-hiding
+                    "a" 'artist-mode
+                    "e" 'toggle-flycheck-error-buffer
+                    "f" 'toggle-frame-fullscreen
                     "h" 'hs-hide-all
                     "i" 'image-toggle-display
-                    "s" 'hs-show-all
-                    "a" 'artist-mode
-                    "r" 'read-only-mode
                     "l" 'toggle-truncate-lines
-                    "f" 'toggle-frame-fullscreen
-                    "e" 'toggle-flycheck-error-buffer
+                    "r" 'read-only-mode
+                    "s" 'hs-show-all
                     "w" 'whitespace-mode
                     )
 
@@ -342,10 +342,10 @@
 (general-define-key :prefix my-leader17
                     :prefix-command 'Info
                     "i" 'shell-command
-                    "v" 'describe-variable
+                    "e" 'eval-last-sexp
                     "k" 'describe-key
                     "s" 'yas/describe-tables ;short key
-                    "e" 'eval-last-sexp
+                    "v" 'describe-variable
                     )
 
 (setq my-leader17 (concat hfeng-prefix " n"))
