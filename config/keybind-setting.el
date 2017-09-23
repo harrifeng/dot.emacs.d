@@ -314,7 +314,7 @@
 
 (add-hook 'org-src-mode-hook ;; guessing
     '(lambda ()
-       (local-set-key (kbd (concat hfeng-prefix " j e")) 'org-edit-src-exit)
+       (local-set-key (kbd (concat hfeng-prefix " j f")) 'org-edit-src-exit)
        ))
 
 
