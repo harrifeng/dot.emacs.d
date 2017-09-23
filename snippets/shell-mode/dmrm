@@ -1,4 +1,4 @@
 # contributor: Harri Feng <harrifeng@gmail.com>
-# name: docker find dagling image
+# name: Docker iMage RM dangling one
 # --
 docker rmi \`docker images --quiet --filter "dangling=true"\`

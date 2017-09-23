@@ -246,7 +246,7 @@
 
 (defun local-proxy()
   (interactive)
-  (setq url-proxy-services '(("http" . "127.0.0.1:8123")))
+  (setq url-proxy-services '(("http" . "127.0.0.1:7777")))
   )
 (defun no-proxy()
   (interactive)
