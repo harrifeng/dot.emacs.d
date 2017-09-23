@@ -317,8 +317,10 @@
        (local-set-key (kbd (concat hfeng-prefix " j f")) 'org-edit-src-exit)
        ))
 
-
-
+(add-hook 'picture-mode-hook ;; artist mode use picture-mode as major mode
+    '(lambda ()
+       (local-set-key (kbd (concat hfeng-prefix " j f")) 'org-edit-src-exit)
+       ))
 
 (setq my-leader16 (concat hfeng-prefix " t"))
 
