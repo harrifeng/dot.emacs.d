@@ -1,0 +1,4 @@
+# contributor: Harri Feng <harrifeng@gmail.com>
+# name: Eshell Proxy
+# --
+export http_proxy=localhost:7777
