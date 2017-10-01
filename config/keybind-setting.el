@@ -375,6 +375,9 @@
     '(lambda ()
        (local-set-key (kbd (concat hfeng-prefix " p d")) 'godoc-at-point)))
 
+(add-hook 'go-mode-hook
+    '(lambda ()
+       (local-set-key (kbd (concat hfeng-prefix " p g")) 'go-guru-describe)))
 
 (add-hook 'python-mode-hook
     '(lambda ()
