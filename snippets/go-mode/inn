@@ -1,0 +1,6 @@
+# contributor: Harri Feng <harrifeng@gmail.com>
+# name: If Not Nil
+# --
+if err != nil {
+   $0
+}
