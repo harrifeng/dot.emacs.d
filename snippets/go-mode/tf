@@ -1,0 +1,4 @@
+# contributor: Harri Feng <harrifeng@gmail.com>
+# name: Time Finish
+# --
+fmt.Println("<--Time used-->:", time.Since(start))
