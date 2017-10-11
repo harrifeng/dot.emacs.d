@@ -343,14 +343,15 @@
 
 (general-define-key :prefix my-leader17
                     :prefix-command 'Info
-                    "i" 'shell-command
+                    "i" 'hfeng/shell-command-to-current-pos
+                    "t" 'shell-command
                     "e" 'eval-last-sexp
                     "k" 'describe-key
                     "s" 'yas/describe-tables ;short key
                     "v" 'describe-variable
                     )
 
-(setq my-leader17 (concat hfeng-prefix " n"))
+(setq my-leader18 (concat hfeng-prefix " n"))
 
 (general-define-key :prefix my-leader17
                     :prefix-command 'Not-open
@@ -359,7 +360,7 @@
                     "s" 'hfeng/bk-kill-buffers-shell-pwd
                     )
 
-(setq my-leader18 (concat hfeng-prefix " p"))
+(setq my-leader19 (concat hfeng-prefix " p"))
 
 (general-define-key :prefix my-leader18
                     :prefix-command 'PerMode
@@ -411,3 +412,8 @@
 (add-hook 'plantuml-mode-hook
     '(lambda ()
        (local-set-key (kbd (concat hfeng-prefix " p v")) 'plantuml-preview-with-prefix-arg)))
+
+(defun hfeng/shell-command-to-current-pos ()
+  (interactive)
+  (setq current-prefix-arg '(4)) ; C-u
+  (call-interactively 'shell-command))
