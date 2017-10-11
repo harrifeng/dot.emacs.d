@@ -94,7 +94,7 @@
                     "d" 'kill-buffer
                     "e" 'end-of-buffer
                     "i" 'indent-whole
-                    "k" 'kill-buffer
+                    "k" 'hfeng/kill-all-region
                     "n" 'next-buffer
                     "o" 'copy-whole-buffer
                     "p" 'previous-buffer
