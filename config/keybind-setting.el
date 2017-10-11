@@ -353,7 +353,7 @@
 
 (setq my-leader18 (concat hfeng-prefix " n"))
 
-(general-define-key :prefix my-leader17
+(general-define-key :prefix my-leader18
                     :prefix-command 'Not-open
                     "n" 'hfeng/bk-kill-buffers
                     "c" 'hfeng/bk-kill-buffers-compilation
@@ -362,7 +362,7 @@
 
 (setq my-leader19 (concat hfeng-prefix " p"))
 
-(general-define-key :prefix my-leader18
+(general-define-key :prefix my-leader19
                     :prefix-command 'PerMode
                     "p" 'hfeng/previous-buffer-same-mode
                     "n" 'hfeng/next-buffer-same-mode
