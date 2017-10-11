@@ -93,6 +93,7 @@
                     "b" 'helm-mini
                     "d" 'kill-buffer
                     "e" 'end-of-buffer
+                    "f" 'rename-buffer  ; refresh
                     "i" 'indent-whole
                     "k" 'hfeng/kill-all-region
                     "n" 'next-buffer
