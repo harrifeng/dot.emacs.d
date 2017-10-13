@@ -345,12 +345,12 @@
 
 (general-define-key :prefix my-leader17
                     :prefix-command 'Info
-                    "i" 'hfeng/shell-command-to-current-pos
-                    "t" 'shell-command
+                    "i" 'shell-command
                     "e" 'eval-last-sexp
                     "k" 'describe-key
                     "s" 'yas/describe-tables ;short key
                     "v" 'describe-variable
+                    "y" 'hfeng/shell-command-to-current-pos
                     )
 
 (setq my-leader18 (concat hfeng-prefix " n"))
