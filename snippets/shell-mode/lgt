@@ -1,4 +1,4 @@
 # contributor: Harri Feng <harrifeng@gmail.com>
 # name: Leetcode Go Test
 # --
-go run cmdtest.go -t $0
+go run cmd/cl.go -t $0
