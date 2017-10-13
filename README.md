@@ -1,5 +1,11 @@
 # Emacs configuration ReadMe #
 
+## Configure Git
+
+```
+git config --global credential.helper store
+```
+
 ## mac version emacs with svg support
 
 ```

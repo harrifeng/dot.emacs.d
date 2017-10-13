@@ -1,6 +1,12 @@
 (provide 'helpfunc-setting)
 
 (require 'cl)
+(defun hfeng/kill-all-region ()
+  (interactive)
+  (kill-region (point-min)
+               (point-max)))
+
+
 (defun hfeng/bk-kill-buffers (regexp)
   "Kill buffers matching REGEXP without asking for confirmation."
   (interactive "sKill buffers matching this regular expression: ")

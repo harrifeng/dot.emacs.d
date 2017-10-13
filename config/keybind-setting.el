@@ -89,11 +89,13 @@
 
 (general-define-key :prefix my-leader2
                     :prefix-command 'Buffer
-                    "b" 'helm-mini
                     "a" 'beginning-of-buffer
+                    "b" 'helm-mini
+                    "d" 'kill-buffer
                     "e" 'end-of-buffer
+                    "f" 'rename-buffer  ; refresh
                     "i" 'indent-whole
-                    "k" 'kill-buffer
+                    "k" 'hfeng/kill-all-region
                     "n" 'next-buffer
                     "o" 'copy-whole-buffer
                     "p" 'previous-buffer
@@ -353,7 +355,7 @@
 
 (setq my-leader18 (concat hfeng-prefix " n"))
 
-(general-define-key :prefix my-leader17
+(general-define-key :prefix my-leader18
                     :prefix-command 'Not-open
                     "n" 'hfeng/bk-kill-buffers
                     "c" 'hfeng/bk-kill-buffers-compilation
@@ -362,7 +364,7 @@
 
 (setq my-leader19 (concat hfeng-prefix " p"))
 
-(general-define-key :prefix my-leader18
+(general-define-key :prefix my-leader19
                     :prefix-command 'PerMode
                     "p" 'hfeng/previous-buffer-same-mode
                     "n" 'hfeng/next-buffer-same-mode
