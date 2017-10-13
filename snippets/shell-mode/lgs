@@ -1,0 +1,4 @@
+# contributor: Harri Feng <harrifeng@gmail.com>
+# name: Leetcode Go Submit
+# --
+go run cmdtest.go -s $0
