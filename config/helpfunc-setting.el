@@ -67,6 +67,12 @@
   (find-file "~/go/src/github.com/harrifeng/playground/")
   )
 
+(defun hfeng/jump-to-main-go ()
+  (interactive)
+  (find-file "~/tmp/main.go")
+  )
+
+
 (defun copy-whole-buffer ()
   "kill the whole buffer"
   (interactive)

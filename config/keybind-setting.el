@@ -293,7 +293,7 @@
                     "l" 'helm-all-mark-rings
 
                     "t" 'hfeng/jump-to-scratch ;tmp file
-                    "m" 'hfeng/jump-to-message ;message file
+                    "m" 'hfeng/jump-to-main-go
                     "e" 'hfeng/jump-to-emacsd  ;emacs.d folder
                     "g" 'hfeng/jump-to-go      ;go folder
 
