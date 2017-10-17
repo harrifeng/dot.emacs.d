@@ -63,9 +63,13 @@ sql-setting.el is need if you use sql very often, one example el file looks like
 go get -u -v github.com/nsf/gocode  golang.org/x/tools/cmd/goimports github.com/tpng/gopkgs  github.com/ramya-rao-a/go-outline  github.com/acroca/go-symbols  golang.org/x/tools/cmd/guru  golang.org/x/tools/cmd/gorename  github.com/fatih/gomodifytags  github.com/josharian/impl  github.com/rogpeppe/godef  sourcegraph.com/sqs/goreturns  github.com/golang/lint/golint  github.com/cweill/gotests/...  github.com/derekparker/delve/cmd/dlv
 ```
 
-## nodejs install
+## cnpm install first
 
-    $ npm install -g js-beautify webpack tern livedown yaml-jsyaml
+    $ npm install -g cnpm --registry=https://registry.npm.taobao.org
+
+## nodejs install global package
+
+    $ cnpm install -g js-beautify webpack tern livedown yaml-jsyaml npm-check-updates
 
 ## python install
 
