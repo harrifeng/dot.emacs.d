@@ -208,6 +208,7 @@
      general
      auto-highlight-symbol
      go-mode
+     go-gopath
      go-guru
      gotest
      groovy-mode
