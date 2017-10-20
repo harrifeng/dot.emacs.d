@@ -149,10 +149,8 @@
 (setq my-leader6 (concat hfeng-prefix " q"))
 
 (general-define-key :prefix my-leader6
-                    :prefix-command 'Quit
-                    "q" 'save-buffers-kill-terminal   ;Exit
-                    "c" 'restart-a-clean-emacs ;no desktop buffer saved
-                    "r" 'restart-emacs
+                    :prefix-command 'Query
+                    "q" 'query-replace
                     )
 
 (setq my-leader7 (concat hfeng-prefix " h"))
@@ -227,6 +225,9 @@
                     "i" 'text-scale-increase
                     "u" 'untabify
                     "x" 'regex-tool
+                    "q" 'save-buffers-kill-terminal   ; Close
+                    "c" 'restart-a-clean-emacs ; Clean Reatart
+                    "r" 'restart-emacs         ; Restart
                     )
 (setq my-leader11 (concat hfeng-prefix " a"))
 
