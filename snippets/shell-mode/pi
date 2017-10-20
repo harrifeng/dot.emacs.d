@@ -1,0 +1,4 @@
+# contributor: Harri Feng <harrifeng@gmail.com>
+# name: Pip install
+# --
+pip install -U $0 -i http://mirrors.aliyun.com/pypi/simple --trusted-host=mirrors.aliyun.com
