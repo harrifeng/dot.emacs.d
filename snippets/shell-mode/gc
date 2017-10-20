@@ -1,4 +1,4 @@
 # contributor: Harri Feng <harrifeng@gmail.com>
-# name: Git Commit
+# name: Git Checkout Master
 # --
-git commit -m \"$1\"
+git checkout ${1:master} $0
