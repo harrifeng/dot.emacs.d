@@ -151,6 +151,7 @@
 (general-define-key :prefix my-leader6
                     :prefix-command 'Query
                     "q" 'query-replace
+                    "r" 'query-replace-from-region ;Only query replace can use this region as first parameter
                     )
 
 (setq my-leader7 (concat hfeng-prefix " h"))
