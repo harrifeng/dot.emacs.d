@@ -221,14 +221,14 @@
 (general-define-key :prefix my-leader10
                     :prefix-command 'X
                     "b" 'bookmark-set
-                    "c" 'recompile-emacs
-                    "d" 'text-scale-decrease
-                    "i" 'text-scale-increase
+                    "c" 'restart-a-clean-emacs ; Clean Reatart
+                    "d" 'text-scale-decrease   ;no work under console
+                    "i" 'text-scale-increase   ;no work under console
+                    "q" 'save-buffers-kill-terminal   ; Close
+                    "r" 'recompile-emacs
                     "u" 'untabify
                     "x" 'regex-tool
-                    "q" 'save-buffers-kill-terminal   ; Close
-                    "c" 'restart-a-clean-emacs ; Clean Reatart
-                    "r" 'restart-emacs         ; Restart
+                    "z" 'restart-emacs  ;no work under console
                     )
 (setq my-leader11 (concat hfeng-prefix " a"))
 
