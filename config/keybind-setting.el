@@ -258,12 +258,12 @@
 
 (general-define-key :prefix my-leader13
                     :prefix-command 'Register
-                    "r" 'append-to-register
-                    "a" 'append-to-register
+                    "r" 'copy-to-register ;new register content
+                    "a" 'append-to-register ;back keep old
                     "i" 'insert-register
                     "l" 'helm-register  ;list register
                     "n" 'copy-to-register ;new register content
-                    "p" 'prepend-to-register
+                    "p" 'prepend-to-register ;front keep old
                     )
 
 (setq my-leader14 (concat hfeng-prefix " e"))
