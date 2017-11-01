@@ -6,6 +6,8 @@
   (kill-region (point-min)
                (point-max)))
 
+(fset 'replace-ctrlms
+      [escape ?< escape ?% ?\C-q ?\C-m return ?\C-q ?\C-j return ?!])
 
 (defun hfeng/bk-kill-buffers (regexp)
   "Kill buffers matching REGEXP without asking for confirmation."
