@@ -94,7 +94,7 @@ git clone https://github.com/golang/tools.git
 
 ## python install
 
-    $ pip install rope flake8 importmagic autopep8 yapf powerline-status psutil
+    $ pip install -U pip rope flake8 importmagic autopep8 yapf -i http://mirrors.aliyun.com/pypi/simple --trusted-host=mirrors.aliyun.com
 
 ## flycheck
 + for shell flycheck,you need
