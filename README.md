@@ -60,6 +60,13 @@ sql-setting.el is need if you use sql very often, one example el file looks like
 
 
 ```
+branch="release-branch.go1.8"
+mkdir -p $GOPATH/src/golang.org/x
+
+git clone -b $branch git@github.com:golang/tools.git $GOPATH/src/golang.org/x/tools
+git clone git@github.com:golang/net.git $GOPATH/src/golang.org/x/net
+
+cd $GOPATH
 go get -v github.com/nsf/gocode
 go get -v golang.org/x/tools/cmd/goimports
 go get -v github.com/tpng/gopkgs
