@@ -205,14 +205,14 @@
                     :prefix-command 'Window
                     "w" 'delete-other-windows
                     "a" 'balance-windows
-                    "b" 'split-window-and-cursor-below
+                    "b" 'split-window-below
                     "d" 'delete-window
                     "h" 'windmove-left
                     "j" 'windmove-down
                     "k" 'windmove-up
                     "l" 'windmove-right
                     "o" 'other-window
-                    "r" 'split-window-and-cursor-right
+                    "r" 'split-window-right
                     "s" 'switch-window
                     )
 
