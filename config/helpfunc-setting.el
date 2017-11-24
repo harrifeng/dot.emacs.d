@@ -241,6 +241,7 @@
      regex-tool
      restart-emacs
      rjsx-mode
+     rotate
      rubocop
      scss-mode
      simple-httpd
