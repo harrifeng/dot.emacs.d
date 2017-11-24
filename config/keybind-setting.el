@@ -64,7 +64,7 @@
                     "'"   'open-eshell-pwd ;mainly used in windows
                     "RET" 'split-window-right
                     ","   'split-window-below
-                    "."   'split-window-right ; `.` is right of `,`
+                    "."   'split-window-below
                     "0"   'delete-window
                     "-"   'delete-window
                     "="   'delete-window
