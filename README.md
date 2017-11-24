@@ -137,3 +137,9 @@ docker run --name cow -p 7777:7777 -e listen=http://0.0.0.0:7777 -e proxy=ss://a
 ```
 xterm -xrm '*.VT100.translations: #override Ctrl <Key>Return: string(0x1c)'
 ```
+
+## linux often
+```
+sudo unlink /etc/localtime
+sudo ln -s /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
+```
