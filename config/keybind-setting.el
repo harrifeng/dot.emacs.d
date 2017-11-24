@@ -63,8 +63,10 @@
                     ";"   'open-shell-pwd ;Most frequently used
                     "'"   'open-eshell-pwd ;mainly used in windows
                     "<return>" 'open-shell-pwd
-                    ","   'split-window-and-cursor-below
-                    "."   'split-window-and-cursor-right ; `.` is right of `,`
+                    ;; ","   'split-window-and-cursor-below
+                    ;; "."   'split-window-and-cursor-right ; `.` is right of `,`
+                    ","   'split-window-below
+                    "."   'split-window-right ; `.` is right of `,`
                     "0"   'delete-window
                     "-"   'delete-window
                     "="   'delete-window
