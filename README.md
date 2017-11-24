@@ -125,7 +125,7 @@ brew install shellcheck
 
 ## Choco install
 ```
-     choco install -y git diffutils nodejs python2 ag wget
+     choco install -y emacs64 git diffutils nodejs python2 ag wget virtualbox vagrant golang jdk8
 ```
 
 ## Docker install
