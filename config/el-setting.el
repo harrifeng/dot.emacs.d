@@ -264,6 +264,25 @@
             (define-key python-mode-map (kbd "C-m") 'python-hfeng-run)
             ))
 
+(defun sh-hfeng-run ()
+  (interactive)
+  (save-buffer)
+
+  (if (eq system-type 'windows-nt)
+      (setq sh-run-command "sh %s")
+    (setq sh-run-command "sh %s"))
+  (compile
+   (format sh-run-command
+           (buffer-file-name)))
+  (my-make-room-for-new-compilation-buffer)
+  )
+
+
+(add-hook 'sh-mode-hook
+          (lambda ()
+            (define-key sh-mode-map (kbd "<f9>") 'sh-hfeng-run)
+            (define-key sh-mode-map (kbd "C-m") 'sh-hfeng-run)
+            ))
 
 ;; [H]ighlight-indentation------------------------------------------------>>
 (add-hook 'ruby-mode-hook
