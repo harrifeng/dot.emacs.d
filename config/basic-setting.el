@@ -86,9 +86,9 @@
     ":pixelsize=20")
    ((string-match system-name "hfeng-laptop")
     ":pixelsize=23")
-   ((string-match system-name "hfengdeMacBook-Pro.local")
-    ":pixelsize=15")
-   (":pixelsize=20")))
+   ((string-match system-name "hfeng-workspace")
+    ":pixelsize=18")
+   (":pixelsize=18")))
 
 ;; red some color
 (set-cursor-color "red")
