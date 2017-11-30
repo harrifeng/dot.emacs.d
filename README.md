@@ -125,8 +125,7 @@ brew install shellcheck
 
 ## Choco install
 ```
-choco install -y ag wget diffutils git emacs64 SourceCodePro nodejs python3 \
-golang jdk9 virtualbox vagrant PyCharm-community intellijidea-community cmder
+choco install -y ag wget diffutils git emacs64 SourceCodePro nodejs python3 golang jdk9 virtualbox vagrant PyCharm-community intellijidea-community cmder
 ```
 
 ## Docker install
