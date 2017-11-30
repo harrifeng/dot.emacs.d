@@ -82,6 +82,13 @@
                   (point-max))
   )
 
+(defun open-pwd-shell-or-eshell-windows-nt-or-not ()
+  "Open a shell on pwd"
+  (interactive)
+  (if (eq system-type 'windows-nt)
+      (open-eshell-pwd)
+    (open-shell-pwd)))
+
 (defun open-shell-pwd ()
   "Open a shell on pwd"
   (interactive)

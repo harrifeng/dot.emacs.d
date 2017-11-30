@@ -61,8 +61,8 @@
 (setq my-leader1 hfeng-prefix)
 
 (general-define-key :prefix my-leader1
-                    ";"   'open-shell-pwd ;Most frequently used
-                    "'"   'open-eshell-pwd ;mainly used in windows
+                    ";"   'open-pwd-shell-or-eshell-windows-nt-or-not
+                    "'"   'open-pwd-shell-or-eshell-windows-nt-or-not
                     "RET" 'split-window-right
                     ","   'split-window-below
                     "."   'split-window-below
