@@ -315,3 +315,6 @@
 
 (if (file-exists-p "/usr/local/bin/git")
     (setq magit-git-executable "/usr/local/bin/git"))
+
+;; python3
+(add-to-list 'auto-mode-alist '("\\.py3\\'" . python-mode))
