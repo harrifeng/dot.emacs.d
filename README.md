@@ -115,8 +115,8 @@ brew install shellcheck
 + First usage use following command to first initialize the environment on shell you can go to .emacs.d folder and run
 
 ```
-    $(tail -n1 README.md
-    ```
+    $tail -n1 README.md
+```
 + Actual-work script
 
 ```
@@ -125,7 +125,8 @@ brew install shellcheck
 
 ## Choco install
 ```
-     choco install -y emacs64 git diffutils nodejs python2 ag wget virtualbox vagrant golang jdk8
+choco install -y ag wget diffutils git emacs64 SourceCodePro nodejs python3 \
+golang jdk9 virtualbox vagrant PyCharm-community intellijidea-community cmder
 ```
 
 ## Docker install
