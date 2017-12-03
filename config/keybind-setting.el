@@ -2,7 +2,6 @@
 ;; git add current buffer to version control!
 (global-set-key (kbd "ESC l")             'rotate-layout)
 (global-set-key (kbd "<f5>")              'revert-buffer-no-confirm)
-(global-set-key (kbd "<f6>")              'helm-all-mark-rings)
 (global-set-key (kbd "<f7>")              'indent-whole)
 (global-set-key (kbd "<f8>")              'toggle-flycheck-error-buffer)
 (global-set-key (kbd "<f12>")             'whitespace-mode)
@@ -297,10 +296,11 @@
 
                     "t" 'hfeng/jump-to-scratch ;tmp file
                     "m" 'hfeng/jump-to-main-go
-                    "e" 'hfeng/jump-to-emacsd  ;emacs.d folder
+                    "x" 'hfeng/jump-to-emacsd  ;emacs.d folder
                     "g" 'hfeng/jump-to-go      ;go folder
 
                     "s" 'shell
+                    "e" 'eshell
                     "n" 'goto-line      ;line number
                     "p" 'hfeng/jump-to-python ; python interpreter
                     )
