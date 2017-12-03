@@ -1,8 +1,8 @@
 (provide 'keybind-setting)
 ;; git add current buffer to version control!
 (global-set-key (kbd "ESC l")             'rotate-layout)
-(global-set-key (kbd "<f2>")              'helm-all-mark-rings)
 (global-set-key (kbd "<f5>")              'revert-buffer-no-confirm)
+(global-set-key (kbd "<f6>")              'helm-all-mark-rings)
 (global-set-key (kbd "<f7>")              'indent-whole)
 (global-set-key (kbd "<f8>")              'toggle-flycheck-error-buffer)
 (global-set-key (kbd "<f12>")             'whitespace-mode)
