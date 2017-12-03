@@ -209,6 +209,7 @@
      darcula-theme
      dockerfile-mode
      docker-tramp
+     doom-themes
      elnode
      elpy
      ess
