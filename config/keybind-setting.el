@@ -152,6 +152,7 @@
                     :prefix-command 'Query
                     "q" 'query-replace
                     "r" 'query-replace-from-region ;Only query replace can use this region as first parameter
+                    "v" 'vr/query-replace
                     )
 
 (setq my-leader7 (concat hfeng-prefix " h"))
