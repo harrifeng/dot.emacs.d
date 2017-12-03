@@ -302,8 +302,7 @@
 
                     "s" 'shell
                     "n" 'goto-line      ;line number
-                    "p" 'hfeng/go-to-previous-mark-in-current-buffer
-                    "y" 'hfeng/jump-to-python ; python interpreter
+                    "p" 'hfeng/jump-to-python ; python interpreter
                     )
 
 
