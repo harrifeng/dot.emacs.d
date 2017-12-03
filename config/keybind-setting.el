@@ -303,7 +303,6 @@
                     "s" 'shell
                     "n" 'goto-line      ;line number
                     "p" 'hfeng/go-to-previous-mark-in-current-buffer
-                    "r" 'inf-ruby       ;ruby interpreter
                     "y" 'hfeng/jump-to-python ; python interpreter
                     )
 
