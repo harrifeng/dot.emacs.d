@@ -108,3 +108,4 @@ ido.last
 bookmarks
 *.jar
 savehist
+flycheck_keybind-setting.el
