@@ -297,7 +297,7 @@
 
                     "t" 'hfeng/jump-to-scratch ;tmp file
                     "m" 'hfeng/jump-to-main-go
-                    "x" 'hfeng/jump-to-emacsd  ;emacs.d folder
+                    "r" 'hfeng/jump-to-emacsd  ;emacs.d is the root folder
                     "g" 'hfeng/jump-to-go      ;go folder
 
                     "s" 'shell
