@@ -318,7 +318,8 @@
 
 ;; [M]aterial theme------------------------------------------------------->>
 ;; (load-theme 'adwaita t)
-(load-theme 'material t)
+;; (load-theme 'material t)
+(load-theme 'doom-molokai t)
 
 ;; [P]lantuml-mode-------------------------------------------------------->>
 (add-to-list
