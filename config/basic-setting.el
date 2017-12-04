@@ -80,15 +80,26 @@
 (package-initialize)
 
 ;; different font size for different hosts
-(defconst my-font-size
+(defconst my-english-font-size
   (cond
    ((string-match system-name "hfeng-desktop")
-    ":pixelsize=20")
+    ":pixelsize=18")
    ((string-match system-name "hfeng-laptop")
-    ":pixelsize=23")
+    ":pixelsize=18")
    ((string-match system-name "hfeng-workspace")
     ":pixelsize=18")
    (":pixelsize=18")))
+
+(defconst my-chinese-font-size
+  (cond
+   ((string-match system-name "hfeng-desktop")
+    20)
+   ((string-match system-name "hfeng-laptop")
+    20)
+   ((string-match system-name "hfeng-workspace")
+    20)
+   (20)))
+
 
 ;; red some color
 (set-cursor-color "red")
