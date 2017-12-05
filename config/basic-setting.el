@@ -83,22 +83,22 @@
 (defconst my-english-font-size
   (cond
    ((string-match system-name "hfeng-desktop")
-    ":pixelsize=18")
+    ":pixelsize=19")
    ((string-match system-name "hfeng-laptop")
-    ":pixelsize=18")
+    ":pixelsize=19")
    ((string-match system-name "hfeng-workspace")
-    ":pixelsize=18")
-   (":pixelsize=18")))
+    ":pixelsize=19")
+   (":pixelsize=19")))
 
 (defconst my-chinese-font-size
   (cond
    ((string-match system-name "hfeng-desktop")
-    20)
+    25)
    ((string-match system-name "hfeng-laptop")
-    20)
+    25)
    ((string-match system-name "hfeng-workspace")
-    20)
-   (20)))
+    25)
+   (25)))
 
 
 ;; red some color

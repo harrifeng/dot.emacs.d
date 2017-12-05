@@ -1,8 +1,8 @@
 (provide 'sub-nt-font)
 
 (qiang-set-font
- '("Consolas" "Source Code Pro" "Courier10 BT" "Courier New" "Monaco" "Inconsolata" "Menlo"  "DejaVu Sans Mono" "Monospace")
+ '("Courier10 BT" "Menlo" "Monaco" "Source Code Pro" "Inconsolata" "Consolas" "Courier New" "DejaVu Sans Mono" "Monospace")
  my-english-font-size
- '("SimSun" "Microsoft Yahei" "KaiTi")
+ '("KaiTi" "SimSun" "Microsoft Yahei")
  my-chinese-font-size
  )
