@@ -294,6 +294,7 @@
                     ; these two for the jump around: godef-jump to somewhere, and j-back
                     "b" 'pop-tag-mark
                     "l" 'helm-all-mark-rings
+                    "v" 'load-theme     ;view
 
                     "t" 'hfeng/jump-to-scratch ;tmp file
                     "m" 'hfeng/jump-to-main-go
