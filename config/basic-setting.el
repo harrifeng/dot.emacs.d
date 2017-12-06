@@ -102,10 +102,10 @@
 
 
 ;; red some color
-(set-cursor-color "red")
-
-(setq default-frame-alist
-      '((cursor-color . "red")))
+;; (set-cursor-color "red")
+;; 
+;; (setq default-frame-alist
+;;       '((cursor-color . "red")))
 
 ;; mysql config, not including password
 (setq sql-user "root")
