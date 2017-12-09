@@ -1,0 +1,4 @@
+# contributor: Harri Feng <harrifeng@gmail.com>
+# name: Git Push current branch
+# --
+git push origin HEAD $0
