@@ -34,7 +34,9 @@
                                   (string-match "org" (file-name-sans-extension
                                                        (buffer-file-name)))
                                   (string-width (file-name-sans-extension
-                                                 (buffer-file-name)))) "/") "."))))
+                                                 (buffer-file-name)))) "/") ".")))
+    (my-make-room-for-new-compilation-buffer)
+  )
 
 (defun java-save-compile-and-test()
   (interactive)
@@ -56,6 +58,7 @@
 (add-hook 'java-mode-hook
           (lambda ()
             (define-key java-mode-map (kbd "<f9>") 'java-save-compile-and-run)
+            (define-key java-mode-map (kbd "C-m") 'java-save-compile-and-run)
             (define-key java-mode-map (kbd "<f8>") 'java-save-compile-and-test)
             ))
 
