@@ -143,6 +143,7 @@
                     "b" 'helm-do-ag-buffers
                     "f" 'helm-do-ag-this-file
                     "p" 'helm-projectile-ag
+                    "o" 'occur
                     "x" 'ag
                     )
 
