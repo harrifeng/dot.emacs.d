@@ -112,7 +112,7 @@ brew install shellcheck
 
 ## Choco install
 ```
-choco install -y ag wget diffutils git emacs64 nodejs python3 golang virtualbox vagrant cmder --ignorechecksum
+choco install -y ag wget diffutils git emacs64 nodejs python3 golang jdk8 virtualbox vagrant cmder --ignorechecksum
 ```
 
 ## Docker install
