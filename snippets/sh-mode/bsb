@@ -1,4 +1,4 @@
 # contributor: Harri Feng <harrifeng@gmail.com>
-# name: run in bash script mode
+# name: Bash SheBang
 # --
 \#! /bin/bash
