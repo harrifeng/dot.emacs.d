@@ -1,4 +1,5 @@
 # contributor: Harri Feng <harrifeng@gmail.com>
 # name: Bash SheBang
 # --
-\#! /bin/bash
+#!/bin/bash
+$0
