@@ -398,6 +398,10 @@
     '(lambda ()
        (local-set-key (kbd (concat hfeng-prefix " p r")) 'run-python))) ;repl
 
+(add-hook 'python-mode-hook
+    '(lambda ()
+       (local-set-key (kbd (concat hfeng-prefix " p s")) 'python-shell-send-buffer))) ;repl
+
 (add-hook 'ess-mode-hook
     '(lambda ()
        (local-set-key (kbd (concat hfeng-prefix " p l")) 'ess-load-file)))
