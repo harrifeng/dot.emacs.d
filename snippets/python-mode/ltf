@@ -1,0 +1,8 @@
+# contributor: Harri Feng <harrifeng@gmail.com>
+# name : Log To File
+# --
+import logging
+import time
+
+logging.basicConfig(filename='tmp-{}.log'.format(time.strftime("%Y-%m-%d")),level=logging.DEBUG)
+$0

@@ -54,6 +54,11 @@
   (switch-to-buffer-other-window "*scratch*")
   )
 
+(defun hfeng/jump-to-log ()
+  (interactive)
+  (find-file (concat default-directory (format "tmp-%s.log" (format-time-string "%Y-%m-%d"))))
+  )
+
 (defun hfeng/jump-to-message ()
   (interactive)
   (switch-to-buffer-other-window "*Messages*")
