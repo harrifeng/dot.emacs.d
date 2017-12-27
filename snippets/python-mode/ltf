@@ -4,5 +4,8 @@
 import logging
 import time
 
-logging.basicConfig(filename='tmp-{}.log'.format(time.strftime("%Y-%m-%d")),level=logging.DEBUG)
+logging.basicConfig(
+    format='[%(asctime)s %(levelname)s %(filename)s-%(lineno)d] %(message)s',
+    filename='tmp-{}.log'.format(time.strftime("%Y-%m-%d")),
+    level=logging.DEBUG)
 $0
