@@ -56,8 +56,9 @@
 
 (defun hfeng/jump-to-log ()
   (interactive)
-  (find-file (concat default-directory (format "tmp-%s.log" (format-time-string "%Y-%m-%d"))))
-  )
+  (setq log-buffer-name  (concat default-directory (format "tmp-%s.log" (format-time-string "%Y-%m-%d"))))
+  (split-window-below)
+  (find-file log-buffer-name))
 
 (defun hfeng/jump-to-message ()
   (interactive)

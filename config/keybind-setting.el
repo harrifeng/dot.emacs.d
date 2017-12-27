@@ -294,13 +294,14 @@
                     :prefix-command 'Jump      ;jump will go to definite one buffer
                     ; these two for the jump around: godef-jump to somewhere, and j-back
                     "b" 'pop-tag-mark
-                    "l" 'helm-all-mark-rings
+                    "r" 'helm-all-mark-rings
                     "v" 'load-theme     ;view
 
                     "t" 'hfeng/jump-to-scratch ;tmp file
                     "m" 'hfeng/jump-to-main-go
-                    "r" 'hfeng/jump-to-emacsd  ;emacs.d is the root folder
+                    "h" 'hfeng/jump-to-emacsd  ;emacs.d is the home folder
                     "g" 'hfeng/jump-to-go      ;go folder
+                    "l" 'hfeng/jump-to-log
 
                     "s" 'shell
                     "e" 'eshell
