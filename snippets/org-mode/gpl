@@ -1,4 +1,5 @@
 # contributor: Harri Feng <harrifeng@gmail.com>
 # name : Github Pic-from-drawio Link
 # --
+#+CAPTION: $1
 [[https://raw.githubusercontent.com/harrifeng/pic-from-drawio/master/$1]]
