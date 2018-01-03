@@ -1,5 +1,4 @@
 # contributor: Harri Feng <harrifeng@gmail.com>
 # name : Github Org_dot Link
 # --
-#+CAPTION: $1
-[[https://raw.githubusercontent.com/harrifeng/org_dot/master/$1]]
+#+CAPTION: $1   [[https://raw.githubusercontent.com/harrifeng/org_dot/master/$1]]
