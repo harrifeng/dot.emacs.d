@@ -110,3 +110,5 @@ bookmarks
 savehist
 flycheck_keybind-setting.el
 *.log
+
+tldr/

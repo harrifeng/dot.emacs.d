@@ -84,7 +84,7 @@ git clone https://github.com/golang/tools.git
 
 ## nodejs install global package
 
-    $ cnpm install -g js-beautify webpack tern livedown npm-check-updates nodeppt
+    $ cnpm install -g js-beautify webpack tern livedown npm-check-updates nodeppt tldr
 
 ## python install
 
