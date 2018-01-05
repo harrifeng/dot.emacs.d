@@ -265,6 +265,7 @@
      sudo-edit
      switch-window
      tern
+     tldr
      toml-mode
      virtualenvwrapper
      visual-regexp
