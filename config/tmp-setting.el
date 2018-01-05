@@ -321,3 +321,20 @@
 
 ;; python3
 (add-to-list 'auto-mode-alist '("\\.py3\\'" . python-mode))
+
+
+;; total commander function
+(defun total-commander-copy-files ()
+  "total commander copy method. Copy the marked files to the next panel."
+  (interactive)
+  (progn (switch-window)
+         (let ((target-directory (expand-file-name default-directory)))
+           (progn (switch-window)
+                  (mapc (lambda (marked-file)
+                          (shell-command (concat (format "cp -r \"%s\""
+                                                         (file-name-nondirectory marked-file))
+                                                 " "
+                                                 target-directory)))
+                        (dired-get-marked-files))
+                  (switch-window)
+                  (revert-buffer)))))
