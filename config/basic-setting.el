@@ -4,8 +4,8 @@
 ;; =============Quantified Habits================ ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-(setq user-mail-address "harrifeng@gmail.com")
-(setq user-full-name    "harrifeng")
+(setq user-mail-address "harrifeng@outlook.com")
+(setq user-full-name    "harrifeng@outlook.com")
 
 (setq register-separator ?+)
 (set-register register-separator "\n\n")

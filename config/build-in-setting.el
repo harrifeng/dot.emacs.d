@@ -5,10 +5,10 @@
 ;; use ssl, it will NOT need any support from gnutls or starttls to ;;
 ;; send email, tested on Mac and Windows 7                          ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-(setq smtpmail-stream-type 'ssl)
+(setq smtpmail-stream-type 'starttls)
 (setq send-mail-function 'smtpmail-send-it)
-(setq smtpmail-smtp-server "smtp.gmail.com")
-(setq smtpmail-smtp-service 465)
+(setq smtpmail-smtp-server "smtp-mail.outlook.com")
+(setq smtpmail-smtp-service 587)
 
 ;;--------tramp-------------------->>
 (require 'tramp)

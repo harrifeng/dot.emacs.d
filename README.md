@@ -130,3 +130,8 @@ xterm -xrm '*.VT100.translations: #override Ctrl <Key>Return: string(0x1c)'
 sudo unlink /etc/localtime
 sudo ln -s /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 ```
+
+## YUM package
+```
+sudo yum install gnutls-utils
+```
