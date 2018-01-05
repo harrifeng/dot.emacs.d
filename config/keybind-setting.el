@@ -354,6 +354,7 @@
                     "e" 'eval-last-sexp
                     "k" 'describe-key
                     "s" 'yas/describe-tables ;short key
+                    "t" 'tldr
                     "v" 'describe-variable
                     "y" 'hfeng/shell-command-to-current-pos
                     )
