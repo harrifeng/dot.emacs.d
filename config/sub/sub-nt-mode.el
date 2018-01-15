@@ -4,8 +4,7 @@
 (require 'python)
 
 (setq
- ;; WinPython has ipython.exe with it
- python-shell-interpreter "ipython.exe")
+ python-shell-interpreter "python.exe")
 
 ;; spell checking
 (setq ispell-program-name "aspell.exe")
