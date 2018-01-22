@@ -255,6 +255,7 @@
      replace-from-region
      regex-tool
      restart-emacs
+     restclient
      rjsx-mode
      rotate
      rubocop
