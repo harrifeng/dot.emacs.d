@@ -211,7 +211,6 @@
      company
      company-go
      company-tern
-     column-marker
      darcula-theme
      dockerfile-mode
      docker-tramp
