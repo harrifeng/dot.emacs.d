@@ -466,3 +466,6 @@
 (add-to-list 'auto-mode-alist '("\\.text\\'" . markdown-mode))
 (add-to-list 'auto-mode-alist '("\\.markdown\\'" . markdown-mode))
 (add-to-list 'auto-mode-alist '("\\.md\\'" . markdown-mode))
+
+;; [R]est-client---------------------------------------------------------->>
+(add-to-list 'auto-mode-alist '("\.rest$" . restclient-mode))
