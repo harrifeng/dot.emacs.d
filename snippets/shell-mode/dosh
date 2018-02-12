@@ -1,4 +1,4 @@
 # contributor: Harri Feng <harrifeng@gmail.com>
 # name: docker add shadowshocks
 # --
-docker run restart="always" -d -p 1984:1984 oddrationale/docker-shadowsocks -s 0.0.0.0 -p 1984 -k $1 -m aes-256-cfb $0
+docker run --restart=always -d -p 1984:1984 oddrationale/docker-shadowsocks -s 0.0.0.0 -p 1984 -k $1 -m aes-256-cfb $0
