@@ -269,6 +269,7 @@
      sudo-edit
      switch-window
      tern
+     treemacs
      tldr
      toml-mode
      virtualenvwrapper

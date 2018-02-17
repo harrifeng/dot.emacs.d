@@ -327,7 +327,6 @@
     '(lambda ()
        (local-set-key (kbd (concat hfeng-prefix " j f")) 'org-edit-src-exit)
        ))
-
 (setq my-leader16 (concat hfeng-prefix " t"))
 
 (general-define-key :prefix my-leader16
@@ -409,6 +408,12 @@
 (add-hook 'inferior-python-mode-hook
     '(lambda ()
        (local-set-key (kbd (concat hfeng-prefix " p v")) 'venv-workon))) ;choose python version
+
+(setq my-leader20 (concat hfeng-prefix " d"))
+(general-define-key :prefix my-leader20
+                    :prefix-command 'Directory
+                    "d" 'treemacs-toggle
+                    )
 
 (defun plantuml-preview-with-prefix-arg ()
   (interactive)
