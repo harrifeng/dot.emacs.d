@@ -272,15 +272,13 @@
 
 (general-define-key :prefix my-leader14
                     :prefix-command 'Edit
-                    "e" 'query-replace
+                    "e" 'replace-string
                     "a" 'align-whitespace
                     "b" 'backward-kill-line
                     "f" 'wgrep-finish-edit
                     "k" 'wgrep-abort-changes
                     "l" 'downcase-region ;M-l downcase-word
                     "m" 'wgrep-change-to-wgrep-mode ;multiple modify
-                    "q" 'query-replace-from-region ;Only query replace can use this region as first parameter
-                    "r" 'replace-string
                     "s" 'sort-lines
                     "t" 'delete-trailing-whitespace
                     "u" 'upcase-region  ;M-u upcase-word
