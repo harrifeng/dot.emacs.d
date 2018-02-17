@@ -3,6 +3,9 @@
 ;; [A]g------------------------------------------------------------------->>
 (setq ag-highlight-search t)
 
+;; [A]nzu----------------------------------------------------------------->>
+(global-anzu-mode +1)
+
 ;; [A]uto-highlight-symbol------------------------------------------------>>
 (global-auto-highlight-symbol-mode t)
 (ahs-set-idle-interval 0.3)
@@ -11,6 +14,7 @@
 (add-hook 'js2-mode-hook 'auto-highlight-symbol-mode)
 (add-hook 'shell-mode-hook 'auto-highlight-symbol-mode)
 (add-hook 'go-mode-hook 'auto-highlight-symbol-mode)
+
 
 ;; [A]vy------------------------------------------------------------------>>
 (global-set-key (kbd "C-t")          'avy-goto-char)
