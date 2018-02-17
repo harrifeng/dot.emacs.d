@@ -205,6 +205,7 @@
          (package-install package)))
    '(
      ag
+     anzu
      auto-highlight-symbol
      avy
      bm

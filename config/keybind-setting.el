@@ -151,9 +151,9 @@
 
 (general-define-key :prefix my-leader6
                     :prefix-command 'Query
-                    "q" 'query-replace
-                    "r" 'query-replace-from-region ;Only query replace can use this region as first parameter
-                    "v" 'vr/query-replace
+                    "q" 'anzu-query-replace-at-cursor
+                    "r" 'vr/query-replace
+                    "s" 'query-replace-from-region ;selected region
                     )
 
 (setq my-leader7 (concat hfeng-prefix " h"))
