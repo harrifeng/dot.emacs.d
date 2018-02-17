@@ -135,3 +135,6 @@ sudo ln -s /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 ```
 sudo yum install gnutls-utils
 ```
+
+## Helm docs
++ Use `TAB` if you don't konw how to swith to edit mode
