@@ -151,9 +151,9 @@
 
 (general-define-key :prefix my-leader6
                     :prefix-command 'Query
-                    "q" 'anzu-query-replace-at-cursor
+                    "q" 'query-replace-from-region
+                    "a" 'anzu-query-replace-at-cursor
                     "r" 'vr/query-replace
-                    "s" 'query-replace-from-region ;selected region
                     )
 
 (setq my-leader7 (concat hfeng-prefix " h"))
