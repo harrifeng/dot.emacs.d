@@ -219,6 +219,7 @@
      elpy
      ess
      exec-path-from-shell
+     expand-region
      flycheck
      general
      auto-highlight-symbol

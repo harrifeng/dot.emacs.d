@@ -285,6 +285,7 @@
                     "t" 'delete-trailing-whitespace
                     "u" 'upcase-region  ;M-u upcase-word
                     "w" 'whack-whitespace
+                    "y" 'er/expand-region
                     )
 
 
