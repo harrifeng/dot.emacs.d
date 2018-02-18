@@ -239,6 +239,7 @@
      highlight-indentation
      highlight-symbol
      htmlize
+     ialign
      inf-ruby
      js2-mode
      load-theme-buffer-local
