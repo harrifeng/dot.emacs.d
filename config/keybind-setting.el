@@ -412,6 +412,7 @@
 (general-define-key :prefix my-leader20
                     :prefix-command 'Directory
                     "d" 'treemacs-toggle
+                    "l" 'treemacs-select-window
                     )
 
 (defun plantuml-preview-with-prefix-arg ()
