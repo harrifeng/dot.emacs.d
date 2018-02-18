@@ -246,6 +246,7 @@
      markdown-mode
      wgrep-ag
      material-theme
+     moe-theme
      monokai-theme
      multiple-cursors
      nodejs-repl
