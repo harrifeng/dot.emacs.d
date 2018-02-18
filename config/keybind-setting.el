@@ -411,8 +411,9 @@
 (setq my-leader20 (concat hfeng-prefix " d"))
 (general-define-key :prefix my-leader20
                     :prefix-command 'Directory
-                    "d" 'treemacs-toggle
-                    "l" 'treemacs-select-window
+                    "d" 'neotree-toggle
+                    "l" 'neotree        ;List and on the Left
+                    "f" 'neotree-find
                     )
 
 (defun plantuml-preview-with-prefix-arg ()

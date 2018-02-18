@@ -249,6 +249,7 @@
      material-theme
      monokai-theme
      multiple-cursors
+     neotree
      nodejs-repl
      plantuml-mode
      projectile
