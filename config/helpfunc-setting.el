@@ -244,6 +244,7 @@
      ialign
      inf-ruby
      js2-mode
+     json-reformat
      load-theme-buffer-local
      magit
      markdown-mode

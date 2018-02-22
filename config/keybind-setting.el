@@ -226,6 +226,7 @@
                     "c" 'restart-a-clean-emacs ; Clean Reatart
                     "d" 'text-scale-decrease   ;no work under console
                     "i" 'text-scale-increase   ;no work under console
+                    "j" 'json-reformat-region
                     "q" 'save-buffers-kill-terminal   ; Close
                     "r" 'recompile-emacs
                     "u" 'untabify
