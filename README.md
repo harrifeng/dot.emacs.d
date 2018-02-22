@@ -6,12 +6,6 @@
 git config --global credential.helper store
 ```
 
-## mac version emacs with svg support
-
-```
-brew install emacs --HEAD --use-git-head --cocoa --with-gnutls --with-librsvg --with-imagemagick
-```
-
 ## dotemacsd
 dotemacsd is from old .emacs.d, keep this only have one branch, so that it can spread quickly
 
