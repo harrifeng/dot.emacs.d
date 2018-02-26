@@ -324,6 +324,9 @@
 ;; (load-theme 'adwaita t)
 (load-theme 'monokai t)
 
+;; [M]oe theme------------------------------------------------------------>>
+(require 'moe-theme)
+
 ;; [P]lantuml-mode-------------------------------------------------------->>
 (add-to-list
  'org-src-lang-modes '("plantuml" . plantuml))

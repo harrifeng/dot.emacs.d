@@ -61,7 +61,7 @@ git clone -b $branch git@github.com:golang/tools.git $GOPATH/src/golang.org/x/to
 git clone git@github.com:golang/net.git $GOPATH/src/golang.org/x/net
 
 cd $GOPATH
-go get -v github.com/nsf/gocode golang.org/x/tools/cmd/goimports github.com/tpng/gopkgs github.com/ramya-rao-a/go-outline github.com/acroca/go-symbols golang.org/x/tools/cmd/guru golang.org/x/tools/cmd/gorename github.com/fatih/gomodifytags github.com/josharian/impl github.com/rogpeppe/godef sourcegraph.com/sqs/goreturns github.com/golang/lint/golint github.com/cweill/gotests/... github.com/derekparker/delve/cmd/dlv
+go get -v github.com/FiloSottile/gvt github.com/nsf/gocode golang.org/x/tools/cmd/goimports github.com/tpng/gopkgs github.com/ramya-rao-a/go-outline github.com/acroca/go-symbols golang.org/x/tools/cmd/guru golang.org/x/tools/cmd/gorename github.com/fatih/gomodifytags github.com/josharian/impl github.com/rogpeppe/godef sourcegraph.com/sqs/goreturns github.com/golang/lint/golint github.com/cweill/gotests/... github.com/derekparker/delve/cmd/dlv
 ```
 
 ## some problem
