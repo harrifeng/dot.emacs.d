@@ -1,0 +1,4 @@
+# contributor: Harri Feng <harrifeng@gmail.com>
+# name: TO secondary GROUP
+# --
+usermod -aG $1 $USER $0
