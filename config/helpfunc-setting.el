@@ -70,6 +70,12 @@
   (find-file "~/.emacs.d")
   )
 
+(defun hfeng/jump-to-tmp ()
+  (interactive)
+  (find-file "~/tmp")
+  )
+
+
 (defun hfeng/jump-to-go ()
   (interactive)
   (find-file "~/go/src/github.com/harrifeng/playground/")

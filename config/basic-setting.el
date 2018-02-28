@@ -85,7 +85,7 @@
    ((string-match system-name "hfeng-desktop")
     ":pixelsize=18")
    ((string-match system-name "hfeng-laptop")
-    ":pixelsize=19")
+    ":pixelsize=25")
    ((string-match system-name "hfeng-workspace")
     ":pixelsize=18")
    (":pixelsize=18")))

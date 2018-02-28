@@ -297,11 +297,12 @@
                     "r" 'helm-all-mark-rings
                     "v" 'load-theme     ;view
 
-                    "t" 'hfeng/jump-to-scratch ;tmp file
-                    "m" 'hfeng/jump-to-main-go
-                    "h" 'hfeng/jump-to-emacsd  ;emacs.d is the home folder
                     "g" 'hfeng/jump-to-go      ;go folder
+                    "h" 'hfeng/jump-to-emacsd  ;emacs.d is the home folder
                     "l" 'hfeng/jump-to-log
+                    "m" 'hfeng/jump-to-main-go
+                    "t" 'hfeng/jump-to-tmp
+                    "x" 'hfeng/jump-to-scratch
 
                     "s" 'shell
                     "e" 'eshell
