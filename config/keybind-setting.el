@@ -153,7 +153,7 @@
                     :prefix-command 'Query
                     "q" 'query-replace-from-region
                     "a" 'anzu-query-replace-at-cursor
-                    "r" 'vr/query-replace
+                    "r" 'query-replace
                     )
 
 (setq my-leader7 (concat hfeng-prefix " h"))
