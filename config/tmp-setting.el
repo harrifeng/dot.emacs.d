@@ -35,7 +35,7 @@
                                                        (buffer-file-name)))
                                   (string-width (file-name-sans-extension
                                                  (buffer-file-name)))) "/") ".")))
-    (my-make-room-for-new-compilation-buffer)
+  (my-make-room-for-new-compilation-buffer)
   )
 
 (defun java-save-compile-and-test()
@@ -338,3 +338,4 @@
                         (dired-get-marked-files))
                   (switch-window)
                   (revert-buffer)))))
+(advice-add 'yas--auto-fill-wrapper :override #'ignore)
