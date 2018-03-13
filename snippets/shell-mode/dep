@@ -1,0 +1,4 @@
+# contributor: Harri Feng <harrifeng@gmail.com>
+# name: DEPloy supervisorctl
+# --
+cd .. && cd - && bash run.sh restart
