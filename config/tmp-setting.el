@@ -342,61 +342,63 @@
 
 
 ;; for helm-dash
-
-(defun jwintz/dash-path (docset)
-  (if (string= docset "Python_2")
-      (concat (concat helm-dash-docsets-path "/") "Python 2.docset")
-    (if (string= docset "Python_3")
-        (concat (concat helm-dash-docsets-path "/") "Python 3.docset")
-      (if (string= docset "OpenGL_4")
-          (concat (concat helm-dash-docsets-path "/") "OpenGL4.docset")
-        (if (string= docset "Emacs_Lisp")
-            (concat (concat helm-dash-docsets-path "/") "Emacs Lisp.docset")
-          (concat
-           (concat
+(when (not (eq system-type 'windows-nt))
+  (defun hfeng/dash-path (docset)
+    (if (string= docset "Python_2")
+        (concat (concat helm-dash-docsets-path "/") "Python 2.docset")
+      (if (string= docset "Python_3")
+          (concat (concat helm-dash-docsets-path "/") "Python 3.docset")
+        (if (string= docset "OpenGL_4")
+            (concat (concat helm-dash-docsets-path "/") "OpenGL4.docset")
+          (if (string= docset "Emacs_Lisp")
+              (concat (concat helm-dash-docsets-path "/") "Emacs Lisp.docset")
             (concat
-             (concat helm-dash-docsets-path "/")
-             (nth 0 (split-string docset "_")))) ".docset"))))))
+             (concat
+              (concat
+               (concat helm-dash-docsets-path "/")
+               (nth 0 (split-string docset "_")))) ".docset"))))))
 
-(defun jwintz/dash-install (docset)
-  (unless (file-exists-p (jwintz/dash-path docset))
-    (helm-dash-install-docset docset)))
+  (defun hfeng/dash-install (docset)
+    (unless (file-exists-p (hfeng/dash-path docset))
+      (helm-dash-install-docset docset)))
 
-(setq helm-dash-docsets-path (format "%s/.emacs.d/docsets" (getenv "HOME")))
+  (setq helm-dash-docsets-path (format "%s/.emacs.d/docsets" (getenv "HOME")))
 
-(jwintz/dash-install "Go")
-(jwintz/dash-install "Bash")
-(jwintz/dash-install "Python_2")
-(jwintz/dash-install "Python_3")
+  (hfeng/dash-install "Go")
+  (hfeng/dash-install "Bash")
+  (hfeng/dash-install "Python_2")
+  (hfeng/dash-install "Python_3")
 
 
-(setq helm-dash-browser-func 'eww)
+  (setq helm-dash-browser-func 'eww)
+  (setq helm-dash-enable-debugging nil)
 
-(setq helm-dash-common-docsets '("Go"
-                                 "Bash"
-                                 "Python 2"
-                                 "Python 3"))
+  (setq helm-dash-common-docsets '("Go"
+                                   "Bash"
+                                   "Python 2"
+                                   "Python 3"))
 
-(defun go-doc ()
-  (interactive)
-  (setq-local helm-dash-docsets '("Go")))
+  (defun go-doc ()
+    (interactive)
+    (setq-local helm-dash-docsets '("Go")))
 
-(add-hook 'go-mode-hook 'go-doc)
+  (add-hook 'go-mode-hook 'go-doc)
 
-(defun python-doc ()
-  (interactive)
-  (setq-local helm-dash-docsets '("Python 2")))
+  (defun python-doc ()
+    (interactive)
+    (setq-local helm-dash-docsets '("Python 2")))
 
-(add-hook 'python-mode-hook 'python-doc)
+  (add-hook 'python-mode-hook 'python-doc)
 
-(defun go-doc ()
-  (interactive)
-  (setq-local helm-dash-docsets '("Go")))
+  (defun go-doc ()
+    (interactive)
+    (setq-local helm-dash-docsets '("Go")))
 
-(add-hook 'go-mode-hook 'go-doc)
+  (add-hook 'go-mode-hook 'go-doc)
 
-(defun bash-doc ()
-  (interactive)
-  (setq-local helm-dash-docsets '("Bash")))
+  (defun bash-doc ()
+    (interactive)
+    (setq-local helm-dash-docsets '("Bash")))
 
-(add-hook 'sh-mode-hook 'bash-doc)
+  (add-hook 'sh-mode-hook 'bash-doc)
+  )

@@ -241,6 +241,7 @@
      helm
      helm-ag
      helm-bm
+     helm-dash
      helm-go-package
      helm-projectile
      helm-swoop
@@ -274,6 +275,7 @@
      simple-httpd
      smart-mode-line
      solarized-theme
+     sqlite
      sudo-edit
      switch-window
      tern
