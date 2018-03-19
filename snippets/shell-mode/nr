@@ -1,4 +1,4 @@
 # contributor: Harri Feng <harrifeng@gmail.com>
-# name: User name
+# name: Npm Reference
 # --
-harrifeng
+npm run $0
