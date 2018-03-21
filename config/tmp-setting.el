@@ -402,3 +402,11 @@
 
   (add-hook 'sh-mode-hook 'bash-doc)
   )
+;; bash google style
+(defun google-set-sh-style ()
+  (interactive)
+  (make-local-variable 'sh-basic-offset)
+  (setq sh-basic-offset 2)
+  (setq indent-tabs-mode nil))
+
+(add-hook 'sh-mode-hook 'google-set-sh-style)
