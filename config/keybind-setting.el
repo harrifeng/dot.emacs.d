@@ -184,6 +184,7 @@
                     "e" 'mc/edit-ends-of-lines       ; like 'm', except the can only cursor at end
                     ;; had region concept
                     "a" 'mc/mark-all-in-region  ;you can also use `C-g` to cancle region, only the curors!!!
+                    "f" 'mc/vertical-align-with-space ;align to format
                     "n" 'mc/mark-next-like-this ;region select next
                     "p" 'mc/mark-previous-like-this ;resiong select previous
                     "w" 'mc/mark-all-like-this ; mark active region in all in whole buffer, not very accurate
