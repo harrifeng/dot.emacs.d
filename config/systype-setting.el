@@ -19,7 +19,7 @@
   (add-to-list 'default-frame-alist '(fullscreen . maximized))
 
   ;; menu-bar-mode is useful in mac---------------------------->>
-  (menu-bar-mode t))
+  (menu-bar-mode -1))
 
  ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
  ;; Linux System specific test on Ubuntu 12.04  ;;
