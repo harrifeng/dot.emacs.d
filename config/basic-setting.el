@@ -88,7 +88,7 @@
     ":pixelsize=25")
    ((string-match system-name "hfeng-workspace")
     ":pixelsize=18")
-   (":pixelsize=18")))
+   (":pixelsize=16")))
 
 (defconst my-chinese-font-size
   (cond
