@@ -414,10 +414,12 @@
 
 (setq my-leader20 (concat hfeng-prefix " d"))
 (general-define-key :prefix my-leader20
-                    :prefix-command 'Directory
-                    "d" 'neotree-toggle
-                    "l" 'neotree        ;List and on the Left
+                    :prefix-command 'Doc-Dir
+                    "d" 'helm-dash
+                    "p" 'helm-dash-at-point
                     "f" 'neotree-find
+                    "l" 'neotree        ;List and on the Left
+                    "t" 'neotree-toggle
                     )
 
 (defun plantuml-preview-with-prefix-arg ()
