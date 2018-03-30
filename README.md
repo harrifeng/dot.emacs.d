@@ -61,7 +61,23 @@ git clone -b $branch git@github.com:golang/tools.git $GOPATH/src/golang.org/x/to
 git clone git@github.com:golang/net.git $GOPATH/src/golang.org/x/net
 
 cd $GOPATH
-go get -v github.com/FiloSottile/gvt github.com/nsf/gocode golang.org/x/tools/cmd/goimports github.com/tpng/gopkgs github.com/ramya-rao-a/go-outline github.com/acroca/go-symbols golang.org/x/tools/cmd/guru golang.org/x/tools/cmd/gorename github.com/fatih/gomodifytags github.com/josharian/impl github.com/rogpeppe/godef sourcegraph.com/sqs/goreturns github.com/golang/lint/golint github.com/cweill/gotests/... github.com/derekparker/delve/cmd/dlv github.com/huydx/hget mvdan.cc/sh/cmd/shfmt
+go get -v github.com/FiloSottile/gvt
+go get -v github.com/nsf/gocode
+go get -v golang.org/x/tools/cmd/goimports
+go get -v github.com/tpng/gopkgs
+go get -v github.com/ramya-rao-a/go-outline
+go get -v github.com/acroca/go-symbols
+go get -v golang.org/x/tools/cmd/guru
+go get -v golang.org/x/tools/cmd/gorename
+go get -v github.com/fatih/gomodifytags
+go get -v github.com/josharian/impl
+go get -v github.com/rogpeppe/godef
+go get -v sourcegraph.com/sqs/goreturns
+go get -v github.com/golang/lint/golint
+go get -v github.com/cweill/gotests/...
+go get -v github.com/derekparker/delve/cmd/dlv
+go get -v github.com/huydx/hget
+go get -v mvdan.cc/sh/cmd/shfmt
 ```
 
 ## some problem
