@@ -127,7 +127,7 @@ choco install -y HeidiSQL ag curl wget diffutils git emacs64 nodejs python3 gola
 
 ## Docker install
 ```
-docker run --name cow -p 1086:1086 -e listen=http://0.0.0.0:1086 -e proxy=ss://aes-256-cfb:pwd@harrifeng.club:1984 -d fzinfz/cow
+docker run --name cow -p 1087:1087 -e listen=http://0.0.0.0:1087 -e proxy=ss://aes-256-cfb:pwd@harrifeng.club:1984 -d fzinfz/cow
 ```
 
 ## xterm
