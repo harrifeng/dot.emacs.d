@@ -1,4 +1,4 @@
 # contributor: Harri Feng <harrifeng@gmail.com>
 # name: git config http
 # --
-git config --global https.proxy "http://127.0.0.1:7777"
+git config --global https.proxy "http://127.0.0.1:1086"

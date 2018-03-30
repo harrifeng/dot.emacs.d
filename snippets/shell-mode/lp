@@ -1,4 +1,4 @@
 # contributor: Harri Feng <harrifeng@gmail.com>
 # name: Local Proxy
 # --
-export http_proxy=localhost:7777
+export http_proxy=localhost:1086
