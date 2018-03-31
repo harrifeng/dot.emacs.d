@@ -96,13 +96,13 @@
 (require 'gotest)
 (define-key go-mode-map (kbd "C-c r") 'go-run)
 
-(add-hook 'go-mode-hook 'company-mode)
+;; (add-hook 'go-mode-hook 'company-mode)
 (add-hook 'go-mode-hook
           (lambda ()
             (add-hook 'before-save-hook 'gofmt-before-save)
             (setq tab-width 4)
             (setq indent-tabs-mode 1)
-            (set (make-local-variable 'company-backends) '(company-go))
+            ;; (set (make-local-variable 'company-backends) '(company-go))
             (company-mode)))
 
 (defun my-make-room-for-new-compilation-buffer ()
