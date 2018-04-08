@@ -1,0 +1,4 @@
+# contributor: Harri Feng <harrifeng@gmail.com>
+# name: docker start python notebook
+# --
+docker run --restart=always -d -p 1988:1988 jupyter/scipy-notebook
