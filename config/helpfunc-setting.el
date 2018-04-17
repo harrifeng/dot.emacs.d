@@ -213,9 +213,6 @@
      auto-highlight-symbol
      avy
      bm
-     company
-     company-go
-     company-tern
      darcula-theme
      dockerfile-mode
      docker-tramp

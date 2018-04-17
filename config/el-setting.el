@@ -93,14 +93,11 @@
 (require 'gotest)
 (define-key go-mode-map (kbd "C-c r") 'go-run)
 
-;; (add-hook 'go-mode-hook 'company-mode)
 (add-hook 'go-mode-hook
           (lambda ()
             (add-hook 'before-save-hook 'gofmt-before-save)
             (setq tab-width 4)
-            (setq indent-tabs-mode 1)
-            ;; (set (make-local-variable 'company-backends) '(company-go))
-            (company-mode)))
+            (setq indent-tabs-mode 1)))
 
 (defun my-make-room-for-new-compilation-buffer ()
   "Renames existing *compilation* buffer to something unique so
@@ -145,13 +142,11 @@
   (my-make-room-for-new-compilation-buffer)
   )
 
-(add-hook 'js2-mode-hook 'company-mode)
 (autoload 'tern-mode "tern.el" nil t)
 (add-hook 'js2-mode-hook
           (lambda ()
             (tern-mode t)
             ))
-(add-to-list 'company-backends 'company-tern)
 
 
 (add-hook 'js2-mode-hook
@@ -209,7 +204,6 @@
           (lambda ()
             (define-key go-mode-map (kbd "<f9>") 'go-hfeng-run)
             (define-key go-mode-map (kbd "C-m") 'go-hfeng-run)
-            ;; (define-key go-mode-map (kbd "TAB") #'company-indent-or-complete-common)
             ))
 
 (defun ruby-hfeng-run ()
@@ -364,15 +358,12 @@
           (lambda ()
             (define-key c++-mode-map (kbd "<f9>") 'cpp-save-compile-and-run)
             (define-key c++-mode-map (kbd "C-m") 'cpp-save-compile-and-run)
-            (define-key c++-mode-map (kbd "TAB") #'company-indent-or-complete-common)
             ))
 
 ;; [R]ust----------------------------------------------------------------->>
 (add-hook 'rust-mode-hook #'racer-mode)
 (add-hook 'racer-mode-hook #'company-mode)
 
-
-(setq company-tooltip-align-annotations t)
 
 (defun rust-save-compile-and-run ()
   (interactive)
@@ -397,7 +388,6 @@
           (lambda ()
             (define-key rust-mode-map (kbd "<f9>") 'rust-save-compile-and-run)
             (define-key rust-mode-map (kbd "C-m") 'rust-save-compile-and-run)
-            (define-key rust-mode-map (kbd "TAB") #'company-indent-or-complete-common)
             ))
 
 ;; [S]mart-mode-line------------------------------------------------------>>
