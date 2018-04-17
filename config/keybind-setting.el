@@ -391,7 +391,7 @@
 
 (add-hook 'python-mode-hook
     '(lambda ()
-       (local-set-key (kbd (concat hfeng-prefix " p f")) 'elpy-autopep8-fix-code)))
+       (local-set-key (kbd (concat hfeng-prefix " p f")) 'py-autopep8)))
 
 (add-hook 'python-mode-hook
     '(lambda ()

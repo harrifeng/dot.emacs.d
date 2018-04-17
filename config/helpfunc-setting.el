@@ -188,7 +188,6 @@
   (interactive)
   (setq package-archives '(("gnu"   . "http://mirrors.tuna.tsinghua.edu.cn/elpa/gnu/")
                            ("melpa" . "http://mirrors.tuna.tsinghua.edu.cn/elpa/melpa/")
-                           ("elpy" . "https://jorgenschaefer.github.io/packages/")
                            ))
   (package-initialize)
   )
@@ -197,7 +196,6 @@
   (interactive)
   (setq package-archives '(("gnu" . "http://elpa.gnu.org/packages/")
                            ("melpa" . "http://melpa.milkbox.net/packages/")
-                           ("elpy" . "https://jorgenschaefer.github.io/packages/")
                            ))
   (package-initialize)
   )
@@ -223,7 +221,6 @@
      docker-tramp
      doom-themes
      elnode
-     elpy
      ess
      exec-path-from-shell
      expand-region
@@ -264,6 +261,7 @@
      nodejs-repl
      plantuml-mode
      projectile
+     py-autopep8
      replace-from-region
      regex-tool
      restart-emacs

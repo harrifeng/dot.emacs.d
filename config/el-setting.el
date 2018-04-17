@@ -55,9 +55,6 @@
 ;; (add-hook 'after-revert-hook 'bm-buffer-restore)
 ;; (add-hook 'vc-before-checkin-hook 'bm-buffer-save)
 
-;; [E]lpy----------------------------------------------------------------->>
-(elpy-enable)
-(remove-hook 'elpy-modules 'elpy-module-flymake)
 ;; [G]it-gutter----------------------------------------------------------->>
 (require 'git-gutter)
 (global-git-gutter-mode +1)
