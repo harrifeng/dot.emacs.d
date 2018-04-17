@@ -367,7 +367,6 @@
   (hfeng/dash-install "Go")
   (hfeng/dash-install "Bash")
   (hfeng/dash-install "Python_2")
-  (hfeng/dash-install "Python_3")
 
 
   (setq helm-dash-browser-func 'eww)
@@ -375,8 +374,7 @@
 
   (setq helm-dash-common-docsets '("Go"
                                    "Bash"
-                                   "Python 2"
-                                   "Python 3"))
+                                   "Python 2"))
 
   (defun go-doc ()
     (interactive)
