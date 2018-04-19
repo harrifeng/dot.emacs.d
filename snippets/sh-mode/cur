@@ -1,4 +1,4 @@
 # contributor: Harri Feng <harrifeng@gmail.com>
 # name: CURrent path
 # --
-CURRENT_PATH=$(cd `dirname $0` && pwd)
+CURRENT_PATH=$(cd \`dirname \$0\` && pwd)
