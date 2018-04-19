@@ -148,3 +148,8 @@ sudo yum install gnutls-utils
 
 ## Helm docs
 + Use `TAB` if you don't konw how to swith to edit mode
+
+## Mac brew install
+```
+brew cask install font-source-code-pro-for-powerline
+```
