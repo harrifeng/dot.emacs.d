@@ -2,4 +2,4 @@
 # name: Delete First N line
 # --
 
-sed -i '1,$1d' $0
+sed -i '1,${1:N}d' $0
