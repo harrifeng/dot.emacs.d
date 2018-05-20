@@ -337,6 +337,30 @@
 (setq projectile-file-exists-remote-cache-expire nil)
 
 ;; [R]egex-tool---------------------------------------------------------->>
+;; c-mode
+(defun c-save-compile-and-run ()
+  (interactive)
+  (save-buffer)
+  (if (eq system-type 'windows-nt)
+      (setq c-run-command "gcc -o %s %s && %s && rm %s.exe")
+    (setq c-run-command "gcc -o %s.out %s && %s.out && rm %s.out"))
+  (compile
+   (format c-run-command
+           (file-name-sans-extension (buffer-file-name))
+           (buffer-file-name)
+           (file-name-sans-extension (buffer-file-name))
+           (file-name-sans-extension (buffer-file-name))
+           ))
+  (my-make-room-for-new-compilation-buffer)
+  )
+
+(add-hook 'c-mode-hook
+          (lambda ()
+            (define-key c-mode-map (kbd "<f9>") 'c-save-compile-and-run)
+            (define-key c-mode-map (kbd "C-m") 'c-save-compile-and-run)
+            ))
+
+
 ;; cpp
 (defun cpp-save-compile-and-run ()
   (interactive)
