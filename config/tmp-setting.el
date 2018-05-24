@@ -88,7 +88,9 @@
     (setq hfeng-run-command "bash  %s"))
   (compile
    (format hfeng-run-command
-           (buffer-file-name))))
+           (buffer-file-name)))
+  (my-make-room-for-new-compilation-buffer)
+  )
 
 (add-hook 'sh-mode-hook
           (lambda ()
