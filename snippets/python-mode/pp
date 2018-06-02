@@ -1,4 +1,4 @@
 # contributor: Harri Feng <harrifeng@gmail.com>
 # name : Python Print
 # --
-print('''[$1] ==>''', $1) $0
+print($0)
