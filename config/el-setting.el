@@ -313,7 +313,7 @@
 
 ;; [M]aterial theme------------------------------------------------------->>
 ;; (load-theme 'adwaita t)
-(load-theme 'monokai t)
+;; (load-theme 'monokai t)
 
 ;; [M]oe theme------------------------------------------------------------>>
 (require 'moe-theme)
