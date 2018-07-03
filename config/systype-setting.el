@@ -14,7 +14,7 @@
   ;; mac use bash------------------------------------------->>
   (setq explicit-shell-file-name "/bin/bash")
   (setq explicit-bash-args '("--noediting" "--login" "-i"))
-  (load-theme 'monokai t)
+  (load-theme 'solarized-light t)
 
   ;; if you want to the emacs mac open to maximized size, setting this
   (add-to-list 'default-frame-alist '(fullscreen . maximized))
