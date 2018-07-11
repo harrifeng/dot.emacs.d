@@ -1,0 +1,4 @@
+# contributor: Harri Feng <harrifeng@gmail.com>
+# name : RE fresh the current folder
+# --
+cd .. && cd -
