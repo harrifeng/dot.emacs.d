@@ -2,5 +2,5 @@
 # name: If Not Nil
 # --
 if err != nil {
-   $0
+   panic(err)
 }
