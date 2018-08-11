@@ -372,30 +372,30 @@
 ;;                                    "Bash"
 ;;                                    "Python 2"))
 
-  (defun go-doc ()
-    (interactive)
-    (setq-local helm-dash-docsets '("Go")))
-
-  (add-hook 'go-mode-hook 'go-doc)
-
-  (defun python-doc ()
-    (interactive)
-    (setq-local helm-dash-docsets '("Python 2")))
-
-  (add-hook 'python-mode-hook 'python-doc)
-
-  (defun go-doc ()
-    (interactive)
-    (setq-local helm-dash-docsets '("Go")))
-
-  (add-hook 'go-mode-hook 'go-doc)
-
-  (defun bash-doc ()
-    (interactive)
-    (setq-local helm-dash-docsets '("Bash")))
-
-  (add-hook 'sh-mode-hook 'bash-doc)
-  )
+  ;; (defun go-doc ()
+  ;;   (interactive)
+  ;;   (setq-local helm-dash-docsets '("Go")))
+  ;;
+  ;; (add-hook 'go-mode-hook 'go-doc)
+  ;;
+  ;; (defun python-doc ()
+  ;;   (interactive)
+  ;;   (setq-local helm-dash-docsets '("Python 2")))
+  ;;
+  ;; (add-hook 'python-mode-hook 'python-doc)
+  ;;
+  ;; (defun go-doc ()
+  ;;   (interactive)
+  ;;   (setq-local helm-dash-docsets '("Go")))
+  ;;
+  ;; (add-hook 'go-mode-hook 'go-doc)
+  ;;
+  ;; (defun bash-doc ()
+  ;;   (interactive)
+  ;;   (setq-local helm-dash-docsets '("Bash")))
+  ;;
+  ;; (add-hook 'sh-mode-hook 'bash-doc)
+  ;; )
 ;; bash google style
 (defun google-set-sh-style ()
   (interactive)
