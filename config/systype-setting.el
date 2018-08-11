@@ -55,6 +55,7 @@
 
 
   ;; win 10 GC
+  (load-theme 'monokai t)  
   (setq gc-cons-threshold (* 512 1024 1024))
   (setq gc-cons-percentage 0.5)
   (run-with-idle-timer 5 t #'garbage-collect)

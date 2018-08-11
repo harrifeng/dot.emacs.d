@@ -275,7 +275,7 @@
      switch-window
      tern
      treemacs
-     tldr
+     ;; tldr
      toml-mode
      virtualenvwrapper
      visual-regexp
