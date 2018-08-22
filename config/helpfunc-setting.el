@@ -86,6 +86,13 @@
   (find-file "~/tmp/main.go")
   )
 
+;; full path of current buffer
+(defun hfeng/copy-full-path-to-kill-ring ()
+  "copy buffer's full path to kill ring"
+  (interactive)
+  (when buffer-file-name
+        (kill-new (file-truename buffer-file-name))))
+
 
 (defun copy-whole-buffer ()
   "kill the whole buffer"

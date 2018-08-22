@@ -92,7 +92,7 @@
                     "b" 'helm-mini
                     "d" 'kill-buffer
                     "e" 'end-of-buffer
-                    "f" 'rename-buffer  ; refresh
+                    "f" 'hfeng/copy-full-path-to-kill-ring
                     "i" 'indent-whole
                     "k" 'hfeng/kill-all-region
                     "n" 'next-buffer
