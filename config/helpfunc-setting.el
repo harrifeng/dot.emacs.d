@@ -93,6 +93,13 @@
   (when buffer-file-name
         (kill-new (file-truename buffer-file-name))))
 
+(defun hfeng/save-all-buffers ()
+  "save all files-visiting buffers without user confirmation"
+  (interactive)
+  (save-some-buffers t nil)
+  (message "save all buffers... done"))
+(run-with-idle-timer 60 (* 30 60) 'hfeng/save-all-buffers)
+
 
 (defun copy-whole-buffer ()
   "kill the whole buffer"
