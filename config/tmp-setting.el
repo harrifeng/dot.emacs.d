@@ -353,21 +353,21 @@
 ;;               (concat
 ;;                (concat helm-dash-docsets-path "/")
 ;;                (nth 0 (split-string docset "_")))) ".docset"))))))
-;; 
+;;
 ;;   (defun hfeng/dash-install (docset)
 ;;     (unless (file-exists-p (hfeng/dash-path docset))
 ;;       (helm-dash-install-docset docset)))
-;; 
+;;
 ;;   (setq helm-dash-docsets-path (format "%s/.emacs.d/docsets" (getenv "HOME")))
-;; 
+;;
 ;;   (hfeng/dash-install "Go")
 ;;   (hfeng/dash-install "Bash")
 ;;   (hfeng/dash-install "Python_2")
-;; 
-;; 
+;;
+;;
 ;;   (setq helm-dash-browser-func 'eww)
 ;;   (setq helm-dash-enable-debugging nil)
-;; 
+;;
 ;;   (setq helm-dash-common-docsets '("Go"
 ;;                                    "Bash"
 ;;                                    "Python 2"))
@@ -404,3 +404,4 @@
   (setq indent-tabs-mode nil))
 
 (add-hook 'sh-mode-hook 'google-set-sh-style)
+(setq fci-rule-color "white")

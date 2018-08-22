@@ -221,6 +221,7 @@
      ess
      exec-path-from-shell
      expand-region
+     fill-column-indicator
      flycheck
      general
      auto-highlight-symbol
