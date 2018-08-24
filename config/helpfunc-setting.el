@@ -98,7 +98,6 @@
   (interactive)
   (save-some-buffers t nil)
   (message "save all buffers... done"))
-(run-with-idle-timer 60 (* 30 60) 'hfeng/save-all-buffers)
 
 
 (defun copy-whole-buffer ()
