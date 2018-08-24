@@ -30,7 +30,7 @@
 
 (setq-default bm-repository-size 1000)
 (setq-default bm-persistent-face
-  '(:foreground "#2e3043" :background "#f9b529"))
+              '(:foreground "#2e3043" :background "#f9b529"))
 (setq-default bm-buffer-persistence t)
 (setq-default bm-cycle-all-buffers nil)
 (setq-default bm-recenter t)
@@ -54,6 +54,16 @@
 ;; (add-hook 'after-save-hook 'bm-buffer-save)
 ;; (add-hook 'after-revert-hook 'bm-buffer-restore)
 ;; (add-hook 'vc-before-checkin-hook 'bm-buffer-save)
+
+;; [F]ill-collumn-indicator----------------------------------------------->>
+(add-hook 'go-mode-hook (lambda ()
+                            (turn-on-auto-fill)
+                            (set-fill-column 90)))
+(add-hook 'org-mode-hook (lambda ()
+                            (turn-on-auto-fill)
+                            (set-fill-column 80)))
+
+
 
 ;; [G]it-gutter----------------------------------------------------------->>
 (require 'git-gutter)
