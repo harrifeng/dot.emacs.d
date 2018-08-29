@@ -9,6 +9,13 @@
 (fset 'replace-ctrlms
       [escape ?< escape ?% ?\C-q ?\C-m return ?\C-q ?\C-j return ?!])
 
+(defun hfeng/kill-other-buffers ()
+  "Kill all other buffers."
+  (interactive)
+  (mapc 'kill-buffer
+        (delq (current-buffer)
+              (remove-if-not 'buffer-file-name (buffer-list)))))
+
 (defun hfeng/bk-kill-buffers (regexp)
   "Kill buffers matching REGEXP without asking for confirmation."
   (interactive "sKill buffers matching this regular expression: ")
@@ -91,7 +98,7 @@
   "copy buffer's full path to kill ring"
   (interactive)
   (when buffer-file-name
-        (kill-new (file-truename buffer-file-name))))
+    (kill-new (file-truename buffer-file-name))))
 
 (defun hfeng/save-all-buffers ()
   "save all files-visiting buffers without user confirmation"
