@@ -57,12 +57,15 @@
 
 ;; [F]ill-collumn-indicator----------------------------------------------->>
 (add-hook 'go-mode-hook (lambda ()
-                            (turn-on-auto-fill)
-                            (set-fill-column 90)))
+                          (turn-on-auto-fill)
+                          (set-fill-column 90)))
 (add-hook 'org-mode-hook (lambda ()
-                            (turn-on-auto-fill)
-                            (set-fill-column 80)))
+                           (turn-on-auto-fill)
+                           (set-fill-column 80)))
 
+(add-hook 'fundamental-mode-hook (lambda ()
+                                   (turn-on-auto-fill)
+                                   (set-fill-column 70)))
 
 
 ;; [G]it-gutter----------------------------------------------------------->>
