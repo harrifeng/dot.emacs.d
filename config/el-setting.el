@@ -67,6 +67,9 @@
                                    (turn-on-auto-fill)
                                    (set-fill-column 70)))
 
+(add-hook 'text-mode-hook (lambda ()
+                            (turn-on-auto-fill)
+                            (set-fill-column 70)))
 
 ;; [G]it-gutter----------------------------------------------------------->>
 (require 'git-gutter)
