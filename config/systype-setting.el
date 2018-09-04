@@ -14,7 +14,6 @@
   ;; mac use bash------------------------------------------->>
   (setq explicit-shell-file-name "/bin/bash")
   (setq explicit-bash-args '("--noediting" "--login" "-i"))
-  (load-theme 'solarized-light t)
 
   ;; if you want to the emacs mac open to maximized size, setting this
   (add-to-list 'default-frame-alist '(fullscreen . maximized))
@@ -31,7 +30,6 @@
   (require 'sub-linux-font)
   ;; Linux use bash also
   (setq explicit-shell-file-name "/bin/bash")
-  (load-theme 'monokai t)
   (menu-bar-mode -1))
 
  ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -55,7 +53,6 @@
 
 
   ;; win 10 GC
-  (load-theme 'monokai t)  
   (setq gc-cons-threshold (* 512 1024 1024))
   (setq gc-cons-percentage 0.5)
   (run-with-idle-timer 5 t #'garbage-collect)
