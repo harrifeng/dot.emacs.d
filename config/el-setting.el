@@ -432,7 +432,7 @@
 ;; [S]mart-mode-line------------------------------------------------------>>
 (setq sml/no-confirm-load-theme t)
 (sml/setup)
-(sml/apply-theme 'respectful)
+(sml/apply-theme 'light)
 
 ;; [S]imple-httpd--------------------------------------------------------->>
 (setq httpd-port 1234)
