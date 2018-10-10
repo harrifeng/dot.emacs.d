@@ -1,0 +1,4 @@
+# contributor: Harri Feng <harrifeng@gmail.com>
+# name: Date Time
+# --
+`(format-time-string "%Y-%m-%d")`$0
