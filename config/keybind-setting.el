@@ -388,6 +388,11 @@
     '(lambda ()
        (local-set-key (kbd (concat hfeng-prefix " p g")) 'go-guru-describe)))
 
+(add-hook 'go-mode-hook
+    '(lambda ()
+       (local-set-key (kbd (concat hfeng-prefix " p s")) 'go-gopath-set-gopath))) ;set path
+
+
 (add-hook 'python-mode-hook
     '(lambda ()
        (local-set-key (kbd (concat hfeng-prefix " p f")) 'py-autopep8)))
