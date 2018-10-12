@@ -121,14 +121,13 @@
 (setq my-leader4 (concat hfeng-prefix " g"))
 
 (general-define-key :prefix my-leader4
-                    :prefix-command 'Git&Go
+                    :prefix-command 'Git
                     "g" 'magit-status
                     "a" 'git-add-current-buffer-to-git ;add & stash
                     "b" 'vc-annotate                   ;blame
                     "c" 'with-editor-finish ;Commit it
                     "d" 'vc-diff
                     "e" 'with-editor-cancel ;Exit commit
-                    "p" 'go-gopath-set-gopath
                     "r" 'vc-revert
                     "s" 'git-add-current-buffer-to-git ;add & stash
                     )
