@@ -351,6 +351,9 @@
 ;; To disable remote file exists cache that use this snippet of code:
 (setq projectile-file-exists-remote-cache-expire nil)
 
+
+;; [R]ainbow-mode-------------------------------------------------------->>
+(add-to-list 'auto-mode-alist '("\\.css\\'" . rainbow-mode))
 ;; [R]egex-tool---------------------------------------------------------->>
 ;; c-mode
 (defun c-save-compile-and-run ()
