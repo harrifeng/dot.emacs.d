@@ -353,7 +353,8 @@
 
 
 ;; [R]ainbow-mode-------------------------------------------------------->>
-(add-to-list 'auto-mode-alist '("\\.css\\'" . rainbow-mode))
+(dolist (hook '(css-mode-hook html-mode-hook sass-mode-hook))
+      (add-hook hook 'rainbow-mode))
 ;; [R]egex-tool---------------------------------------------------------->>
 ;; c-mode
 (defun c-save-compile-and-run ()
