@@ -103,7 +103,7 @@
 
 ;; red some color
 ;; (set-cursor-color "red")
-;; 
+;;
 ;; (setq default-frame-alist
 ;;       '((cursor-color . "red")))
 
@@ -153,3 +153,11 @@
 
 ;; Auto ask yes for `Kill process buffer without confirmation?`
 (setq kill-buffer-query-functions (delq 'process-kill-buffer-query-function kill-buffer-query-functions))
+
+(electric-pair-mode 1)
+(setq electric-pair-pairs '(
+                            (?\" . ?\")
+                            (?\` . ?\`)
+                            (?\( . ?\))
+                            (?\{ . ?\})
+                            ))
