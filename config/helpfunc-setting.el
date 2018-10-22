@@ -230,12 +230,13 @@
    '(
      ag
      anzu
+     auto-complete
      auto-highlight-symbol
      avy
      bm
      darcula-theme
-     dockerfile-mode
      docker-tramp
+     dockerfile-mode
      doom-themes
      elnode
      ess
@@ -244,14 +245,14 @@
      fill-column-indicator
      flycheck
      general
-     auto-highlight-symbol
-     go-mode
-     go-gopath
-     go-guru
-     gotest
-     groovy-mode
      gist
      git-gutter
+     go-autocomplete
+     go-gopath
+     go-guru
+     go-mode
+     gotest
+     groovy-mode
      haml-mode
      helm
      helm-ag
@@ -270,7 +271,6 @@
      load-theme-buffer-local
      magit
      markdown-mode
-     wgrep-ag
      material-theme
      moe-theme
      monokai-theme
@@ -280,8 +280,8 @@
      plantuml-mode
      projectile
      py-autopep8
-     replace-from-region
      regex-tool
+     replace-from-region
      restart-emacs
      restclient
      rjsx-mode
@@ -295,13 +295,13 @@
      sudo-edit
      switch-window
      tern
-     treemacs
-     ;; tldr
      toml-mode
+     treemacs
      virtualenvwrapper
      visual-regexp
      web-beautify
      web-mode
+     wgrep-ag
      which-key
      yaml-mode
      yasnippet
