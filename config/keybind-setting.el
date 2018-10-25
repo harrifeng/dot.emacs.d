@@ -307,7 +307,8 @@
                     "s" 'shell
                     "e" 'eshell
                     "n" 'goto-line      ;line number
-                    "p" 'hfeng/jump-to-python ; python interpreter
+                    "p" 'goto-match-paren
+                    "P" 'hfeng/jump-to-python ; python interpreter
                     )
 
 
