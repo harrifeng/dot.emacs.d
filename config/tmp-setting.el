@@ -428,5 +428,6 @@ vi style of % jumping to matching brace."
 
 (setq pyim-page-tooltip 'posframe)
 
-(setq pyim-dicts
-      '((:name "greatDict" :file "/Users/hfeng/github/pyim-greatdict/pyim-greatdict.pyim")))
+(quelpa '(pyim-greatdict :fetcher github :repo "tumashu/pyim-greatdict"))
+(require 'pyim-greatdict)
+(pyim-greatdict-enable)

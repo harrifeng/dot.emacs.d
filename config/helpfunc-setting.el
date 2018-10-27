@@ -282,6 +282,7 @@
      projectile
      py-autopep8
      pyim
+     quelpa
      regex-tool
      replace-from-region
      restart-emacs
