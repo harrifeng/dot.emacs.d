@@ -425,3 +425,5 @@ vi style of % jumping to matching brace."
 (pyim-basedict-enable)   ; 拼音词库，五笔用户 *不需要* 此行设置
 (setq default-input-method "pyim")
 (global-set-key (kbd "C-\\") 'toggle-input-method)
+
+(setq pyim-page-tooltip 'posframe)

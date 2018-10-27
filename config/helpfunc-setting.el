@@ -278,6 +278,7 @@
      neotree
      nodejs-repl
      plantuml-mode
+     posframe
      projectile
      py-autopep8
      pyim
