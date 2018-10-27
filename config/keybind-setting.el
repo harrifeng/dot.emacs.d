@@ -32,14 +32,12 @@
 (global-set-key (kbd "C-c c")             'set-mark-command)
 (global-set-key (kbd "C-.")               'set-mark-command)
 
-(global-set-key (kbd "C-c d")             'toggle-input-method)
-(global-set-key (kbd "C-;")               'toggle-input-method)
+(global-set-key (kbd "C-c d")             'other-window)
+(global-set-key (kbd "C-;")               'other-window)
 
 (global-set-key (kbd "C-c e")             'undo)
 (global-set-key (kbd "C-/")               'undo)
 
-(global-set-key (kbd "C-c f")             'other-window)
-(global-set-key (kbd "C-'")               'other-window)
 (global-set-key (kbd "C-7")               'other-window)
 
 ;; End Iterm2 Key region------------------------------->
@@ -63,7 +61,7 @@
 (setq my-leader1 hfeng-prefix)
 
 (general-define-key :prefix my-leader1
-                    ";"   'open-pwd-shell-or-eshell-windows-nt-or-not
+                    ";"   'toggle-input-method
                     "'"   'open-pwd-shell-or-eshell-windows-nt-or-not
                     "RET" 'split-window-right
                     ","   'split-window-below
