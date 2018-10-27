@@ -419,3 +419,9 @@ vi style of % jumping to matching brace."
     (cond ((looking-at "\\s\(") (forward-list 1) (backward-char 1))
           ((looking-at "\\s\)") (forward-char 1) (backward-list 1))
                   (t (self-insert-command (or arg 1)))))
+
+(require 'pyim)
+(require 'pyim-basedict) ; 拼音词库设置，五笔用户 *不需要* 此行设置
+(pyim-basedict-enable)   ; 拼音词库，五笔用户 *不需要* 此行设置
+(setq default-input-method "pyim")
+(global-set-key (kbd "C-\\") 'toggle-input-method)
