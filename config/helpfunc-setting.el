@@ -228,6 +228,7 @@
      (or (package-installed-p package)
          (package-install package)))
    '(
+     posframe
      ag
      anzu
      auto-complete

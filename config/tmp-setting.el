@@ -426,8 +426,15 @@ vi style of % jumping to matching brace."
 (setq default-input-method "pyim")
 (global-set-key (kbd "C-\\") 'toggle-input-method)
 
-(setq pyim-page-tooltip 'posframe)
+(setq pyim-page-tooltip 'popup)
+
+;; (add-hook 'emacs-startup-hook
+;;                     #'(lambda () (pyim-restart-1 t)))
 
 ;(quelpa '(pyim-greatdict :fetcher github :repo "tumashu/pyim-greatdict"))
 ;(require 'pyim-greatdict)
 ;(pyim-greatdict-enable)
+
+
+(setq pyim-dicts
+      '((:name "dict1" :file "~/github/pyim-greatdict/pyim-greatdict.pyim")))
