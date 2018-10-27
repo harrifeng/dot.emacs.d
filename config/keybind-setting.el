@@ -32,11 +32,15 @@
 (global-set-key (kbd "C-c c")             'set-mark-command)
 (global-set-key (kbd "C-.")               'set-mark-command)
 
-(global-set-key (kbd "C-c d")             'other-window)
-(global-set-key (kbd "C-;")               'other-window)
+(global-set-key (kbd "C-c d")             'toggle-input-method)
+(global-set-key (kbd "C-;")               'toggle-input-method)
 
 (global-set-key (kbd "C-c e")             'undo)
 (global-set-key (kbd "C-/")               'undo)
+
+(global-set-key (kbd "C-c f")             'other-window)
+(global-set-key (kbd "C-'")               'other-window)
+(global-set-key (kbd "C-7")               'other-window)
 
 ;; End Iterm2 Key region------------------------------->
 (if (display-graphic-p)

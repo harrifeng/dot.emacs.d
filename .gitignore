@@ -116,3 +116,6 @@ tldr/
 network-security.data
 
 docsets/
+
+# for input method
+pyim/

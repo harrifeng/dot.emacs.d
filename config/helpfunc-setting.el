@@ -280,6 +280,7 @@
      plantuml-mode
      projectile
      py-autopep8
+     pyim
      regex-tool
      replace-from-region
      restart-emacs
