@@ -427,3 +427,6 @@ vi style of % jumping to matching brace."
 (global-set-key (kbd "C-\\") 'toggle-input-method)
 
 (setq pyim-page-tooltip 'posframe)
+
+(setq pyim-dicts
+      '((:name "greatDict" :file "/Users/hfeng/github/pyim-greatdict/pyim-greatdict.pyim")))
