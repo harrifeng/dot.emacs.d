@@ -228,7 +228,6 @@
      (or (package-installed-p package)
          (package-install package)))
    '(
-     posframe
      ag
      anzu
      auto-complete
@@ -239,8 +238,6 @@
      docker-tramp
      dockerfile-mode
      doom-themes
-     elnode
-     ess
      exec-path-from-shell
      expand-region
      fill-column-indicator
