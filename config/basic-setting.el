@@ -76,7 +76,7 @@
 ;; packages setting, this will work on all platforms, although unix-link system
 ;; can use el-get, package still exist as supplementary
 (setq package-archives '(("gnu" . "http://elpa.gnu.org/packages/")
-                         ("melpa" . "http://melpa.milkbox.net/packages/")))
+                         ("melpa" . "http://melpa.org/packages/")))
 (package-initialize)
 
 ;; different font size for different hosts
