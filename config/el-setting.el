@@ -328,7 +328,7 @@
 
 
 ;; [M]aterial theme------------------------------------------------------->>
-(load-theme 'monokai t)
+(load-theme 'material t)
 
 ;; [M]oe theme------------------------------------------------------------>>
 ;; (require 'moe-theme)
